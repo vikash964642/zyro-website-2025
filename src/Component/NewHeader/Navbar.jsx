@@ -74,7 +74,7 @@ const Navbar = () => {
             <li className=" border-light-gray-600 pb-[13px]">
               <NavLink
                 to="/"
-                className="pt-[45px] pb-[3px] px-3 inline-block"
+                className="pt-[45px] pb-[3px] px-3 inline-block "
                 onClick={handleClick}
               >
                  Company

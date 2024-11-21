@@ -91,8 +91,8 @@ const NavLinks = (props) => {
               </p>
             </Link>
             {link.submenu && activeLink === link.name && (
-              <div className="lg:absolute   md:block group-hover:md:block hover:md:block ">
-                <div className=" pr-2 pb-4 gap-7 border-[#C3C3C3] bg-white lg:border-t-0 lg:border-x lg:border-b lg:rounded-b-lg group fill-white stroke-0.5 stroke-gray-600 filter  ">
+              <div className="lg:absolute md:block group-hover:md:block hover:md:block ">
+                <div className=" pr-2 pb-4 gap-7 lg:relative lg:right-[90px] border-[#C3C3C3] lg:bg-white  lg:border-t-0 lg:border-x lg:border-b lg:rounded-b-lg group fill-white stroke-0.5 stroke-gray-600 filter  ">
                   {link.sublinks &&
                     link.sublinks.map((mysublinks, subIndex) => (
                       <div key={subIndex} onClick={handleSublinkClick}>
@@ -111,16 +111,16 @@ const NavLinks = (props) => {
                                 alt=""
                               />
                             </div>
-                            <h1
-                              className={`text-[17px] font-medium rounded items-center ${
+                            <p
+                              className={`text-[17px] font-medium rounded items-center   ${
                                 hoveredSublinkIndex === subIndex
-                                  ? "text-primary"
-                                  : "text-black"
+                                  ? "text-[#6F41D2]"
+                                  : "text-[#909090]"
                               }`}
                               onClick={ScrollTop}
                             >
                               {mysublinks.name}
-                            </h1>
+                            </p>
                           </div>
                         </Link>
                       </div>
