@@ -1,13 +1,17 @@
 
 
-import './App.css'
+import Header from "./Component/NewHeader/Navbar";
+import { HashRouter as Router} from "react-router-dom";
 
 function App() {
  
 
   return (
     <>
-     <h1 className='text-xl font-bold'>hello world !</h1>
+    <Router>
+
+    < Header/>
+    </Router>
     </>
   )
 }
