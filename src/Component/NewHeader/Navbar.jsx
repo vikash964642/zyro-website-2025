@@ -1,7 +1,6 @@
 import { Outlet, NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Logo from "../../../public/image/zyro-logo.webp";
-// import Button from "../Utils/Buttons";
 import NavLinks from "./NavLinks";
 import { Link } from "react-router-dom";
 
@@ -66,10 +65,11 @@ const Navbar = () => {
 
           {/* Mobile nav */}
           <ul
-            className={`lg:hidden bg-[#434343]  fixed overflow-hidden text-[#D9D9D9] w-full text-[22px] top-[4.8rem] overflow-y-auto bottom-0 pb-11 pl-4 duration-800  ${
+            className={`lg:hidden bg-[#434343] bg-mobileMenuSape fixed overflow-hidden text-[#D9D9D9] w-full text-[22px] top-[4.8rem] overflow-y-auto bottom-0 pb-11 pl-4 duration-800  ${
               open ? "left-0" : "left-[-100%]"
             }`}
           >
+             
             <NavLinks handleClick={handleClick}  />
             <li className=" border-light-gray-600 pb-[13px]">
               <NavLink
@@ -80,9 +80,9 @@ const Navbar = () => {
                  Company
               </NavLink>
             </li>
-          <div className=" flex justify-center mt-[15px] bottom-[66px] fixed w-[90%] bg-white z-[99px]">
-              <div className="flex justify-center">
-                <Link to="https://play.google.com/store/apps/details?id=com.shopaver" className="border-primary border-2 rounded-[30px]  text-center text-primary w-[141px] text-[16px]  min-[360px]:w-[182px] h-[50px] min-[360px]:text-[20px] leading-[24px] pt-[8px]">
+          <div className=" flex justify-center mt-[15px] bottom-[66px] fixed w-[90%] bg-transparent z-[99px]">
+              <div className="flex justify-center ">
+                <Link to="https://play.google.com/store/apps/details?id=com.shopaver" className="border-[#6F41D2] bg-[#6F41D2] border-2 rounded-[30px]  text-center text-primary w-[141px] text-[16px]  min-[360px]:w-[182px] h-[50px] min-[360px]:text-[20px] leading-[24px] pt-[8px]">
                   Download App
                 </Link>
               </div>

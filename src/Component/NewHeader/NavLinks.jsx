@@ -101,7 +101,7 @@ const NavLinks = (props) => {
                           onClick={(e) => handleBlogLinkClick(e, mysublinks)}
                         >
                           <div
-                            className={`flex hover:bg-secondary items-center h-7 w-64 py-3 pt-1 rounded ${isMobile ? 'my-4' : 'my-[6px]'}`}
+                            className={`flex hover:bg-secondary items-center h-7 w-64 py-3 pt-5 rounded ${isMobile ? 'my-4' : 'my-[6px]'}`}
                             onMouseOver={() => setHoveredSublinkIndex(subIndex)}
                             onMouseLeave={() => setHoveredSublinkIndex(null)}
                           >

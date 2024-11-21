@@ -5,8 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        mobileMenuSape:"url(/public/image/shades/mobile_menu_shad.svg)"
+      }
+    },
   },
   plugins: [],
 }
-
