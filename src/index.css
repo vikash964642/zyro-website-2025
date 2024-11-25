@@ -9,7 +9,11 @@
     margin:0px;
     padding:0px;
    
-  }
-  body{
-    background-color: #434343;
-  }
+}
+body{
+  background-color: #434343;
+}
+
+.no-scollbar::-webkit-scrollbar {
+  display: none;
+}
