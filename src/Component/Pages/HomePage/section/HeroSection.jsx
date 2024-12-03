@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useSwipeable } from "react-swipeable";
 
-// Sample data for the slides
 const slides = [
   {
     image: "./../../../../public/image/HomePage/herosection.webp",
@@ -24,24 +23,34 @@ const slides = [
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Function to handle forward navigation
+  // Handle forward navigation
   const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
-  // Function to handle backward navigation
+  // Handle backward navigation
   const handlePrev = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
-  // Function to handle dot navigation
+  // Handle dot click
   const handleDotClick = (index) => {
     setCurrentSlide(index);
   };
 
+  // Swipeable handlers
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: handleNext, // Move to next slide on swipe left
+    onSwipedRight: handlePrev, // Move to previous slide on swipe right
+  });
+
   return (
     <section className="max-w-7xl mx-auto pt-[103px] relative pb-8">
-      <div className="container mx-auto flex items-center justify-around flex-col-reverse lg:flex-row relative">
+      {/* Add swipe handlers to this div */}
+      <div
+        className="container mx-auto flex items-center justify-around flex-col-reverse lg:flex-row relative"
+        {...swipeHandlers}
+      >
         {/* Left Content */}
         <div className="lg:w-[603px] w-full px-[44px] lg:px-[0px] mt-[36px]">
           <h4 className="md:text-[42px] text-white text-[22px] font-medium md:leading-[55px] leading-[24px] lg:mt-[10px] max-[400px]:text-[18px]">
@@ -73,15 +82,15 @@ export default function HeroSection() {
         {/* Desktop Navigation Buttons */}
         <button
           onClick={handlePrev}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white p-2 bg-gray-700 rounded-full flex items-center justify-center w-[40px] h-[40px] hover:bg-gray-800 lg:flex hidden"
+          className="fixed left-4 top-1/2 transform -translate-y-1/2 text-white p-2 bg-gray-700 rounded-full  items-center justify-center w-[40px] h-[40px] hover:bg-gray-800 lg:flex hidden"
         >
-          <FaArrowLeft />
+          &lt;
         </button>
         <button
           onClick={handleNext}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white p-2 bg-gray-700 rounded-full flex items-center justify-center w-[40px] h-[40px] hover:bg-gray-800 lg:flex hidden"
+          className="fixed right-4 top-1/2 transform -translate-y-1/2 text-white p-2 bg-gray-700 rounded-full  items-center justify-center w-[40px] h-[40px] hover:bg-gray-800 lg:flex hidden"
         >
-          <FaArrowRight />
+          &gt;
         </button>
 
         {/* Mobile Indicators */}
