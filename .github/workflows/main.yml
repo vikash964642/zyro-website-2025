@@ -32,17 +32,18 @@ jobs:
           path: ./build
 
   deploy:
-    name: Deploy
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: Download build artifact
+      - name: Download Artifact
         uses: actions/download-artifact@v3
         with:
           name: build-artifacts
-          run: echo "Deploying from downloaded artifacts"
+
+      - name: Delopy
+        run: echo "Deploying from downloaded artifacts" 
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
