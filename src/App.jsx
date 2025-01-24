@@ -1,15 +1,20 @@
-
-
-import './App.css'
+import Header from "./Component/NewHeader/Navbar";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./Component/Pages/HomePage/HomePage";
 
 function App() {
- 
-
   return (
     <>
-     <h1 className='text-xl font-bold'>hello world !</h1>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />}> 
+            
+          </Route>
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
