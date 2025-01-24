@@ -112,7 +112,7 @@ const NavLinks = (props) => {
                               />
                             </div>
 
-                            <p>vikash</p>
+                            <p>vikash Kumar</p>
                             <p
                               className={`text-[17px] font-medium rounded items-center   ${
                                 hoveredSublinkIndex === subIndex
