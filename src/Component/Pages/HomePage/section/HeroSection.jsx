@@ -4,20 +4,20 @@ import { useSwipeable } from "react-swipeable";
 
 const slides = [
   {
-    image: "./../../../../public/image/HomePage/herosection.webp",
+    image: "./../../../../public/image/HomePage/herosection-banner.png",
     heading: "Accelerate Your Business with our Connected Banking Solutions",
-    paragraph: "Elevate your business with easy payments and payouts through our advanced banking solutions.",
+    paragraph: "Connect and manage all your business current accounts from different banks in a single dashboard with our connected banking. ",
   },
   {
-    image: "./../../../../public/image/HomePage/herosection2.webp",
-    heading: "Streamline Your Finances with Innovative Tools",
-    paragraph: "Experience seamless management of your business finances with our cutting-edge tools.",
+    image: "./../../../../public/image/HomePage/herosoundbox.png",
+    heading: "Zyro Sound Box",
+    paragraph: "Accept digital payments with our Zyro UPI QR Code. The soundbox offers instant secure audio payment confirmations and ensuring a faster, more relialble and efficient customer experience.",
   },
   {
-    image: "./../../../../public/image/HomePage/herosection3.webp",
-    heading: "Expand Your Business Horizons Globally",
-    paragraph: "Discover opportunities to grow your business worldwide with our tailored financial solutions.",
-  },
+    image: "./../../../../public/image/HomePage/herosection-banner-1.png",
+    heading: "Simplify, Track, and Control Expense in One Place",
+    paragraph: "Expense management made easy with Zyro. Manage all your business expense in one place track, control and optimize easily",
+  }
 ];
 
 export default function HeroSection() {
@@ -45,17 +45,17 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="max-w-7xl mx-auto pt-[103px] relative pb-8">
+    <section className=" max-w-screen-lg mx-auto">
       {/* Add swipe handlers to this div */}
       <div
-        className="container mx-auto flex items-center justify-around flex-col-reverse lg:flex-row relative"
+        className="container mx-auto flex items-center justify-around flex-col-reverse lg:flex-row relative mt-[103px] gap-5"
         {...swipeHandlers}
       >
         {/* Left Content */}
-        <div className="lg:w-[603px] w-full px-[44px] lg:px-[0px] mt-[36px]">
-          <h4 className="md:text-[42px] text-white text-[22px] font-medium md:leading-[55px] leading-[24px] lg:mt-[10px] max-[400px]:text-[18px]">
+        <div className="lg:w-[55%] w-full">
+          <h1 className="md:text-[42px] text-white text-[22px] font-medium md:leading-[55px] leading-[24px] lg:mt-[10px] max-[400px]:text-[18px]">
             {slides[currentSlide].heading.split(" ").map((word, index) =>
-              word === "Connected" || word === "Innovative" || word === "Globally" ? (
+              word === "Connected" || word === "Banking" || word === "Solutions" ? (
                 <span key={index} className="bg-gradientText bg-clip-text text-transparent font-semibold">
                   {word}{" "}
                 </span>
@@ -63,8 +63,8 @@ export default function HeroSection() {
                 word + " "
               )
             )}
-          </h4>
-          <p className="text-white font-medium text-[14px] md:text-[16px] md:leading-[21.28px] leading-[18.62px] md:mt-[18px] mt-[15px]">
+          </h1>
+          <p className="text-white text-[14px] md:text-[18.28px] md:mt-[18px] mt-[30px] pr-[40px]">
             {slides[currentSlide].paragraph}
           </p>
           <div className="max-md:flex flex md:justify-end lg:justify-start max-md:justify-end">
@@ -75,20 +75,20 @@ export default function HeroSection() {
         </div>
 
         {/* Right Content */}
-        <div className="p-[25px] md:p-[0px]">
-          <img src={slides[currentSlide].image} alt={`Slide ${currentSlide + 1}`} className="max-w-full h-auto" />
+        <div className="p-[25px] md:p-[0px] lg:w-[45%] w-full">
+          <img src={slides[currentSlide].image} alt={`Slide ${currentSlide + 1}`} />
         </div>
 
         {/* Desktop Navigation Buttons */}
         <button
           onClick={handlePrev}
-          className="fixed left-4 top-1/2 transform -translate-y-1/2 text-white p-2 bg-gray-700 rounded-full  items-center justify-center w-[40px] h-[40px] hover:bg-gray-800 lg:flex hidden"
+          className="fixed left-4  text-white p-2 bg-gray-700 rounded-full  items-center justify-center w-[40px] h-[40px] hover:bg-gray-800 lg:flex hidden"
         >
           &lt;
         </button>
         <button
           onClick={handleNext}
-          className="fixed right-4 top-1/2 transform -translate-y-1/2 text-white p-2 bg-gray-700 rounded-full  items-center justify-center w-[40px] h-[40px] hover:bg-gray-800 lg:flex hidden"
+          className="fixed right-4  text-white p-2 bg-gray-700 rounded-full  items-center justify-center w-[40px] h-[40px] hover:bg-gray-800 lg:flex hidden"
         >
           &gt;
         </button>

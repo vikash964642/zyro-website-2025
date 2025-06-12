@@ -7,11 +7,13 @@ function App() {
     <>
       <Router>
         <Header />
+      
         <Routes>
           <Route path="/" element={<HomePage />}> 
             
           </Route>
         </Routes>
+         
       </Router>
     </>
   );
