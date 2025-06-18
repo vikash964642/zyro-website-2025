@@ -44,7 +44,7 @@ function BankAccountManagement() {
   };
 
   return (
-    <section className="max-w-screen-lg mx-auto">
+    <section className="max-w-screen-lg mx-auto mt-[82px]">
       <div>
         <p className="text-white text-[28px] lg:text-[36px] font-medium text-center">
           Bank Account{" "}

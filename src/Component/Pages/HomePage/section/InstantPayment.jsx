@@ -12,7 +12,7 @@ const cards = [
 
 function InstantPayment() {
   return (
-    <section className="max-w-screen-lg mx-auto">
+    <section className="max-w-screen-lg mx-auto mt-[120px]">
       <div>
         <h2 className="bg-gradientText bg-clip-text text-transparent text-center font-semibold text-[28px] lg:text-[45px] leading-[46px] lg:leading-[46px]">
           Instant Payment Alerts, <br className="hidden lg:block" /> Loud and Clear
