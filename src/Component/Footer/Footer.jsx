@@ -7,6 +7,7 @@ import linkedIn from "../../../public/image/FooterImage/LinkedIn.svg";
 import zyrologo from "../../../public/image/zyro-logo.svg";
 // import { useNavigate } from 'react-router-dom';
 import GooglePlay from "../../../public/image/FooterImage/GooglePlay.png";
+import certificatezyro from "../../../public/image/FooterImage/certificatezyro.png";
 
 function Footer() {
   const ScrollTop = () => {
@@ -17,43 +18,33 @@ function Footer() {
       <div className="bg-secondary lg:mt-[120px] p-[20px] min-[450px]:px-[50px] lg:p-[50px] pt-[30px]">
         <div className="flex lg:justify-between    flex-col lg:flex-row  ">
           <div className=" lg:w-[30%]">
-            <img src={zyrologo} ></img>
+            <img src={zyrologo}></img>
             <p className="text-white70 pt-[30px] text-[14px] lg:text-[15px]">
               ZYRO is designed to empower businesses by providing a
               next-generation banking platform that streamlines financial
               process, enhances operational efficiency and ensures precise
               control over your finances.
             </p>
-             <img src={GooglePlay}className="hidden lg:block pt-[30px]"></img>
-            <div className="hidden lg:block mt-[40px] text-white">
-              <p className="text-[22px] md:font-semibold text-webtext">
-                Address
-              </p>
-              <p className="font-semibold text-[15px] leading-[25px] text-webtext">
-                Unit No. 409, 4th Floor, Ithum Tower,
-                <br />
-                Sector - 62 Noida,
-                <br />
-                Uttar Pradesh - 201301
-              </p>
-            
-            </div>
+            <img
+              src={GooglePlay}
+              className="hidden lg:block mt-[30px] cursor-pointer"
+            ></img>
           </div>
 
-          <div className="flex justify-between lg:justify-around min-[360px]:w-[322px] min-[450px]:w-[400px]  lg:w-[40%] mt-[24px] lg:mt-[0px]">
+          <div className="hidden lg:flex lg:justify-around   lg:w-[40%]">
             <div className="">
-              <p className="text-white80 font-medium text-[16px] leading-[21px]">
+              <p className="text-white90 font-medium text-[16px] leading-[21px]">
                 Product
               </p>
               <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
                 <li>
                   <Link to="/posbilling" onClick={ScrollTop}>
-                  Connected Banking
+                    Connected Banking
                   </Link>
                 </li>
                 <li>
                   <Link to="/quickbilling" onClick={ScrollTop}>
-                   Zyro Soundbox
+                    Zyro Soundbox
                   </Link>
                 </li>
                 <li>
@@ -63,34 +54,34 @@ function Footer() {
                 </li>
                 <li>
                   <Link to="/khata" onClick={ScrollTop}>
-             Expense Management
+                    Expense Management
                   </Link>
                 </li>
                 <li>
                   <Link to="/ondc" onClick={ScrollTop}>
-                 Billing & Accounting
+                    Billing & Accounting
                   </Link>
                 </li>
                 <li>
                   <Link to="/onlinestore" onClick={ScrollTop}>
-                  Gift Cards API
+                    Gift Cards API
                   </Link>
                 </li>
                 <li>
                   <Link to="/WhatsappCommerce" onClick={ScrollTop}>
-               Prepaid Card
+                    Prepaid Card
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="">
-              <p className="text-white80 font-medium text-[16px] leading-[21px]">
+              <p className="text-white90 font-medium text-[16px] leading-[21px]">
                 Banking +
               </p>
               <ul className="font-normal text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px] text-white70">
                 <li>
                   <Link to="/" onClick={ScrollTop}>
-                Connected Banking
+                    Connected Banking
                   </Link>
                 </li>
                 <li>
@@ -107,25 +98,24 @@ function Footer() {
                 <li>
                   <Link to="/">Zyro Capital</Link>
                 </li>
-              
               </ul>
             </div>
           </div>
 
-  <div className="flex justify-between lg:justify-around min-[360px]:w-[300px] min-[450px]:w-[375px]  lg:w-[30%] mt-[24px] lg:mt-[0px]">
+          <div className="hidden lg:flex lg:justify-around  lg:w-[30%] ">
             <div className="lg:ml-[12px]">
-              <p className="text-white80 font-medium text-[16px] leading-[21px]">
+              <p className="text-white90 font-medium text-[16px] leading-[21px]">
                 Company
               </p>
               <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
                 <li>
                   <Link to="/posbilling" onClick={ScrollTop}>
-                  Home
+                    Home
                   </Link>
                 </li>
                 <li>
                   <Link to="/quickbilling" onClick={ScrollTop}>
-              About Us
+                    About Us
                   </Link>
                 </li>
                 <li>
@@ -135,81 +125,302 @@ function Footer() {
                 </li>
                 <li>
                   <Link to="/khata" onClick={ScrollTop}>
-            Contact Us
+                    Contact Us
                   </Link>
                 </li>
                 <li>
                   <Link to="/ondc" onClick={ScrollTop}>
-                 Careers
+                    Careers
                   </Link>
                 </li>
-             
               </ul>
             </div>
             <div className=" max-[1123px]:mr-[15px]   max-[1124px]:mr-[15px]">
-              <p className="text-white80 font-medium text-[16px] leading-[21px]">
-              Resources
+              <p className="text-white90 font-medium text-[16px] leading-[21px]">
+                Resources
               </p>
               <ul className="font-normal text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px] text-white70">
                 <li>
                   <Link to="/" onClick={ScrollTop}>
-               Terms & Conditions
+                    Terms & Conditions
                   </Link>
                 </li>
                 <li>
                   <Link to="" onClick={ScrollTop}>
-                  Privacy Policy
+                    Privacy Policy
                   </Link>
                 </li>
                 <li>
                   <Link to="/">Cookies Policy</Link>
                 </li>
-              
               </ul>
             </div>
           </div>
- </div>
- <div className="mt-[30px] flex lg:hidden items-center min-[376px]:justify-between max-[375px]:flex-col max-[375px]:gap-[20px] max-[375px]:justify-center min-[450px]:w-[405px]">
-  <img src={GooglePlay}></img>
-  <div className="flex items-center gap-[20px]">
-                <NavLink to="">
-                  <img src={Facebook} />
-                </NavLink>
-                <NavLink to="https://www.instagram.com/shopaver/">
-                  <img src={Instagram} className=""></img>
-                </NavLink>
-                <NavLink>
-                  <img src={Youtube} className=""></img>
-                </NavLink>
-                <NavLink to="https://www.linkedin.com/company/shopaver/">
-                  <img src={linkedIn} className=""></img>
-                </NavLink>
-                <NavLink t="https://x.com/ShopaverApp">
-                  <img src={XTwitter} className=""></img>
-                </NavLink>
-              </div>
- </div>
-<div className="border-t border-white20 mt-[35px]"></div>
-   <div className="flex justify-center lg:justify-between items-center mt-[30px]">
-     <div className="hidden lg:flex items-center gap-[20px] ">
-                <NavLink to="">
-                  <img src={Facebook} />
-                </NavLink>
-                <NavLink to="https://www.instagram.com/shopaver/">
-                  <img src={Instagram} className=""></img>
-                </NavLink>
-                <NavLink>
-                  <img src={Youtube} className=""></img>
-                </NavLink>
-                <NavLink to="https://www.linkedin.com/company/shopaver/">
-                  <img src={linkedIn} className=""></img>
-                </NavLink>
-                <NavLink t="https://x.com/ShopaverApp">
-                  <img src={XTwitter} className=""></img>
-                </NavLink>
-              </div>
-              <p className="text-[12px] lg:text-[14px] text-white70 font-normal">© 2024 KGC Infotech Pvt.Ltd.. All Rights Reserved.</p>
-   </div>
+        </div>
+        <div className="mt-[25px] flex justify-between gap-0 min-[425px]:justify-center min-[425px]:gap-[80px] lg:hidden ">
+          <div>
+            <div className="">
+              <p className="text-white90 font-medium text-[16px] leading-[21px]">
+                Product
+              </p>
+              <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
+                <li>
+                  <Link to="/posbilling" onClick={ScrollTop}>
+                    Connected Banking
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/quickbilling" onClick={ScrollTop}>
+                    Zyro Soundbox
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/inventory" onClick={ScrollTop}>
+                    Zyro POS
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/khata" onClick={ScrollTop}>
+                    Expense Management
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/ondc" onClick={ScrollTop}>
+                    Billing & Accounting
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/onlinestore" onClick={ScrollTop}>
+                    Gift Cards API
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/WhatsappCommerce" onClick={ScrollTop}>
+                    Prepaid Card
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="pt-[30px]">
+              <p className="text-white90 font-medium text-[16px] leading-[21px]">
+                Company
+              </p>
+              <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
+                <li>
+                  <Link to="/posbilling" onClick={ScrollTop}>
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/quickbilling" onClick={ScrollTop}>
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/inventory" onClick={ScrollTop}>
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/khata" onClick={ScrollTop}>
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/ondc" onClick={ScrollTop}>
+                    Careers
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div className="">
+              <p className="text-white90 font-medium text-[16px] leading-[21px]">
+                Banking +
+              </p>
+              <ul className="font-normal text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px] text-white70">
+                <li>
+                  <Link to="/" onClick={ScrollTop}>
+                    Connected Banking
+                  </Link>
+                </li>
+                <li>
+                  <Link to="" onClick={ScrollTop}>
+                    Payout
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">Bank Account Verification</Link>
+                </li>
+                <li>
+                  <Link to="/">Escrow Account</Link>
+                </li>
+                <li>
+                  <Link to="/">Zyro Capital</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="pt-[80px] min-[768px]:pt-[100px]">
+              <p className="text-white90 font-medium text-[16px] leading-[21px]">
+                Resources
+              </p>
+              <ul className="font-normal text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px] text-white70">
+                <li>
+                  <Link to="/" onClick={ScrollTop}>
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link to="" onClick={ScrollTop}>
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">Cookies Policy</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center lg:hidden pt-[40px]">
+          <img src={certificatezyro} className="rounded-[7.83px]"></img>
+        </div>
+    <div className="flex min-[425px]:justify-center lg:hidden mt-[25px]">
+          <div className="">
+          <div className="flex items-center gap-[20px]">
+            <p className="text-[14px] font-medium leading-[21px] text-white90">
+              Support:
+            </p>
+            <a
+              href="tel:9560050703"
+              className="text-[14px] font-normal leading-[21px] text-[#9E9C9F]"
+            >
+              +919560050703
+            </a>
+          </div>
+          <div className="flex items-center gap-[40px] pt-[8px]">
+            <p className="text-[14px] font-medium leading-[21px] text-white90">
+              Email:
+            </p>
+            <a
+              href="mailto:support@myzyro.com"
+              className="text-[14px] font-normal leading-[21px] text-[#9E9C9F]"
+            >
+              support@myzyro.com
+            </a>
+          </div>
+
+          <div className="flex gap-[20px] pt-[5px]">
+            <p className="text-[14px] font-medium leading-[21px] text-white90">
+              Address:
+            </p>
+            <p
+              href="tel:9560050703"
+              className="text-[14px] font-normal leading-[21px] text-[#9E9C9F]"
+            >
+              H-143, Ground Floor, Sector 63 Noida, Uttar Pradesh 201301
+            </p>
+ 
+
+
+
+ 
+
+
+  {/* <div className="[writing-mode:vertical-lr] rotate-180 text-purple-400 text-xl font-bold">
+    Bottom to Top
+  </div> */}
+
+
+
+          </div>
+        </div>
+    </div>
+        <div className="mt-[30px] flex lg:hidden items-center justify-center max-[375px]:flex-col max-[375px]:gap-[20px] gap-[50px]">
+          <img src={GooglePlay}></img>
+          <div className="flex items-center gap-[20px]">
+            <NavLink to="">
+              <img src={Facebook} />
+            </NavLink>
+            <NavLink to="https://www.instagram.com/shopaver/">
+              <img src={Instagram} className=""></img>
+            </NavLink>
+            <NavLink>
+              <img src={Youtube} className=""></img>
+            </NavLink>
+            <NavLink to="https://www.linkedin.com/company/shopaver/">
+              <img src={linkedIn} className=""></img>
+            </NavLink>
+            <NavLink t="https://x.com/ShopaverApp">
+              <img src={XTwitter} className=""></img>
+            </NavLink>
+          </div>
+        </div>
+
+        <div className="hidden lg:flex justify-between items-end pt-[30px]">
+          <div>
+            <div className="flex items-center gap-[20px]">
+              <p className="text-[14px] font-medium leading-[21px] text-white90">
+                Support:
+              </p>
+              <a
+                href="tel:9560050703"
+                className="text-[14px] font-normal leading-[21px] text-[#9E9C9F]"
+              >
+                +919560050703
+              </a>
+            </div>
+            <div className="flex items-center gap-[40px] pt-[8px]">
+              <p className="text-[14px] font-medium leading-[21px] text-white90">
+                Email:
+              </p>
+              <a
+                href="mailto:support@myzyro.com"
+                className="text-[14px] font-normal leading-[21px] text-[#9E9C9F]"
+              >
+                support@myzyro.com
+              </a>
+            </div>
+
+            <div className="flex items-center gap-[20px] pt-[5px]">
+              <p className="text-[14px] font-medium leading-[21px] text-white90">
+                Address:
+              </p>
+              <p
+                href="tel:9560050703"
+                className="text-[14px] font-normal leading-[21px] text-[#9E9C9F]"
+              >
+                H-143, Ground Floor, Sector 63 Noida, Uttar Pradesh 201301
+              </p>
+            </div>
+          </div>
+          <img src={certificatezyro}></img>
+        </div>
+        <div className="border-t border-white20 mt-[35px]"></div>
+        <div className="flex justify-center lg:justify-between items-center mt-[30px]">
+          <div className="hidden lg:flex items-center gap-[20px] ">
+            <NavLink to="">
+              <img src={Facebook} />
+            </NavLink>
+            <NavLink to="https://www.instagram.com/shopaver/">
+              <img src={Instagram} className=""></img>
+            </NavLink>
+            <NavLink>
+              <img src={Youtube} className=""></img>
+            </NavLink>
+            <NavLink to="https://www.linkedin.com/company/shopaver/">
+              <img src={linkedIn} className=""></img>
+            </NavLink>
+            <NavLink t="https://x.com/ShopaverApp">
+              <img src={XTwitter} className=""></img>
+            </NavLink>
+          </div>
+          <p className="text-[12px] lg:text-[14px] text-white70 font-normal">
+            © 2024 KGC Infotech Pvt.Ltd.. All Rights Reserved.
+          </p>
+        </div>
       </div>
     </>
   );

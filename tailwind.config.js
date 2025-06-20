@@ -15,7 +15,7 @@ export default {
         gradientTextMid: "#9573DE",
         gradientTextEnd: "#fff",
         white70:"rgba(255, 255, 255, 0.70)",
-         white80:"rgba(255, 255, 255, 0.90)",
+         white90:"rgba(255, 255, 255, 0.90)",
          white20: "rgba(255, 255, 255, 0.20)",
       },
     },
