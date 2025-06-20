@@ -9,7 +9,9 @@ import ManagingCorporate from "./section/ManagingCorporate";
 import ExpenceControl from "./section/ExpenceControl";
 import ConnectedBanking from "./section/ConnectedBanking";
 import VerticleSlider from "./section/VerticleSlider";
-
+import BusinessVerticleSlider from "./section/BusinessVerticleSlider";
+import NewsletterBox from "./section/NewsletterBox";
+import ControlFinance from "./section/ControlFinance";
 export default function HomePage() {
   return (
     <div>
@@ -22,7 +24,11 @@ export default function HomePage() {
       <ZyroPosMachine/>
       <ExpenceControl/>
       <ManagingCorporate />
+      <BusinessVerticleSlider/>
       <VerticleSlider />
+      <ControlFinance />
+<NewsletterBox />
+      
     </div>
   )
 }
