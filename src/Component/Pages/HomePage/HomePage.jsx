@@ -8,6 +8,7 @@ import ZyroPosMachine from "./section/ZyroPosMachine";
 import ManagingCorporate from "./section/ManagingCorporate";
 import ExpenceControl from "./section/ExpenceControl";
 import ConnectedBanking from "./section/ConnectedBanking";
+import CardSliders from "./section/CardSliders";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       <ZyroSoundBox/>
       <InstantPayment/>
       <ZyroPosMachine/>
+      <CardSliders/>
       <ExpenceControl/>
       <ManagingCorporate />
     </div>
