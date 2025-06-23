@@ -178,7 +178,7 @@ export default function HeroSection() {
       </button>
 
       {/* Slides Wrapper */}
-     <section className="max-w-screen-md xl:max-w-screen-lg mx-auto lg:mt-[103px] overflow-hidden " {...swipeHandlers}>
+     <section className="max-w-screen-md xl:max-w-screen-lg mx-auto lg:mt-[103px] mt-[60px] overflow-hidden relative" {...swipeHandlers}>
   <div
     className="flex transition-transform duration-700 ease-in-out"
     style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -198,16 +198,18 @@ export default function HeroSection() {
               )
             )}
           </h1>
-          <p className="text-white text-[14px] md:text-[14.5px] xl:text-[18.28px] md:mt-[18px] mt-[30px] pr-[40px]">{slide.paragraph}</p>
-          <div className="max-md:flex flex md:justify-end lg:justify-start max-md:justify-end">
-            <Link to="" className="text-white font-bold md:text-[15.6px] text-sm flex md:justify-start justify-end pt-[30px] lg:pt-[15px]">
+          <p className="text-white80 text-[14px] md:text-[14.5px] xl:text-[18.28px] md:mt-[18px] mt-[30px] text-center lg:text-left">{slide.paragraph}</p>
+          <div className="flex gap-[20px] lg:gap-[35px] items-center mt-[35px] flex-col lg:flex-row">
+            <button className="bg-[#4F31B4] rounded-[24px] h-[44px] w-[100%] min-[450px]:w-[200px] lg:w-[140px]  text-[#FFF] text-[18px] font-semibold" >Get Started</button>
+            <Link to="" className="text-white font-bold md:text-[15.6px] text-sm flex md:justify-start justify-center ">
               Know more &gt;&gt;
             </Link>
+
           </div>
         </div>
 
         {/* Right Image */}
-        <div className="p-[25px] md:p-[0px] lg:w-[45%] w-full">
+        <div className="p-[25px] md:p-[0px] lg:w-[45%] w-full flex justify-center items-center">
           <img src={slide.image} alt={`Slide ${index + 1}`} />
         </div>
          <h1 className="md:text-[27px] xl:text-[42px] lg:hidden text-white text-[22px] text-center font-medium lg:leading-[37px] xl:leading-[55px] leading-[24px] lg:mt-[10px] max-[400px]:text-[18px]">
@@ -226,7 +228,7 @@ export default function HeroSection() {
   </div>
 
   {/* Mobile Dots */}
-  <div className="absolute bottom-0 left-0 right-0 flex justify-center items-center lg:hidden pb-4">
+  <div className="pt-[30px] flex justify-center items-center lg:hidden">
     {slides.map((_, index) => (
       <div
         key={index}

@@ -15,7 +15,9 @@ function Footer() {
   };
   return (
     <>
-      <div className="bg-secondary lg:mt-[120px] p-[20px] min-[450px]:px-[50px] lg:p-[50px] pt-[30px]">
+   <div className="border-white20 border-solid border-t-[1px]  lg:mt-[120px] mt-[80px]"></div>
+      <div className="bg-secondary p-[20px] min-[450px]:px-[50px] lg:p-[50px] pt-[30px]">
+         
         <div className="flex lg:justify-between    flex-col lg:flex-row  ">
           <div className=" lg:w-[30%]">
             <img src={zyrologo}></img>

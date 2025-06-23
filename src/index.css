@@ -44,7 +44,7 @@ body {
 .scroller-section {
   display: grid;
   place-items: center;
-  padding: 40px;
+  padding: 16px;
   color: white;
 }
 
