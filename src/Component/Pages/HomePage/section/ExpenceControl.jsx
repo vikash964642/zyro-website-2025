@@ -31,7 +31,7 @@ function ExpenceControl() {
 
   // Scroll to image when label is clicked
   const handleLabelClick = (index) => {
-    imageRefs.current[index]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    imageRefs.current[index]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     setActiveIndex(index);
   };
 
