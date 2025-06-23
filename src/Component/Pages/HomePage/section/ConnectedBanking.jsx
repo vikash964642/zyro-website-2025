@@ -18,9 +18,9 @@ export default function ConnectedBanking() {
   }, [collaborators.length]);
 
   return (
-    <section  className="max-w-screen-lg mx-auto">
+    <section  className="max-w-screen-lg mx-4 lg:mx-auto">
 <div className="flex items-center justify-center bg-[#080411] py-10">
-      <div className="flex flex-col items-center w-3/4">
+      <div className="flex flex-col items-center lg:w-3/4">
         <h1 className="text-3xl md:text-6xl text-[#EDEDED] text-center font-semibold">
           Connected Banking
         </h1>

@@ -17,11 +17,13 @@ export default {
         white70:"rgba(255, 255, 255, 0.70)",
          white90:"rgba(255, 255, 255, 0.90)",
          white20: "rgba(255, 255, 255, 0.20)",
+          white80: "rgba(255, 255, 255, 0.80)",
          grey70:"rgba(191, 191, 191, 0.70)",
          newletterBG: "rgba(109, 236, 49, 0.02)",
          newletterboxBorder:"rgba(109, 236, 49, 0.50)",
          bordercolor1: "rgba(255, 255, 255, 0.20)",
          backgroundColor1: "rgba(8, 4, 17, 0.50)",
+         
       },
     },
   },

@@ -12,18 +12,18 @@ const cards = [
 
 function InstantPayment() {
   return (
-    <section className="max-w-screen-lg mx-auto mt-[120px]">
+    <section className="max-w-screen-lg mx-4 lg:mx-auto mt-[120px]">
       <div>
-        <h2 className="bg-gradientText bg-clip-text text-transparent text-center font-semibold text-[28px] lg:text-[45px] leading-[46px] lg:leading-[46px]">
+        <h2 className="bg-gradientText bg-clip-text text-transparent text-center font-semibold max-[360px]:text-[22px] max-[400px]:text-[24px] text-[27px] lg:text-[45px] leading-[46px] lg:leading-[46px]">
           Instant Payment Alerts, <br className="hidden lg:block" /> Loud and Clear
         </h2>
       </div>
 
-      <div className="mt-8 grid grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+      <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-7 justify-items-center">
         {cards.map((card, index) => (
           <div
             key={index}
-            className="w-[184.64px] h-[130.06px] lg:w-[257.31px] lg:h-[181.24px] rounded-[9.75px] lg:rounded-[13.59px] border-[0.56px] lg:border-[0.78px] pl-[18.84px] lg:pl-[21.05px] pt-[16.02px] lg:pt-[22.33px]"
+            className="max-[360px]:w-[135px] max-[360px]:h-[120px] max-[400px]:w-[160px] max-[400px]:h-[125px] w-[184.64px] h-[130.06px] lg:w-[257.31px] lg:h-[181.24px] rounded-[9.75px] lg:rounded-[13.59px] border-[0.56px] lg:border-[0.78px] border-solid border-[#45465E]  max-[360px]:pl-[12px] max-[360px]:pt-[12px] max-[400px]:pl-[14px] max-[400px]:pt-[12px] pl-[18.84px] lg:pl-[21.05px] pt-[16.02px] lg:pt-[22.33px]"
           >
             <div className="h-[37px] lg:h-[52.53px] w-[37px] lg:w-[52.53px] bg-[#4F31B4] rounded-full flex items-center justify-center">
               <img

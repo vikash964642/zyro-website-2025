@@ -2,12 +2,12 @@ import { useState } from "react";
 
 function VerticleSlider() {
     const contents = [
-    { id: 1, title: "Fast Onboarding", paragraph: "This is the paragraph for Content 1." },
-    { id: 2, title: "Real-Time Tracking", paragraph: "This is the paragraph for Content 2." },
-    { id: 3, title: "Increased Success Rates", paragraph: "This is the paragraph for Content 3." },
-    { id: 4, title: "100% Secure & Reliable", paragraph: "This is the paragraph for Content 4." },
-    { id: 5, title: "Integrated Dashboard", paragraph: "This is the paragraph for Content 5." },
-     { id: 6, title: "Competitive Pricing", paragraph: "This is the paragraph for Content 6." },
+    { id: 1, title: "Fast User-Friendly Interface", paragraph: "Our platform offers a user-friendly interface that makes digital banking simple, efficient, and easy for everyone to manage." },
+    { id: 2, title: "Scalable Solutions", paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis mi pretium, dictum arcu eu, dapibus est. Maecenas sed sapien ac eros sollicitudin vulputate." },
+    { id: 3, title: "Time-Saving and Cost-Effective", paragraph: "Proin a ligula ipsum. Vestibulum id vestibulum arcu, sed sodales nisl. Curabitur aliquam lectus at odio facilisis mollis. " },
+    { id: 4, title: "Robust Data Security", paragraph: "Curabitur volutpat, tortor rhoncus tempor sollicitudin, justo nibh iaculis ipsum, ac porttitor elit nulla non tortor. Vivamus non enim suscipit, " },
+    { id: 5, title: "Innovation", paragraph: "Aenean dignissim sollicitudin lorem ut commodo. Donec fringilla posuere enim, vitae blandit est tempor at. Quisque venenatis, urna eget pellentesque malesuada" },
+     { id: 6, title: "Trusted Certification", paragraph: "velit est tristique quam, nec maximus risus metus et massa. Etiam posuere posuere libero, at volutpat enim pellentesque non. " },
     //   { id: 7, title: "Zyro Pricing 7", paragraph: "This is the paragraph for Content 7." },
     //   { id: 8, title: "Zyro Pricing 8", paragraph: "This is the paragraph for Content 8." },
     //   { id: 9, title: "Zyro Pricing 9", paragraph: "This is the paragraph for Content 9." },
@@ -23,14 +23,14 @@ function VerticleSlider() {
    
 
 
-
+<p className="lg:text-[48px] text-[28px] text-white90 font-medium text-center lg:mb-[50px] mb-[30px]">Why ZYRO is perfect for your Business</p>
 <div className="w-full border-[0.894px] border-[#3A3C42] border-solid rounded-[3.575px] flex flex-col lg:flex-row lg:h-[400px] ">
   {/* Left Side: Title + Paragraph */}
-  <div className="w-full lg:w-1/2 h-[380px] lg:h-auto bg-[#0B0618] flex flex-col justify-center items-center lg:items-start text-left text-white90 text-base border-b-[0.894px] lg:border-b-0 lg:border-r-[0.894px] border-[#3A3C42] border-solid p-6">
-    <p className="text-[28px] lg:text-[32px] font-medium text-[#fff]">
+  <div className="w-full lg:w-1/2 h-[350px] lg:h-auto bg-[#0B0618] flex flex-col lg:justify-center  text-white90 text-base border-b-[0.894px] lg:border-b-0 lg:border-r-[0.894px] border-[#3A3C42] border-solid p-6">
+    <p className="max-[360px]:text-[20px] max-[400px]:text-[22px] text-[25px] lg:text-[32px] font-medium text-[#fff] pt-[10px] lg:pt-0">
       {contents.find((item) => item.id === activeId)?.title}
     </p>
-    <p className="text-[16px] lg:text-[21px] font-normal text-white70 pt-[20px]">
+    <p className="max-[400px]:text-[14px] text-[16px] lg:text-[21px] font-normal text-white70 pt-[20px]">
       {contents.find((item) => item.id === activeId)?.paragraph}
     </p>
   </div>
@@ -61,3 +61,4 @@ function VerticleSlider() {
 }
 
 export default VerticleSlider
+

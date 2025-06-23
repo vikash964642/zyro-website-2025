@@ -59,7 +59,7 @@ function ExpenceControl() {
   }, []);
 
   return (
-    <section className="max-w-screen-lg mx-auto py-10 mt-[120px]">
+    <section className="max-w-screen-lg lg:mx-auto mx-4 py-10 mt-[120px]">
       <h3 className="text-white text-center text-2xl lg:text-3xl font-semibold mb-10">
         Complete{' '}
         <span className="bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">

@@ -2,7 +2,7 @@
 
 /* WebKit browsers: Chrome, Safari, Edge */
 .custom-scrollbar::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
   height:90%
 }
 
