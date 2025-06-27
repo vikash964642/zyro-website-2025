@@ -3,6 +3,7 @@ import collab1 from "../../../../../public/image/HomePage/Axis_Bank.png";
 import collab2 from "../../../../../public/image/zyro-logo.svg";
 import zyroLogo from "../../../../../public/image/zyro-logo.svg";
 import partnership from "../../../../../public/image/HomePage/Partners.png";
+import './HomePageCss.css';
 
 export default function ConnectedBanking() {
   const [currImg, setCurrImg] = useState(0);
@@ -18,8 +19,9 @@ export default function ConnectedBanking() {
   }, [collaborators.length]);
 
   return (
-    <section  className="max-w-screen-lg mx-4 lg:mx-auto">
-<div className="flex items-center justify-center bg-[#080411] py-10">
+    <section  className="max-w-screen-lg mx-4 lg:mx-auto mt-[90px] lg:mt-[150px]">
+<div className="flex items-center justify-center bg-[#080411] py-10 relative">
+  <div className="ConnectedBanking-gradient"></div>
       <div className="flex flex-col items-center lg:w-3/4">
         <h1 className="text-3xl md:text-6xl text-[#EDEDED] text-center font-semibold">
           Connected Banking
@@ -32,7 +34,7 @@ export default function ConnectedBanking() {
           Know more »
         </button>
 
-        <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-[500px] gap-6">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-[500px] gap-6">
           <div className="flex items-center justify-center overflow-hidden w-28 h-28 bg-white rounded-full">
             <img
               src={collaborators[currImg]}

@@ -1,6 +1,5 @@
 
 // import React from "react";
-import './HomePageCss.css'
 function Scroller() {
   const logos = [
     "../../../../../public/image/HomePage/icon/canara-icon.jpg",
@@ -26,7 +25,6 @@ function Scroller() {
         </div>
       </div>
        
-        <div className="home-hero_gradient"></div>
     </section>
   );
 }

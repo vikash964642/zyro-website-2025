@@ -2,7 +2,8 @@
 
 function ControlFinance() {
   return (
-     <section className="max-w-screen-lg lg:mx-auto mx-4 mt-[120px]">
+     <section className="max-w-screen-lg lg:mx-auto px-4 pt-[120px]">
+            <div className="CotrolFinance-gradient"></div>
 <div className="text-center ">
   <p className="max-[375px]:text-[24px] text-[28px] lg:text-[45px] text-white90 font-medium">Take control of your Finance now</p>  
   <p className="max-[375px]:text-[14px] text-[18px] lg:text-[29px] text-white70 font-normal pt-[19px]">Accelerate your business with ZYRO</p>

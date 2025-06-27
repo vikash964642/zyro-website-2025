@@ -23,7 +23,11 @@ function VerticleSlider() {
    
 
 
-<p className="lg:text-[48px] text-[28px] text-white90 font-medium text-center lg:mb-[50px] mb-[30px]">Why ZYRO is perfect for your Business</p>
+<div className="relative">
+      <div className="VerticleSlider-gradient"></div>
+  <p className="lg:text-[48px] text-[28px] text-white90 font-medium text-center lg:mb-[50px] mb-[30px]">Why ZYRO is perfect for your Business</p>
+  
+</div>
 <div className="w-full border-[0.894px] border-[#3A3C42] border-solid rounded-[3.575px] flex flex-col lg:flex-row lg:h-[400px] ">
   {/* Left Side: Title + Paragraph */}
   <div className="w-full lg:w-1/2 h-[350px] lg:h-auto bg-[#0B0618] flex flex-col lg:justify-center  text-white90 text-base border-b-[0.894px] lg:border-b-0 lg:border-r-[0.894px] border-[#3A3C42] border-solid p-6">
