@@ -21,7 +21,7 @@ export const links = [
  },
 
     { name: 'Banking', submenu: true, sublinks: [
-        { name: 'Connected Banking', link: "https://shopaver.com/Blogs/", img: "blog_icon"  },
+        { name: 'Connected Banking', link: "/connectedbanking", img: "blog_icon"  },
         { name: 'Payout', link: "/", img: "youtube_icon"  },
         { name: 'Payment', link: "/", img: "news_icon"  },
         { name: 'Smart Collect', link: "/", img: "news_icon"  },

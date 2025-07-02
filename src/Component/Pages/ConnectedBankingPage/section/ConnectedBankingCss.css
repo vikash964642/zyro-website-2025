@@ -1,0 +1,37 @@
+
+.feature-scrollbar::-webkit-scrollbar {
+  width: 7px;
+}
+.feature-scrollbar::-webkit-scrollbar-track {
+  /* background: #413668; */
+}
+.feature-scrollbar::-webkit-scrollbar-thumb {
+ background: #413668;
+  border-radius: 8px;
+}
+
+
+/* index.css or global.css */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+.businessScrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+.businessScrollbar::-webkit-scrollbar-track {
+   background: #2A253B;
+   border-radius:20px; 
+}
+.businessScrollbar::-webkit-scrollbar-thumb {
+border-radius: 9.17px 9.17px 9.167px 9.167px;
+opacity: 0.9981;
+background: linear-gradient(90deg, #413668 0%, #1C113F 100%);
+ 
+}

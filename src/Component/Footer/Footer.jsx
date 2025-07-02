@@ -40,7 +40,7 @@ function Footer() {
               </p>
               <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
                 <li>
-                  <Link to="/posbilling" onClick={ScrollTop}>
+                  <Link to="/connectedbanking" onClick={ScrollTop}>
                     Connected Banking
                   </Link>
                 </li>
@@ -82,7 +82,7 @@ function Footer() {
               </p>
               <ul className="font-normal text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px] text-white70">
                 <li>
-                  <Link to="/" onClick={ScrollTop}>
+                  <Link to="/connectedbanking" onClick={ScrollTop}>
                     Connected Banking
                   </Link>
                 </li>
@@ -167,7 +167,7 @@ function Footer() {
               </p>
               <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
                 <li>
-                  <Link to="/posbilling" onClick={ScrollTop}>
+                  <Link to="/connectedbanking" onClick={ScrollTop}>
                     Connected Banking
                   </Link>
                 </li>
@@ -244,7 +244,7 @@ function Footer() {
               </p>
               <ul className="font-normal text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px] text-white70">
                 <li>
-                  <Link to="/" onClick={ScrollTop}>
+                  <Link to="/connectedbanking" onClick={ScrollTop}>
                     Connected Banking
                   </Link>
                 </li>
