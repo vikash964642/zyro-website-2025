@@ -1,6 +1,7 @@
 // import React from 'react'
 import Replayicon from "../../../../../public/image/HomePage/Icon/replay-last.png";
 
+
 const cards = [
   { image: Replayicon, paragraph: "Replay Last\nTransactions" },
   { image: Replayicon, paragraph: "Real-Time\nAlerts" },
@@ -23,7 +24,7 @@ function InstantPayment() {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="max-[360px]:w-[135px] max-[360px]:h-[120px] max-[400px]:w-[160px] max-[400px]:h-[125px] w-[184.64px] h-[130.06px] lg:w-[257.31px] lg:h-[181.24px] rounded-[9.75px] lg:rounded-[13.59px] border-[0.56px] lg:border-[0.78px] border-solid border-[#45465E]  max-[360px]:pl-[12px] max-[360px]:pt-[12px] max-[400px]:pl-[14px] max-[400px]:pt-[12px] pl-[18.84px] lg:pl-[21.05px] pt-[16.02px] lg:pt-[22.33px]"
+            className="max-[360px]:w-[135px] max-[360px]:h-[120px] max-[400px]:w-[160px] max-[400px]:h-[125px] w-[184.64px] h-[130.06px] lg:w-[257.31px] lg:h-[181.24px] rounded-[9.75px] lg:rounded-[13.59px] border-[0.56px] lg:border-[0.78px] border-solid border-[#45465E]  max-[360px]:pl-[12px] max-[360px]:pt-[12px] max-[400px]:pl-[14px] max-[400px]:pt-[12px] pl-[18.84px] lg:pl-[21.05px] pt-[16.02px] lg:pt-[22.33px] relative overflow-hidden"
           >
             <div className="h-[37px] lg:h-[52.53px] w-[37px] lg:w-[52.53px] bg-[#4F31B4] rounded-full flex items-center justify-center">
               <img
@@ -40,9 +41,12 @@ function InstantPayment() {
                 </span>
               ))}
             </p>
+            
+         <div className="instant_payment_gradient"></div>
           </div>
         ))}
       </div>
+
     </section>
   );
 }

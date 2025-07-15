@@ -24,9 +24,10 @@ function Scroller() {
             </div>
           ))}
         </div>
+        <div className="scroller_gradient_left"></div>
+        <div className="scroller_gradient_right"></div>
       </div>
        
-        <div className="home-hero_gradient"></div>
     </section>
   );
 }

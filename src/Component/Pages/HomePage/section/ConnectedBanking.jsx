@@ -1,13 +1,18 @@
 import { useEffect, useState } from "react";
 import collab1 from "../../../../../public/image/HomePage/Axis_Bank.png";
-import collab2 from "../../../../../public/image/zyro-logo.svg";
+import collab2 from "../../../../../public/image/HomePage/icicic.png";
+import collab3 from "../../../../../public/image/HomePage/yes_bank.png";
+import collab4 from "../../../../../public/image/HomePage/canara-icon.png";
+import collab5 from "../../../../../public/image/HomePage/idfc.png";
+import collab6 from "../../../../../public/image/HomePage/rbl.png";
+import collab7 from "../../../../../public/image/HomePage/upi.png";
 import zyroLogo from "../../../../../public/image/zyro-logo.svg";
 import partnership from "../../../../../public/image/HomePage/Partners.png";
 
 export default function ConnectedBanking() {
   const [currImg, setCurrImg] = useState(0);
 
-  const collaborators = [collab1, collab2];
+  const collaborators = [collab1, collab2, collab3, collab4, collab5, collab6, collab7];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -19,7 +24,7 @@ export default function ConnectedBanking() {
 
   return (
     <section  className="max-w-screen-lg mx-4 lg:mx-auto">
-<div className="flex items-center justify-center bg-[#080411] py-10">
+<div className="flex items-center justify-center py-10">
       <div className="flex flex-col items-center lg:w-3/4">
         <h1 className="text-3xl md:text-6xl text-[#EDEDED] text-center font-semibold">
           Connected Banking

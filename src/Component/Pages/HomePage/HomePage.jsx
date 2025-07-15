@@ -12,7 +12,7 @@ import VerticleSlider from "./section/VerticleSlider";
 import BusinessVerticleSlider from "./section/BusinessVerticleSlider";
 import NewsletterBox from "./section/NewsletterBox";
 import ControlFinance from "./section/ControlFinance";
-import CardSliders from "./section/CardSliders";
+// import CardSliders from "./section/CardSliders";
 
 
 export default function HomePage() {
@@ -25,7 +25,7 @@ export default function HomePage() {
       <ZyroSoundBox/>
       <InstantPayment/>
       <ZyroPosMachine/>
-      <CardSliders/>
+      {/* <CardSliders/> */}
       <ExpenceControl/>
       <ManagingCorporate />
       <BusinessVerticleSlider/>
