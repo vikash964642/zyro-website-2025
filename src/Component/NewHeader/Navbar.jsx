@@ -1,6 +1,6 @@
 import { Outlet, NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import Logo from "../../../public/image/zyro-logo.webp";
+import Logo from "../../../public/image/zyro-logo.svg";
 import NavLinks from "./NavLinks";
 import { Link } from "react-router-dom";
 

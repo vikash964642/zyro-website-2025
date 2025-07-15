@@ -1,15 +1,181 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  @media (min-width: 425px) {
+    .gap-425px-100 {
+      gap: 100px;
+    }
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+  --background: #0B051E;
+  --white: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: var(--background);
+}
+
+/* src/index.css */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+/* tailwind.css or App.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 
-*{
-    box-sizing:border-box;
-    font-family: "Inter", serif;
-    margin:0px;
-    padding:0px;
-   
+
+.scroller-section {
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  color: white;
+}
+
+.scroller-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+   /* .animate {
+            animation: slide 0.4s ease;
+        } */
+
+.slider {
+  height: 55.77px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: white;
+  /* border-radius: 12px; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.slider-track {
+  display: flex;
+  width: calc(200px * 14); 
+  animation: scroll 30s linear infinite;
+  align-items: start;
+}
+
+.slide {
+  height: 55.77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  padding: 7px;
+}
+
+.slide img {
+  width: 120px;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.slide img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  body{
-    background-color: #434343;
+
+  100% {
+    transform: translateX(-50%);
   }
+}
+
+
+.instant_payment_gradient {
+      z-index: -1;
+    opacity: .95;
+    filter: blur(37px);
+    background-image: linear-gradient(#601ef9, #fff0);
+    border-radius: 100%;
+    width: 336px;
+    height: 40px;
+    position: absolute;
+    inset: 19% 0% 0% -22%;
+}
+.scroller_gradient_left{
+    opacity: .95;
+    filter: blur(1px);
+    background-image: linear-gradient(90deg, var(--background) 0%, var(--background) 24%, rgba(255, 255, 255, 0) 100%);
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    inset: -1% 0% 0% -2%;
+}
+.scroller_gradient_right{
+    opacity: .95;
+    filter: blur(1px);
+    background-image: linear-gradient(270deg,var(--background) 0%, var(--background) 24%, rgba(255, 255, 255, 0) 100%);
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    inset: -1% 0% 0% 92%;
+}
+
+.vertical_slider_gradient{
+     opacity: .95;
+    filter: blur(78px);
+    background-image: linear-gradient(#601ef9, #fff0);
+    border-radius: 100%;
+    width: 429px;
+    height: 100px;
+    position: absolute;
+    inset: 57% 0% 0% 55%;
+    z-index: -1;
+}
+.ControlFinance_gradient{
+   opacity: .95;
+    filter: blur(252px);
+    background-image: linear-gradient(#601ef9, #fff0);
+    border-radius: 100%;
+    width: 675px;
+    height: 644px;
+    position: absolute;
+    inset: -34% 0% 0% 17%;
+    z-index: -1;
+}
+
+
+@keyframes slide {
+  from {
+    transform: translateY(-120px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+.animate {
+  animation: slide 0.4s ease;
+}
+
+
+
+
