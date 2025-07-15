@@ -160,11 +160,12 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="flex items-center justify-center gap-[50px] lg:pt-[105px] pt-[60px]">
+    <section className="flex items-center justify-center gap-[50px] lg:pt-[105px] pt-[60px] relative">
+        <div className="home-hero_gradient"></div>
       {/* Navigation Buttons */}
       <button
         onClick={handlePrev}
-        className=" z-50 left-[100px] min-[1500px]:left-[200px] top-[190px] text-white bg-gray-700 rounded-full w-[40px] h-[40px] hover:bg-gray-800 lg:flex justify-center items-center hidden"
+        className=" z-20 left-[100px] min-[1500px]:left-[200px] top-[190px] text-white bg-gray-700 rounded-full w-[40px] h-[40px] hover:bg-gray-800 lg:flex justify-center items-center hidden"
       >
         &lt;
       </button>
@@ -252,12 +253,12 @@ export default function HeroSection() {
       </div>
       <button
         onClick={handleNext}
-        className=" z-50 right-[100px] min-[1500px]:right-[200px] top-[190px] text-white  bg-gray-700 rounded-full w-[40px] h-[40px] hover:bg-gray-800 lg:flex justify-center items-center hidden"
+        className=" z-20 right-[100px] min-[1500px]:right-[200px] top-[190px] text-white  bg-gray-700 rounded-full w-[40px] h-[40px] hover:bg-gray-800 lg:flex justify-center items-center hidden"
       >
         &gt;
       </button>
       
-        <div className="home-hero_gradient"></div>
+      
     </section>
   );
 }

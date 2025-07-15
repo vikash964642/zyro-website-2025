@@ -13,7 +13,7 @@ function Scroller() {
   ];
 
   return (
-    <section className="max-w-screen-lg mx-auto scroller-section mt-[131px]">
+    <section className="max-w-screen-lg lg:mx-auto mx-4 scroller-section mt-[131px]">
       <h1>Our Partners</h1>
       <div className="slider">
         <div className="slider-track">
@@ -23,8 +23,6 @@ function Scroller() {
             </div>
           ))}
         </div>
-        <div className="scroller_gradient_left"></div>
-        <div className="scroller_gradient_right"></div>
       </div>
        
     </section>

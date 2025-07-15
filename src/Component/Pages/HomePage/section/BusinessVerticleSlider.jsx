@@ -105,7 +105,7 @@ function BusinessVerticleSlider() {
         <p className="text-[24px] lg:text-[34px] font-medium text-[#FFF] text-center lg:mb-[50px] mb-[30px]">Grow your business with simplified billing solutions</p>
   
      <div className="relative">
-                <div className="absolute top-0 right-0 -translate-x-1/2 text-sm text-white z-10">
+                <div className="absolute top-0 right-0 -translate-x-1/2 text-[10px] lg:text-sm text-white z-10">
     {currentIndex + 1} / {slides.length}
   </div>
          <div className="flex items-center justify-center business-slider-parent px-3 pt-[20px] pb-[20px] lg:p-6">
@@ -122,7 +122,7 @@ function BusinessVerticleSlider() {
           {slides.map((slide, idx) => (
             <div
               key={slide.id}
-              className="flex flex-col-reverse md:flex-row items-center justify-center gap-[50px]  relative"
+              className="flex flex-col-reverse md:flex-row items-center justify-center gap-[50px] pr-[14px]  relative"
               style={{
                 height: slideHeight,
                 scrollSnapAlign: "start",

@@ -11,7 +11,10 @@ function VerticalSlider() {
     { item: "24/7 Customer Service  ", info: "Get expert customer service anytime through email, phone, or WhatsApp. " },
   ];
 
+
   const [activeIndex, setActiveIndex] = useState(0);
+
+ 
 
   return (
     <section className="max-w-screen-lg lg:mx-auto  mt-[120px] relative">
