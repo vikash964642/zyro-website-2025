@@ -1,14 +1,18 @@
 import { useEffect, useState } from "react";
-import collab1 from "../../../../../public/image/HomePage/Axis_Bank.png";
-import collab2 from "../../../../../public/image/zyro-logo.svg";
-import zyroLogo from "../../../../../public/image/zyro-logo.svg";
-import partnership from "../../../../../public/image/HomePage/Partners.png";
+import collab1 from "/assets/icons/upi.webp";
+import collab2 from "/assets/icons/canara-icon.webp";
+import collab3 from "/assets/icons/icicic.webp";
+import collab4 from "/assets/icons/idfc.webp";
+import collab5 from "/assets/icons/rbl.webp";
+import collab6 from "/assets/icons/yes_bank.webp";
+import zyroLogo from "/image/zyro-logo.svg";
+import partnership from "/image/HomePage/partners.png";
 import './HomePageCss.css';
 
 export default function ConnectedBanking() {
   const [currImg, setCurrImg] = useState(0);
 
-  const collaborators = [collab1, collab2];
+  const collaborators = [collab1, collab2, collab3, collab4, collab5, collab6];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,13 +24,13 @@ export default function ConnectedBanking() {
 
   return (
     <section  className="max-w-screen-lg mx-4 lg:mx-auto mt-[90px] lg:mt-[150px]">
-<div className="flex items-center justify-center bg-[#080411] py-10 relative">
+<div className="flex items-center justify-center  py-10 relative">
   <div className="ConnectedBanking-gradient"></div>
       <div className="flex flex-col items-center lg:w-3/4">
         <h1 className="text-3xl md:text-6xl text-[#EDEDED] text-center font-semibold">
           Connected Banking
         </h1>
-        <p className="w-[90%] text-[#9E9C9F] text-center text-sm md:text-xl font-normal my-3 leading-relaxed">
+        <p className="w-[90%] text-[#9E9C9F] text-center text-[14px] lg:text-[20px] font-normal my-3 lg:leading-[33.6px]">
          Easily link, view, and manage all your bank accounts in one place with our Connected Banking solution. Stay on top of your finances with real-time updates, seamless transactions, and simplified account management.
         </p>
 

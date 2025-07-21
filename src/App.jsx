@@ -4,8 +4,10 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./Component/Pages/HomePage/HomePage";
 import Footer from "./Component/Footer/Footer";
 import ConnectedBanking from "./Component/Pages/ConnectedBankingPage/ConnectedBanking";
+// import usePreventZoom from "./Component/Utils/resize";
 
 function App() {
+  // usePreventZoom();
   return (
     <>
       <Router>

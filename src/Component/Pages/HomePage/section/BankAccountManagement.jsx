@@ -1,20 +1,22 @@
 import { useRef } from "react";
-import multipalbank1 from "../../../../../public/image/HomePage/multipal-bank1.png";
-import multipalbank2 from "../../../../../public/image/HomePage/multipal-bank2.png";
-import multipalbank3 from "../../../../../public/image/HomePage/multipal-bank3.png";
-import multipalbank4 from "../../../../../public/image/HomePage/multipal-bank4.png";
-import multipalbank5 from "../../../../../public/image/HomePage/multipal-bank5.png";
+import multipalbank3 from "/assets/icons/multipal-bank.webp";
+import multipalbank4 from "/assets/icons/real-time.webp";
+import multipalbank2 from "/assets/icons/account-to-account.webp";
+import multipalbank1 from "/assets/icons/account-system.webp";
+import multipalbank5 from "/assets/icons/seamless-fund.webp";
+import multipalbank6 from "/assets/icons/enhanced.webp";
+import multipalbank7 from "/assets/icons/user-friendly.png";
 
 
 // Sample data
 const sliders = [
-  { image: multipalbank1, paragraph: "Multiple Bank Support" },
-  { image: multipalbank2, paragraph: "Secure Transactions" },
-  { image: multipalbank3, paragraph: "24/7 Account Access" },
-  { image: multipalbank4, paragraph: "Real-Time Alerts" },
-  { image: multipalbank5, paragraph: "Instant Setup" },
-  { image: multipalbank1, paragraph: "Low Maintenance" },
-  { image: multipalbank2, paragraph: "Seamless Experience" },
+  { image: multipalbank3, paragraph: "Multiple Bank Account" },
+  { image: multipalbank4, paragraph: "Real-Time Monitoring" },
+  { image: multipalbank2, paragraph: "Account-to- Account Payments" },
+  { image: multipalbank5, paragraph: "Seamless Fund Transfers" },
+  { image: multipalbank7, paragraph: "User-Friendly Dashboard" },
+  { image: multipalbank1, paragraph: "Accounting System  Integration" },
+  { image: multipalbank6, paragraph: "Enhanced Security" },
 ];
 
 function BankAccountManagement() {
@@ -72,7 +74,7 @@ function BankAccountManagement() {
         {sliders.map((slider, index) => (
           <div
             key={index}
-            className="lg:w-[173px] w-[166px] h-[216px] lg:h-[247px] border-[0.688px] border-[#4F31B4] rounded-[16.52px] flex-shrink-0 scroll-snap-align-start"
+            className="lg:w-[173.63px] w-[166.11px] h-[216.52px] lg:h-[247px] border-[0.688px] border-[#4F31B4] rounded-[16.52px] flex-shrink-0 scroll-snap-align-start"
           >
             <div className="lg:h-[116.47px] h-[109px] w-[109px] lg:w-[116.47px] rounded-full border-[0.688px] border-[#4F31B4] flex items-center justify-center mt-[24.09px] ml-[19.27px]">
               <img
@@ -81,7 +83,7 @@ function BankAccountManagement() {
                 className="h-[50px] lg:h-[56px] w-[50px] lg:w-[56px]"
               />
             </div>
-            <p className="text-white text-[15px] lg:text-[16px] lg:font-semibold font-medium leading-[24.11px] align-middle ml-[19.27px] mt-[21.30px]">
+            <p className="text-white text-[15px] lg:text-[16px] lg:font-semibold font-medium leading-[24px] align-middle ml-[19.27px] mt-[21.30px]">
               {slider.paragraph}
             </p>
           </div>

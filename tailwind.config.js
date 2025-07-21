@@ -9,6 +9,7 @@ export default {
       backgroundImage: {
         mobileMenuShape: "url('/image/shades/mobile_menu_shad.svg')",
         gradientText: "linear-gradient(202deg, #fff, #9573DE 53%, #fff)",
+        gradientText1: "radial-gradient(circle,rgba(255, 255, 255, 1) 100%, rgba(149, 115, 222, 1) 100%, rgba(255, 255, 255, 0.67) 100%);",
       },
       colors: {
         gradientTextStart: "#fff",
