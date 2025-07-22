@@ -1,4 +1,3 @@
-
 // import React from "react";
 function Scroller() {
   const logos = [
@@ -8,14 +7,14 @@ function Scroller() {
     "../../../../../public/image/HomePage/icon/npci.jpg",
     "../../../../../public/image/HomePage/icon/pine-labs.jpg",
     "../../../../../public/image/HomePage/icon/yes-bank-icon.jpg",
-    "../../../../../public/image/HomePage/icon/rbl-icon.jpg"
-    
+    "../../../../../public/image/HomePage/icon/rbl-icon.jpg",
   ];
 
   return (
     <section className="max-w-screen-lg mx-auto scroller-section mt-[131px]">
-      <h1>Our Partners</h1>
-      <div className="slider">
+      <h3 className="text-[23px] font-normal pb-[32px]">Our Trusted Partners</h3>
+      <div className="slider relative">
+        <div className="scroller-left-gradient"></div>
         <div className="slider-track">
           {[...logos, ...logos].map((logo, index) => (
             <div className="slide" key={index}>
@@ -23,8 +22,8 @@ function Scroller() {
             </div>
           ))}
         </div>
+        <div className="scroller-right-gradient"></div>
       </div>
-       
     </section>
   );
 }

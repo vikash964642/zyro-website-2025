@@ -1,6 +1,59 @@
 
-import { useRef, useState } from "react";
+// import { useRef, useState } from "react";
+
+// function BusinessVerticleSlider() {
+//   const containerRef = useRef(null);
+//   const [currentIndex, setCurrentIndex] = useState(0);
+//   const slideHeight = 500; // px
+
+//   const handleScroll = () => {
+//     if (!containerRef.current) return;
+//     const scrollTop = containerRef.current.scrollTop;
+//     const newIndex = Math.round(scrollTop / slideHeight);
+//     setCurrentIndex(newIndex);
+//   };
+
+//   return (
+ 
+//   );
+// }
+
+// export default BusinessVerticleSlider;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import  { useRef, useEffect, useState } from 'react';
+import expencecontrol1 from '/image/HomePage/expenseControl.png';
+import expencecontrol2 from '/image/HomePage/language-soundbox.png';
+import expencecontrol3 from '/image/HomePage/managing-corporate.png';
+import expencecontrol4 from '/image/HomePage/zyro_soundbox.png';
+import expencecontrol5 from '/image/HomePage/language-soundbox.png';
+import expencecontrol6 from '/image/HomePage/expenseControl.png';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Scrollbar from "smooth-scrollbar";
 import './HomePageCss.css'; // Make sure this includes the custom scrollbar CSS
+import './GrowBusinessSection/verticale.css'; // Make sure this includes the custom scrollbar CSS
 import sliderImg1 from '../../../../../public/image/sliderImg1.jpg';
 import sliderImg2 from '../../../../../public/image/sliderImg2.jpg';
 const slides = [
@@ -12,31 +65,187 @@ const slides = [
   { id: 6, image: [sliderImg2],title:"Complete Invoicing Solutions 6", content: "Non tortor. Vivamus non enim suscipit, sagittis arcu vel, posuere ante. Aenean dignissim." },
 ];
 
-function BusinessVerticleSlider() {
-  const containerRef = useRef(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const slideHeight = 500; // px
+gsap.registerPlugin(ScrollTrigger);
 
-  const handleScroll = () => {
-    if (!containerRef.current) return;
-    const scrollTop = containerRef.current.scrollTop;
-    const newIndex = Math.round(scrollTop / slideHeight);
-    setCurrentIndex(newIndex);
+const labels = [
+  'Real Time Card Tracking',
+  'Spend Limits for Every Employee',
+  'Instant Notifications',
+  'Export Transactions Easily',
+  'Advanced Fraud Detection',
+  'Track Receipts Effortlessly',
+];
+
+const images = [
+  expencecontrol1,
+  expencecontrol2,
+  expencecontrol3,
+  expencecontrol4,
+  expencecontrol5,
+  expencecontrol6,
+];
+const BusinessVerticleSlider = () => {
+    const containerRef = useRef(null);
+  const slideHeight = 500; // px
+   const imageRefs = useRef([]);
+  const scrollContainerRef = useRef();
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Scroll to image when label is clicked
+  const handleLabelClick = (index) => {
+    imageRefs.current[index]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    setActiveIndex(index);
   };
 
+useEffect(() => {
+  const scroller = document.querySelector(".scroller");
+
+  const bodyScrollBar = Scrollbar.init(scroller, {
+    damping: 0.1,
+  });
+
+  ScrollTrigger.scrollerProxy(scroller, {
+    scrollTop(value) {
+      if (arguments.length) {
+        bodyScrollBar.scrollTop = value;
+      }
+      return bodyScrollBar.scrollTop;
+    },
+    getBoundingClientRect() {
+      return {
+        top: 0,
+        left: 0,
+        width: window.innerWidth,
+        height: window.innerHeight,
+      };
+    },
+  });
+
+  bodyScrollBar.addListener(ScrollTrigger.update);
+
+  const panels = gsap.utils.toArray(".panel");
+
+gsap.set(panels, {
+  position: "absolute",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "100%",
+});
+gsap.set(panels[0], { opacity: 1, y: 0, zIndex: 10 });
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "section.black",
+      scroller: scroller,
+      start: "top top",
+      end: `+=${panels.length * window.innerHeight}`,
+      scrub: true,
+      pin: true,
+      anticipatePin: 1,
+    },
+  });
+
+panels.forEach((panel, i) => {
+  if (i > 0) {
+    tl.to(panels[i - 1], {
+      opacity: 0,
+      y: 0,
+      duration: 0.6,
+      ease: "cubic-bezier(0.19,1,0.22,1)",
+      zIndex: 0
+    })
+    .to(panels[i], {
+      opacity: 1,
+      y: 0,
+      zIndex: 10,
+      duration: 0.6,
+      ease: "cubic-bezier(0.19,1,0.22,1)"
+    }, "<");
+  }
+});
+
+  return () => {
+    ScrollTrigger.getAll().forEach((t) => t.kill());
+    bodyScrollBar.destroy();
+  };
+}, []);
+
   return (
-    <section className="max-w-screen-lg lg:mx-auto mx-4 mt-[120px] ">
-        <p className="text-[24px] lg:text-[34px] font-medium text-[#FFF] text-center lg:mb-[50px] mb-[30px]">Grow your <span className="gradientText2">business</span> with simplified billing solutions</p>
+    <div className="scroller" style={{ height: "100vh", overflow: "hidden" }}>
+      {/* First Section */}
+    <section className="orange max-w-screen-lg lg:mx-auto mx-4 py-10 mt-[120px]">
+      <h3 className="text-white text-center text-2xl lg:text-3xl font-semibold mb-10">
+        Complete{' '}
+        <span className="bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
+          Expense Control
+        </span>{' '}
+        at Your Fingertips
+      </h3>
+
+      <div className="flex flex-col md:flex-row gap-6">
+        {/* Label Section */}
+        <div className="w-full md:w-1/2 sticky top-0 space-y-4">
+          {labels.map((label, index) => (
+            <label
+              key={index}
+              onClick={() => handleLabelClick(index)}
+              className={`block p-[2px] rounded-md cursor-pointer ${
+                activeIndex === index ? 'bg-gradient-to-r from-purple-500 to-cyan-500' : ''
+              }`}
+            >
+              <div
+                className={`flex items-center px-4 py-4 rounded-md ${
+                  activeIndex === index
+                    ? 'bg-black bg-opacity-70 text-white'
+                    : 'bg-black bg-opacity-50 text-white'
+                }`}
+              >
+                <input
+                  type="radio"
+                  name="feature"
+                  checked={activeIndex === index}
+                  readOnly
+                  className="w-4 h-4 rounded-full border border-white bg-transparent checked:bg-white mr-3"
+                />
+                <span>{label}</span>
+              </div>
+            </label>
+          ))}
+        </div>
+
+        {/* Image Section - One at a time */}
+        <div
+          ref={scrollContainerRef}
+          className="w-full md:w-1/2 h-[500px] overflow-y-scroll scroll-smooth snap-y snap-mandatory no-scrollbar"
+        >
+          {images.map((img, index) => (
+            <div
+              key={index}
+              data-index={index}
+              ref={(el) => (imageRefs.current[index] = el)}
+              className="h-[500px] flex justify-center items-center snap-start"
+            >
+              <img src={img} alt={`Image ${index}`} className="max-w-full max-h-[400px]" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+      {/* Main Section */}
+         <section className="black max-w-screen-lg lg:mx-auto mx-4 mt-[120px] ">
+        <p className="text-[24px] lg:text-[34px] font-medium text-[#FFF] text-center lg:mb-[50px] mb-[30px]">Grow your business with simplified billing solutions</p>
   
-     <div className="relative">
-                <div className="absolute top-[6px] right-[2px] -translate-x-1/2 text-[10px] lg:text-[12px] text-white z-10">
-    {currentIndex + 1} / {slides.length}
+     <div className="relative p-wrapoverflow-hidden">
+                <div className="absolute top-0 right-0 -translate-x-1/2 text-[10px] lg:text-sm text-white z-10">
+   1/6
   </div>
          <div className="flex items-center justify-center business-slider-parent px-3 pt-[20px] pb-[20px] lg:p-6">
         <div
           ref={containerRef}
-          onScroll={handleScroll}
-          className="overflow-y-scroll   custom-scrollbar w-[100%]"
+          // onScroll={handleScroll}
+          className="relative overflow-y-scroll   custom-scrollbar w-[100%]"
           style={{
             height: slideHeight,
            
@@ -44,21 +253,18 @@ function BusinessVerticleSlider() {
           }}
         >
           {slides.map((slide, idx) => (
+            <>
             <div
               key={slide.id}
-              className="flex flex-col-reverse md:flex-row items-center justify-center gap-[50px] pr-[14px] lg:pb-[20px]  relative"
+              className="panel absolute top-0 left-0 w-full h-full flex flex-col-reverse md:flex-row items-center justify-center gap-[50px] pr-[14px] "
               style={{
                 height: slideHeight,
                 scrollSnapAlign: "start",
         
               }}
+              
             >
-              {/* Top Counter */}
-              {/* {idx === currentIndex && (
-                <div className="absolute top-2 left-1/2 -translate-x-1/2 text-sm text-white">
-                  {currentIndex + 1} / {slides.length}
-                </div>
-              )} */}
+           
 
               {/* 🎯 Image Container */}
               <div className="w-full md:w-1/2 flex h-[240px] lg:h-full justify-center items-center business-slider-image-sec">
@@ -80,20 +286,36 @@ function BusinessVerticleSlider() {
                 </div>
               </div>
 
-              {/* Bottom Counter */}
-              {/* {idx === currentIndex && (
-                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-sm text-white">
-                  {currentIndex + 1} / {slides.length}
-                </div>
-              )} */}
             </div>
+            
+            </>
           ))}
         </div>
       </div>
      </div>
     </section>
+
+
+      {/* Last Section */}
+      <section className="blue" style={sectionStyle("#2196f3")}></section>
+    </div>
   );
-}
+};
+
+// Styles
+const sectionStyle = (bg) => ({
+  width: "100%",
+  height: "100vh",
+  backgroundColor: bg,
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  color: "#fff",
+  fontSize: "2rem",
+  position: "relative",
+});
+
+
 
 export default BusinessVerticleSlider;
 

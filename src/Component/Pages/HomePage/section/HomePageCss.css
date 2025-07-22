@@ -106,6 +106,34 @@ filter: blur(92px);
 position:absolute;  
   inset:-36% 11% 40% 0%;
 }
+
+.instant-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(64, 28, 139, 0.44) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0.65;
+  filter: blur(20px);
+  position: absolute;
+  inset: 14% 0% 48% 0%;
+}
+
+.scroller-left-gradient{
+background: linear-gradient(90deg,rgba(11, 5, 31, 1) 0%, rgba(11, 5, 31, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 1;
+  /* filter: blur(-80px); */
+  position: absolute;
+  inset: 0% 90% 0% 0%;
+  z-index: 1;
+}
+.scroller-right-gradient{
+background: linear-gradient(270deg,rgba(11, 5, 31, 1) 0%, rgba(11, 5, 31, 1) 0%, rgba(255, 255, 255, 0) 100%);  /* filter: blur(-80px); */
+  position: absolute;
+  inset: 0% 0% 0% 90%;
+  z-index: 1;
+}
+
 .VerticleSlider-gradient{
    background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) -18.15%, #FFF 44.52%, #8D31F5 81.85%);
 opacity: 0.2;
@@ -190,28 +218,16 @@ filter: blur(100px);
 box-shadow: 0px 6.441px 8.588px 0px rgba(0, 0, 0, 0.16);
 backdrop-filter: blur(15.028546333312988px);
 }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 0.5s ease-out;
-}
+article.accordion section,
+article.accordion section h2
+{
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+} */
 
 
-@media (max-width:768px){
-  .business-slider-image-sec{
-    border-radius: 14.015px;
-border: 0.584px solid rgba(118, 87, 117, 0.36);
-background: linear-gradient(0deg, #0B0718 0%, rgba(119, 85, 122, 0.88) 100%);
-  }
-}
+
 

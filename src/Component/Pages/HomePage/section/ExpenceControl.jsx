@@ -25,6 +25,7 @@ const images = [
 ];
 
 function ExpenceControl() {
+  
   const imageRefs = useRef([]);
   const scrollContainerRef = useRef();
   const [activeIndex, setActiveIndex] = useState(0);

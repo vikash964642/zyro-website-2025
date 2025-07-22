@@ -462,6 +462,45 @@ const contents = [
     id: 3,
     title: "Time-Saving and Cost-Effective",
     paragraph:
+      "Proin a ligula ipsum. Vestibulum id vestibulum arcu, sed sodales nisl. Curabitur aliquam lectus at odio facilisis mollis.",
+  },
+  {
+    id: 4,
+    title: "Robust Data Security",
+    paragraph:
+      "Curabitur volutpat, tortor rhoncus tempor sollicitudin, justo nibh iaculis ipsum, ac porttitor elit nulla non tortor.",
+  },
+  {
+    id: 5,
+    title: "Innovation",
+    paragraph:
+      "Aenean dignissim sollicitudin lorem ut commodo. Donec fringilla posuere enim, vitae blandit est tempor at.",
+  },
+  {
+    id: 6,
+    title: "Trusted Certification",
+    paragraph:
+      "Velit est tristique quam, nec maximus risus metus et massa. Etiam posuere posuere libero, at volutpat enim pellentesque non.",
+  },
+];
+
+const contents = [
+  {
+    id: 1,
+    title: "Fast User-Friendly Interface",
+    paragraph:
+      "Our platform offers a user-friendly interface that makes digital banking simple, efficient, and easy for everyone to manage.",
+  },
+  {
+    id: 2,
+    title: "Scalable Solutions",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis mi pretium, dictum arcu eu, dapibus est.",
+  },
+  {
+    id: 3,
+    title: "Time-Saving and Cost-Effective",
+    paragraph:
       "Proin a ligula ipsum. Vestibulum id vestibulum arcu, sed sodales nisl.",
   },
   {
@@ -494,6 +533,11 @@ export default function ResponsiveVerticalSlider() {
   };
 
   const lastIndex = activeIndices[activeIndices.length - 1];
+
+function VerticleSlider() {
+  const [activeId, setActiveId] = useState(1);
+
+  const activeItem = contents.find((item) => item.id === activeId);
 
   return (
     <section className="max-w-screen-xl mx-auto px-4 mt-10">

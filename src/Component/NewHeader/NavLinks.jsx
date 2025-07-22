@@ -273,11 +273,13 @@ const NavLinks = ({ handleClick }) => {
                           onMouseOver={() => setHoveredSublinkIndex(subIndex)}
                           onMouseLeave={() => setHoveredSublinkIndex(null)}
                         >
-                          <img
-                            src={`/assets/icons/${item.img}.svg`}
-                            className=" mr-3 hidden lg:flex"
+                         <div className="h-[33.85px] w-[33.85px] bg-[#4F31B4] rounded-full flex justify-center items-center">
+                           <img
+                            src={`/assets/icons/${item.img}.png`}
+                            className=" hidden lg:flex"
                             
                           />
+                         </div>
                           <span
                             className={`text-[16px] text-[#909090] font-normal lg:text-[16px] text lg:font-medium  lg:text-[#393939] ${
                               hoveredSublinkIndex === subIndex
@@ -309,11 +311,13 @@ const NavLinks = ({ handleClick }) => {
                               ScrollTop();
                             }}
                           >
-                            <img
-                              src={`/assets/icons/${item.img}.svg`}
-                              className=" mr-3 hidden lg:block"
-                              
-                            />
+                             <div className="h-[33.85px] w-[33.85px] bg-[#4F31B4] rounded-full flex justify-center items-center">
+                           <img
+                            src={`/assets/icons/${item.img}.png`}
+                            className="  hidden lg:flex"
+                            
+                          />
+                         </div>
                             <span  className={`text-[16px] text-[#909090] font-normal lg:text-[16px] text lg:font-medium  lg:text-[#393939] ${
                               hoveredSublinkIndex === subIndex
                                 ? "lg:text-[#6F41D2]"
