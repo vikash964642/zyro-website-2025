@@ -210,9 +210,10 @@ const NavLinks = ({ handleClick }) => {
           <div
             className="relative   text-left md:cursor-pointer group"
             onMouseEnter={() => handleLinkMouseEnter(link.name)}
-            onMouseLeave={handleLinkMouseLeave}
+         onMouseLeave={handleLinkMouseLeave}
             onClick={() => handleLinkClick(link.name)}
           >
+            
            {/*  onMouseLeave={handleLinkMouseLeave} */}
             <Link
               to={link.name === "Blog" ? "#" : link.link || "#"}
@@ -248,7 +249,7 @@ const NavLinks = ({ handleClick }) => {
             </Link>
 
             {link.submenu && activeLink === link.name && (
-              <div className="lg:absolute top-full lg:mt-[1px] left-0 z-50  max-h-[180px] lg:max-h-none overflow-auto">
+              <div className="lg:absolute  top-full lg:mt-[1px] left-0 z-50  max-h-[180px] lg:max-h-none overflow-auto">
                 <div
                   className={`${
                     link.name === "Product"
@@ -257,7 +258,7 @@ const NavLinks = ({ handleClick }) => {
                   } lg:gap-10 lg:px-6 lg:py-6 border-[#C3C3C3] lg:bg-white lg:border-t-0 lg:border-x lg:border-b lg:rounded-b-lg shadow-md`}
                 >
                   {/* COLUMN 1: sublinks */}
-                  <div className={`flex flex-col ${activeLink === link.name && link.name !== "Product" ? 'border-b-[0.5px] lg:border-b-0 border-[#414141]' : ''} `}>
+                  <div className={`flex flex-col  ${activeLink === link.name && link.name !== "Product" ? 'border-b-[0.5px] lg:border-b-0 border-[#414141]' : ''} `}>
                     {link.sublinks?.map((item, subIndex) => (
                       <Link
                         to={item.link || "#"}
@@ -265,7 +266,7 @@ const NavLinks = ({ handleClick }) => {
                         onClick={(e) => handleBlogLinkClick(e, item)}
                       >
                         <div
-                          className="flex items-center hover:bg-secondary rounded px-2 py-2 transition"
+                          className="flex items-center hover:bg-secondary gap-[11px] rounded px-2 py-2 transition"
                           onClick={() => {
                             handleSublinkClick();
                             ScrollTop();
@@ -305,7 +306,7 @@ const NavLinks = ({ handleClick }) => {
                           onClick={(e) => handleBlogLinkClick(e, item)}
                         >
                           <div
-                            className="flex items-center hover:bg-secondary rounded px-2 py-2 transition"
+                            className="flex items-center hover:bg-secondary gap-[11px] rounded px-2 py-2 transition"
                             onClick={() => {
                               handleSublinkClick();
                               ScrollTop();

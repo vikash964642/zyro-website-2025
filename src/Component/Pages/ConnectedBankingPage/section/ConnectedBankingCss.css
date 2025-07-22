@@ -35,3 +35,9 @@ opacity: 0.9981;
 background: linear-gradient(90deg, #413668 0%, #1C113F 100%);
  
 }
+.features-heading-gradient{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}

@@ -48,7 +48,7 @@ function FeaturesConnectedBanking() {
    <>
     <section className="max-w-screen-lg lg:mx-auto lg:mt-[131px] mt-[100px]">
       <div className='mx-4'>
-       <p className="max-[375px]:text-[22px] text-[28px] lg:text-[32px] font-semibold text-white text-center">Key Features of  Zyro Connected Banking</p> 
+       <p className="max-[375px]:text-[22px] text-[28px] lg:text-[32px] font-semibold text-white text-center">Key<span className='features-heading-gradient'> Features of  Zyro Connected Banking</span></p> 
       <div className='flex justify-center'>
          <p className="max-[375px]:text-[12.5px] max-[375px]:pt-[13px] text-[14px] lg:text-[20px] font-normal text-[#9E9C9F] text-center  pt-[22px] lg:w-[750px]">Run your business smarter with connected banking by managing, automating, and tracking all your finances on a single platform.</p>
       </div>

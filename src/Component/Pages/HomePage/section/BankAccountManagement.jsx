@@ -75,7 +75,6 @@ function BankAccountManagement() {
           <div
             key={index}
             className="lg:w-[173.63px] w-[166.11px] h-[216.52px] lg:h-[247px] border-[0.688px] border-[#4F31B4] rounded-[16.52px] flex-shrink-0 scroll-snap-align-start"
-            className="lg:w-[173px] w-[166px] h-[216px] lg:h-[247px] BankAccountManagementCss flex-shrink-0 scroll-snap-align-start"
           >
             <div className="lg:h-[116.47px] h-[109px] w-[109px] lg:w-[116.47px] rounded-full BankAccountManagementCss2 flex items-center justify-center mt-[24.09px] ml-[19.27px]">
               <img
