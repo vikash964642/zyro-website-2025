@@ -1,0 +1,185 @@
+/* src/custom-scrollbar.css */
+
+/* WebKit browsers: Chrome, Safari, Edge */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height:90%
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+ opacity: 0.9981;
+background: linear-gradient(0deg, #FEED7A 0%, #FF8400 48.96%, #DF91F7 100%);
+border-radius:4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* blue-500 */
+  border-radius: 4px;
+  border: 2px solid red; /* match the red background */
+}
+
+/* Firefox */
+/* .custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 red; 
+} */
+.business-slider-parent{
+    border-radius: 23.163px;
+border: 0.965px solid rgba(141, 49, 245, 0.20);
+background: rgba(25, 17, 51, 0.20);
+}
+.business-slider-image-sec{
+    border-radius: 23.163px;
+border: 0.965px solid #765775;
+background: linear-gradient(0deg, #575E8E 0%, rgba(99, 99, 99, 0.00) 52.5%, rgba(119, 85, 122, 0.88) 100%);
+}
+
+ /* .home-hero_gradient {
+    z-index: -1;
+    opacity: .75;
+    filter: blur(200px);
+    background-image: linear-gradient(#601ef9, #fff0);
+    border-radius: 100%;
+    width: 50rem;
+    height: 24rem;
+    position: absolute;
+    inset: -15% 0% 0% 35%;
+}   */
+.home-hero_gradient {
+ z-index: -1;
+    opacity: .75;
+    filter: blur(200px);
+    background-image: linear-gradient(#601ef9, #fff0);
+    border-radius: 100%;
+  
+    position: absolute;
+ 
+    inset: 0% 8% 0% 11%;
+}
+.Newaletter-subscribe-btn{
+
+background: #3E8222;
+box-shadow: 0px 4.605px 16.119px 0px rgba(74, 58, 255, 0.16);
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px; /* 87.5% */
+}
+.ControlFinance-custom-shadow {
+  box-shadow: 0px 3.204px 11.213px 0px rgba(74, 58, 255, 0.16);
+}
+.ManagingCorporate-gradient{
+opacity: 0.2;
+background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) -18.15%, rgba(255, 255, 255, 0.73) 44.52%, rgba(141, 49, 245, 0.73) 81.85%);
+filter: blur(70px);
+position:absolute;
+/* height:500px;
+width:500px; */
+  inset: -12% 0% 40% 51%;
+}
+.ConnectedBanking-gradient{
+    background: linear-gradient(180deg, rgba(64, 28, 139, 0.44) 0%, rgba(255, 255, 255, 0.00) 100%);
+opacity: 0.75;
+filter: blur(91.38888549804688px);
+position:absolute;
+/* height:250px;
+width:500px; */
+  inset: -10% 22% 35% 21%;
+}
+
+.ZyroPosMachine-gradient{
+  border-radius: 686px;
+opacity: 0.2;
+background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) 0%, #8D31F5 100%, #FFF 100%);
+filter: blur(92px);
+position:absolute;  
+  inset:-36% 11% 40% 0%;
+}
+.VerticleSlider-gradient{
+   background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) -18.15%, #FFF 44.52%, #8D31F5 81.85%);
+opacity: 0.2;
+filter: blur(90px); 
+position:absolute;  
+  inset:-36% 0% 40% 0%;
+}
+.CotrolFinance-gradient{
+  border-radius: 686px;
+opacity: 0.2;
+background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) 0%, #8D31F5 100%, #FFF 100%);
+filter: blur(150px);  
+position:absolute;  
+  inset:-36% 0% 40% 0%;
+}
+
+
+.Newsletter-gradient{
+opacity: 0.2;
+border-radius: 1320.214px;
+background: rgba(109, 236, 49, 0.10);
+filter: blur(142.7772979736328px);  
+position:absolute;  
+  inset:-36% 0% 40% 0%;
+}
+
+.mobile-home-gradient{
+width: 463px;
+height: 222px;
+transform: rotate(90deg);
+flex-shrink: 0;
+border-radius: 192px;
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(79, 49, 180, 0.65) 0%, rgba(255, 255, 255, 0.00) 100%);
+filter: blur(100px);
+/* position:absolute; */
+}
+/* .bg-mobileMenuSape{
+  background: #2A7B9B;
+
+} */
+
+
+/* index.css or a global CSS file */
+.slick-slide-card {
+  /* transform: scale(0.6); */
+  opacity: 0.5;
+
+}
+
+.slick-center .slick-slide-card {
+  /* transform: scale(1); */
+  opacity: 1;
+  z-index: 10;
+
+}
+.slick-slider .slick-dots {
+  margin-top: 1.5rem !important;
+  position: relative !important;
+}
+ .slick-dots li{
+  margin:0px;
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+  width:15px !important;
+  height:15px !important;
+ }
+.slick-track{
+  display:flex !important;
+  align-items:center !important;
+  /* justify-content:space-between; */
+}
+.slider-bg-gradient{
+  background: linear-gradient(180deg, rgba(14, 6, 37, 0.32) 0%, rgba(30, 14, 81, 0.32) 30.77%, rgba(11, 5, 30, 0.32) 100%);
+}
+
+
+
+.abcd{
+
+box-shadow: 0px 6.441px 8.588px 0px rgba(0, 0, 0, 0.16);
+backdrop-filter: blur(15.028546333312988px);
+}
+
+
+
