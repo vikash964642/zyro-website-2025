@@ -39,6 +39,7 @@ useEffect(() => {
     centerMode: true,
     centerPadding: "0px",
     arrows: false,
+    variableWidth: true,
    
     speed: 300,
   
