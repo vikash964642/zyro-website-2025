@@ -8,9 +8,12 @@ export default {
     extend: {
       backgroundImage: {
         mobileMenuShape: "url('/image/shades/mobile_menu_shad.svg')",
+        textgradiantMid: "linear-gradient(45deg, #EDEDED 24%, #9573DE 45%, #F7F7F7 72%)",
         gradientText: "linear-gradient(202deg, #fff, #9573DE 53%, #fff)",
+        featuregradientText: "linear-gradient(360deg,rgba(255, 255, 255, 0) 0%, rgba(80, 49, 181, 0.75) 43%, rgba(80, 49, 181, 1) 100%)",
       },
       colors: {
+        featurediv: " linear-gradient(145deg,rgba(79, 49, 180, 1) 6%, rgba(34, 21, 78, 1) 100%)",
         gradientTextStart: "#fff",
         gradientTextMid: "#9573DE",
         gradientTextEnd: "#fff",
