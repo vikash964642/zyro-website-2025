@@ -8,10 +8,13 @@ export default {
     extend: {
       backgroundImage: {
         mobileMenuShape: "url('/image/shades/mobile_menu_shad.svg')",
+        textgradiantMid: "linear-gradient(45deg, #EDEDED 24%, #9573DE 45%, #F7F7F7 72%)",
         gradientText: "linear-gradient(202deg, #fff, #9573DE 53%, #fff)",
         gradientText1: "radial-gradient(circle,rgba(255, 255, 255, 1) 100%, rgba(149, 115, 222, 1) 100%, rgba(255, 255, 255, 0.67) 100%);",
+        featuregradientText: "linear-gradient(360deg,rgba(255, 255, 255, 0) 0%, rgba(80, 49, 181, 0.75) 43%, rgba(80, 49, 181, 1) 100%)",
       },
       colors: {
+        featurediv: " linear-gradient(145deg,rgba(79, 49, 180, 1) 6%, rgba(34, 21, 78, 1) 100%)",
         gradientTextStart: "#fff",
         gradientTextMid: "#9573DE",
         gradientTextEnd: "#fff",
@@ -25,7 +28,7 @@ export default {
          bordercolor1: "rgba(255, 255, 255, 0.20)",
          backgroundColor1: "rgba(8, 4, 17, 0.50)",
          gradientText2: "linear-gradient(234deg, #FFF 0%, #9573DE 22.6%, #FFF 100%)",
-
+         backgroundColor2: "rgba(8, 4, 17, 0.00)",
          
       },
       
