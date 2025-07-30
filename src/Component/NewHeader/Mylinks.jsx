@@ -12,7 +12,7 @@ export const links = [
     ],
     sublinks2: [
 
-        { name: 'Zyro SoundBox', link: "", img: "pos_billing" },
+        { name: 'Zyro SoundBox', link: "/soundboxPage", img: "pos_billing" },
         { name: 'Zyro POS', link: "", img: "Time_Circle"  },
         { name: 'UPI Stack', link: "", img: "inventory_icon"  },
         { name: 'Self Billing', link: "", img: "ondc_icon"  },

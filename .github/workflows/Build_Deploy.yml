@@ -1,0 +1,78 @@
+name: Build & Deploy
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repository
+      - uses: actions/checkout@v4
+
+      # Run a one-line script
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Run a multi-line script
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
+      # Setup Node.js
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # Install dependencies
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      # Build the project
+      - name: Build project
+        run: npm run build
+
+      # Upload production-ready build files
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      # Download the artifact
+      - name: Download Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifacts
+
+      # Deploy
+      - name: Deploy
+        run: echo "Deploying from downloaded artifacts"
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: ./dist
+
+      - name: 📂 Sync files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
