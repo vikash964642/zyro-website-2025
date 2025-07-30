@@ -18,7 +18,7 @@ export const links = [
 
     { name: 'Banking', submenu: true, sublinks: [
         { name: 'Connected Banking', link: "/connectedbanking", img: ""  },
-        { name: 'Payout', link: "/", img: ""  },
+        { name: 'Payout', link: "/payout", img: ""  },
         { name: 'Payment', link: "/", img: ""  },
         { name: 'Smart Collect', link: "/", img: ""  },
         { name: 'Escrow Account', link: "/", img: ""  },
