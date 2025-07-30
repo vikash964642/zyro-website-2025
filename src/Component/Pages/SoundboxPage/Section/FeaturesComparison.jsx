@@ -5,13 +5,19 @@ function FeaturesComparison() {
         Zyro Soundbox vs Others
       </p>
 
-      <div className="overflow-x-auto mt-6">
-        <table className="min-w-full text-white border border-red-300">
-          <thead className="text-[24.75px] font-medium leading-[27px] bg-transparent">
+      <div className="h-[529px] rounded-[27px] overflow-x-auto mt-6 flex items-center justify-center bg-featurediv  bg-clip-text text-transparent  hover:shadow-md transition duration-300 text-center" style={{
+                background:
+                  " linear-gradient(160deg,rgba(79, 49, 180, 1) 6%, rgba(34, 21, 78, 1) 100%)",
+              }}>
+        <div className="lg:h-[99.7%] h-[99.6%]  w-[99.7%] rounded-[27px] bg-[#080411] lg:px-[52px] relative">
+            <div className="feature-comparison-gradient hidden lg:block"></div>
+            <div className="feature-comparison-gradient1"></div>
+        <table className="min-w-full rounded-[27px] text-white  border-collapse ">
+          <thead className="text-[15px] lg:text-[24.75px] font-medium leading-[27px] bg-transparent">
             <tr>
-              <th className="px-4 py-4 text-left">Features</th>
-              <th className="px-4 py-4 text-left">Zyro Soundbox</th>
-              <th className="px-4 py-4 text-left">Others</th>
+              <th className="px-4 py-6 text-left">Features</th>
+              <th className="px-4 py-6 text-left">Zyro Soundbox</th>
+              <th className="px-4 py-6 text-left">Others</th>
             </tr>
           </thead>
           <tbody>
@@ -42,14 +48,23 @@ function FeaturesComparison() {
                 others: "Limited or no support",
               },
             ].map((row, i) => (
-              <tr key={i} className="border-b border-gray-700">
-                <td className="px-4 py-4 text-[18px] font-semibold">{row.feature}</td>
-                <td className="px-4 py-4 text-[15.75px]">{row.zyro}</td>
-                <td className="px-4 py-4 text-[15.75px]">{row.others}</td>
+              <tr key={i} className="border-b border-gray-700 text-left">
+                <td className="px-4 py-6 text-[11px] lg:text-[18px] font-medium lg:font-semibold leading-[17px] lg:leading-[27px]">{row.feature}</td>
+                <td className="px-4 py-6 text-[11px] lg:text-[15.75px] font-normal text-[#989898] leading-[17px] lg:leading-[27px]">{row.zyro}</td>
+                <td className="px-4 py-6 text-[11px] lg:text-[15.75px] font-normal text-[#989898] leading-[17px] lg:leading-[27px]">{row.others}</td>
               </tr>
+
             ))}
+            <tr className="">
+                <td className="py-6"></td>
+                <td></td>
+                <td></td>
+            </tr>
           </tbody>
         </table>
+          <div className="feature-comparison-gradient2 hidden lg:block"></div>
+
+      </div>
       </div>
     </section>
   );

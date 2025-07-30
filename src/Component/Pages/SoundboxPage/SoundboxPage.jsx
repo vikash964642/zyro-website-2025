@@ -2,8 +2,9 @@
 import Herosection from './Section/Herosection';
 import Features from './Section/Features';
 import MultiLanguage from './Section/MultiLanguage';
-// import SoundboxFeatures from './Section/SoundboxFeatures';
+import SoundboxFeatures from './Section/SoundboxFeatures';
 import FeaturesComparison from './Section/FeaturesComparison';
+import Form from './Section/Form';
 
 function SoundboxPage() {
   return (
@@ -11,8 +12,9 @@ function SoundboxPage() {
         <Herosection/>
         <Features/>
         <MultiLanguage/>
-        {/* <SoundboxFeatures/> */}
+        <SoundboxFeatures/>
         <FeaturesComparison/>
+        <Form/>
     </div>
   )
 }
