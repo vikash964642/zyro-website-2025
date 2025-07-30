@@ -35,3 +35,95 @@ opacity: 0.9981;
 background: linear-gradient(90deg, #413668 0%, #1C113F 100%);
  
 }
+.features-heading-gradient{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.faq-gradient{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.faq-utils-bgGradient{
+  position:absolute;
+  top:75px;
+  border-radius: 138px;
+height: 276px;
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(64, 28, 139, 0.59) 0%, rgba(255, 255, 255, 0.00) 100%);
+filter: blur(91.38888549804688px);
+z-index:-1;
+}
+
+.businessBankingGradient2{
+  position:absolute;
+  border-radius: 50%;
+background: linear-gradient(180deg, #170931 0%, #62537E 100%);
+filter: blur(200px);
+}
+
+.businessBankingGradient1{
+  position:absolute;
+  border-radius: 50%;
+background: linear-gradient(180deg, #A489FF 0%, #343434 100%);
+filter: blur(200px);
+left:0px;
+top:200px;
+}
+
+.connectedBankingCardGradient1{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.verticlesliderZyroGradient{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.90) 0%, rgba(141, 49, 245, 0.90) 91.17%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+.slide-left {
+  animation: slideLeft 0.5s ease;
+}
+.slide-right {
+  animation: slideRight 0.5s ease;
+}
+.slide-top {
+  animation: slideTop 0.5s ease;
+}
+.slide-bottom {
+  animation: slideBottom 0.5s ease;
+}
+
+@keyframes slideLeft {
+  0% { opacity: 0; transform: translateX(40px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideRight {
+  0% { opacity: 0; transform: translateX(-40px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideTop {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideBottom {
+  0% { opacity: 0; transform: translateY(-40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Fix for vertical writing */
+.vertical-rl {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+
+

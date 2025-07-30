@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer utilities {
   @media (min-width: 425px) {
     .gap-425px-100 {
@@ -9,7 +10,7 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -18,7 +19,7 @@
   padding: 0px;
 }
 body {
-  background-color: #080411;
+  background-color: #0b051e;
 }
 
 /* src/index.css */
@@ -38,8 +39,6 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
-
 
 .scroller-section {
   display: grid;
@@ -64,7 +63,7 @@ body {
 
 .slider-track {
   display: flex;
-  width: calc(200px * 14); 
+  width: calc(200px * 14);
   animation: scroll 30s linear infinite;
   align-items: start;
 }
@@ -98,7 +97,5 @@ body {
     transform: translateX(-50%);
   }
 }
-
-
 
 

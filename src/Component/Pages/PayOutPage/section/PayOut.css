@@ -1,0 +1,70 @@
+.BusinessCardGradient{
+border-radius: 431.5px;
+opacity: var(--opacity-50, 0.5);
+background: radial-gradient(50% 50% at 50% 50%, var(--color-grey-2070, rgba(46, 48, 56, 0.70)) 0%, var(--color-grey-200, rgba(46, 48, 56, 0.00)) 100%);
+height:245px;
+width:100%;
+top:30%;
+position:absolute;
+}
+
+.businessCardBorder1{
+    background: var(--color-grey-12, #1C1D22);
+}
+
+.businessCardheaderColor1{
+    background: linear-gradient(90deg, #EDEDED 16.83%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.businessCardheaderColor2{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.90) 16.35%, rgba(155, 120, 234, 0.90) 49.67%, rgba(255, 255, 255, 0.90) 82.69%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+.ConnectedCardSliderHeader{
+    background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.heroSectionHeaderGradient{
+   background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+}
+.bulkPaymentHeaderGradient{
+    background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.BuiltBusinessHeaderGradient{
+background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.border-businessCardBorder1{
+  background: var(--color-grey-12, #1C1D22);
+  height:1px;  
+}
+@media (max-width:1024px){
+.bulkPaymentHeaderGradient{
+  background: linear-gradient(234deg, #FFF 7.67%, #9573DE 82.67%, #FFF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;  
+}
+.BuiltBusinessHeaderGradient{
+    background: linear-gradient(234deg, #FFF 7.67%, #9573DE 82.67%, #FFF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+}
