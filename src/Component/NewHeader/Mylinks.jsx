@@ -9,7 +9,7 @@ export const links = [
     ],
     sublinks2: [
 
-        { name: 'Expense Management', link: "", img: "expenseManagementIcon" },
+        { name: 'Expense Management', link: "/ExpenseManagement", img: "expenseManagementIcon" },
         { name: 'Billing & Accounting', link: "", img: "billingAccountingIcon"  },
         { name: 'Prepaid Card', link: "", img: "prepaidCard"  },
         { name: 'Zyro SoundBox', link: "/soundboxPage", img: "pos_billing" },

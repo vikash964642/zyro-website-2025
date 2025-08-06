@@ -1,0 +1,38 @@
+.hero-left-gradiant, .hero-right-gradiant{
+    border-radius: 50%;
+  opacity: 1;
+ background: linear-gradient(90deg,rgba(164, 137, 255, 0.94) 0%, rgba(52, 52, 52, 0.6) 100%);
+  filter: blur(114px);
+  position: absolute;
+  inset: -19% 77% 60% -8%;
+  z-index: -1;
+  overflow: hidden;
+}
+.hero-right-gradiant{
+  inset:-19% -18% 31% 78%;
+}
+
+.role-Gradiant-head{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.roleBased-gradiant{
+   border-radius: 50%;
+  opacity: 1;
+ background: linear-gradient(90deg,rgba(164, 137, 255, 0.94) 0%, rgba(52, 52, 52, 0.6) 100%);
+  filter: blur(130px);
+  position: absolute;
+  inset: 34% 32% 16% 29%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+@media (max-width:1024px) {
+  .hero-left-gradiant{
+    inset:-25% 10% 103% 5%;
+  }
+  
+}

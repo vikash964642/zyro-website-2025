@@ -6,6 +6,7 @@ import Footer from "./Component/Footer/Footer";
 import ConnectedBanking from "./Component/Pages/ConnectedBankingPage/ConnectedBanking";
 import PayOut from "./Component/Pages/PayOutPage/PayOut";
 import SoundboxPage from "./Component/Pages/SoundboxPage/SoundboxPage";
+import ExpenseManagement from "./Component/Pages/ExpenseManagement/ExpenseManagement";
 
 function App() {
   // usePreventZoom();
@@ -19,6 +20,7 @@ function App() {
            <Route path="/connectedbanking" element={<ConnectedBanking/>}  />
            <Route path="/payout" element={<PayOut/>} />
            <Route path="/soundboxPage" element={<SoundboxPage/>}  />
+           <Route path="/ExpenseManagement" element={<ExpenseManagement/>}  />
          
         </Routes>
          <Footer />
