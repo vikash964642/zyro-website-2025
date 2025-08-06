@@ -58,7 +58,7 @@ function BankAccountManagement() {
           <span className="bg-gradientText bg-clip-text text-transparent">
             Management made
           </span>{" "}
-          <br className="hidden lg:block" /> simple & Easy
+          <br className="hidden lg:block" /> Simple & Easy
         </p>
       </div>
 
