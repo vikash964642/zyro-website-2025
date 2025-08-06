@@ -1,0 +1,122 @@
+.PaymentHeaderGradient {
+  background: linear-gradient(90deg, #ededed 0%, #9573de 50%, #f8f8f8 64.42%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.PaymentBorderLineGradient{
+    background: linear-gradient(180deg, var(--color-grey-12, #1C1D22) 0%, #707488 100%);
+}
+.HorizentalSliderHeaderGradient{
+ background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+}
+.PosFeatureGradientTop{
+    border-radius: 50%;
+  opacity: 1;
+  background: linear-gradient(
+    7deg,
+    rgba(79, 49, 180, 1) 6%,
+    rgba(34, 21, 78, 1) 100%
+  );
+  filter: blur(200px);
+  position: absolute;
+  inset:17% 4% 64% 49%;
+  z-index: -1;
+}
+.PosFeatureGradientBottom1{
+    border-radius: 50%;
+  opacity: 1;
+  background: linear-gradient(
+    7deg,
+    rgba(79, 49, 180, 1) 6%,
+    rgba(34, 21, 78, 1) 100%
+  );
+  filter: blur(200px);
+  position: absolute;
+  inset:77% 15% 1% 11%;
+  z-index: -1;
+}
+
+.PosFeatureGradientBottom2{
+    border-radius: 50%;
+  opacity: 1;
+  background: linear-gradient(
+    7deg,
+    rgba(79, 49, 180, 1) 6%,
+    rgba(34, 21, 78, 1) 100%
+  );
+  filter: blur(200px);
+  position: absolute;
+  inset:76% 8% 1% 11%;
+  z-index: -1;
+}
+.PosMachineHeaderGradient{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.PosMachineGradientTopMob{
+    border-radius: 50%;
+  opacity: 1;
+  background: linear-gradient(
+    7deg,
+    rgba(79, 49, 180, 1) 6%,
+    rgba(34, 21, 78, 1) 100%
+  );
+  filter: blur(80px);
+  position: absolute;
+  inset:-6% 15% 85% 10%;
+  z-index: -1;
+}
+.HeroSectionHeaderGradient{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.swiper-slide-image {
+  z-index: 1;
+  position: relative;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.swiper-slide-active .swiper-slide-image {
+  z-index: 10; /* bring active image to front */
+  transform: scale(1.05); /* optional zoom effect */
+}
+.PosSystemSliderCardHeader{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.PosSystemSliderHeaderGradient{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+/* @media (max-width:1023px){
+.PosMachineHeaderGradient{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.90) 16.35%, rgba(155, 120, 234, 0.90) 49.67%, rgba(255, 255, 255, 0.90) 82.69%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+} */
+@media (max-width:767px){
+.PosFeatureGradientTop{
+   inset:20% 7% 56% 8%;
+}
+.PosFeatureGradientBottom1{
+  display:none;
+}
+.PosFeatureGradientBottom2{
+    inset:65% 1% 3% 1%;
+}
+}

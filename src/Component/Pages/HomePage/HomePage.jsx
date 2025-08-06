@@ -24,9 +24,11 @@ export default function HomePage() {
       <ZyroSoundBox />
       <InstantPayment />
       <ZyroPosMachine />
+     
       <CardSliders />
+        <ManagingCorporate />
       <ExpenceControl />
-      <ManagingCorporate />
+     
       <BusinessVerticleSlider />
       <VerticleSlider />
       <ControlFinance />
