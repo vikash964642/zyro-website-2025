@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+      
       backgroundImage: {
         mobileMenuShape: "url('/image/shades/mobile_menu_shad.svg')",
         textgradiantMid: "linear-gradient(45deg, #EDEDED 24%, #9573DE 45%, #F7F7F7 72%)",
@@ -32,7 +33,11 @@ export default {
          
       },
       
+
+      
+      
     },
   },
+  
   plugins: [],
 };

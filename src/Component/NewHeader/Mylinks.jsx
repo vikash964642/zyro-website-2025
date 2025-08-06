@@ -3,7 +3,7 @@ export const links = [
     { name: 'Product', submenu: true, sublinks: [
 
         { name: 'Zyro Soundbox', link: "", img: "zyroSoundboxIcon"},
-        { name: 'Zyro POS', link: "", img: "zyroPosIcon"  },
+        { name: 'Zyro POS', link: "/posPage", img: "zyroPosIcon"  },
         { name: 'Gift Card API', link: "", img: "giftCardApi"  },
         { name: 'UPI Stack', link: "", img: "upiStackIcon"  },
     ],
@@ -11,7 +11,7 @@ export const links = [
 
         { name: 'Expense Management', link: "/ExpenseManagement", img: "expenseManagementIcon" },
         { name: 'Billing & Accounting', link: "", img: "billingAccountingIcon"  },
-        { name: 'Prepaid Card', link: "", img: "prepaidCard"  },
+        { name: 'Prepaid Card', link: "/prepaidPage", img: "prepaidCard"  },
         { name: 'Zyro SoundBox', link: "/soundboxPage", img: "pos_billing" },
         { name: 'Zyro POS', link: "", img: "Time_Circle"  },
         { name: 'UPI Stack', link: "", img: "inventory_icon"  },
