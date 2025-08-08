@@ -1,0 +1,40 @@
+import { Link } from "react-router-dom";
+import arrowRight from "/image/ConnectedBanking/arrowRight.svg";
+import digitalizebusiness from "/image/ExpenseManagement/digitalizebusiness.webp";
+
+function Digitize() {
+  return (
+    <section className="">
+      <div className="max-w-full lg:max-w-screen-lg lg:mx-auto mt-[100px]">
+      <div className="bg-[#0E0624] border relative border-white rounded-[20px] pl-[25px] pt-[93px]  flex flex-col lg:flex-row ">
+        <div className="relative mt-[55px] lg:mt-[0px]  flex flex-col justify-start items-center lg:items-start">
+         
+            <h2 className="max-[360px]:text-[22px] text-[26px] lg:text-[48px] font-semibold text-center lg:text-left text-white90">
+              Digitize your Business Expenses
+            </h2>
+          
+
+          <Link className="relative  mt-[40px] cursor-pointer z-20">
+            <div className=" w-[199px] h-[52px] bg-[#4F31B4] rounded-[44px] flex justify-center items-center">
+              <p className="text-[16px] font-semibold text-[#FFF]">
+                Get Started Today
+              </p>
+            </div>
+            <div className="h-[52px] w-[52px] bg-[#FBF9F1] rounded-[50%] absolute top-0 left-[176px] flex justify-center items-center">
+              <img src={arrowRight} />
+            </div>
+          </Link>
+          <div className="absolute DizitizebusinessGradient-left "></div>
+        </div>
+        <div className="flex items-end justify-center lg:justify-start">
+          <img src={digitalizebusiness}  className="h-[373px] min-w-full lg:min-w-[494px]"/>
+
+          <div className="absolute w-[200px] h-[250px] lg:w-[300px] lg:h-[300px] DizitizebusinessGradient-right"></div>
+        </div>
+      </div>
+      </div>
+    </section>
+  );
+}
+
+export default Digitize;
