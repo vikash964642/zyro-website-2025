@@ -46,7 +46,7 @@ background: linear-gradient(0deg, #575E8E 0%, rgba(99, 99, 99, 0.00) 52.5%, rgba
     inset: -15% 0% 0% 35%;
 }   */
 .home-hero_gradient {
- z-index: -1;
+ /* z-index: -1;
     opacity: .75;
     filter: blur(200px);
     background-image: linear-gradient(#601ef9, #fff0);
@@ -54,7 +54,21 @@ background: linear-gradient(0deg, #575E8E 0%, rgba(99, 99, 99, 0.00) 52.5%, rgba
   
     position: absolute;
  
-    inset: 0% 8% 0% 11%;
+    inset: 0% 8% 0% 11%; */
+    border-radius: 541.022px;
+    z-index:-1;
+    position:absolute;
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(64, 28, 139, 0.80) 0%, rgba(255, 255, 255, 0.00) 100%);
+ filter: blur(92px);
+ inset: 0% 7% 55% 11%;
+}
+
+.heroSectionHeadingGradient{
+  background: linear-gradient(234deg, #FFF 0%, #9573DE 53%, #F0EBFA 81.67%, #FFF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 .Newaletter-subscribe-btn{
 
@@ -78,16 +92,46 @@ position:absolute;
 width:500px; */
   inset: -12% 0% 40% 51%;
 }
+.ManagerCorporateHeaderGradient{
+background: linear-gradient(234deg, #FFF 0%, #9573DE 67.79%, #FFF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.ExpenceControlHeaderGradient{
+  background: linear-gradient(234deg, #FFF 34.62%, #9573DE 63.46%, #FFF 74.04%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
 .ConnectedBanking-gradient{
     background: linear-gradient(180deg, rgba(64, 28, 139, 0.44) 0%, rgba(255, 255, 255, 0.00) 100%);
 opacity: 0.75;
 filter: blur(91.38888549804688px);
 position:absolute;
-/* height:250px;
-width:500px; */
+z-index:-1;
   inset: -10% 22% 35% 21%;
 }
+.VerticleSliderGradient{
+    border-radius: 50%;
+  position: absolute;
+  inset:38% 7% 29% 62%;
+  z-index: -1;
+  background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) -18.15%, #FFF 44.52%, #8D31F5 81.85%);
+opacity: 0.4;
+filter: blur(95px);
+}
 
+.VerticleSliderGradientMob{
+  border-radius: 50%;
+  position: absolute;
+  inset:5% 37% 5% 34%;
+  z-index: -1;
+  background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) -18.15%, #FFF 44.52%, #8D31F5 81.85%);
+opacity: 0.3;
+filter: blur(100px);
+}
 .BankAccountManagementCss{
   border-radius: 16.516px;
 border:1px solid rgba(79, 49, 180, 0.4);
@@ -97,6 +141,19 @@ background: #0B051E;
   border:1px solid rgba(79, 49, 180, 0.4);
 
 }
+.BankAccountManagementHeaderGradient{
+  background: linear-gradient(234deg, #FFF 0%, #9573DE 53%, #FFF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.BankAccountManagementHeaderGradientMob{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.90) 16.35%, rgba(155, 120, 234, 0.90) 49.67%, rgba(255, 255, 255, 0.90) 82.69%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 
 .ZyroPosMachine-gradient{
   border-radius: 686px;
@@ -105,8 +162,14 @@ background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) 0%, #8D31F5 100%, #F
 filter: blur(92px);
 position:absolute;  
   inset:-36% 11% 40% 0%;
+  z-index:-1;
 }
-
+.ZyroPosMachineHeaderGradient{
+  background: linear-gradient(234deg, #FFF 0%, #9573DE 69.23%, #FFF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 .instant-gradient {
   background: linear-gradient(
     180deg,
@@ -118,7 +181,12 @@ position:absolute;
   position: absolute;
   inset: 14% 0% 48% 0%;
 }
-
+.instantPaymentHeaderGradient{
+  background: linear-gradient(234deg, #FFF 38.94%, #9573DE 72.6%, #FFF 89.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 .scroller-left-gradient{
 background: linear-gradient(90deg,rgba(11, 5, 31, 1) 0%, rgba(11, 5, 31, 1) 0%, rgba(255, 255, 255, 0) 100%);
   opacity: 1;

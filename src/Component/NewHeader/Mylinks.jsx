@@ -2,7 +2,7 @@ export const links = [
     
     { name: 'Product', submenu: true, sublinks: [
 
-        { name: 'Zyro Soundbox', link: "", img: "zyroSoundboxIcon"},
+        { name: 'Zyro Soundbox', link: "/soundboxPage", img: "zyroSoundboxIcon"},
         { name: 'Zyro POS', link: "/posPage", img: "zyroPosIcon"  },
         { name: 'Gift Card API', link: "", img: "giftCardApi"  },
         { name: 'UPI Stack', link: "", img: "upiStackIcon"  },
@@ -11,30 +11,27 @@ export const links = [
 
         { name: 'Expense Management', link: "/ExpenseManagement", img: "expenseManagementIcon" },
         { name: 'Billing & Accounting', link: "", img: "billingAccountingIcon"  },
-        { name: 'Prepaid Card', link: "/prepaidPage", img: "prepaidCard"  },
-        { name: 'Zyro SoundBox', link: "/soundboxPage", img: "pos_billing" },
-        { name: 'Zyro POS', link: "", img: "Time_Circle"  },
-        { name: 'UPI Stack', link: "", img: "inventory_icon"  },
-        { name: 'Self Billing', link: "", img: "ondc_icon"  },
-        
+        { name: 'Prepaid Card', link: "/prepaidPage", img: "prepaidCard"  }, 
     ],
  },
 
     { name: 'Banking', submenu: true, sublinks: [
-        { name: 'Connected Banking', link: "/connectedbanking", img: ""  },
-        { name: 'Payout', link: "/payout", img: ""  },
-        { name: 'Payment', link: "/", img: ""  },
-        { name: 'Smart Collect', link: "/", img: ""  },
-        { name: 'Escrow Account', link: "/", img: ""  },
-        { name: 'Dashboard', link: "/", img: ""  }
+        { name: 'Connected Banking', link: "/connectedbanking", img: "ConnectedBankingIcon"  },
+        { name: 'Payout', link: "/payout", img: "PayoutIcon"  },
+        { name: 'Escrow Account', link: "/", img: "EscrowAccountIcon"  },
+      
+    ],
+       sublinks2: [
+
+        { name: 'Bank Account Verification', link: "", img: "BankAccountVarificationIcon" },
+        { name: 'Zyro Capital', link: "", img: "ZyrocapitalIcon"  },
     ],
  }
  ,
     { name: 'Resources', submenu: true, sublinks: [
-        { name: 'Blog', link: "https://shopaver.com/Blogs/", img: ""  },
-        { name: 'News', link: "/", img: ""  },
-        { name: 'Careers', link: "/", img: ""  },
-        { name: 'YouTube', link: "/", img: ""  }
+        { name: 'Terms & Conditions', link: "", img: ""  },
+        { name: 'Privacy Policy', link: "", img: ""  },
+        { name: 'Cookies Policy', link: "", img: ""  }
     ],
  },
      { name: 'Company', submenu: true, sublinks: [
