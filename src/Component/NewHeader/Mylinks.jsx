@@ -39,7 +39,7 @@ export const links = [
  },
      { name: 'Company', submenu: true, sublinks: [
         { name: 'Home', link: "https://shopaver.com/Blogs/", img: "blog_icon"  },
-        { name: 'About Us', link: "/", img: ""  },
+        { name: 'About Us', link: "/About-us", img: ""  },
         { name: 'Blog', link: "/", img: ""  },
         { name: 'Contact Us', link: "/", img: ""  },
         { name: 'Careers', link: "/", img: ""  },
