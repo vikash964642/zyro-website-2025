@@ -41,7 +41,7 @@ export const links = [
         { name: 'Home', link: "https://shopaver.com/Blogs/", img: "blog_icon"  },
         { name: 'About Us', link: "/", img: ""  },
         { name: 'Blog', link: "/", img: ""  },
-        { name: 'Contact Us', link: "/", img: ""  },
+        { name: 'Contact Us', link: "/ContactUs", img: ""  },
         { name: 'Careers', link: "/", img: ""  },
         { name: 'Help Desk', link: "/", img: ""  }
     ],
