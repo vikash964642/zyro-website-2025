@@ -39,7 +39,7 @@ const cardData = [
 
 function Corevalue() {
   return (
-    <section className="min-h-[100vh] flex justify-center items-center">
+    <section className="min-h-[80vh] flex justify-center items-center">
       <div className="max-w-screen-lg mx-auto px-4 relative">
         <h3 className="coreheader text-center text-[34px] leading-[46px] font-semibold">
           Our Core Values
@@ -48,9 +48,9 @@ function Corevalue() {
 
 
         {/* Desktop & Tablet View */}
-        <div className="hidden sm:grid grid-cols-1 sm:grid-cols-3 gap-6 mt-[35px]">
+        <div className="hidden sm:flex flex-wrap justify-center gap-4  mt-[35px]">
           {/* First row: 3 cards */}
-          {cardData.slice(0, 3).map((card, index) => (
+          {cardData.slice(0, 5).map((card, index) => (
             <div
               key={index}
               className="lg:h-[305px] lg:w-[318px] w-[287px] h-[276px] bg-[#0B051E] border rounded-[25px] flex flex-col items-center text-center p-6"
@@ -70,7 +70,7 @@ function Corevalue() {
           ))}
 
           {/* Second row: 2 cards centered */}
-          <div className="col-span-3 flex justify-center gap-6 mt-6">
+          {/* <div className="col-span-3 flex justify-center gap-6 mt-6">
             {cardData.slice(3).map((card, index) => (
               <div
                 key={index}
@@ -89,7 +89,7 @@ function Corevalue() {
                 </p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Mobile View - Horizontal Scroll */}
