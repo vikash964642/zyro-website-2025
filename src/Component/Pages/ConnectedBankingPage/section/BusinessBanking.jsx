@@ -4,7 +4,7 @@ import BusinessBankingMob from '../../../../../public/image/ConnectedBanking/Bus
 function BusinessBanking() {
   return (
   <section className="max-w-screen-lg lg:mx-auto mt-[100px]">
-    <div className='bg-[#0E0624] rounded-[20px] px-[25px] lg:pl-[70px] lg:pr-[90px] lg:h-[460px] flex flex-col lg:flex-row gap-[100px] lg:gap-[0px]'>
+    <div className='bg-[#0E0624] rounded-[20px] px-[22px] lg:pl-[70px] lg:pr-[90px] lg:h-[460px] flex flex-col lg:flex-row gap-[100px] lg:gap-[0px] mx-[11px] lg:mx-0 '>
       <div className='relative mt-[55px] lg:mt-[0px] lg:w-[60%] flex flex-col justify-center items-center lg:items-start'>
           <div>
             <h2 className='max-[360px]:text-[22px] text-[26px] lg:text-[48px] font-semibold text-center lg:text-left text-white90'>Ready to Simplify Your Business Banking</h2>

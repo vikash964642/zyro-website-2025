@@ -22,6 +22,8 @@ export default {
         white70:"rgba(255, 255, 255, 0.70)",
          white90:"rgba(255, 255, 255, 0.90)",
          white20: "rgba(255, 255, 255, 0.20)",
+         white20Bg: "rgba(25, 17, 51, 0.20)",
+         border20:"rgba(141, 49, 245, 0.20)",
           white80: "rgba(255, 255, 255, 0.80)",
          grey70:"rgba(191, 191, 191, 0.70)",
          newletterBG: "rgba(109, 236, 49, 0.02)",

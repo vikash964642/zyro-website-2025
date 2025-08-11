@@ -39,7 +39,7 @@ function PosFeatures() {
   return (
     <section className="max-w-screen-lg mx-auto px-[12px] xl:px-0 relative lg:mt-[80px] mt-[110px]">
      <h2 className='text-center lg:text-[34px] text-[24px] leading-[32px] lg:leading-[48px] font-semibold PaymentHeaderGradient'>Advanced POS Features that Simplify all Payments</h2> 
-      <div className='h-[580px] overflow-hidden md:h-[445px] max-[360px]:px-[15px] max-[400px]:px-[25px] px-[40px] md:px-0 mt-[45px] md:mt-[40px]  border-[0.5px] border-[#45465E] rounded-[23px] '>
+      <div className='h-[580px] overflow-hidden md:h-[445px]  mt-[45px] md:mt-[40px]  border-[0.5px] border-[#45465E] rounded-[23px] '>
         <div className='PosFeatureGradientTop'></div>
  <Swiper
        className='h-full'
@@ -51,7 +51,7 @@ function PosFeatures() {
           <SwiperSlide key={index}>
            
 
-              <div className='flex flex-col md:flex-row h-full'>
+              <div className='flex flex-col md:flex-row h-full max-[360px]:px-[15px] max-[400px]:px-[25px] px-[40px] md:px-0'>
                 <div className='md:w-[50%] relative h-[40%] md:h-full pt-[45px] md:pt-0 md:pl-[30px] lg:pl-[57px] flex flex-col md:justify-center  items-center md:items-start'>
                 <h3 className='max-[360px]:text-[28px] max-[400px]:text-[31px] text-[32.895px] lg:text-[36px] font-semibold text-[#FFF] text-center md:text-left'>{card.heading}</h3>
                 <div className='hidden md:block w-[1px] h-[117px] PaymentBorderLineGradient mt-[18px]'></div>
