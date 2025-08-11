@@ -27,6 +27,7 @@ export default {
          newletterBG: "rgba(109, 236, 49, 0.02)",
          newletterboxBorder:"rgba(109, 236, 49, 0.50)",
          bordercolor1: "rgba(255, 255, 255, 0.20)",
+         borderColor: "rgba(141, 49, 245, 0.2)",
          backgroundColor1: "rgba(8, 4, 17, 0.50)",
          gradientText2: "linear-gradient(234deg, #FFF 0%, #9573DE 22.6%, #FFF 100%)",
          backgroundColor2: "rgba(8, 4, 17, 0.00)",
