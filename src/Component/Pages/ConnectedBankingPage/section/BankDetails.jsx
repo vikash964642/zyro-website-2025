@@ -58,6 +58,10 @@ function BankDetails() {
         imageRefs.current[index]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         setActiveIndex(index);
       };
+      // const handleLabelClick = (index) => {
+      //   imageRefs.current[index]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      //   setActiveIndex(index);
+      // };
     
       // Observe which image is in view
       useEffect(() => {
