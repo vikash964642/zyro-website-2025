@@ -223,10 +223,11 @@ const [bgImage, setBgImage] = useState("");
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    <section className="max-w-screen-lg lg:mx-auto mt-[100px] px-[20px] xl:px-[0px]">
+    <section className="max-w-screen-lg lg:mx-auto mt-[100px] lg:mt-[140px] px-[20px] xl:px-[0px] relative">
+      <div className="BuiltBusinessGradient"></div>
            <h2 className="text-center max-[360px]:text-[21px] text-[24px] lg:text-[34px] font-semibold BuiltBusinessHeaderGradient">Zyro Payout : Built for Every Business </h2>
           <div className=" flex justify-center pt-[10px] lg:pt-[15px]">
-             <p className="text-center max-[360px]:text-[13px] text-[16px] font-normal lg:font-medium text-[#ADACB3]  lg:w-[420px]">Zyro Payout Simplifies Secure Payments Across All Industries</p>
+             <p className="text-center max-[360px]:text-[13px] text-[16px] font-normal lg:font-medium text-[#ADACB3] w-[326px] lg:w-[420px]">Zyro Payout Simplifies Secure Payments Across All Industries</p>
           </div>
     <div className="flex max-[350px]:w-[300px] max-[375px]:w-[335px] max-[525px]:w-[100%] w-[450px] lg:w-[770px] mx-auto  justify-center mt-[55px] lg:mt-[35px]"   style={{
         backgroundImage: `url(${bgImage})`,

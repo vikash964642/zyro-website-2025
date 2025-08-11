@@ -1,5 +1,6 @@
 
-import ConnecteBankingImg1 from "../../../../../public/image/ConnectedBanking/ConnecteBankingImg1.png";
+import CardPayOutImg1 from "../../../../../public/image/PayOut/CardPayOutImg1.svg";
+import CardPayOutImg2 from "../../../../../public/image/PayOut/CardPayOutImg2.svg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './PayOut.css';
@@ -7,13 +8,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const contentData = [
   {
-    image: ConnecteBankingImg1,
+    image: CardPayOutImg1,
     heading: "Instant Beneficiary Setup",
     paragraph:
       "No cool-off period between adding a beneficiary and sending payments.",
   },
   {
-    image: ConnecteBankingImg1,
+    image: CardPayOutImg2,
     heading: "Multiple Payment Modes",
     paragraph:
       "Choose from IMPS, NEFT, RTGS, or UPI for convenient payment transfers.",
@@ -25,11 +26,16 @@ export default function ConnectedCardSlider() {
 
 
   return (
-    <section className="max-w-screen-lg lg:mx-auto mt-[100px] px-[20px] xl:px-[0px]">
-      <h2 className="text-[28px] lg:px-[190px] lg:text-[31.72px] font-semibold text-center  ConnectedCardSliderHeader">
+    <section className="max-w-screen-lg lg:mx-auto px-[20px] xl:px-[0px] relative">
+      <div className="ConnectedCardSliderTopGradient"></div>
+   <div className="pt-[100px] lg:pt-[140px]">
+     <div className="flex justify-center">
+        <h2 className="text-[24px] md:text-[30px]   lg:text-[34px] font-semibold text-center md:w-[500px] lg:w-[602px]  ConnectedCardSliderHeader">
        Advanced Payout designed to Scale with your Business
       </h2>
-      <div className="flex flex-col sm:flex-row gap-4  justify-center xl:justify-between mt-[35px] lg:mt-[45px]">
+    </div>
+      <div className="flex flex-col sm:flex-row gap-[45px] sm:gap-[20px]  justify-center xl:justify-between mt-[35px] lg:mt-[45px] relative">
+        <div className="ConnectedCardSliderBottomGradient"></div>
         {contentData.map((item, index) => (
           <div
             key={index}
@@ -41,16 +47,17 @@ export default function ConnectedCardSlider() {
             </div>
             <div className="bg-white py-[13px] px-[15px] rounded-b-[13.59px] rounded-t-[0px] flex-1 flex flex-col justify-start">
              
-              <h3 className="text-[16px] font-semibold text-[#4F31B4] pt-[11px]">
+              <h3 className="text-[16.5px] md:text-[18px] lg:text-[20px]  font-semibold text-[#4F31B4] pt-[11px]">
                 {item.heading}
               </h3>
-              <p className="text-[14px] font-medium text-[#565656] pt-[3px]">
+              <p className="text-[14px] md:text-[15px] lg:text-[16px]  font-medium text-[#565656] pt-[3px]">
                 {item.paragraph}
               </p>
             </div>
           </div>
         ))}
       </div> 
+   </div>
 
       {/* <div className="grid grid-cols-1 sm:grid-cols-2   gap-4 mt-[35px] lg:mt-[45px]">
   {contentData.map((item, index) => (

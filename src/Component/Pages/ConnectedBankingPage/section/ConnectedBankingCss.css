@@ -35,6 +35,13 @@ opacity: 0.9981;
 background: linear-gradient(90deg, #413668 0%, #1C113F 100%);
  
 }
+
+.ConnectedHeroHeaderGradient{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 .features-heading-gradient{
   background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
 background-clip: text;
@@ -58,7 +65,21 @@ background: linear-gradient(180deg, rgba(64, 28, 139, 0.59) 0%, rgba(255, 255, 2
 filter: blur(91.38888549804688px);
 z-index:-1;
 }
-
+.HorizentalSliderHeaderGradient{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.HorizentalSliderGradient{
+  position: absolute;
+  inset:0% 31% 53% 30%;
+  z-index: -1;
+ border-radius: 138px;
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(64, 28, 139, 0.59) 0%, rgba(255, 255, 255, 0.00) 100%);
+filter: blur(91.38888549804688px);
+}
 .businessBankingGradient2{
   position:absolute;
   border-radius: 50%;
@@ -74,7 +95,21 @@ filter: blur(200px);
 left:0px;
 top:200px;
 }
-
+.BankDetailsHeaderGradient{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.BankDetailsImageGradient{
+ border-radius: 686px;
+opacity: 0.2;
+background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) 0%, #8D31F5 100%, #FFF 100%);
+filter: blur(92px);
+position:absolute;  
+  inset:-36% 11% 40% 0%;
+  z-index:-1;
+}
 .connectedBankingCardGradient1{
   background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
 background-clip: text;
@@ -87,7 +122,24 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-
+.VerticleSliderGradient{
+    border-radius: 50%;
+  position: absolute;
+  inset:38% 7% 29% 62%;
+  z-index: -1;
+  background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) -18.15%, #FFF 44.52%, #8D31F5 81.85%);
+opacity: 0.4;
+filter: blur(95px);
+}
+.VerticleSliderGradientMob{
+  border-radius: 50%;
+  position: absolute;
+  inset:5% 37% 5% 34%;
+  z-index: -1;
+  background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) -18.15%, #FFF 44.52%, #8D31F5 81.85%);
+opacity: 0.3;
+filter: blur(100px);
+}
 /* Animations */
 .slide-left {
   animation: slideLeft 0.5s ease;
@@ -125,5 +177,22 @@ background-clip: text;
   text-orientation: mixed;
 }
 
+@media (max-width:1023px){
+  .BusinessScrollerHeaderGradient{
+  background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+}
 
+@media (max-width:767px){
 
+.HorizentalSliderGradient{
+    inset:69% 26% 0% 24%;
+    border-radius: 61px;
+opacity: 0.2;
+background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) 0%, #8D31F5 100%, #FFF 100%);
+filter: blur(58.3769645690918px);
+}
+}

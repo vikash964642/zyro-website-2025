@@ -164,8 +164,10 @@ function HeroSection() {
     //     </div>
     //   </div>
     // </section>
-    <section className="max-w-screen-lg lg:mx-auto px-[20px] xl:px-0">
-  <div className="flex flex-col md:flex-row justify-between md:gap-[20px] md:h-[450px] lg:h-[500px] pt-[60px] md:pt-0">
+    <section className=" bg-[#0E0624] relative overflow-hidden">
+      <div className="HerosectionGradient"></div>
+<div className="max-w-screen-lg lg:mx-auto px-[20px] xl:px-0">
+    <div className="flex flex-col md:flex-row justify-between md:gap-[20px] md:h-[450px] pb-[60px] md:pb-0 lg:h-[500px] pt-[60px] md:pt-0">
     
     {/* Left Side: Text vertically centered */}
     <div className="md:w-1/2 h-full flex flex-col justify-center text-center lg:text-left">
@@ -201,6 +203,7 @@ function HeroSection() {
      </div>
 
   </div>
+</div>
 </section>
 
   );

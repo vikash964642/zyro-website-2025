@@ -6,43 +6,43 @@ import './HomePageCss.css'
 const contents = [
   {
     id: 1,
-    title: "Fast User-Friendly Interface",
+    title: "Fast Onboarding ",
     paragraph:
-      "Our platform offers a user-friendly interface that makes digital banking simple, efficient, and easy for everyone to manage.",
+      "Set up your account quickly and start managing your finances with ease.   ",
   },
   {
     id: 2,
-    title: "Scalable Solutions",
+    title: "Real-Time Tracking ",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis mi pretium, dictum arcu eu, dapibus est.",
+      "Track your business finances and transactions in real-time for better control.",
   },
   {
     id: 3,
-    title: "Time-Saving and Cost-Effective",
+    title: "User-Friendly Dashboard  ",
     paragraph:
-      "Proin a ligula ipsum. Vestibulum id vestibulum arcu, sed sodales nisl. Curabitur aliquam lectus at odio facilisis mollis.",
+      "Manage accounts, view reports, and track financial performance with our simple, intuitive interface. ",
   },
   {
     id: 4,
-    title: "Robust Data Security",
+    title: "Robust Security  ",
     paragraph:
-      "Curabitur volutpat, tortor rhoncus tempor sollicitudin, justo nibh iaculis ipsum, ac porttitor elit nulla non tortor.",
+      "Keep your business transactions safe with advanced encryption and secure payment gateways. ",
   },
   {
     id: 5,
-    title: "Innovation",
+    title: "Scalable Solutions ",
     paragraph:
-      "Aenean dignissim sollicitudin lorem ut commodo. Donec fringilla posuere enim, vitae blandit est tempor at.",
+      "Suitable for businesses of all sizes, from startups to large enterprises. ",
   },
   {
     id: 6,
-    title: "Trusted Certification",
+    title: "24/7 Customer Service  ",
     paragraph:
-      "Velit est tristique quam, nec maximus risus metus et massa. Etiam posuere posuere libero, at volutpat enim pellentesque non.",
+      "Get expert customer service anytime through email, phone, or WhatsApp. ",
   },
 ];
 
-export default function ResponsiveVerticalSlider() {
+export default function VerticleSlider() {
   const [activeIndices, setActiveIndices] = useState([0]);
   const lastIndex = activeIndices[activeIndices.length - 1];
 
@@ -52,19 +52,19 @@ export default function ResponsiveVerticalSlider() {
   };
 
   return (
-    <section className="max-w-screen-xl mx-auto px-4 mt-10">
+    <section className="max-w-screen-lg mx-auto px-4 mt-10">
       <h2 className="max-[360px]:text-[25px] text-center text-[28px] lg:text-[48px] text-white90 font-medium mb-12">
         Why <span className="verticlesliderZyroGradient max-[360px]:text-[25px]   text-[28px] lg:text-[48px] font-bold">ZYRO</span> is perfect for your Business
       </h2>
 
       {/* --- Desktop Layout --- */}
-      <div className="relative hidden lg:flex w-full h-[450px] rounded-md overflow-hidden bg-[#0B0618] border-[0.666px] border-[#3A3C42]">
+      <div className="relative hidden lg:flex w-full h-[410px] rounded-md overflow-hidden  border-[0.666px] border-[#3A3C42]">
         {/* Left Titles */}
         <div className="flex items-stretch transition-all duration-500">
           {activeIndices.slice(0, -1).map((index) => (
             <div
               key={contents[index].id}
-              className="w-[80px] min-w-[80px] border-r-[0.666px] border-[#3A3C42] py-[25px] flex justify-center cursor-pointer hover:bg-[#1C1C1F] transition-transform duration-500"
+              className="w-[105px] min-w-[80px] border-r-[0.666px] border-[#3A3C42] py-[25px] flex justify-center cursor-pointer transition-transform duration-500"
               onClick={() => handleClick(index)}
             >
               <p
@@ -85,7 +85,7 @@ export default function ResponsiveVerticalSlider() {
         {/* Active Content */}
         <div
           key={lastIndex}
-          className="flex-1 flex flex-col justify-center px-[40px] py-8 transition-all duration-500 animate-fadeIn"
+          className="flex-1 bg-[#0B0618] flex flex-col justify-center px-[40px] py-8 transition-all duration-500 animate-fadeIn"
         >
           <p className="text-white text-[32px] font-medium">
             {contents[lastIndex].title}
@@ -97,15 +97,16 @@ export default function ResponsiveVerticalSlider() {
 
         {/* Right Titles */}
         <div className="flex items-stretch transition-all duration-500">
+          <div className="VerticleSliderGradient"></div>
           {contents.map((item, idx) =>
             !activeIndices.includes(idx) ? (
               <div
                 key={item.id}
-                className="w-[80px] min-w-[80px] border-l-[0.666px] border-[#3A3C42]"
+                className="w-[105px] min-w-[80px] border-l-[0.666px] border-[#3A3C42]"
               >
                 <button
                   onClick={() => handleClick(idx)}
-                  className="w-full h-full px-2 py-[25px] flex justify-center items-end hover:bg-[#1C1C1F] transition-all duration-500"
+                  className="w-full h-full px-2 py-[25px] flex justify-center items-end transition-all duration-500"
                 >
                   <span
                     className="block text-[#686868] text-[23px] font-semibold vertical-rl rotate-180"
@@ -124,7 +125,7 @@ export default function ResponsiveVerticalSlider() {
       </div>
 
       {/* --- Mobile Layout --- */}
-      <div className="flex lg:hidden flex-col bg-[#0B0618] rounded-md overflow-hidden border-[0.666px] border-[#3A3C42] border-b-0">
+      <div className="flex lg:hidden flex-col  rounded-md overflow-hidden border-[0.666px] border-[#3A3C42] border-b-0">
         <div className="flex flex-col">
           {contents.slice(0, lastIndex).map((item, idx) => (
             <button
@@ -146,7 +147,8 @@ export default function ResponsiveVerticalSlider() {
           </p>
         </div>
 
-        <div className="flex flex-col border-t-[0.666px] border-[#3A3C42]">
+        <div className="relative flex flex-col border-t-[0.666px] border-[#3A3C42] overflow-hidden">
+          <div className="VerticleSliderGradientMob"> </div>
           {contents.slice(lastIndex + 1).map((item, idx) => {
             const trueIdx = lastIndex + 1 + idx;
             return (

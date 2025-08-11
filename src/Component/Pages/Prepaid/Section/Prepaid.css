@@ -4,6 +4,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.HeroSectionGradient{
+    position: absolute;
+  inset: 0% 25% 78% 25%;
+  z-index: -1;
+  border-radius: 175.5px;
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(64, 28, 139, 0.59) 0%, rgba(255, 255, 255, 0.00) 100%);
+filter: blur(91.38888549804688px);
+}
 .cardBoxGradient {
   border-radius: 175.5px;
   opacity: 1;

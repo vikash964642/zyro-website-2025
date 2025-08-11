@@ -2,6 +2,9 @@
 import { useEffect, useRef, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import './ConnectedBankingCss.css'
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 const cardsData = [
   {
     id: 1,
@@ -124,7 +127,7 @@ useEffect(() => {
   return (
       <section className="max-w-screen-lg lg:mx-auto lg:mt-[131px] mt-[100px]">
         <div className="flex justify-center items-center px-[16px]">
-            <p className="text-[#FFF] text-center lg:text-[28px] text-[24px] max-[375px]:text-[22px] font-semibold">One Dashboard to Manage all your Business Accounts</p>
+            <p className="text-[#FFF] text-center text-[24px] md:text-[26px] lg:text-[28px]  max-[375px]:text-[22px] font-semibold md:w-[480px] BusinessScrollerHeaderGradient">One Dashboard To Manage All Your Business Accounts</p>
         </div>
  <div className="hidden lg:flex h-[450px] mt-[30px] overflow-hidden">
       {/* Left Side: Scrollable headings */}
@@ -162,7 +165,9 @@ useEffect(() => {
                   : "border-[#4E4E4E]"
               }`}
             >
-              <h2 className="text-[#FFF] text-[20px] font-medium">{card.heading}</h2>
+              <h2 className={` text-[20px] font-medium ${ activeIndex === index
+                  ? "text-[#FFF]"
+                  : "text-[#CACACA]"}`}>{card.heading}</h2>
               <p className="text-[#9E9C9F] text-[16px] font-normal pt-[8px]">{card.paragraph}</p>
             </div>
           ))}
@@ -184,7 +189,7 @@ useEffect(() => {
       {cardsData.map((slide, index) => (
         <div
           key={index}
-          className="flex-none w-[calc(100%-2rem)] flex flex-col items-center p-4 bg-[#0B051E] border-[0.3px] border-[#A901A3] rounded-[10px] mx-4"
+          className="flex-none w-[calc(100%-3.4rem)] flex flex-col items-center max-[375px]:px-[25px] px-[35px] py-[20px] bg-[#0B051E] border-[0.3px] border-[#A901A3] rounded-[10px] mx-[27px]"
         >
           <div className="w-full">
             <p className="text-[#FFFFFF] text-[18px] font-medium max-[375px]:text-[16px]">
@@ -198,7 +203,7 @@ useEffect(() => {
           </div>
 
           {/* Image */}
-          <div className="w-full flex justify-center items-center bg-[#080219] p-2 border-[0.129px] border-[#646464] rounded-[12.8px] mt-[20px]">
+          <div className="w-full flex justify-center items-center bg-[#080219] pt-[20px] px-[16px] pb-[27px] border-[0.129px] border-[#646464] rounded-[12.8px] mt-[20px]">
             <img src={slide.image} alt={`Slide ${index + 1}`} />
           </div>
         </div>
@@ -210,15 +215,15 @@ useEffect(() => {
   <div className="flex justify-center gap-5 mt-4">
     <button
       onClick={handlePrev}
-      className="z-20 text-white bg-gray-700 rounded-full w-[40px] h-[40px] hover:bg-gray-800 flex justify-center items-center"
+      className={`  rounded-full w-[22px] h-[22px] flex justify-center items-center border-[1.5px] border-[#6E6E6E] text-[#6E6E6E] hover:border-[#FFF] hover:text-[#FFF]`}
     >
-      &lt;
+    <FontAwesomeIcon icon={faAngleLeft}  />
     </button>
     <button
       onClick={handleNext}
-      className="z-20 text-white bg-gray-700 rounded-full w-[40px] h-[40px] hover:bg-gray-800 flex justify-center items-center"
+      className={`  rounded-full w-[22px] h-[22px]  flex justify-center items-center border-[1.5px] border-[#6E6E6E] text-[#6E6E6E] hover:border-[#FFF] hover:text-[#FFF]`}
     >
-      &gt;
+      <FontAwesomeIcon icon={faAngleRight}  />
     </button>
   </div>
 </div>

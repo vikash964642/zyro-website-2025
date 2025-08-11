@@ -2,7 +2,7 @@
 import './HomePageCss.css';
 function NewsletterBox() {
   return (
- <section className="max-w-screen-lg lg:mx-auto mx-4 mt-[120px]">
+ <section className="max-w-screen-lg mx-auto px-[20px] xl:px-0 mt-[120px]">
     <div className='lg:h-[540px] lg:rounded-[59px] rounded-[19px] bg-newletterBG  border-[0.928px] border-newletterboxBorder  border-solid'>
        <div className='flex justify-center items-center h-[100%] m-[10px] lg:m-0 py-[35px] lg:py-0 relative'>
         <div >

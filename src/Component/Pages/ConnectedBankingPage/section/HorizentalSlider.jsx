@@ -53,20 +53,17 @@ function HorizentalSlider() {
   };
 
   return (
-    <section className="max-w-screen-lg lg:mx-auto mx-4 mt-[82px]">
+    <section className="max-w-screen-lg mx-auto  mt-[82px] px-[20px] xl:px-0 relative">
+      <div className="HorizentalSliderGradient"></div>
       <div>
-        <p className="text-white max-[360px]:text-[22px] max-[400px]:text-[25px] text-[28px] lg:text-[32px] font-medium text-center">
-       Experience{" "}
-          <span className="bg-gradientText bg-clip-text text-transparent">
-           the Benefit of
-          </span>{" "}
-          <span > Connected Banking</span>
+        <p className="HorizentalSliderHeaderGradient max-[360px]:text-[22px] max-[400px]:text-[25px] text-[28px] lg:text-[32px] font-semibold text-center">
+     Experience the Benefit of Connected Banking 
         </p>
       </div>
 
       <div
         ref={scrollRef}
-        className="flex overflow-x-auto gap-4 lg:mt-[65px] mt-[50px]  pb-2 cursor-grab hide-scrollbar"
+        className="flex overflow-x-auto lg:gap-[30px] gap-[22px] lg:mt-[65px] mt-[50px]  pb-2 cursor-grab hide-scrollbar"
         style={{ scrollSnapType: "x mandatory" }}
         onMouseDown={handleMouseDown}
         onMouseLeave={handleMouseLeave}
@@ -76,10 +73,10 @@ function HorizentalSlider() {
         {sliders.map((slider, index) => (
           <div
             key={index}
-            className={`lg:w-[250px] w-[220px] lg:py-[22px] lg:px-[16px] py-[16px] px-[12px]  border-[0.287px] last-mt border-[#4A4A4A] rounded-[7.167px] flex-shrink-0 scroll-snap-align-start ${
+            className={`lg:w-[260px] w-[187px] lg:pt-[22px] lg:pb-[17px] lg:px-[16px] pt-[15px] pb-[12px] px-[12px]  border-[0.287px] lg:border-[0.4px] last-mt border-[#4A4A4A] rounded-[7.167px] flex-shrink-0 scroll-snap-align-start ${
       index === sliders.length - 1 ? 'lg:mr-3' : ''}`}
           >
-            <div className="lg:h-[116.47px] h-[70px] w-[70px] lg:w-[116.47px] rounded-[14.333px] border-[0.493px] border-[#A901A3] bg-[#080219] flex items-center justify-center ">
+            <div className="lg:h-[95px] h-[68px] w-[68px] lg:w-[95px] rounded-[14.333px] lg:rounded-[20px] border-[0.493px] border-[#A901A3] bg-[#080219] flex items-center justify-center ">
               <img
                 src={slider.image}
                 alt={slider.paragraph}
