@@ -8,10 +8,10 @@ import ZyroPosMachine from "./section/ZyroPosMachine";
 import ManagingCorporate from "./section/ManagingCorporate";
 import ExpenceControl from "./section/ExpenceControl";
 import ConnectedBanking from "./section/ConnectedBanking";
-import BusinessVerticleSlider from "./section/BusinessVerticleSlider";
+// import BusinessVerticleSlider from "./section/BusinessVerticleSlider";
 import NewsletterBox from "./section/NewsletterBox";
 import ControlFinance from "./section/ControlFinance";
-import CardSliders from "./section/CardSliders";
+// import CardSliders from "./section/CardSliders";
 import VerticleSlider from "./section/VerticleSlider";
 
 export default function HomePage() {
@@ -24,12 +24,14 @@ export default function HomePage() {
       <ZyroSoundBox />
       <InstantPayment />
       <ZyroPosMachine />
-     
-      <CardSliders />
+      {/* <CardSliders /> */}
+
+      
         <ManagingCorporate />
       <ExpenceControl />
-     
-      <BusinessVerticleSlider />
+      {/* <BusinessVerticleSlider /> */}
+      
+      
       <VerticleSlider />
       <ControlFinance />
       <NewsletterBox />

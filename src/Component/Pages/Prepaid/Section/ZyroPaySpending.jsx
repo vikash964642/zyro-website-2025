@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from '../../../../../public/image/Prepaid/PrepaidCardDesignDemo.svg';
 function ZyroPaySpending() {
   return (
   <section className="max-w-screen-lg mx-auto px-[12px] xl:px-0 relative lg:mt-[80px] mt-[110px]">
@@ -16,8 +16,8 @@ function ZyroPaySpending() {
         <li className='max-[360px]:text-[13px] text-[14px] lg:text-[16px] font-normal text-[#B9B9B9] pt-[10px] lg:pt-[15px]'>Approve top-ups and set spending limits in a tap</li>
     </ul>
 </div>
-<div className='mt-[40px] md:mt-[0px] h-[305px] w-[100%] min-[414px]:w-[352px] lg:h-[350px] lg:w-[400px] border-[0.5px] border-[#A901A3] rounded-[19.67px] bg-[#080219]'>
-
+<div className='mt-[40px] md:mt-[0px] h-[305px] w-[100%] min-[414px]:w-[352px] lg:h-[350px] lg:w-[400px] border-[0.5px] border-[#A901A3] rounded-[19.67px] bg-[#080219] flex justify-center items-center p-3'>
+<img src={Image}/>
 </div>
 </div>
     </div>

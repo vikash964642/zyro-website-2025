@@ -210,7 +210,7 @@ const CardList=[
 export default function CenteredImageSlider() {
      const [activeIndex, setActiveIndex] = useState(0);
   return (
-   <div className=" max-w-screen-lg mx-auto mt-16 px-4 xl:px-0">
+   <div className="  mt-16 px-4 xl:px-0">
     <div className="flex justify-center">
         <h2 className="max-[360px]:text-[22px] text-[24px] md:[28px] lg:text-[32px] font-semibold PosSystemSliderHeaderGradient text-center md:w-[550px] lg:w-[648px]">Zyro POS System : Trusted by Businesses Across Industries</h2>
     </div>
@@ -250,7 +250,7 @@ export default function CenteredImageSlider() {
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 1.3,
+            slidesPerView: 1.6,
             spaceBetween: 30,
           },
         }}

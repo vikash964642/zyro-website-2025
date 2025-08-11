@@ -1,6 +1,6 @@
 import React from 'react'
 import arrowRight from '../../../../../public/image/ConnectedBanking/arrowRight.svg';
-import BusinessBankingMob from '../../../../../public/image/ConnectedBanking/BusinessBankingMob.svg';
+import BusinessBankingMob from '../../../../../public/image/Prepaid/PrepaidBusinessBanking.svg';
 function BusinessBanking() {
   return (
   <section className="max-w-screen-lg lg:mx-auto mt-[100px]">
@@ -8,7 +8,9 @@ function BusinessBanking() {
       <div className='relative mt-[55px] lg:mt-[0px] lg:w-[60%] flex flex-col justify-center items-center lg:items-start'>
           <div>
             <h2 className='max-[360px]:text-[22px] text-[26px] lg:text-[48px] font-semibold text-center lg:text-left text-white90'>Start smart spending today</h2>
-            <p className='max-[360px]:text-[12px] text-[14px] lg:text-[16px] font-normal text-center lg:text-left text-white70 pt-[10px]'>Experience the future of spending with Zyro Prepaid Card</p>
+            <div className='flex'>
+              <p className='max-[360px]:text-[12px] text-[14px] lg:text-[20px] font-normal text-center lg:text-left text-white70 pt-[10px] lg:w-[435px]'>Experience the future of spending with Zyro Prepaid Card</p>
+            </div>
         </div>
 
            <div className='relative  mt-[40px] cursor-pointer z-20'>
