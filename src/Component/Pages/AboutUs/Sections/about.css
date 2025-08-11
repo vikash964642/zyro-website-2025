@@ -1,0 +1,136 @@
+.aboutheader,
+.whoWeHeader,
+.missionhead,
+.visionHead,
+.coreheader,
+.accelerateHead {
+  background: linear-gradient(90deg, #ededed 0%, #9573de 50%, #f8f8f8 64.42%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.left-gradiant,
+.right-gradiant,
+.center-gradiant {
+  border-radius: 50%;
+  opacity: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(164, 137, 255, 0.94) 0%,
+    rgba(52, 52, 52, 0.6) 100%
+  );
+  filter: blur(200px);
+  position: absolute;
+  inset: -16% 76% -6% -15%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.right-gradiant {
+  inset: -14% -15% -6% 78%;
+}
+.center-gradiant {
+  inset: -59% 15% 79% 22%;
+}
+
+/* who We are start */
+
+.bgGradiant {
+  border-radius: 50%;
+  opacity: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(164, 137, 255, 0.94) 0%,
+    rgba(52, 52, 52, 0.6) 100%
+  );
+  filter: blur(250px);
+  position: absolute;
+  inset: 36% -1% -11% -3%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* who We are end */
+
+/* mission and vision start */
+
+.leftGradiant,
+.CenterGradiant,
+.RightGradiant {
+  border-radius: 50%;
+  opacity: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(164, 137, 255, 0.94) 0%,
+    rgba(52, 52, 52, 0.6) 100%
+  );
+  filter: blur(250px);
+  position: absolute;
+  inset: 66% 69% 6% -1%;
+  overflow: hidden;
+}
+.CenterGradiant {
+  inset: 0% 27% 80% 34%;
+}
+.RightGradiant {
+  inset: 54% -2% 21% 62%;
+}
+
+/* mission and vision end */
+
+/* Accelerate start */
+
+.Core-Values-gradiant {
+  border-radius: 138px;
+  opacity: 1;
+  background: linear-gradient(
+    178deg,
+    rgba(64, 28, 139, 0.6) 80%,
+    rgba(255, 255, 255, 0.76) 0%
+  );
+  filter: blur(182px);
+  position: absolute;
+  inset: 34% 11% 25% 21%;
+  z-index: -1;
+}
+
+.accelerate-gradiant{
+  border-radius: 138px;
+  opacity: 1;
+  background: linear-gradient(
+    178deg,
+    rgba(64, 28, 139, 0.6) 80%,
+    rgba(255, 255, 255, 0.76) 0%
+  );
+  filter: blur(182px);
+  position: absolute;
+  inset: -10% 11% -92% 21%;
+  z-index: -1;
+}
+
+/* Accelerate end */
+
+@media (max-width: 1024px) {
+  .left-gradiant {
+    inset: 67% 69% -5% 0%;
+  }
+
+  .center-gradiant {
+    inset: -59% 1% 69% 51%;
+  }
+
+  .bgGradiant {
+    inset: 33% 10% 3% 4%;
+  }
+
+  .leftGradiant {
+    inset: 2% 0% 79% 28%;
+  }
+  .CenterGradiant {
+    inset: 37% 19% 45% 11%;
+  }
+  .RightGradiant {
+    inset: 82% 10% 0% 13%;
+  }
+}

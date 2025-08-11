@@ -9,7 +9,11 @@ import SoundboxPage from "./Component/Pages/SoundboxPage/SoundboxPage";
 import ExpenseManagement from "./Component/Pages/ExpenseManagement/ExpenseManagement";
 import Prepaid from "./Component/Pages/Prepaid/Prepaid";
 import Pos from "./Component/Pages/PosPage/Pos";
+
+import AboutUs from "./Component/Pages/AboutUs/AboutUs";
+
 import ContactUs from "./Component/Pages/ContactUs/ContactUs";
+
 function App() {
   // usePreventZoom();
   return (
@@ -25,7 +29,9 @@ function App() {
            <Route path="/ExpenseManagement" element={<ExpenseManagement/>}  />
              <Route path="/prepaidPage" element={<Prepaid/>}  />
                 <Route path="/posPage" element={<Pos/>}  />
+                <Route path="/About-us" element={<AboutUs/>}  />
                 <Route path="/ContactUs" element={<ContactUs/>}  />
+
          
         </Routes>
          <Footer />
