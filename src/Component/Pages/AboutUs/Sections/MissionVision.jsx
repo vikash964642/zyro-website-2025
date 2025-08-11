@@ -8,7 +8,7 @@ function MissionVision() {
             <div className='leftGradiant'></div>
             <div className='CenterGradiant'></div>
             <div className='RightGradiant'></div>
-        <div className='lg:w-[55%] pl-[39px]'>
+        <div className='lg:w-[55%] pl-[39px] pr-[15px]'>
             <div>
                 <h3 className='missionhead lg:text-[32px] text-[24px] font-semibold lg:leading-[46px]'>Our Mission</h3>
                 <p className='text-[15.5px] font-normal leading-[27px] text-[#A9A9A9]'>Our mission is to reshape financial services by delivering innovative, secure, and user-friendly banking solutions for businesses. We are committed to bridging the urban-rural divide and bringing advanced fintech services to every corner of society, enabling all to thrive in the next generation of financial services.</p>

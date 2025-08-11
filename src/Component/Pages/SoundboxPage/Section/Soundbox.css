@@ -118,6 +118,13 @@ background: linear-gradient(180deg, #1A1235 0%, #0B051E 100%);
   border-radius: 30px;
 background: linear-gradient(180deg, #1A1235 0%, #0B051E 100%);
 }
+
+@media (max-width:1190px) {
+  .features-gradient{
+    inset: 4% 0% 74% 8%;
+  }
+  
+}
 @media (max-width: 999px) {
   .features-gradient {
     border-radius: 175.5px;

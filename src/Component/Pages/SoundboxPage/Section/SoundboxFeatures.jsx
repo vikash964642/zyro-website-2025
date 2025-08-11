@@ -16,7 +16,7 @@ function SoundboxFeatures() {
               Loud and clear payment sounds, even in the busiest places.
             </p>
           </div>
-          <div className="lg:bg-[#080219] z-10 lg:rounded-[30px] border-[0.627px] border-[#797979] p-[20px] lg:mr-[70px] w-[370px] h-[370px] flex justify-center items-center">
+          <div className="lg:bg-[#080219] z-10 lg:rounded-[30px] border-[0.627px] border-borderColor p-[20px] lg:mr-[70px] w-[370px] h-[370px] flex justify-center items-center">
             <img src={soundbox} alt="" height={"326px"} width={"241.5px"} />
           </div>
         </div>
@@ -24,7 +24,7 @@ function SoundboxFeatures() {
       </div>
         <div className=" flex z-10  lg:absolute lg:top-[300px] w-full mt-[70px] lg:mt-0">
         <div className="w-[50%]">
-            <div className="lg:bg-[#080219] lg:rounded-[25.5px] border-[0.532px] border-[#797979] p-[20px] lg:ml-[113px] w-[370px] lg:w-[314px] h-[408px] lg:h-[347px] flex justify-center items-center">
+            <div className="lg:bg-[#080219] lg:rounded-[25.5px] border-[0.632px] border-borderColor p-[20px] lg:ml-[113px] w-[370px] lg:w-[314px] h-[408px] lg:h-[347px] flex justify-center items-center">
             <img src={newSoundbox} alt="" height={"222px"} width={"248.5px"} />
           </div>
         </div>
@@ -53,7 +53,7 @@ function SoundboxFeatures() {
 </div>
 
 <div className="flex justify-center mx-[20px]">
-  <div className="absolute top-[235px]  bg-[#080219] h-[370px] max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-[#797979] flex justify-center items-center">
+  <div className="absolute top-[235px]  bg-[#080219] h-[370px] max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-borderColor flex justify-center items-center">
 <img src={soundbox} alt=""className="h-[325px] w-[245px]"/>
 </div>
 </div>
@@ -71,7 +71,7 @@ function SoundboxFeatures() {
 </div>
 </div>
 <div className="flex justify-center mx-[20px]">
-  <div className="absolute top-[235px]  bg-[#080219] h-[370px] max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-[#797979] flex justify-center items-center">
+  <div className="absolute top-[235px]  bg-[#080219] h-[370px] max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-borderColor flex justify-center items-center">
 <img src={newSoundbox} alt=""className="max-[360px]:h-[270px] max-[360px]:w-[280px] h-[265px] w-[290px]"/>
 </div>
 </div>

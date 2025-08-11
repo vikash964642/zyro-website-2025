@@ -6,7 +6,7 @@ import XTwitter from "../../../public/image/FooterImage/XTwitter.svg";
 import linkedIn from "../../../public/image/FooterImage/LinkedIn.svg";
 import zyrologo from "../../../public/image/zyro-logo.svg";
 // import { useNavigate } from 'react-router-dom';
-import GooglePlay from "../../../public/image/FooterImage/GooglePlay.png";
+import GooglePlay from "../../../public/image/FooterImage/playstore.svg";
 import certificatezyro from "../../../public/image/FooterImage/certificatezyro.png";
 
 function Footer() {
@@ -41,37 +41,37 @@ function Footer() {
               <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
                 <li>
                   <Link to="/connectedbanking" onClick={ScrollTop}>
-                    Connected Banking
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/quickbilling" onClick={ScrollTop}>
                     Zyro Soundbox
                   </Link>
                 </li>
                 <li>
-                  <Link to="/inventory" onClick={ScrollTop}>
+                  <Link to="/posPage" onClick={ScrollTop}>
                     Zyro POS
                   </Link>
                 </li>
                 <li>
-                  <Link to="/khata" onClick={ScrollTop}>
-                    Expense Management
+                  <Link to="/ExpenseManagement" onClick={ScrollTop}>
+                   Expense Management
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ondc" onClick={ScrollTop}>
-                    Billing & Accounting
+                  <Link to="/prepaidPage" onClick={ScrollTop}>
+                    Prepaid Card
                   </Link>
                 </li>
                 <li>
-                  <Link to="/onlinestore" onClick={ScrollTop}>
+                  <Link to="" onClick={ScrollTop}>
                     Gift Cards API
                   </Link>
                 </li>
                 <li>
-                  <Link to="/WhatsappCommerce" onClick={ScrollTop}>
-                    Prepaid Card
+                  <Link to="" onClick={ScrollTop}>
+                   Billing & Accounting
+                  </Link>
+                </li>
+                <li>
+                  <Link to="" onClick={ScrollTop}>
+                   UPI Stack
                   </Link>
                 </li>
               </ul>
@@ -87,18 +87,18 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="" onClick={ScrollTop}>
+                  <Link to="/payout" onClick={ScrollTop}>
                     Payout
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">Bank Account Verification</Link>
+                  <Link to="">Bank Account Verification</Link>
                 </li>
                 <li>
-                  <Link to="/">Escrow Account</Link>
+                  <Link to="">Escrow Account</Link>
                 </li>
                 <li>
-                  <Link to="/">Zyro Capital</Link>
+                  <Link to="">Zyro Capital</Link>
                 </li>
               </ul>
             </div>
@@ -111,27 +111,27 @@ function Footer() {
               </p>
               <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
                 <li>
-                  <Link to="/posbilling" onClick={ScrollTop}>
+                  <Link to="/" onClick={ScrollTop}>
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/quickbilling" onClick={ScrollTop}>
+                  <Link to="/About-us" onClick={ScrollTop}>
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/inventory" onClick={ScrollTop}>
+                  <Link to="" onClick={ScrollTop}>
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link to="/khata" onClick={ScrollTop}>
+                  <Link to="/ContactUs" onClick={ScrollTop}>
                     Contact Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ondc" onClick={ScrollTop}>
+                  <Link to="" onClick={ScrollTop}>
                     Careers
                   </Link>
                 </li>
@@ -143,7 +143,7 @@ function Footer() {
               </p>
               <ul className="font-normal text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px] text-white70">
                 <li>
-                  <Link to="/" onClick={ScrollTop}>
+                  <Link to="" onClick={ScrollTop}>
                     Terms & Conditions
                   </Link>
                 </li>
@@ -153,7 +153,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">Cookies Policy</Link>
+                  <Link to="">Cookies Policy</Link>
                 </li>
               </ul>
             </div>
@@ -167,38 +167,38 @@ function Footer() {
               </p>
               <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
                 <li>
-                  <Link to="/connectedbanking" onClick={ScrollTop}>
-                    Connected Banking
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/quickbilling" onClick={ScrollTop}>
+                  <Link to="/soundboxPage" onClick={ScrollTop}>
                     Zyro Soundbox
                   </Link>
                 </li>
                 <li>
-                  <Link to="/inventory" onClick={ScrollTop}>
+                  <Link to="/posPage" onClick={ScrollTop}>
                     Zyro POS
                   </Link>
                 </li>
                 <li>
-                  <Link to="/khata" onClick={ScrollTop}>
-                    Expense Management
+                  <Link to="/ExpenseManagement" onClick={ScrollTop}>
+                   Expense Management
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ondc" onClick={ScrollTop}>
-                    Billing & Accounting
+                  <Link to="/prepaidPage" onClick={ScrollTop}>
+                   Prepaid Card
                   </Link>
                 </li>
                 <li>
-                  <Link to="/onlinestore" onClick={ScrollTop}>
-                    Gift Cards API
+                  <Link to="" onClick={ScrollTop}>
+                   Gift Cards API
                   </Link>
                 </li>
                 <li>
-                  <Link to="/WhatsappCommerce" onClick={ScrollTop}>
-                    Prepaid Card
+                  <Link to="" onClick={ScrollTop}>
+                   Billing & Accounting
+                  </Link>
+                </li>
+                <li>
+                  <Link to="" onClick={ScrollTop}>
+                  UPI Stack
                   </Link>
                 </li>
               </ul>
@@ -209,27 +209,27 @@ function Footer() {
               </p>
               <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
                 <li>
-                  <Link to="/posbilling" onClick={ScrollTop}>
+                  <Link to="/" onClick={ScrollTop}>
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/quickbilling" onClick={ScrollTop}>
+                  <Link to="/About-us" onClick={ScrollTop}>
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/inventory" onClick={ScrollTop}>
+                  <Link to="" onClick={ScrollTop}>
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link to="/khata" onClick={ScrollTop}>
+                  <Link to="/ContactUs" onClick={ScrollTop}>
                     Contact Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ondc" onClick={ScrollTop}>
+                  <Link to="" onClick={ScrollTop}>
                     Careers
                   </Link>
                 </li>
@@ -249,18 +249,18 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="" onClick={ScrollTop}>
+                  <Link to="/payout" onClick={ScrollTop}>
                     Payout
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">Bank Account Verification</Link>
+                  <Link to="">Bank Account Verification</Link>
                 </li>
                 <li>
-                  <Link to="/">Escrow Account</Link>
+                  <Link to="">Escrow Account</Link>
                 </li>
                 <li>
-                  <Link to="/">Zyro Capital</Link>
+                  <Link to="">Zyro Capital</Link>
                 </li>
               </ul>
             </div>
@@ -270,7 +270,7 @@ function Footer() {
               </p>
               <ul className="font-normal text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px] text-white70">
                 <li>
-                  <Link to="/" onClick={ScrollTop}>
+                  <Link to="" onClick={ScrollTop}>
                     Terms & Conditions
                   </Link>
                 </li>
@@ -280,7 +280,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">Cookies Policy</Link>
+                  <Link to="">Cookies Policy</Link>
                 </li>
               </ul>
             </div>
