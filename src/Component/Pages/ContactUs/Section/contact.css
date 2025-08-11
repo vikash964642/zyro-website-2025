@@ -1,0 +1,21 @@
+.contacthead, .visitHeader  {
+  background: linear-gradient(90deg, #ededed 0%, #9573de 50%, #f8f8f8 64.42%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardGradiant{
+      border-radius: 50%;
+  opacity: 1;
+  background: linear-gradient(
+    7deg,
+    rgba(79, 49, 180, 1) 6%,
+    rgba(34, 21, 78, 1) 100%
+  );
+  filter: blur(200px);
+  position: absolute;
+  inset:47% 3% -17% 13%;
+  z-index: -1;
+  overflow: hidden;
+}
