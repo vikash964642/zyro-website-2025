@@ -54,10 +54,6 @@ function BankDetails() {
        const [currentSlide, setCurrentSlide] = useState(0);
     
       // Scroll to image when label is clicked
-      const handleLabelClick = (index) => {
-        imageRefs.current[index]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        setActiveIndex(index);
-      };
       // const handleLabelClick = (index) => {
       //   imageRefs.current[index]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       //   setActiveIndex(index);

@@ -26,7 +26,7 @@ const contents = [
     id: 4,
     title: "Robust Security  ",
     paragraph:
-      "Keep your business transactions safe with advanced encryption and secure payment gateways. ",
+      "Keep your business transactions safe with advanced encryption and secure payment solutions. ",
   },
   {
     id: 5,
