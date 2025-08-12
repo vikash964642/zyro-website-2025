@@ -1,4 +1,5 @@
 
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PropTypes from "prop-types";
@@ -58,7 +59,7 @@ function FAQUtils({ heading, subheading, faq }) {
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className="max-[360px]:text-[12px] text-[#9E9C9F] lg:text-[16px] text-[14px] font-normal mt-[10px] md:mt-[20px] overflow-hidden"
+                    className="max-[360px]:text-[12px] text-[#9E9C9F] lg:text-[16px] text-[14px] font-normal mt-[10px] md:mt-[20px] overflow-hidden pr-[60px]"
                   >
                     {item.ans}
                   </motion.p>

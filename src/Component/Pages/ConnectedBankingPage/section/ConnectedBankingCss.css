@@ -57,12 +57,11 @@ background-clip: text;
 
 .faq-utils-bgGradient{
   position:absolute;
-  top:75px;
   border-radius: 138px;
-height: 276px;
+height: 325px;
 opacity: 0.75;
 background: linear-gradient(180deg, rgba(64, 28, 139, 0.59) 0%, rgba(255, 255, 255, 0.00) 100%);
-filter: blur(91.38888549804688px);
+filter: blur(71px);
 z-index:-1;
 }
 .HorizentalSliderHeaderGradient{

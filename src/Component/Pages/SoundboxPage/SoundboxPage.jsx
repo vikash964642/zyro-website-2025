@@ -5,6 +5,7 @@ import MultiLanguage from './Section/MultiLanguage';
 import SoundboxFeatures from './Section/SoundboxFeatures';
 import FeaturesComparison from './Section/FeaturesComparison';
 import Form from './Section/Form';
+import Faq from './Section/Faq';
 
 function SoundboxPage() {
   return (
@@ -14,6 +15,7 @@ function SoundboxPage() {
         <MultiLanguage/>
         <SoundboxFeatures/>
         <FeaturesComparison/>
+        <Faq/>
         <Form/>
     </div>
   )
