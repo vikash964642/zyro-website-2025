@@ -154,7 +154,9 @@ const NavLinks = ({ handleClick }) => {
   };
 
   const [activeLink, setActiveLink] = useState(null);
-  const [hoveredSublinkIndex, setHoveredSublinkIndex] = useState(null);
+  // const [hoveredSublinkIndex, setHoveredSublinkIndex] = useState(null);
+  const [hoveredSublink1Index, setHoveredSublink1Index] = useState(null);
+const [hoveredSublink2Index, setHoveredSublink2Index] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
@@ -177,7 +179,8 @@ const NavLinks = ({ handleClick }) => {
   const handleLinkMouseLeave = () => {
     if (!isMobile) {
       setActiveLink(null);
-      setHoveredSublinkIndex(null);
+      setHoveredSublink1Index(null);
+  setHoveredSublink2Index(null);
     }
   };
 
@@ -192,7 +195,8 @@ const NavLinks = ({ handleClick }) => {
       setActiveLink(null);
       handleClick?.();
     }
-    setHoveredSublinkIndex(null);
+ setHoveredSublink1Index(null);
+  setHoveredSublink2Index(null);
   };
 
   const handleBlogLinkClick = (e, link) => {
@@ -210,11 +214,12 @@ const NavLinks = ({ handleClick }) => {
           <div
             className="relative   text-left md:cursor-pointer group"
             onMouseEnter={() => handleLinkMouseEnter(link.name)}
-         onMouseLeave={handleLinkMouseLeave}
+        onMouseLeave={handleLinkMouseLeave}
             onClick={() => handleLinkClick(link.name)}
           >
             
-           {/*  onMouseLeave={handleLinkMouseLeave} */}
+      {/* onMouseLeave={handleLinkMouseLeave}
+            onClick={() => handleLinkClick(link.name)} */}
             <Link
               to={link.name === "Blog" ? "#" : link.link || "#"}
               onClick={(e) => {
@@ -228,7 +233,7 @@ const NavLinks = ({ handleClick }) => {
                 }
               }}
             >
-              <p className={`text-[18px] text-[#D9D9D9] lg:text-[16px] font-medium lg:text-[#181818] md:pt-[25px] py-[20px] flex justify-between items-center md:pr-0 pr-5 group hover:text-primary focus:text-primary lg:border-hidden   ${activeLink === link.name ? '' : 'border-b-[0.5px] border-[#414141]'}`}>
+              <p className={`text-[18px] text-[#D9D9D9] lg:text-[16px] font-medium lg:text-[#181818] md:pt-[25px] py-[20px] flex justify-between items-center md:pr-0 pr-5 group hover:text-primary focus:text-primary lg:border-hidden border-t-[0.5px]  border-[#414141]   `}>
                 {link.name}
            
 {link.submenu && (
@@ -252,13 +257,13 @@ const NavLinks = ({ handleClick }) => {
               <div className="lg:absolute  top-full lg:mt-[1px] left-0 z-50  max-h-[180px] lg:max-h-none overflow-auto">
                 <div
                   className={`${
-                    link.name === "Product"
-                      ? "lg:flex lg:justify-between lg:w-[500px]"
-                      : "lg:w-[300px]"
-                  } lg:gap-10 lg:px-6 lg:py-6 border-[#C3C3C3] lg:bg-white lg:border-t-0 lg:border-x lg:border-b lg:rounded-b-lg shadow-md`}
+                    link.name === "Product" || link.name === "Banking"
+                      ? "lg:flex lg:justify-between lg:w-[550px]"
+                      : "lg:w-[275px]"
+                  } lg:px-6 lg:py-6 border-[#C3C3C3] lg:bg-white lg:border-t-0 lg:border-x lg:border-b lg:rounded-b-lg shadow-md`}
                 >
                   {/* COLUMN 1: sublinks */}
-                  <div className={`flex flex-col  ${activeLink === link.name && link.name !== "Product" ? 'border-b-[0.5px] lg:border-b-0 border-[#414141]' : ''} `}>
+                  <div className={`flex flex-col  `}>
                     {link.sublinks?.map((item, subIndex) => (
                       <Link
                         to={item.link || "#"}
@@ -266,25 +271,34 @@ const NavLinks = ({ handleClick }) => {
                         onClick={(e) => handleBlogLinkClick(e, item)}
                       >
                         <div
-                          className="flex items-center hover:bg-secondary gap-[11px] rounded px-2 py-2 transition"
+                          className="flex items-center  gap-[11px] rounded  py-2 transition"
                           onClick={() => {
                             handleSublinkClick();
                             ScrollTop();
                           }}
-                          onMouseOver={() => setHoveredSublinkIndex(subIndex)}
-                          onMouseLeave={() => setHoveredSublinkIndex(null)}
+                          onMouseOver={() => setHoveredSublink1Index(subIndex)}
+                          onMouseLeave={() => setHoveredSublink1Index(null)}
                         >
-                         <div className="h-[33.85px] w-[33.85px] bg-[#4F31B4] rounded-full flex justify-center items-center">
+                         {/* <div className="h-[33.85px] w-[33.85px] bg-[#4F31B4] rounded-full flex justify-center items-center">
                            <img
-                            src={`/assets/icons/${item.img}.png`}
+                            src={`/assets/icons/${item.img}.svg`}
                             className=" hidden lg:flex"
                             
                           />
-                         </div>
+                         </div> */}
+                         {["Product","Banking"].includes(link.name) && (
+                           <div className="h-[33.85px] w-[33.85px] bg-[#4F31B4] rounded-full hidden lg:flex justify-center items-center">
+                           <img
+                            src={`/assets/icons/${item.img}.svg`}
+                            
+                            
+                          />
+                         </div> 
+                         )}
                           <span
                             className={`text-[16px] text-[#909090] font-normal lg:text-[16px] text lg:font-medium  lg:text-[#393939] ${
-                              hoveredSublinkIndex === subIndex
-                                ? "lg:text-[#6F41D2]"
+                              hoveredSublink1Index === subIndex
+                                ? "lg:text-[#6F41D2] lg:font-semibold"
                                 : ""
                             }`}
                           >
@@ -297,8 +311,8 @@ const NavLinks = ({ handleClick }) => {
                   </div>
 
                   {/* COLUMN 2: sublinks2 (Only for Product) */}
-                  {link.name === "Product" && link.sublinks2 && (
-                    <div className={`flex flex-col ${activeLink === link.name ? 'border-b-[0.5px] lg:border-b-0 border-[#414141]' : ''} `}>
+                  {["Product", "Banking"].includes(link.name)  && link.sublinks2 && (
+                    <div className={`flex flex-col `}>
                       {link.sublinks2.map((item, subIndex) => (
                         <Link
                           to={item.link || "#"}
@@ -306,22 +320,27 @@ const NavLinks = ({ handleClick }) => {
                           onClick={(e) => handleBlogLinkClick(e, item)}
                         >
                           <div
-                            className="flex items-center hover:bg-secondary gap-[11px] rounded px-2 py-2 transition"
+                            className="flex items-center gap-[11px] rounded  py-2 transition"
                             onClick={() => {
                               handleSublinkClick();
                               ScrollTop();
                             }}
+                             onMouseOver={() => setHoveredSublink2Index(subIndex)}
+                             onMouseLeave={() => setHoveredSublink2Index(null)}
                           >
-                             <div className="h-[33.85px] w-[33.85px] bg-[#4F31B4] rounded-full flex justify-center items-center">
+                       
+                              {["Product","Banking"].includes(link.name) && (
+                                <div className="h-[33.85px] w-[33.85px] bg-[#4F31B4] rounded-full hidden lg:flex justify-center items-center">
                            <img
-                            src={`/assets/icons/${item.img}.png`}
-                            className="  hidden lg:flex"
+                            src={`/assets/icons/${item.img}.svg`}
+                      
                             
                           />
-                         </div>
+                         </div> 
+                         )}
                             <span  className={`text-[16px] text-[#909090] font-normal lg:text-[16px] text lg:font-medium  lg:text-[#393939] ${
-                              hoveredSublinkIndex === subIndex
-                                ? "lg:text-[#6F41D2]"
+                              hoveredSublink2Index === subIndex
+                                ? "lg:text-[#6F41D2] lg:font-semibold"
                                 : ""
                             }`}>
                               {item.name}

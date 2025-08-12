@@ -1,7 +1,5 @@
 
 
-
-
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PropTypes from "prop-types";

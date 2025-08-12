@@ -70,10 +70,10 @@ function HorizentalSlider() {
         {sliders.map((slider, index) => (
           <div
             key={index}
-            className={`lg:w-[250px] w-[220px] lg:py-[22px] lg:px-[16px] py-[16px] px-[12px]  border-[0.287px] last-mt border-[#4A4A4A] rounded-[7.167px] flex-shrink-0 scroll-snap-align-start ${
+            className={`lg:w-[250px] w-[220px] lg:py-[22px] lg:px-[16px] py-[16px] px-[12px]  border-[0.287px] last-mt border-bordercolor1 rounded-[7.167px] flex-shrink-0 scroll-snap-align-start ${
       index === sliders.length - 1 ? 'lg:mr-3' : ''}`}
           >
-            <div className="lg:h-[116.47px] h-[70px] w-[70px] lg:w-[116.47px] rounded-[14.333px] border-[0.493px] border-[#A901A3] bg-[#080219] flex items-center justify-center ">
+            <div className="lg:h-[116.47px] h-[70px] w-[70px] lg:w-[116.47px] rounded-[14.333px] md:rounded-[17px] lg:rounded-[20px] border-[0.688px] border-border20 bg-[#080219] flex items-center justify-center ">
               <img
                 src={slider.image}
                 alt={slider.paragraph}

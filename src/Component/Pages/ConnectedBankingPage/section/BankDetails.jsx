@@ -1,12 +1,16 @@
 
  import  { useRef, useEffect, useState } from 'react';
  import { useSwipeable } from "react-swipeable";
-    import expencecontrol1 from '../../../../../public/image/HomePage/expenseControl.png';
-    import expencecontrol2 from '../../../../../public/image/HomePage/language-soundbox.png';
-    import expencecontrol3 from '../../../../../public/image/HomePage/managing-corporate.png';
-    import expencecontrol4 from '../../../../../public/image/HomePage/zyro_soundbox.png';
-    import expencecontrol5 from '../../../../../public/image/HomePage/language-soundbox.png';
-    import expencecontrol6 from '../../../../../public/image/HomePage/expenseControl.png';
+    import BankDetailsImg1 from '../../../../../public/image/ConnectedBanking/BankDetailsImg1.webp';
+      import BankDetailsImg2 from '../../../../../public/image/ConnectedBanking/BankDetailsImg2.webp';
+        import BankDetailsImg3 from '../../../../../public/image/ConnectedBanking/BankDetailsImg3.webp';
+  import BankDetailsAIcon1 from '../../../../../public/assets/icons/BankDetailsAIcon1.svg'
+  import BankDetailsAIcon2 from '../../../../../public/assets/icons/BankDetailsAIcon2.svg'
+  import BankDetailsNonIcon3 from '../../../../../public/assets/icons/BankDetailsNonIcon3.svg'
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+
     
     // const labels = [
     //   'Real Time Card Tracking',
@@ -27,29 +31,21 @@
     // ];
     const contentData = [
   {
-    label: 'Real Time Card Tracking',
-    image: expencecontrol1,
+    Icon:BankDetailsAIcon1,
+    label: 'Enter the bank details',
+    image: BankDetailsImg1,
   },
   {
-    label: 'Spend Limits for Every Employee',
-    image: expencecontrol2,
+     Icon:BankDetailsAIcon2,
+    label: 'Upload your excel file with a simple drag-and-drop',
+    image: BankDetailsImg2,
   },
   {
-    label: 'Instant Notifications',
-    image: expencecontrol3,
+     Icon:BankDetailsNonIcon3,
+    label: 'Initiate payouts instantly',
+    image: BankDetailsImg3,
   },
-  {
-    label: 'Export Transactions Easily',
-    image: expencecontrol4,
-  },
-  {
-    label: 'Advanced Fraud Detection',
-    image: expencecontrol5,
-  },
-  {
-    label: 'Track Receipts Effortlessly',
-    image: expencecontrol6,
-  },
+  
 ];
 function BankDetails() {
         const imageRefs = useRef([]);
@@ -58,10 +54,10 @@ function BankDetails() {
        const [currentSlide, setCurrentSlide] = useState(0);
     
       // Scroll to image when label is clicked
-      const handleLabelClick = (index) => {
-        imageRefs.current[index]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        setActiveIndex(index);
-      };
+      // const handleLabelClick = (index) => {
+      //   imageRefs.current[index]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      //   setActiveIndex(index);
+      // };
     
       // Observe which image is in view
       useEffect(() => {
@@ -102,50 +98,53 @@ function BankDetails() {
           onSwipedRight: handlePrev,
         });
   return (
-        <section className="max-w-screen-lg lg:mx-auto mt-[80px] lg:mt-[120px]">
-          <h3 className="text-white max-[375px]:text-[24px] text-[28px] lg:text-[32px] text-center lg:text-left font-semibold mb-[20px] lg:mb-[24px] mx-4 lg:mx-0">
-          Make Bulk{' '}
-            <span className="bg-gradient-to-r from-[#EDEDED] to-[#9573DE] bg-clip-text text-transparent">
-              Transfers in
-            </span>{' '}
-           Three Easy Steps
+        <section className="max-w-screen-lg lg:mx-auto lg:px-[40px] mt-[80px] lg:mt-[120px]">
+          <h3 className="BankDetailsHeaderGradient max-[375px]:text-[24px] text-[28px] lg:text-[32px] text-center lg:text-left font-semibold mb-[20px] lg:mb-[24px] px-[30px] lg:px-0">
+        Make Bulk Transfers in Three Easy Steps
           </h3>
-    <p className='text-[#959595] max-[375px]:text-[13px] text-[14px] text-center lg:text-left lg:text-[20px] font-normal lg:w-[57%] mx-4 lg:mx-0'>Efficiently manage business payouts with instant, automated payments to vendors or employees directly from your connected bank account.</p>
-          <div className="hidden lg:flex gap-6 mt-[40px]">
+    <p className='text-[#959595] max-[375px]:text-[13px] text-[14px] text-center lg:text-left lg:text-[20px] font-normal lg:w-[590px] mx-4 lg:mx-0'>Efficiently manage business payouts with instant, automated payments to vendors or employees directly from your connected bank account.</p>
+          <div className="hidden lg:flex gap-6  mt-[40px]">
             {/* Label Section */}
-            <div className="w-full md:w-1/2 sticky top-0 space-y-4">
+            <div className="w-full md:w-1/2 sticky top-0 space-y-[25px]">
             {contentData.map((item, index) => (
-  <label
-    key={index}
-    onClick={() => handleLabelClick(index)}
-    className={`block p-[2px] cursor-pointer border-l-[2.34px] text-[20px] font-normal ${
-      activeIndex === index ? ' border-[#FFF] text-[#FFF]' : 'border-[#ACACAC] text-[#959595]'
-    }`}
-  >
-    <div className="flex items-center px-4 py-4 rounded-md">
-      <span>{item.label}</span>
-    </div>
-  </label>
+  // <label
+  //   key={index}
+  //   onClick={() => handleLabelClick(index)}
+  //   className={`block p-[2px] cursor-pointer border-l-[2.34px] text-[20px] font-normal ${
+  //     activeIndex === index ? ' border-[#FFF] text-[#FFF]' : 'border-[#ACACAC] text-[#959595]'
+  //   }`}
+  // >
+  //   <div className="flex items-center px-4 py-4 rounded-md">
+  //     <span>{item.label}</span>
+  //   </div>
+  // </label>
+  <div  key={index} className='flex items-center gap-[25px]'>
+    <img src={item.Icon}/>
+<div className={`border-l-[2.34px] h-[61px] ${ activeIndex === index ? ' border-[#FFF] ' : 'border-[#ACACAC] '} `}></div>
+<p className={`w-[368px] text-[20px] font-normal ${activeIndex===index ? 'text-[#FFF]' : 'text-[#959595]'}`}>{item.label}</p>
+  </div>
 ))}
             </div>
     
             {/* Image Section - One at a time */}
-            <div
+           <div className='w-full md:w-1/2 flex justify-end'>
+             <div
               ref={scrollContainerRef}
-              className="w-full md:w-1/2 h-[500px] overflow-y-scroll scroll-smooth snap-y snap-mandatory no-scrollbar"
+              className=" h-[255px] overflow-y-scroll scroll-smooth snap-y space-y-[15px] snap-mandatory no-scrollbar"
             >
         {contentData.map((item, index) => (
   <div
     key={index}
     data-index={index}
     ref={(el) => (imageRefs.current[index] = el)}
-    className="h-[500px] flex justify-center items-center snap-start"
+    className="h-[255px] w-[418px] border-[0.3px] border-[#646464] rounded-[20px] bg-[#080219] flex justify-center items-end snap-start"
   >
-    <img src={item.image} alt={`Image ${index}`} className="max-w-full max-h-[400px]" />
+    <img src={item.image} alt={`Image ${index}`} className="h-[225px] w-[339px]" />
   </div>
 ))}
 
             </div>
+           </div>
           </div>
 
            <div className="lg:hidden flex flex-col items-center mt-[24px]">
@@ -161,18 +160,22 @@ function BankDetails() {
       {contentData.map((slide, index) => (
         <div
           key={index}
-          className="flex-none w-[calc(100%-2rem)] h-auto flex flex-col items-center p-4  border-[0.402px] border-[#4E4E4E] rounded-[10px] mx-4"
+          className="flex-none flex justify-between flex-col pt-[25px] px-[20px] pb-[15px] w-[calc(100%-3.4rem)] h-[286px] fle border-[0.402px] border-[#4E4E4E] rounded-[10px] mx-[27px] overflow-hidden relative"
         >
-          <div className="w-full flex justify-center">
-            <p className="text-[#FFFFFF] text-[18px] font-medium max-[375px]:text-[16px]">
+          <div className='BankDetailsImageGradient'></div>
+          <div className="flex gap-[21.5px] items-center">
+            <img src={slide.Icon}/>
+            <p className="text-[#FFFFFF] max-[350px]:text-[15px] max-[375px]:text-[16px] text-[18px] font-medium ">
               {slide.label}
             </p>
           </div>
     
 
           {/* Image */}
-          <div className="w-full flex justify-center items-center  mt-[20px]">
-            <img src={slide.image} alt={`Slide ${index + 1}`} className='' />
+          <div className="w-full flex justify-center items-center">
+          <div className='max-[360px]:px-[18px] border-[0.209px] border-[#646464] rounded-[13.937px] w-[292px] h-[177px] bg-[#080219] flex justify-center items-end'>
+              <img src={slide.image} alt={`Slide ${index + 1}`} className='max-[360px]:w-[100%] w-[236.23px] h-[156.8px]' />
+          </div>
           </div>
         </div>
       ))}
@@ -183,15 +186,15 @@ function BankDetails() {
   <div className="flex justify-center gap-5 mt-4">
     <button
       onClick={handlePrev}
-      className="z-20 text-white bg-gray-700 rounded-full w-[40px] h-[40px] hover:bg-gray-800 flex justify-center items-center"
+      className={`  rounded-full w-[22px] h-[22px] flex justify-center items-center border-[1.5px] border-[#6E6E6E] text-[#6E6E6E] hover:border-[#FFF] hover:text-[#FFF]`}
     >
-      &lt;
+    <FontAwesomeIcon icon={faAngleLeft}  />
     </button>
     <button
       onClick={handleNext}
-      className="z-20 text-white bg-gray-700 rounded-full w-[40px] h-[40px] hover:bg-gray-800 flex justify-center items-center"
+      className={`  rounded-full w-[22px] h-[22px]  flex justify-center items-center border-[1.5px] border-[#6E6E6E] text-[#6E6E6E] hover:border-[#FFF] hover:text-[#FFF]`}
     >
-      &gt;
+      <FontAwesomeIcon icon={faAngleRight}  />
     </button>
   </div>
 </div>

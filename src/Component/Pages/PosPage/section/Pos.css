@@ -79,6 +79,15 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+.HerosectionGradient{
+   position: absolute;
+  inset:50% 85% 1% 0%;
+  z-index: 1;
+  border-radius: 382px;
+background: linear-gradient(180deg, #A489FF 0%, #343434 100%);
+filter: blur(125px);
+
+}
 .swiper-slide-image {
   z-index: 1;
   position: relative;

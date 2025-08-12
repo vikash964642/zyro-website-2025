@@ -192,7 +192,7 @@ function BusinessCard() {
     <div className='BusinessCardGradient'></div>
   </div>
 
-  <h2 className='text-[34px] font-semibold text-center text-[#FFF] businessCardheaderColor1 px-[180px]'>
+  <h2 className='md:text-[30px] lg:text-[34px] font-semibold text-center text-[#FFF] businessCardheaderColor1 md:px-[115px] lg:px-[180px]'>
     Your Business Deserves Faster and Smarter Payout
   </h2>
 
