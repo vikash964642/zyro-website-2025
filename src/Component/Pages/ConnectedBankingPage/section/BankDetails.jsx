@@ -4,9 +4,13 @@
     import BankDetailsImg1 from '../../../../../public/image/ConnectedBanking/BankDetailsImg1.webp';
       import BankDetailsImg2 from '../../../../../public/image/ConnectedBanking/BankDetailsImg2.webp';
         import BankDetailsImg3 from '../../../../../public/image/ConnectedBanking/BankDetailsImg3.webp';
-  import BankDetailsAIcon1 from '../../../../../public/assets/icons/BankDetailsAIcon1.svg'
-  import BankDetailsAIcon2 from '../../../../../public/assets/icons/BankDetailsAIcon2.svg'
-  import BankDetailsNonIcon3 from '../../../../../public/assets/icons/BankDetailsNonIcon3.svg'
+import BankDetailIconActive1 from '../../../../../public/image/ConnectedBanking/BankDetailIconActive1.svg';
+ import BankDetailIconNonActive1 from '../../../../../public/image/ConnectedBanking/BankDetailIconNonActive1.svg';  
+ import BankDetailIconActive2 from '../../../../../public/image/ConnectedBanking/BankDetailIconActive2.svg';
+ import BankDetailIconNonActive2 from '../../../../../public/image/ConnectedBanking/BankDetailIconNonActive2.svg'; 
+ import BankDetailIconActive3 from '../../../../../public/image/ConnectedBanking/BankDetailIconActive3.svg';
+ import BankDetailIconNonActive3 from '../../../../../public/image/ConnectedBanking/BankDetailIconNonActive3.svg'; 
+  
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
@@ -31,17 +35,20 @@ import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
     // ];
     const contentData = [
   {
-    Icon:BankDetailsAIcon1,
+    IconActive:BankDetailIconActive1,
+    IconNonActive:BankDetailIconNonActive1,
     label: 'Enter the bank details',
     image: BankDetailsImg1,
   },
   {
-     Icon:BankDetailsAIcon2,
+     IconActive:BankDetailIconActive2,
+    IconNonActive:BankDetailIconNonActive2,
     label: 'Upload your excel file with a simple drag-and-drop',
     image: BankDetailsImg2,
   },
   {
-     Icon:BankDetailsNonIcon3,
+ IconActive:BankDetailIconActive3,
+    IconNonActive:BankDetailIconNonActive3,
     label: 'Initiate payouts instantly',
     image: BankDetailsImg3,
   },
@@ -98,7 +105,7 @@ function BankDetails() {
           onSwipedRight: handlePrev,
         });
   return (
-        <section className="max-w-screen-lg lg:mx-auto lg:px-[40px] mt-[80px] lg:mt-[120px]">
+        <section className="max-w-screen-lg lg:mx-auto lg:px-[40px] mt-[120px] lg:mt-[200px]">
           <h3 className="BankDetailsHeaderGradient max-[375px]:text-[24px] text-[28px] lg:text-[32px] text-center lg:text-left font-semibold mb-[20px] lg:mb-[24px] px-[30px] lg:px-0">
         Make Bulk Transfers in Three Easy Steps
           </h3>
@@ -118,8 +125,8 @@ function BankDetails() {
   //     <span>{item.label}</span>
   //   </div>
   // </label>
-  <div  key={index} className='flex items-center gap-[25px]'>
-    <img src={item.Icon}/>
+  <div  key={index} className='flex items-center gap-[30px]'>
+    <img  src={activeIndex === index ? item.IconActive : item.IconNonActive}/>
 <div className={`border-l-[2.34px] h-[61px] ${ activeIndex === index ? ' border-[#FFF] ' : 'border-[#ACACAC] '} `}></div>
 <p className={`w-[368px] text-[20px] font-normal ${activeIndex===index ? 'text-[#FFF]' : 'text-[#959595]'}`}>{item.label}</p>
   </div>
@@ -137,7 +144,7 @@ function BankDetails() {
     key={index}
     data-index={index}
     ref={(el) => (imageRefs.current[index] = el)}
-    className="h-[255px] w-[418px] border-[0.3px] border-[#646464] rounded-[20px] bg-[#080219] flex justify-center items-end snap-start"
+    className="h-[255px] w-[418px] border-[0.3px] ConnectedSliderBorder rounded-[20px] bg-[#080219] flex justify-center items-end snap-start"
   >
     <img src={item.image} alt={`Image ${index}`} className="h-[225px] w-[339px]" />
   </div>

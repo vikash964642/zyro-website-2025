@@ -76,7 +76,7 @@
 
 // export default BusinessCard
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import './PayOut.css';
 import BusinessCardImg1 from '../../../../../public/image/PayOut/BusinessCardImg1.png';
@@ -146,7 +146,7 @@ function BusinessCard() {
   }, []);
 
   return (
-    <section className=" max-w-screen-lg lg:mx-auto mt-[100px] px-[20px] xl:px-[0px]">
+    <section className=" max-w-screen-lg lg:mx-auto mt-[100px] lg:mt-[150px] px-[20px] xl:px-[0px]">
     {/* <div className='hidden sm:block'>
            <div className='relative'>
            <div className='BusinessCardGradient'></div>
@@ -228,7 +228,7 @@ function BusinessCard() {
             {/* ml-[20px] */}
             {/* pr-[30px] down */}
           <div className={`rounded-xl overflow-hidden ${plClass} ${prClass}  transition duration-300 hover:shadow-xl h-full`}>
-            <div className="bg-[#080219] w-[47px] h-[47px] rounded-[8px] border-[0.341px] border-[#A901A3] flex justify-center items-center">
+            <div className="bg-[#080219] w-[47px] h-[47px] rounded-[8px]  BusinessCardBorder flex justify-center items-center">
               <img src={card.img} alt={card.heading} className='max-w-full max-h-full object-contain' />
             </div>
             <h3 className="text-[18px] lg:text-[22px]  text-[#FFF] font-medium lg:font-semibold mt-[9px]">{card.heading}</h3>

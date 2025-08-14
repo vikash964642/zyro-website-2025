@@ -5,8 +5,9 @@ import digitalizebusiness from "/image/ExpenseManagement/digitalizebusiness.webp
 function Digitize() {
   return (
     <section className="">
-      <div className="max-w-full lg:max-w-screen-lg lg:mx-auto mt-[100px]">
-      <div className="bg-[#0E0624] border relative border-white rounded-[20px] pl-[25px] pt-[93px]  flex flex-col lg:flex-row ">
+      <div className="max-w-full lg:max-w-screen-lg mx-[12px] lg:mx-auto mt-[100px]">
+      <div className="bg-[#0E0624] overflow-hidden relative rounded-[20px]  pt-[93px]  flex flex-col lg:flex-row gap-[140px] lg:gap-0">
+            <div className='DigitizeGradient1'></div>
         <div className="relative mt-[55px] lg:mt-[0px]  flex flex-col justify-start items-center lg:items-start">
          
             <h2 className="max-[360px]:text-[22px] text-[26px] lg:text-[48px] font-semibold text-center lg:text-left text-white90">
@@ -27,7 +28,7 @@ function Digitize() {
           <div className="absolute DizitizebusinessGradient-left "></div>
         </div>
         <div className="flex items-end justify-center lg:justify-start">
-          <img src={digitalizebusiness}  className="h-[373px] min-w-full lg:min-w-[494px]"/>
+          <img src={digitalizebusiness}  className="h-[321px] lg:h-[373px]  lg:min-w-[494px]"/>
 
           <div className="absolute w-[200px] h-[250px] lg:w-[300px] lg:h-[300px] DizitizebusinessGradient-right"></div>
         </div>

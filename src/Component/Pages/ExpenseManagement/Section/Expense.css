@@ -17,6 +17,15 @@
   inset: -19% 0% 31% 78%;
 }
 
+.DigitizeGradient1{
+  position: absolute;
+  inset:50% 73% 1% 0%;
+  /* z-index: -1; */
+border-radius: 382px;
+background: linear-gradient(180deg, #A489FF 0%, #343434 100%);
+filter: blur(120px);
+}
+
 .role-Gradiant-head {
   background: linear-gradient(90deg, #ededed 0%, #9573de 50%, #f8f8f8 64.42%);
   background-clip: text;
@@ -224,4 +233,9 @@ background-clip: text;
   .features-gradient{
     inset: 28% 22% 16% 23%;
   }
+  .DigitizeGradient1{
+   
+inset: 0% 0% 79% 50%;
 }
+  }
+
