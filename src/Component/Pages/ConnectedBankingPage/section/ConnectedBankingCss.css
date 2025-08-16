@@ -1,13 +1,13 @@
 
 .feature-scrollbar::-webkit-scrollbar {
-  width: 7px;
+  width: 9px;
 }
 .feature-scrollbar::-webkit-scrollbar-track {
   /* background: #413668; */
 }
 .feature-scrollbar::-webkit-scrollbar-thumb {
  background: #413668;
-  border-radius: 8px;
+  border-radius: 9px;
 }
 
 
@@ -48,6 +48,35 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+
+.gradient-border {
+  background: linear-gradient(#434343, #22154E) border-box;
+}
+/* #6F41D2 #A901A3 */
+/* .Connecte_gradient-border2 {
+  background: linear-gradient(#A901A3, #6F41D2) border-box;
+} */
+ .Connecte_gradient-border2 {
+  border: 0.3px solid transparent;
+  background:
+    linear-gradient(#080219, #080219) padding-box, /* inner background */
+    linear-gradient(rgba(169, 1, 163, 0.3), rgba(111, 65, 210, 0.4)) border-box;
+  border-radius: 20px;
+}
+.ConnectedSliderBorder {
+  border: 0.6px solid transparent;
+  background:
+    linear-gradient(#080219, #080219) padding-box, /* inner background */
+    linear-gradient(to bottom right, rgba(121, 121, 121, 0.5), rgba(111, 65, 210, 0.7)) border-box; /* gradient border reversed */
+
+}
+
+
+
+
+
+
+
 .faq-gradient{
   background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
 background-clip: text;

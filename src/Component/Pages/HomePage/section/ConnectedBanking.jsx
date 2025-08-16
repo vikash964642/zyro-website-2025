@@ -24,7 +24,8 @@ export default function ConnectedBanking() {
   }, [collaborators.length]);
 
   return (
-    <section  className="max-w-screen-lg mx-4 lg:mx-auto mt-[90px] lg:mt-[150px]">
+    <section  className="min-h-[90vh] flex justify-center items-center">
+      <div className="max-w-screen-lg mx-4 lg:mx-auto mt-[90px] lg:mt-0">
 <div className="py-10 relative">
   <div className="ConnectedBanking-gradient"></div>
  
@@ -55,7 +56,7 @@ export default function ConnectedBanking() {
           <img
             src={partnership}
             alt="partnership"
-            className="w-20 md:w-28 object-contain"
+            className="w-20 md:w-[76px] object-contain"
           />
 
           <div className="flex items-center justify-center overflow-hidden w-28 h-28 bg-white rounded-full">
@@ -67,6 +68,7 @@ export default function ConnectedBanking() {
           </div>
         </div>
      
+    </div>
     </div>
     </section>
     

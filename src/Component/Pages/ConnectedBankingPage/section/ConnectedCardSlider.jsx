@@ -152,7 +152,7 @@ export default function ConnectedCardSlider() {
  
 
   return (
-    <section className="max-w-screen-lg lg:mx-auto mt-[100px] px-[20px] xl:px-[0px]">
+    <section className="max-w-screen-lg lg:mx-auto mt-[100px] lg:mt-[200px] px-[20px] xl:px-[0px]">
       <h2 className="text-[28px] lg:text-[31.72px] font-semibold text-[#FFF] text-center lg:text-left">
         How Zyro{" "}
         <span className="text-[28px] lg:text-[32px] font-semibold connectedBankingCardGradient1">
@@ -172,7 +172,7 @@ export default function ConnectedCardSlider() {
             key={index}
             className=" w-full min-h-[420px] flex flex-col  transform transition-transform duration-300 ease-in-out hover:scale-[1.04]"
           >
-            <div className="bg-[#080219] h-[290px] p-3  rounded-t-[13.59px] rounded-b-[0px] border-[0.627px] border-[#797979]">
+            <div className="bg-[#080219] h-[290px] p-3  rounded-t-[13.59px] rounded-b-[0px]  ConnectedSliderBorder">
               <img src={item.image} className="h-[100%] w-[100%]" />
             </div>
             <div className="bg-white py-[13px] px-[15px] rounded-b-[13.59px] rounded-t-[0px] flex-1 flex flex-col justify-start">

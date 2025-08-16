@@ -51,7 +51,13 @@ top:30%;
 position:absolute;
 z-index:-1;
 }
+.BusinessCardBorder {
+  border: 0.34px solid transparent;
+  background:
+    linear-gradient(#080219, #080219) padding-box, /* inner background */
+    linear-gradient(to bottom right, rgba(121, 121, 121, 0.5), rgba(111, 65, 210, 0.7)) border-box; /* gradient border reversed */
 
+}
 .businessCardBorder1{
     background: var(--color-grey-12, #1C1D22);
 }
@@ -87,6 +93,13 @@ filter: blur(91px);
 
 }
 
+.borderFade {
+  border-color: transparent; /* so Tailwind's 0.4px thickness still applies */
+  background:
+    linear-gradient(#080219, #080219) padding-box, /* inner bg */
+    linear-gradient(to bottom, rgba(74,74,74,0.4), rgba(74,74,74,0.3)) border-box;
+
+}
 
 .heroSectionHeaderGradient{
    background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);

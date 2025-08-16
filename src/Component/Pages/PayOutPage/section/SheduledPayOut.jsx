@@ -1,8 +1,8 @@
-import React from 'react'
+
 import SheduledPayOutImg1 from '../../../../../public/image/PayOut/SheduledPayOutImg1.svg';
 function SheduledPayOut() {
   return (
-  <section className="max-w-screen-lg lg:mx-auto mt-[100px]">
+  <section className="max-w-screen-lg lg:mx-auto mt-[150px]">
     <h2 className='text-[24px] md:text-[30px] lg:text-[34px] text-[#FFF] font-semibold SheduledPayoutHeaderGradient text-center max-[360px]:px-[15px] px-[20px]'>Scheduled Payouts, On Time, Every Time</h2>
     <div className='flex justify-center pt-[12px]'>
         <p className='text-[14px] md:text-[15px] lg:text-[16px] text-[#A9A9A9] font-normal leading-[25px] max-[360px]:w-full w-[325px] md:w-[450px] lg:w-[550px] text-center'>Set future payments with scheduled payouts for efficient, timely, and hassle-free transfers</p>

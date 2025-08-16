@@ -106,9 +106,9 @@ import PosHeroSection2 from '../../../../../public/video/PosHeroSection2.mp4';
 import PosHeroSection3 from '../../../../../public/video/PosHeroSection3.mp4';
 
 const cardData = [
-  { video: PosHeroSection1, SubHeader: "SWIPE" },
+  { video: PosHeroSection3, SubHeader: "SWIPE" },
   { video: PosHeroSection2, SubHeader: "TAP" },
-  { video: PosHeroSection3, SubHeader: "INSERT" },
+  { video: PosHeroSection1, SubHeader: "INSERT" },
 ];
 
 function HeroSection() {
@@ -164,29 +164,31 @@ function HeroSection() {
     //     </div>
     //   </div>
     // </section>
-    <section className=" bg-[#0E0624] relative overflow-hidden">
-      <div className="HerosectionGradient"></div>
-<div className="max-w-screen-lg lg:mx-auto px-[20px] xl:px-0">
-    <div className="flex flex-col md:flex-row justify-between md:gap-[20px] md:h-[450px] pb-[60px] md:pb-0 lg:h-[500px] pt-[60px] md:pt-0">
+    <section className=" bg-[#0E0624] relative px-[15px] pb-[60px] md:pb-0 xl:px-0 overflow-hidden">
+      <div className="HerosectionGradient1"></div>
+
+    <div className="flex flex-col md:flex-row md:justify-between xl:justify-center xl:gap-[18%]    items-center md:min-h-[80vh]  pb-[60px] md:pb-0  pt-[50px] md:pt-0">
     
     {/* Left Side: Text vertically centered */}
-    <div className="md:w-1/2 h-full flex flex-col justify-center text-center lg:text-left">
-      <h2 className="text-[27.79px] md:text-[30px] lg:text-[34px] font-semibold HeroSectionHeaderGradient leading-tight">
+    <div className=" h-full flex flex-col justify-center text-center md:text-left">
+ 
+        <h2 className="max-[375px]:text-[26px] text-[27.79px] sm:text-[30px] lg:text-[34px] font-semibold HeroSectionHeaderGradient leading-tight max-[375px]:w-full w-[360px] sm:w-[400px] lg:w-[440px]">
         ZYRO POS - One device for all your payments needs
       </h2>
+
       <p className="text-[#9E9C9F] text-[17.1px] md:text-[20px] lg:text-[26px] font-normal pt-[32px] md:pt-[10px]">
         Experience fast, secure payments with
       </p>
       <span className="text-[32px] md:text-[35px] lg:text-[52px] font-semibold text-[#FFF] mt-[10.5px] md:mt-[30px]">
         {cardData[currentIndex].SubHeader}
       </span>
-     <div className="hidden md:flex justify-center lg:justify-start mt-[55px]">
+     <div className="hidden md:flex justify-center md:justify-start mt-[55px]">
          <button className=" md:w-[225px] md:h-[46px] bg-[#4F31B4] md:rounded-[24.77px] md:text-[18px] font-semibold text-[#FFF] ">Get your speaker</button>
      </div>
     </div>
 
     {/* Right Side: Video vertically centered */}
-    <div className="md:w-1/2 h-full flex justify-center items-center mt-[80px] md:mt-0">
+    <div className=" h-full flex justify-center items-center mt-[80px] md:mt-0 relative">
       <video
         key={currentIndex}
         ref={videoRef}
@@ -197,13 +199,14 @@ function HeroSection() {
         onEnded={handleVideoEnd}
         className="max-[425px]:w-[100%] w-[400px] h-[225px] md:w-[350px] md:h-[280px] lg:w-[390px] lg:h-[385px]  rounded-lg"
       />
+  
     </div>
- <div className="flex md:hidden justify-center lg:justify-start mt-[70px]">
+    <div className="HerosectionGradient2"></div>
+  </div>
+   <div className="flex md:hidden justify-center lg:justify-start">
          <button className="max-[400px]:w-[100%] w-[350px] h-[59.8px]  bg-[#4F31B4] rounded-[32.075px]  text-[23.52px] font-semibold text-[#FFF] ">Get your speaker</button>
      </div>
 
-  </div>
-</div>
 </section>
 
   );
