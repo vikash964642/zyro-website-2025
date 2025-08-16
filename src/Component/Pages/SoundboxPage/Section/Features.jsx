@@ -35,9 +35,9 @@ function Features() {
         
       <div className="mt-[131px] max-w-screen-xl mx-auto px-[19px] relative">
         
-        <div className="features-gradient"></div>
+        <div className="features-gradient-right"></div>
         <p className="bg-textgradiantMid text-transparent bg-clip-text text-[24px] lg:text-[38px] font-semibold leading-[40px] lg:leading-[56px] text-center px-[16px]">
-          Key Features of a Soundbox for Every Business
+          Key Features of ZYRO  Soundbox for Every Business
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
           {cards.map((card, index) => (

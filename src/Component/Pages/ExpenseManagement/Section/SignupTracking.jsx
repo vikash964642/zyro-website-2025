@@ -81,7 +81,7 @@ function SignupTracking() {
         {sliders.map((slider, index) => (
           <div
             key={index}
-            className={`w-[174px] h-[284px] border border-[#4F31B4] rounded-[16.52px] flex-shrink-0
+            className={`w-[175px] h-[284px] border border-[#4F31B4] rounded-[16.52px] flex-shrink-0
               ${index === 0 ? 'ml-4' : ''}`}
             style={{ scrollSnapAlign: 'start' }}
           >

@@ -25,10 +25,6 @@ function FAQ() {
       ques: "Is a POS machine safe to use for digital transactions?",
       ans: "Yes, POS machines are PCI DSS certified and use encrypted channels for secure payments.",
     },
-    // {
-    //   ques: "What is a POS limit? ",
-    //   ans: "A POS limit is the maximum amount a customer can spend using their card at physical stores in a single day, set by their issuing bank.",
-    // },
     {
       ques: "Can I print receipts using the POS machine? ",
       ans: "Yes, most POS devices come with a built-in thermal printer for instant receipt generation.",

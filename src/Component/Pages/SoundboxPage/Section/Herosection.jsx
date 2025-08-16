@@ -1,5 +1,5 @@
 // import React from 'react'
-import languageSoundbox from '/image/HomePage/language-soundbox.png'
+import languageSoundbox from '/image/soundbox/soundboxnew.webp'
 
 
 function Herosection() {

@@ -1,4 +1,4 @@
-.features-gradient {
+.features-gradient-right {
   border-radius: 175.5px;
   opacity: 1;
   background: linear-gradient(
@@ -8,7 +8,7 @@
   );
   filter: blur(103px);
   position: absolute;
-  inset: 32% -8% 9% 67%;
+  inset: 37% -7% 22% 68%;
   z-index: -1;
 }
 .features-gradient-left {
@@ -21,7 +21,7 @@
   );
   filter: blur(103px);
   position: absolute;
-  inset: 32% 68% 9% -9%;
+  inset: 32% 54% 9% 8%;
   z-index: -1;
 }
 
@@ -69,11 +69,19 @@
     rgba(23, 9, 49, 0.8) 0%,
     rgba(98, 83, 126, 0.6) 100%
   );
-  filter: blur(400px);
+  filter: blur(100px);
   position: absolute;
-  inset: 44% 0% 1% 77%;
-  z-index: 1;
+  inset: 35% 2% 3% 68%;
 }
+.cardbg {
+  background: linear-gradient(
+    90deg,
+    rgba(121, 121, 121, 1) 0%,
+    rgba(111, 65, 210, 1) 100%
+  );
+}
+
+
 .form-input-gradient {
   border-radius: 175.5px;
   opacity: 1;
@@ -82,10 +90,9 @@
     rgba(164, 137, 255, 0.8) 0%,
     rgba(52, 52, 52, 0.6) 100%
   );
-  filter: blur(400px);
+  filter: blur(100px);
   position: absolute;
-  inset: 44% 70% 1% 0%;
-  z-index: 1;
+  inset: 61% 70% 1% 0%;
 }
 
 .soundboxFeatures-gradient {
@@ -120,13 +127,13 @@ background: linear-gradient(180deg, #1A1235 0%, #0B051E 100%);
 }
 
 @media (max-width:1190px) {
-  .features-gradient{
+  .features-gradient-right{
     inset: 4% 0% 74% 8%;
   }
   
 }
 @media (max-width: 999px) {
-  .features-gradient {
+  .features-gradient-rihght {
     border-radius: 175.5px;
     opacity: 1;
     background: linear-gradient(
@@ -146,15 +153,14 @@ background: linear-gradient(180deg, #1A1235 0%, #0B051E 100%);
 
   .form-soundbox-gradient {
     border-radius: 175.5px;
-    opacity: 1;
+    opacity: 0.6;
     background: linear-gradient(
       97deg,
       rgba(23, 9, 49, 0.8) 0%,
       rgba(98, 83, 126, 0.6) 100%
     );
-    filter: blur(400px);
+    filter: blur(100px);
     position: absolute;
     inset: 67% 6% 1% 6%;
-    z-index: 1;
   }
 }

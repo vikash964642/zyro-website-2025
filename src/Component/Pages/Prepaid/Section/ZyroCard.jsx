@@ -13,12 +13,11 @@ function ZyroCard() {
       <div className='zyroCardBox mt-[50px] lg:mt-[20px] rounded-[23.163px] max-[360px]:px-[20px] px-[30px] py-[45px] lg:p-[45px] md:flex justify-between items-center'>
         <div>
             <div>
-             <div className='flex justify-center items-center gradiantBorder h-[43px] w-[43px] rounded-[9.05px]'>
-                   <div className=' flex justify-center items-center h-[calc(100%-2px)] w-[calc(100%-2px)]  rounded-[9.05px] bg-[#080219]'>
-                <img src={ZyroCardImg1} className=''/>
-                 </div>
-          </div>
-                <h3 className='text-[20px] lg:text-[22px] font-semibold text-[#FFF] pt-[8px]'>Instant Alerts</h3>
+               <div className='flex justify-center items-center h-[43px] w-[43px] border-[0.311px] border-[#A901A3] rounded-[9.05px] bg-[#080219]'>
+                 <img src={ZyroCardImg1} className='h-[20.673px] w-[26.975px]'/>
+               </div>
+                <h3 className='text-[20px] lg:text-[22px] font-semibold text-[#FFF] pt-[8px]'>Live Alerts</h3>
+
                 <p className='text-[14px] lg:text-[16px] font-normal text-[#CACACA] pt-[5px]'>Get notified for every transaction</p>
             </div>
                <div className='pt-[34px]'>

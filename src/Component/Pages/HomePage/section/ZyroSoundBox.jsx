@@ -1,5 +1,5 @@
 // import React from 'react'
-import languageSoundbox from '../../../../../public/image/HomePage/language-soundbox.svg'
+import languageSoundbox from '../../../../../public/image/HomePage/languageSoundbox.webp'
 import KnowMoreRightIcon from '../../../../../public/image/HomePage/Icon/KnowMoreRightIcon.svg'
 function ZyroSoundBox() {
   return (

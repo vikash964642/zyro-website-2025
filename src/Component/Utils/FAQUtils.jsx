@@ -14,7 +14,7 @@ function FAQUtils({ heading, subheading, faq }) {
   };
 
   return (
-    <section>
+    <section >
       <div className="max-w-screen-lg lg:mx-auto mt-[120px] lg:mt-[150px] px-4 xl:px-0 relative">
         <div className="flex justify-center">
           <div className="max-[360px]:w-[275px] max-[400px]:w-[300px] w-[350px] md:w-[400px] lg:w-[443px] faq-utils-bgGradient"></div>

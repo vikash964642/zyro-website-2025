@@ -13,6 +13,8 @@ import Pos from "./Component/Pages/PosPage/Pos";
 import AboutUs from "./Component/Pages/AboutUs/AboutUs";
 
 import ContactUs from "./Component/Pages/ContactUs/ContactUs";
+import Terms from "./Component/Pages/Terms";
+import Privacy from "./Component/Pages/Privacy";
 
 function App() {
   // usePreventZoom();
@@ -31,6 +33,8 @@ function App() {
                 <Route path="/posPage" element={<Pos/>}  />
                 <Route path="/About-us" element={<AboutUs/>}  />
                 <Route path="/ContactUs" element={<ContactUs/>}  />
+                <Route path="/terms-and-conditions" element={<Terms/>}  />
+                <Route path="/privacy-policy" element={<Privacy/>}  />
 
          
         </Routes>

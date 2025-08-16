@@ -53,7 +53,7 @@ function Corevalue() {
           {cardData.slice(0, 5).map((card, index) => (
             <div
               key={index}
-              className="lg:h-[305px] lg:w-[318px] w-[287px] h-[276px] bg-[#0B051E] border rounded-[25px] flex flex-col items-center text-center p-6"
+              className="lg:h-[305px] lg:w-[318px] w-[287px] h-[276px] bg-[#0B051E] border-borderColor border-[0.6px] rounded-[25px] flex flex-col items-center text-center p-6"
             >
               <img
                 src={card.icon}
@@ -104,7 +104,7 @@ function Corevalue() {
     {cardData.map((card, index) => (
       <div
         key={index}
-        className="flex-shrink-0 bg-[#0B051E] border rounded-[25px] flex flex-col items-center text-center p-6"
+        className="flex-shrink-0 bg-[#0B051E] border-borderColor border-[0.6px] rounded-[25px] flex flex-col items-center text-center p-6"
         style={{ width: "287px", height: "276px" }}
       >
         <img
