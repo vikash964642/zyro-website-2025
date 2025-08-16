@@ -19,7 +19,7 @@ function MissionVision() {
                 <p className='text-[15.5px] font-normal leading-[27px] text-[#A9A9A9]'>We are envisioning a future where innovative solutions bridge the financial divide by providing smooth, secure, and inclusive financial experiences for everyone, everywhere. By removing traditional barriers, we are redefining access and empowering businesses to grow in the digital economy.</p>
             </div>
         </div>
-        <div className='flex justify-center items-center  lg:w-[45%] pt-[105px] lg:pt-0 px-[10px]'>
+        <div className='flex justify-center items-center  lg:w-[45%] pt-[105px] lg:pt-0 px-[20px]'>
             <img src={missionImage} alt="" className='lg:h-[286px] lg:w-[415.5px]'/>
         </div>
         </div>

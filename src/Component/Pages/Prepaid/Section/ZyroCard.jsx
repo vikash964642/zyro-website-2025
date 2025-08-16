@@ -16,7 +16,7 @@ function ZyroCard() {
                <div className='flex justify-center items-center h-[43px] w-[43px] border-[0.311px] border-[#A901A3] rounded-[9.05px] bg-[#080219]'>
                  <img src={ZyroCardImg1} className='h-[20.673px] w-[26.975px]'/>
                </div>
-                <h3 className='text-[20px] lg:text-[22px] font-semibold text-[#FFF] pt-[8px]'>Instant Alerts</h3>
+                <h3 className='text-[20px] lg:text-[22px] font-semibold text-[#FFF] pt-[8px]'>Live Alerts</h3>
                 <p className='text-[14px] lg:text-[16px] font-normal text-[#CACACA] pt-[5px]'>Get notified for every transaction</p>
             </div>
                <div className='pt-[34px]'>

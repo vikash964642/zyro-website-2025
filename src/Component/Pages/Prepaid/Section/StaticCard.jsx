@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import staticCardImg1 from '../../../../../public/image/Prepaid/staticCardImg1.webp'
 import staticCardImg2 from '../../../../../public/image/Prepaid/staticCardImg2.webp'
 import staticCardImg3 from '../../../../../public/image/Prepaid/staticCardImg3.webp'
@@ -7,7 +7,7 @@ const cardData = [
     image:staticCardImg1,
     heading:"Instant Top-Up",
     heading1: "Instant",
-    heading2: "Alerts",
+    heading2: "Top-Up",
     paragraph: "Add money via UPI directly from your ZyroPay app.",
   },
   {

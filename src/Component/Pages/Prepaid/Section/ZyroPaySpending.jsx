@@ -1,10 +1,10 @@
-import React from 'react'
+// import React from 'react'
 import Image from '../../../../../public/image/Prepaid/PrepaidCardDesignDemo.svg';
 function ZyroPaySpending() {
   return (
   <section className="max-w-screen-lg mx-auto px-[12px] xl:px-0 relative lg:mt-[80px] mt-[110px]">
     <div className='  flex justify-center'>
- <h2 className='max-[360px]:text-[22px] text-[24px] md:text-[30px] lg:text-[34px] lg:leading-[44px] w-[607px] font-semibold ZyroPaySpendingHeaderGradient1 text-center'>Stay Goodbye to Overspending & hello to smarter spending</h2>
+ <h2 className='max-[360px]:text-[22px] text-[24px] md:text-[30px] lg:text-[34px] lg:leading-[44px] w-[607px] font-semibold ZyroPaySpendingHeaderGradient1 text-center'>Say Goodbye to Overspending & hello to smarter spending</h2>
     </div>
     <p className='max-[360px]:text-[13px] text-[14px] lg:text-[16px] font-normal text-[#A9A9A9] text-center pt-[10px]'>Full Control in your hands</p>
     <div className='h-auto md-[400px] lg:h-[465px] w-[100%] ZyroPaySpendingBoxGradient border-[0.688px] border-[#434343] rounded-[24px] md:rounded-[30px] lg:rounded-[50px] mt-[34px]  lg:mt-[42px]'>

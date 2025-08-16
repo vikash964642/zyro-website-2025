@@ -1,5 +1,5 @@
 import soundbox from "/image/soundbox/soundbox.webp";
-import newSoundbox from "/image/soundbox/newSoundbox.webp";
+import newSoundbox from "/image/soundbox/Newsoundbox.webp";
 function SoundboxFeatures() {
   return (
     <section className="max-w-screen-lg mx-auto relative mt-[161px]">
@@ -16,19 +16,21 @@ function SoundboxFeatures() {
               Loud and clear payment sounds, even in the busiest places.
             </p>
           </div>
-          <div className="lg:bg-[#080219] z-10 lg:rounded-[30px] border-[0.627px] border-borderColor p-[20px] lg:mr-[70px] w-[370px] h-[370px] flex justify-center items-center">
-            <img src={soundbox} alt="" height={"326px"} width={"241.5px"} />
+          <div className="cardbg w-[370px] h-[370px] relative rounded-[30px] flex justify-center items-center mr-[70px]">
+            <div className="lg:bg-[#080219] z-10 lg:rounded-[30px]  p-[20px]   absolute  h-[calc(100%-2px)] w-[calc(100%-2px)]">
+              <img src={soundbox} alt="" />
+            </div>
           </div>
         </div>
       
       </div>
-        <div className=" flex z-10  lg:absolute lg:top-[300px] w-full mt-[70px] lg:mt-0">
-        <div className="w-[50%]">
-            <div className="lg:bg-[#080219] lg:rounded-[25.5px] border-[0.632px] border-borderColor p-[20px] lg:ml-[113px] w-[370px] lg:w-[314px] h-[408px] lg:h-[347px] flex justify-center items-center">
-            <img src={newSoundbox} alt="" height={"222px"} width={"248.5px"} />
+        <div className=" flex justify-around z-10  lg:absolute lg:top-[300px] w-full mt-[70px] lg:mt-0">
+        <div className=" cardbg rounded-[25.5px] w-[314px] h-[347px] flex justify-center items-center ">
+            <div className="bg-[#080219] rounded-[25.5px]  p-[20px]  h-[calc(100%-2px)] w-[calc(100%-2px)]">
+            <img src={newSoundbox} alt=""  />
           </div>
         </div>
-          <div className="w-[50%] flex flex-col justify-end pl-[70px]">
+          <div className="w-[31%] flex flex-col justify-end ">
             <p className="text-[#FFFFFF]  text-[34.2px] leading-[41.32px] font-semibold w-[216px]">
               Better Visible QR Code
             </p>
@@ -52,9 +54,9 @@ function SoundboxFeatures() {
 </div>
 </div>
 
-<div className="flex justify-center mx-[20px]">
+<div className="cardbg flex justify-center mx-[20px]">
   <div className="absolute top-[235px]  bg-[#080219] h-[370px] max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-borderColor flex justify-center items-center">
-<img src={soundbox} alt=""className="h-[325px] w-[245px]"/>
+<img src={soundbox} alt="" className="p-[40px]" />
 </div>
 </div>
 </div>
@@ -72,7 +74,7 @@ function SoundboxFeatures() {
 </div>
 <div className="flex justify-center mx-[20px]">
   <div className="absolute top-[235px]  bg-[#080219] h-[370px] max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-borderColor flex justify-center items-center">
-<img src={newSoundbox} alt=""className="max-[360px]:h-[270px] max-[360px]:w-[280px] h-[265px] w-[290px]"/>
+<img src={newSoundbox} alt="" className="pr-[40px]"/>
 </div>
 </div>
 </div>

@@ -5,11 +5,11 @@ function FeaturesComparison() {
         Zyro Soundbox vs Others
       </p>
 
-      <div className="h-[529px] rounded-[27px] overflow-x-auto mt-6 flex items-center justify-center bg-featurediv  bg-clip-text text-transparent  hover:shadow-md transition duration-300 text-center" style={{
+      <div className="lg:h-[529px] p-[1px] h-auto rounded-[27px] overflow-x-auto mt-6 flex items-center justify-center bg-featurediv  bg-clip-text text-transparent  hover:shadow-md transition duration-300 text-center" style={{
                 background:
                   " linear-gradient(160deg,rgba(79, 49, 180, 1) 6%, rgba(34, 21, 78, 1) 100%)",
               }}>
-        <div className="lg:h-[99.7%] h-[99.6%]  w-[99.7%] rounded-[27px] bg-[#080411] lg:px-[52px] relative">
+        <div className="lg:h-[99.7%] h-[calc(100%-2px)]  lg:w-[99.7%] w-full rounded-[27px] bg-[#080411] lg:px-[52px] relative">
             <div className="feature-comparison-gradient hidden lg:block"></div>
             <div className="feature-comparison-gradient1"></div>
         <table className="min-w-full rounded-[27px] text-white  border-collapse ">
