@@ -8,19 +8,19 @@ function FeaturesConnectedBanking() {
       "Easily link all your current bank accounts and manage them conveniently from a single dashboard with complete control over your finances.",
   },
     {
-    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon4.svg",
+    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon2.svg",
     heading: "Real-Time Syncing",
     paragraph:
       "Get real-time updated on balances, transactions, and activity across all your linked business accounts for accurate tracking and control.",
   },
     {
-    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon2.svg",
+    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon3.svg",
     heading: "API Integrations",
     paragraph:
       "Seamlessly connect our tools with your existing systems, ensure smooth operations, and access clear & concise documentation for efficient implementation.",
   },
     {
-    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon3.svg",
+    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon4.svg",
     heading: "Bulk Payments & Payouts",
     paragraph:
       "Easily make bulk payments to vendors or employees by uploading an excel file in just a single click for secure processing.",
@@ -32,7 +32,7 @@ function FeaturesConnectedBanking() {
       "Choose from IMPS, NEFT, and RTGS to make your payments smooth, secure and timely-ensuring reliable transfers whenever you need them.",
   },
     {
-    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon1.svg",
+    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon6.svg",
     heading: "Cash Flow Management",
     paragraph:
       "Get complete cash flow visibility by linking multiple accounts and tracking all outgoing transactions from a single dashboard.",
@@ -50,7 +50,8 @@ function FeaturesConnectedBanking() {
       </div>
       <div className="h-[500px] lg:h-[400px] pr-4 overflow-auto feature-scrollbar ml-4 mt-[50px]">
          {features.map((feature,index) => (
-          <div key={index} className="border-[0.688px] border-[#434343] rounded-[16.516px] px-[16px] lg:px-[20px] py-[18px]  flex gap-[18px] mt-[25px] first:mt-0 bg-[#0B051E]">
+         <div key={index} className='mt-[25px] gradient-border rounded-[16.516px] first:mt-0 lg:h-[133px] lg:w-full flex justify-center items-center'>
+           <div  className=" rounded-[16.516px] w-[calc(100%-2px)] h-[calc(100%-2px)] px-[16px] lg:px-[20px] py-[18px]  flex gap-[18px] mt-[25px] first:mt-0 bg-[#0B051E]">
            <div className='h-[50px] w-[50px] bg-[#4F31B4] rounded-full flex  justify-center items-center'>
              <img src={feature.image} ></img>
            </div>
@@ -59,6 +60,7 @@ function FeaturesConnectedBanking() {
                   <p className="max-[375px]:text-[12.5px] text-[#9E9C9F] text-[14px] lg:text-[16px] font-normal pt-[12px]">{feature.paragraph}</p>
                 </div>
             </div>
+         </div>
          ))}
       </div>
     </section>

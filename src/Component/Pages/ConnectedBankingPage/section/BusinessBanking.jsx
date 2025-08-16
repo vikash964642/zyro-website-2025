@@ -3,7 +3,7 @@ import arrowRight from '../../../../../public/image/ConnectedBanking/arrowRight.
 import BusinessBankingMob from '../../../../../public/image/ConnectedBanking/BusinessBankingMob.svg';
 function BusinessBanking() {
   return (
-  <section className="max-w-screen-lg lg:mx-auto mt-[100px]">
+  <section className="max-w-screen-lg lg:mx-auto mt-[140px] lg:mt-[200px]">
     <div className='bg-[#0E0624] rounded-[20px] px-[22px] lg:pl-[70px] lg:pr-[90px] lg:h-[460px] flex flex-col lg:flex-row gap-[100px] lg:gap-[0px] mx-[11px] lg:mx-0 '>
       <div className='relative mt-[55px] lg:mt-[0px] lg:w-[60%] flex flex-col justify-center items-center lg:items-start'>
           <div>

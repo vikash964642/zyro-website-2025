@@ -34,38 +34,54 @@ border: 0.965px solid #765775;
 background: linear-gradient(0deg, #575E8E 0%, rgba(99, 99, 99, 0.00) 52.5%, rgba(119, 85, 122, 0.88) 100%);
 }
 
- /* .home-hero_gradient {
-    z-index: -1;
-    opacity: .75;
-    filter: blur(200px);
-    background-image: linear-gradient(#601ef9, #fff0);
-    border-radius: 100%;
-    width: 50rem;
-    height: 24rem;
-    position: absolute;
-    inset: -15% 0% 0% 35%;
-}   */
-.home-hero_gradient {
- /* z-index: -1;
-    opacity: .75;
-    filter: blur(200px);
-    background-image: linear-gradient(#601ef9, #fff0);
-    border-radius: 100%;
-  
-    position: absolute;
- 
-    inset: 0% 8% 0% 11%; */
-    border-radius: 541.022px;
-    z-index:-1;
-    position:absolute;
-opacity: 0.75;
-background: linear-gradient(180deg, rgba(64, 28, 139, 0.80) 0%, rgba(255, 255, 255, 0.00) 100%);
- filter: blur(92px);
- inset: 0% 7% 55% 11%;
-}
 
-.heroSectionHeadingGradient{
+   
+
+.home-hero_gradient {
+    border-radius: 541.022px;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.75;
+    background: linear-gradient(180deg, rgba(64, 28, 139, 0.80) 0%, rgba(255, 255, 255, 0.00) 100%);
+    filter: blur(92px);
+    inset: 0% 30% 50% 24%;
+} 
+
+.home-hero_gradientBottom {
+    z-index: -1;
+    position: absolute;
+    opacity: 0.75;
+   border-radius: 408.055px;
+background: radial-gradient(39.32% 39.32% at 50% 39.32%, #401C8B 0%, rgba(46, 46, 46, 0.00) 100%);
+    filter: blur(92px);
+    inset: 0% 30% 50% 24%;
+} 
+.heroSectionHeadingGradient1{
   background: linear-gradient(234deg, #FFF 0%, #9573DE 53%, #F0EBFA 81.67%, #FFF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.heroSectionHeadingGradient2{
+background: linear-gradient(234deg, #FFF 0%, #9573DE 53%, #F0EBFA 81.67%, #FFF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.heroSectionHeadingGradient3{
+  background: linear-gradient(234deg, #FFF 44.23%, #9573DE 53.37%, #FFF 94.71%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.heroSectionHeadingGradient4{
+  background: linear-gradient(234deg, #FFF 32.69%, #9573DE 53%, #F0EBFA 76.44%, #FFF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.heroSectionHeadingGradient3Mob{
+background: linear-gradient(90deg, #9573DE 0%, #FFF 53.85%);
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -83,6 +99,29 @@ line-height: 21px; /* 87.5% */
 .ControlFinance-custom-shadow {
   box-shadow: 0px 3.204px 11.213px 0px rgba(74, 58, 255, 0.16);
 }
+.sap_ControlFinance{
+  background-position-x: center;
+    background-position-y: -106px;
+}
+.sap{
+  background-position-x: center;
+    background-position-y: -10rem;
+}
+
+.ControlFinance-gradiant{
+  border-radius: 138px;
+  opacity: 1;
+  background: linear-gradient(
+    178deg,
+    rgba(64, 28, 139, 0.6) 80%,
+    rgba(255, 255, 255, 0.76) 0%
+  );
+  filter: blur(182px);
+  position: absolute;
+  inset: 0% 10% 2% 16%;;
+  z-index: -1;
+}
+
 .ManagingCorporate-gradient{
 opacity: 0.2;
 background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) -18.15%, rgba(255, 255, 255, 0.73) 44.52%, rgba(141, 49, 245, 0.73) 81.85%);
@@ -106,12 +145,13 @@ background-clip: text;
 }
 
 .ConnectedBanking-gradient{
-    background: linear-gradient(180deg, rgba(64, 28, 139, 0.44) 0%, rgba(255, 255, 255, 0.00) 100%);
-opacity: 0.75;
-filter: blur(91.38888549804688px);
-position:absolute;
-z-index:-1;
-  inset: -10% 22% 35% 21%;
+background: linear-gradient(180deg, rgba(64, 28, 139, 0.44) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 1;
+    border-radius: 501px;
+    filter: blur(182.388885px);
+    position: absolute;
+    z-index: -1;
+    inset: 7% -3% -19% -2%;
 }
 .VerticleSliderGradient{
     border-radius: 50%;
@@ -220,12 +260,13 @@ position:absolute;
 
 
 .Newsletter-gradient{
-opacity: 0.2;
+z-index:-1;
 border-radius: 1320.214px;
 background: rgba(109, 236, 49, 0.10);
-filter: blur(142.7772979736328px);  
+filter: blur(100px); 
 position:absolute;  
-  inset:-36% 0% 40% 0%;
+  inset:56% 8% -21% 8%;
+  
 }
 
 .mobile-home-gradient{

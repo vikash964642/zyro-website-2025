@@ -167,7 +167,7 @@ export default function ConnectedBankingVerticleSlider() {
   };
 
   return (
-    <section className="max-w-screen-lg mx-auto px-4 mt-10">
+    <section className="max-w-screen-lg mx-auto px-4 mt-[150px] lg:mt-[200px]">
        <h2 className="text-center text-[28px] lg:text-[48px] text-white90 font-medium mb-12">
    Why choose <span className="verticlesliderZyroGradient font-bold">ZYRO</span> Connected Banking for your Business
 </h2>

@@ -4,11 +4,12 @@ import './HomePageCss.css'
 import KnowMoreRightIcon from '../../../../../public/image/HomePage/Icon/KnowMoreRightIcon.svg'
 function ManagingCorporate() {
   return (
-     <section className="max-w-screen-lg px-4  xl:px-0 mx-auto mt-[120px]">
-          
+     <section className="min-h-[90vh] flex justify-center items-center">
+          <div className='max-w-screen-lg px-4  xl:px-0 mx-auto mt-[180px] lg:mt-0'>
+
             <div className='lg:flex justify-between items-center relative'>
                 <div className='lg:w-[50%]'>
-                    <h2 className=" font-semibold text-[#FFF]  max-[400px]:text-[26px] text-[28px] lg:text-[38px] max-[375px]:leading-[38px] leading-[44px] lg:leading-[60px] text-center lg:text-left">Managing <span className='ManagerCorporateHeaderGradient'>Corporate Card and Expense Made Easy with Zyro</span></h2>
+                    <h2 className="font-medium lg:font-semibold text-[#FFF]  max-[400px]:text-[26px] text-[28px] lg:text-[36px] max-[375px]:leading-[38px] leading-[44px] lg:leading-[60px] text-center px-[10px] lg:text-left lg:pr-[12px]">Managing <span className='ManagerCorporateHeaderGradient lg:text-[38px] font-semibold'>Corporate Card and Expense Made Easy with Zyro</span></h2>
                     <p className="text-white80 lg:text-[#9E9C9F] text-[14px] lg:text-[20px] font-normal leading-[20px] lg:leading-[33.6px] mt-[18px] align-middle text-center lg:text-left ">Say goodbye to spreadsheets, delays, reimbursements, and manual entries. Zyro makes it simple to track and manage your corporate card spending and expense automatically, accurately, and in real time.</p>
                     <div className='flex justify-center lg:justify-start mt-[39px]'>
                           <button className="text-white w-[150px] h-[40px] bg-[#4F31B4] rounded-[30px] text-[18.6px] font-medium  flex items-center justify-center gap-[3px]">Know more<img src={KnowMoreRightIcon} alt="" className='h-[13px] w-[13px]' /></button>
@@ -21,6 +22,7 @@ function ManagingCorporate() {
                   
                 </div>
             </div>
+          </div>
        
         </section>
   )

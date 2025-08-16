@@ -125,7 +125,7 @@ useEffect(() => {
   }, [activeIndex]);
 
   return (
-      <section className="max-w-screen-lg lg:mx-auto lg:mt-[131px] mt-[100px]">
+      <section className="max-w-screen-lg lg:mx-auto lg:mt-[150px] mt-[100px]">
         <div className="flex justify-center items-center px-[16px]">
             <p className="text-[#FFF] text-center text-[24px] md:text-[26px] lg:text-[28px]  max-[375px]:text-[22px] font-semibold md:w-[480px] BusinessScrollerHeaderGradient">One Dashboard To Manage All Your Business Accounts</p>
         </div>
@@ -154,24 +154,48 @@ useEffect(() => {
         className="w-1/2 h-[450px] overflow-y-scroll hide-scrollbar pr-2"
         ref={rightScrollRef}
       >
-        <div className="flex flex-col justify-between h-full px-6 ">
+        {/* <div className="flex flex-col justify-between h-full px-6 ">
           {cardsData.map((card, index) => (
-            <div
-              key={card.id}
-              ref={(el) => (cardRefs.current[index] = el)}
-              className={`border-[0.4px]  py-[24px] px-[20px] rounded-[20px]  transition-all duration-300 ${
-                activeIndex === index
-                  ? "border-[#A901A3] bg-[#080219]"
-                  : "border-[#4E4E4E]"
-              }`}
+         <div  key={card.id}
+              ref={(el) => (cardRefs.current[index] = el)} className={`h-[138px] w-full  rounded-[20px] flex justify-center items-center ${activeIndex === index ? 'Connecte_gradient-border2':''}`}>
+             <div
+             
+              className={`  px-[20px] flex flex-col justify-center rounded-[20px]  transition-all duration-300 ${ activeIndex === index
+                  ? "w-[calc(100%-1.5px)] h-[calc(100%-1.5px)] bg-[#080219] "
+                  : "border-[0.4px] border-[#4E4E4E] h-full w-full"}`}
             >
               <h2 className={` text-[20px] font-medium ${ activeIndex === index
                   ? "text-[#FFF]"
                   : "text-[#CACACA]"}`}>{card.heading}</h2>
               <p className="text-[#9E9C9F] text-[16px] font-normal pt-[8px]">{card.paragraph}</p>
             </div>
+         </div>
           ))}
-        </div>
+        </div> */}
+        <div className="flex flex-col justify-between h-full px-6">
+  {cardsData.map((card, index) => (
+    <div
+      key={card.id}
+      ref={(el) => (cardRefs.current[index] = el)}
+      className={`h-[138px] w-full rounded-[20px] flex justify-center items-center 
+        ${activeIndex === index ? 'Connecte_gradient-border2' : 'border-[0.4px] border-[#4E4E4E]'}`}
+    >
+      <div className="px-[20px] flex flex-col justify-center w-full h-full rounded-[20px]">
+        <h2
+          className={`text-[20px] font-medium ${
+            activeIndex === index ? 'text-[#FFF]' : 'text-[#CACACA]'
+          }`}
+        >
+          {card.heading}
+        </h2>
+        <p className="text-[#9E9C9F] text-[16px] font-normal pt-[8px]">
+          {card.paragraph}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </div>
     

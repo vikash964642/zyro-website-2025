@@ -210,7 +210,7 @@ const CardList=[
 export default function CenteredImageSlider() {
      const [activeIndex, setActiveIndex] = useState(0);
   return (
-   <div className="  mt-16 px-4 xl:px-0">
+   <div className="  mt-[180px] px-4 xl:px-0">
     <div className="flex justify-center">
         <h2 className="max-[360px]:text-[22px] text-[24px] md:[28px] lg:text-[32px] font-semibold PosSystemSliderHeaderGradient text-center md:w-[550px] lg:w-[648px]">Zyro POS System : Trusted by Businesses Across Industries</h2>
     </div>
@@ -220,7 +220,7 @@ export default function CenteredImageSlider() {
 
       {/* 🔼 Overlay Image (above active card) */}
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20 pointer-events-none">
-        <img src={PosMachineImg} className="w-[170px] h-[275px] md:w-[180px] md:h-[290px] lg:w-[200px] lg:h-[325px]" />
+        <img src={PosMachineImg} className="w-[170px] h-[275px] md:w-[180px] md:h-[290px] lg:w-[200px] lg:h-[300px] min-[1500px]:w-[225px] min-[1500px]:h-[365px]" />
       </div>
 
       {/* 🔽 Swiper */}
@@ -230,8 +230,8 @@ export default function CenteredImageSlider() {
         slidesPerView="auto"
         loop={true}
         autoplay={{
-    delay: 3000,               // ⏱ Delay between slides (in ms)
-    disableOnInteraction: false, // ✅ Keep autoplay after interaction
+    delay: 3000,             
+    disableOnInteraction: false,
   }}
 
         grabCursor={true}
@@ -261,7 +261,7 @@ export default function CenteredImageSlider() {
               <img
                 src={data.image}
                 alt={`POS Image ${idx}`}
-                className="w-full h-[371px] md:h-[400px] lg:h-[445px] object-cover"
+                className="w-full h-[371px] md:h-[375px] lg:h-[400px] min-[1500px]:h-[445px] object-cover"
               />
               {/* <div className="p-4">
                 <h3 className="text-lg font-semibold">{data.header}</h3>

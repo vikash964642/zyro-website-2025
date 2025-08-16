@@ -42,7 +42,7 @@ export default function ConnectedCardSlider() {
             className=" min-h-[420px] flex flex-col  transform transition-transform duration-300 ease-in-out hover:scale-[1.04]"
           
           >
-            <div className="bg-[#080219] h-[290px] p-3  rounded-t-[13.59px] rounded-b-[0px] border-[0.627px] border-[#797979]">
+            <div className="bg-[#080219] h-[290px] p-3  rounded-t-[13.59px] rounded-b-[0px] border-[0.627px] borderFade">
               <img src={item.image} className="h-[100%] w-[100%]" />
             </div>
             <div className="bg-white py-[13px] px-[15px] rounded-b-[13.59px] rounded-t-[0px] flex-1 flex flex-col justify-start">

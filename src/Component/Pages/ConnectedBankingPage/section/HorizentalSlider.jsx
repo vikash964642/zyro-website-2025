@@ -53,7 +53,7 @@ function HorizentalSlider() {
   };
 
   return (
-    <section className="max-w-screen-lg mx-auto  mt-[82px] px-[20px] xl:px-0 relative">
+    <section className="max-w-screen-lg mx-auto  mt-[100px] lg:mt-[200px] px-[20px] xl:px-0 relative">
       <div className="HorizentalSliderGradient"></div>
       <div>
         <p className="HorizentalSliderHeaderGradient max-[360px]:text-[22px] max-[400px]:text-[25px] text-[28px] lg:text-[32px] font-semibold text-center">
@@ -73,16 +73,19 @@ function HorizentalSlider() {
         {sliders.map((slider, index) => (
           <div
             key={index}
-            className={`lg:w-[260px] w-[187px] lg:pt-[22px] lg:pb-[17px] lg:px-[16px] pt-[15px] pb-[12px] px-[12px]  border-[0.287px] lg:border-[0.4px] last-mt border-[#4A4A4A] rounded-[7.167px] flex-shrink-0 scroll-snap-align-start ${
+            className={`lg:w-[260px] w-[187px] lg:pt-[22px] lg:pb-[17px] lg:px-[16px] pt-[15px] pb-[12px] px-[12px]  border-[0.287px] lg:border-[0.4px] last-mt border-[rgba(74,74,74,0.3)] rounded-[7.167px] flex-shrink-0 scroll-snap-align-start ${
       index === sliders.length - 1 ? 'lg:mr-3' : ''}`}
           >
-            <div className="lg:h-[95px] h-[68px] w-[68px] lg:w-[95px] rounded-[14.333px] lg:rounded-[20px] border-[0.493px] border-[#A901A3] bg-[#080219] flex items-center justify-center ">
+            {/* Connecte_gradient-border2 */}
+        <div className="Connecte_gradient-border2 lg:h-[95px] h-[68px] w-[68px] lg:w-[95px] rounded-[14.333px] lg:rounded-[20px] flex justify-center items-center">
+              <div className=" rounded-[14.333px] lg:rounded-[20px]  bg-[#080219] flex items-center justify-center ">
               <img
                 src={slider.image}
                 alt={slider.paragraph}
                 className="h-[38px] lg:h-[56px] w-[38px] lg:w-[56px]"
               />
             </div>
+        </div>
             <p className="text-[#FFF] text-[14.333px] lg:text-[20px] font-semibold lg:pt-[18px] pt-[13px]">{slider.heading}</p>
             <p className="text-[#9E9C9F] text-[11.467px] lg:text-[16px] font-normal  lg:pt-[18px] pt-[13px]" >
               {slider.paragraph}
