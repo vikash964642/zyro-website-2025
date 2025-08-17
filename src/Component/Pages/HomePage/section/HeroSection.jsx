@@ -75,8 +75,9 @@ useEffect(() => {
   return (
    <>
     <section className="hidden lg:flex items-center justify-center gap-[50px] lg:pt-[105px] pt-[60px] relative">
+      
         <div className="home-hero_gradient"></div>
-        {/* <div className="home-hero_gradientBottom"></div> */}
+       
       {/* Navigation Buttons */}
       <button
         onClick={handlePrev}

@@ -2,7 +2,8 @@ import soundbox from "/image/soundbox/soundbox.webp";
 import newSoundbox from "/image/soundbox/Newsoundbox.webp";
 function SoundboxFeatures() {
   return (
-    <section className="max-w-screen-lg mx-auto relative mt-[161px]">
+    <section className="min-h-[90vh] flex justify-center items-center">
+      <div className="max-w-screen-lg mx-auto relative ">
     <div className="hidden lg:block">
         <div className="soundboxFeatures-gradient hidden lg:block"></div>
       <div className="min-h-[700px] relative">
@@ -78,6 +79,7 @@ function SoundboxFeatures() {
 </div>
 </div>
 </div>
+    </div>
     </div>
     </div>
     </section>
