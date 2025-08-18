@@ -1,13 +1,14 @@
 // import React from "react";
+import yesBank from "/image/HomePage/Icon/yesIcon.jpg";
 function Scroller() {
   const logos = [
-    "../../../../../public/image/HomePage/icon/canara-icon.jpg",
-    "../../../../../public/image/HomePage/icon/icici.jpg",
-    "../../../../../public/image/HomePage/icon/idfc-icon.jpg",
-    "../../../../../public/image/HomePage/icon/npci.jpg",
-    "../../../../../public/image/HomePage/icon/pine-labs.jpg",
-    "../../../../../public/image/HomePage/icon/yes-bank-icon.jpg",
-    "../../../../../public/image/HomePage/icon/rbl-icon.jpg",
+    "/image/HomePage/Icon/canara-icon.jpg",
+    "/image/HomePage/Icon/icici.jpg",
+    "/image/HomePage/Icon/idfc-icon.jpg",
+    "/image/HomePage/Icon/npci.jpg",
+    "/image/HomePage/Icon/pine-labs.jpg",
+    yesBank,
+    "/image/HomePage/Icon/rbl-icon.jpg",
   ];
 
   return (

@@ -1,5 +1,5 @@
 import soundbox from "/image/soundbox/soundbox.webp";
-import newSoundbox from "/image/soundbox/Newsoundbox.webp";
+import newSoundbox from "/image/soundbox/newSoundbox.webp";
 function SoundboxFeatures() {
   return (
     <section className="max-w-screen-lg mx-auto relative mt-[161px]">

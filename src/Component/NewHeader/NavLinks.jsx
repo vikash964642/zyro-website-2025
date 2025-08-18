@@ -146,7 +146,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { links } from "./Mylinks";
 import PropTypes from "prop-types";
-import AngleDown from '../../../public/image/AngleDown.png';
+import AngleDown from '/image/AngleDown.png';
 
 const NavLinks = ({ handleClick }) => {
   const ScrollTop = () => {
