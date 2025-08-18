@@ -24,7 +24,7 @@ function BusinessBanking() {
  <div className='businessBankingGradient1 w-[200px] h-[250px] lg:w-[300px] lg:h-[300px] z-10'></div>
       </div>
 <div className='flex items-end justify-center lg:justify-start lg:w-[40%] relative'>
-     <img src={BusinessBankingMob}/>
+     <img src={BusinessBankingMob} className='z-10'/>
 
         <div className='w-[200px] h-[250px] lg:w-[300px] lg:h-[300px] businessBankingGradient2'></div>
  

@@ -1,6 +1,6 @@
 import React from 'react'
-import arrowRight from '../../../../../public/image/ConnectedBanking/arrowRight.svg';
-import BusinessBankingMob from '../../../../../public/image/ConnectedBanking/BusinessBankingMob.svg';
+import arrowRight from '/image/ConnectedBanking/arrowRight.svg';
+import BusinessBankingMob from '/image/ConnectedBanking/BusinessBankingMob.svg';
 function BusinessBanking() {
   return (
   <section className="max-w-screen-lg lg:mx-auto mt-[140px] lg:mt-[200px]">

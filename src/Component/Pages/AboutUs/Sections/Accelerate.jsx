@@ -1,6 +1,6 @@
 // import React from 'react'
 import arrowRight from "/image/ConnectedBanking/arrowRight.svg";
-import sape from '../../../../../public/image/AboutUs/backgroundImage.svg'
+import sape from '/image/AboutUs/backgroundImage.svg'
 
 function Accelerate() {
   return (
