@@ -2,14 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  @media (min-width: 425px) {
+    .gap-425px-100 {
+      gap: 100px;
+    }
+  }
+}
 
-*{
-    box-sizing:border-box;
-    font-family: "Inter", serif;
-    margin:0px;
-    padding:0px;
-   
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #0b051e;
+  font-family: 'Inter', sans-serif;
+
+}
+
+/* src/index.css */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+/* tailwind.css or App.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroller-section {
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.scroller-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.slider {
+  height: 55.77px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: white;
+  /* border-radius: 12px; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.slider-track {
+  display: flex;
+  width: calc(200px * 14);
+  animation: scroll 30s linear infinite;
+  align-items: start;
+}
+
+.slide {
+  height: 55.77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  padding: 7px;
+}
+
+.slide img {
+  width: 120px;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.slide img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  body{
-    background-color: #080411;
+
+  100% {
+    transform: translateX(-50%);
   }
+}
+
+

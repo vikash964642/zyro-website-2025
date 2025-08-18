@@ -1,111 +1,295 @@
-import { useState } from "react";
+
+import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+// import HomePageRightIcon from '../../../../../public/image/HomePage/HomePageRightIcon.webp';
+import KnowMoreRightIcon from '../../../../../public/image/HomePage/Icon/KnowMoreRightIcon.svg'
+
 
 const slides = [
   {
-    image: "./../../../../public/image/HomePage/herosection.webp",
-    heading: "Accelerate Your Business with our Connected Banking Solutions",
-    paragraph: "Elevate your business with easy payments and payouts through our advanced banking solutions.",
+    image: "./../../../../public/image/HomePage/herosection-banner.png",
+     imageMob: "./../../../../public/image/HomePage/herosection-banner.png",
+    heading1: "Accelerate Your Business with our",
+    heading2:"Connected Banking Solutions",
+    paragraph:
+      "Connect and manage all your business current accounts from different banks in a single dashboard with our connected banking.",
   },
   {
-    image: "./../../../../public/image/HomePage/herosection2.webp",
-    heading: "Streamline Your Finances with Innovative Tools",
-    paragraph: "Experience seamless management of your business finances with our cutting-edge tools.",
+    image: "./../../../../public/image/HomePage/herosoundbox.svg",
+     imageMob: "./../../../../public/image/HomePage/herosoundbox.svg",
+    heading1: "Zyro Sound Box",
+    heading2:"",
+    paragraph:
+      "Accept digital payments with our Zyro UPI QR Code. The soundbox offers instant secure audio payment confirmations, ensuring a faster, more reliable and efficient customer experience.",
   },
   {
-    image: "./../../../../public/image/HomePage/herosection3.webp",
-    heading: "Expand Your Business Horizons Globally",
-    paragraph: "Discover opportunities to grow your business worldwide with our tailored financial solutions.",
+    image: "./../../../../public/image/HomePage/herosection-banner-1.webp",
+        imageMob: "./../../../../public/image/HomePage/herosection-banner-1.webp",
+    heading1: "Simplify, Track, and Control Expense",
+    heading2:" in One Place",
+    paragraph:
+      "Expense management made easy with Zyro. Manage all your business expenses in one place — track, control and optimize easily.",
+  },
+   {
+    image: "./../../../../public/image/HomePage/herosection-banner-2.webp",
+     imageMob: "./../../../../public/image/HomePage/herosection-banner-2-mob.webp",
+    heading1: "Zyro POS Device",
+    heading2:"",
+    paragraph:
+      "Accepts UPI & Card Payments with a Single Device",
   },
 ];
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Handle forward navigation
   const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
+    console.log(setCurrentSlide);
   };
 
-  // Handle backward navigation
   const handlePrev = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
-  // Handle dot click
   const handleDotClick = (index) => {
     setCurrentSlide(index);
   };
 
-  // Swipeable handlers
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: handleNext, // Move to next slide on swipe left
-    onSwipedRight: handlePrev, // Move to previous slide on swipe right
+    onSwipedLeft: handleNext,
+    onSwipedRight: handlePrev,
   });
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  }, 4000);
+
+  return () => clearInterval(interval);
+}, []);
 
   return (
-    <section className="max-w-7xl mx-auto pt-[103px] relative pb-8">
-      {/* Add swipe handlers to this div */}
+   <>
+    <section className="hidden lg:flex items-center justify-center gap-[50px] lg:pt-[105px] pt-[60px] relative">
+        <div className="home-hero_gradient"></div>
+        {/* <div className="home-hero_gradientBottom"></div> */}
+      {/* Navigation Buttons */}
+      <button
+        onClick={handlePrev}
+        className=" z-20 left-[100px] min-[1500px]:left-[200px] top-[190px] text-[18px] text-[#8E8C92]  rounded-full w-[40px] h-[40px] border-[2px] border-[#8E8C92] lg:flex justify-center items-center hidden"
+      >
+<FontAwesomeIcon icon={faAngleLeft}  />
+
+
+
+      </button>
+
+      {/* Slides Wrapper */}
       <div
-        className="container mx-auto flex items-center justify-around flex-col-reverse lg:flex-row relative"
+        className="max-w-screen-md xl:max-w-screen-lg  overflow-hidden relative"
         {...swipeHandlers}
       >
-        {/* Left Content */}
-        <div className="lg:w-[603px] w-full px-[44px] lg:px-[0px] mt-[36px]">
-          <h4 className="md:text-[42px] text-white text-[22px] font-medium md:leading-[55px] leading-[24px] lg:mt-[10px] max-[400px]:text-[18px]">
-            {slides[currentSlide].heading.split(" ").map((word, index) =>
-              word === "Connected" || word === "Innovative" || word === "Globally" ? (
-                <span key={index} className="bg-gradientText bg-clip-text text-transparent font-semibold">
-                  {word}{" "}
-                </span>
-              ) : (
-                word + " "
-              )
-            )}
-          </h4>
-          <p className="text-white font-medium text-[14px] md:text-[16px] md:leading-[21.28px] leading-[18.62px] md:mt-[18px] mt-[15px]">
-            {slides[currentSlide].paragraph}
-          </p>
-          <div className="max-md:flex flex md:justify-end lg:justify-start max-md:justify-end">
-            <Link to="" className="text-white font-bold md:text-[15.6px] text-sm flex md:justify-start justify-end pt-[30px] lg:pt-[15px]">
-              Know more &gt;&gt;
-            </Link>
-          </div>
+        <div
+          className="flex transition-transform duration-1000 ease-in-out"
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        >
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className="min-w-full flex flex-col-reverse lg:flex-row items-center gap-5"
+            >
+              {/* Left Content */}
+              <div className="lg:w-[55%] w-full">
+               {index===0 && (
+                 <h1 className="text-[42px]  text-white90  font-medium leading-[54px] lg:mt-[10px] ">
+                 {slide.heading1} <span className="heroSectionHeadingGradient1 font-semibold">{slide.heading2}</span>
+                </h1>
+               )}
+                 {index===1 && (
+                 <h1 className="heroSectionHeadingGradient2 text-[55.547px] font-semibold leading-[54px] lg:mt-[10px] ">
+                 {slide.heading1} <span>{slide.heading2}</span>
+                </h1>
+               )}
+                 {index===2 && (
+                 <h1 className="text-[42px]     leading-[54px] lg:mt-[10px] ">
+                <span className="heroSectionHeadingGradient2 font-semibold"> {slide.heading1}</span> <span className=" text-white90 font-medium ">{slide.heading2}</span>
+                </h1>
+               )}
+                 {index===3 && (
+                 <h1 className="text-[42px] heroSectionHeadingGradient4 font-semibold leading-[54px] lg:mt-[10px] ">
+                 {slide.heading1} <span>{slide.heading2}</span>
+                </h1>
+               )}
+             {(index===0 || index===1 || index===2) &&(
+                 <p className="text-white70 text-[18.28px] mt-[20px] font-normal">
+                  {slide.paragraph}
+                </p>
+             )}
+               {index===3 &&(
+                 <p className="text-[#FFF] text-[32px] font-medium mt-[30px] text-center lg:text-left">
+                  {slide.paragraph}
+                </p>
+             )}
+                <div className="flex gap-[20px] lg:gap-[35px] items-center mt-[35px] flex-col lg:flex-row">
+              {(index===0 || index===2 || index===3) && (
+                    <button className="bg-[#4F31B4] rounded-[24.77px] h-[45px] w-[148px]  text-[#FFF] text-[18px] font-semibold">
+                    Get Started
+                  </button>
+              )}
+                {index===1  && (
+                    <button className="bg-[#4F31B4] rounded-[24.77px] h-[48px] w-[218px]  text-[#FFF] text-[20px] font-semibold">
+                    Get Your Speaker
+                  </button>
+              )}
+                <Link
+                    to=""
+                    className="text-[#FFF] font-medium md:text-[15.6px] lg:text-[16.45px] text-sm flex md:justify-start justify-center "
+                  >
+                    Know more <img src={KnowMoreRightIcon} className="pl-[4px]"/>
+                  </Link>
+                
+                </div>
+              </div>
+
+              {/* Right Image */}
+              <div className="p-[25px] md:p-[0px] lg:w-[45%] w-full flex justify-center items-center">
+                <img src={slide.image} alt={`Slide ${index + 1}`} />
+              </div>
+             
+ 
+
+        
+            </div>
+          ))}
         </div>
 
-        {/* Right Content */}
-        <div className="p-[25px] md:p-[0px]">
-          <img src={slides[currentSlide].image} alt={`Slide ${currentSlide + 1}`} className="max-w-full h-auto" />
+        
+      </div>
+      <button
+        onClick={handleNext}
+        className=" z-20 right-[100px] min-[1500px]:right-[200px] top-[190px] text-[18px] text-[#8E8C92]  rounded-full w-[40px] h-[40px] border-[2px] border-[#8E8C92] lg:flex justify-center items-center hidden"
+      >
+    <FontAwesomeIcon icon={faAngleRight}  />
+      </button>
+      
+      
+    </section>
+     
+     
+     
+     <section className="block lg:hidden px-[20px]  pt-[40px] relative">
+        <div className="home-hero_gradient"></div>
+    
+      <div
+        className=" overflow-hidden relative"
+        {...swipeHandlers}
+      >
+        <div
+          className="flex transition-transform duration-1000 ease-in-out"
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        >
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className="min-w-full flex flex-col justify-between"
+            >
+               <div>
+               {index === 0 && (
+  <div className="text-center">
+    <div className="max-[350px]:text-[16px] max-[375px]:text-[18px] text-[20px] text-white90 font-medium">
+      {slide.heading1}
+    </div>
+    <div className="max-[375px]:text-[28px] leading-[40px] text-[32px] font-semibold heroSectionHeadingGradient1">
+      {slide.heading2}
+    </div>
+  </div>
+)}
+
+{index === 1 && (
+  <div className="text-center max-[375px]:text-[28px] text-[36px] font-semibold heroSectionHeadingGradient2">
+    {slide.heading1} <span>{slide.heading2}</span>
+  </div>
+)}
+
+{index === 2 && (
+  <div className="text-center max-[375px]:text-[26px] text-[28px] font-semibold heroSectionHeadingGradient3Mob">
+  {slide.heading1} <span className="">{slide.heading2}</span>
+  </div>
+)}
+
+{index === 3 && (
+  <div className="text-center max-[375px]:text-[32px] text-[36px] font-semibold heroSectionHeadingGradient4">
+    {slide.heading1} <span>{slide.heading2}</span>
+  </div>
+)}
+       </div>
+           
+{(index === 1 || index === 2) && (
+  <p className={`text-white70 max-[350px]:text-[15px] max-[375px]:text-[16px] text-[18px] font-normal text-center ${index===1 ? "pt-[15px]" : ""} `}>
+    {slide.paragraph}
+  </p>
+)}
+{ index === 3 && (
+  <p className={`text-white70 max-[375px]:text-[18px] text-[20px] font-normal text-center`}>
+    {slide.paragraph}
+  </p>
+)}
+
+             
+              <div className=" w-full flex justify-center items-center mt-[35px]">
+                <img src={slide.imageMob} alt={`Slide ${index + 1}`} className={`${index===0 ? 'max-[360px]:h-[275px] max-[360px]:w-[275px] h-[290px] w-[290px]' : ''} ${index===1 ? 'max-[360px]:h-[275px] max-[360px]:w-[275px] w-[350px] h-[345px]' : ''} ${index===2 ? 'max-[360px]:h-[185px] max-[360px]:w-[275px] w-[300px] h-[200px] mt-[100px]' : ''} ${index===3 ? 'w-[254px] h-[380px]' : ''}`}/>
+              </div>
+         
+             {index===0 && (
+            <div className="flex justify-center pt-[30px]">
+                 <p className="text-white70  max-[350px]:text-[13px] text-[14px] font-normal text-center max-[360px]:w-full w-[325px] md:w-[400px]">{slide.paragraph}</p>
+            </div>
+             )}
+          
+  {(index === 0 || index === 2 || index === 3) && (
+ <div className="flex justify-center mt-[25px]">
+  <button className="bg-[#4F31B4] max-[375px]:w-[100%] w-[325px] h-[55px] rounded-[30px] text-[22px] text-[#FFF] font-semibold">Get Started</button>
+ </div>
+)}
+     {index===1 && (
+       <div className="flex justify-center mt-[25px]">
+  <button className="bg-[#4F31B4] max-[375px]:w-[100%] w-[325px] h-[55px] rounded-[30px] text-[22px] text-[#FFF] font-semibold">Get Your Speaker</button>
+ </div>
+     )}
+             <Link
+                    to=""
+                    className="text-[#FFF] font-medium text-[16px] flex lg:justify-start justify-center items-center pt-[20px]"
+                  >
+                    Know more <img src={KnowMoreRightIcon} className="pl-[4px] h-[15px] w-[15px]"/>
+                  </Link>
+                  
+            </div>
+          ))}
         </div>
 
-        {/* Desktop Navigation Buttons */}
-        <button
-          onClick={handlePrev}
-          className="fixed left-4 top-1/2 transform -translate-y-1/2 text-white p-2 bg-gray-700 rounded-full  items-center justify-center w-[40px] h-[40px] hover:bg-gray-800 lg:flex hidden"
-        >
-          &lt;
-        </button>
-        <button
-          onClick={handleNext}
-          className="fixed right-4 top-1/2 transform -translate-y-1/2 text-white p-2 bg-gray-700 rounded-full  items-center justify-center w-[40px] h-[40px] hover:bg-gray-800 lg:flex hidden"
-        >
-          &gt;
-        </button>
-
-        {/* Mobile Indicators */}
-        <div className="absolute bottom-0 left-0 right-0 flex justify-center items-center lg:hidden pb-4">
+        {/* Mobile Dots */}
+        <div className="pt-[20px] flex justify-center items-center">
           {slides.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 mx-2 rounded-full cursor-pointer ${
-                index === currentSlide ? "bg-white" : "bg-gray-400"
+              className={` mx-[5px] cursor-pointer ${
+                index === currentSlide ? "bg-[#4F31B4] w-[13px] h-[7px] rounded-[9.17px]" : "bg-[#CACACA] w-[7px] h-[7px] rounded-full"
               } transition-all duration-300`}
               onClick={() => handleDotClick(index)}
             ></div>
           ))}
         </div>
       </div>
+ 
+      
+      
     </section>
+   </>
   );
 }
+
+

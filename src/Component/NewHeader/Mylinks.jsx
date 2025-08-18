@@ -1,31 +1,46 @@
-
 export const links = [
     
     { name: 'Product', submenu: true, sublinks: [
 
-        { name: 'QR Sound Box', link: "", img: "pos_billing" },
-        { name: 'Prepaid Card', link: "", img: "Time_Circle"  },
-        { name: 'Credit Facility', link: "", img: "inventory_icon"  },
-        { name: 'ONDC', link: "", img: "ondc_icon"  },
-        { name: 'Gift Card', link: "", img: "online_store_icon"  },
-        { name: 'Billing & Accounting', link: "", img: "whatsapp_icon"  }
+        { name: 'Zyro Soundbox', link: "/soundboxPage", img: "zyroSoundboxIcon"},
+        { name: 'Zyro POS', link: "/posPage", img: "zyroPosIcon"  },
+        // { name: 'Gift Card API', link: "", img: "giftCardApi"  },
+        // { name: 'UPI Stack', link: "", img: "upiStackIcon"  },
+    ],
+    sublinks2: [
+
+        { name: 'Expense Management', link: "/ExpenseManagement", img: "expenseManagementIcon" },
+        // { name: 'Billing & Accounting', link: "", img: "billingAccountingIcon"  },
+        { name: 'Prepaid Card', link: "/prepaidPage", img: "prepaidCard"  }, 
     ],
  },
+
     { name: 'Banking', submenu: true, sublinks: [
-        { name: 'Connected Banking', link: "https://shopaver.com/Blogs/", img: "blog_icon"  },
-        { name: 'Payout', link: "/", img: "youtube_icon"  },
-        { name: 'Payment', link: "/", img: "news_icon"  },
-        { name: 'Smart Collect', link: "/", img: "news_icon"  },
-        { name: 'Escrow Account', link: "/", img: "news_icon"  },
-        { name: 'Dashboard', link: "/", img: "news_icon"  }
+        { name: 'Connected Banking', link: "/connectedbanking", img: "ConnectedBankingIcon"  },
+        { name: 'Payout', link: "/payout", img: "PayoutIcon"  },
+        // { name: 'Escrow Account', link: "/", img: "EscrowAccountIcon"  },
+      
+    ],
+       sublinks2: [
+
+        // { name: 'Bank Account Verification', link: "", img: "BankAccountVarificationIcon" },
+        // { name: 'Zyro Capital', link: "", img: "ZyrocapitalIcon"  },
     ],
  }
  ,
     { name: 'Resources', submenu: true, sublinks: [
-        { name: 'Blog', link: "https://shopaver.com/Blogs/", img: "blog_icon"  },
-        { name: 'News', link: "/", img: "youtube_icon"  },
-        { name: 'Careers', link: "/", img: "news_icon"  },
-        { name: 'YouTube', link: "/", img: "news_icon"  }
+        { name: 'Terms & Conditions', link: "/terms-and-conditions", img: ""  },
+        { name: 'Privacy Policy', link: "/privacy-policy", img: ""  },
+        // { name: 'Cookies Policy', link: "", img: ""  }
+    ],
+ },
+     { name: 'Company', submenu: true, sublinks: [
+        { name: 'Home', link: "/", img: ""  },
+        { name: 'About Us', link: "/About-us", img: ""  },
+        { name: 'Blog', link: "https://zyro.in/blog/", img: ""  },
+        { name: 'Contact Us', link: "/ContactUs", img: ""  },
+        // { name: 'Careers', link: "/", img: ""  },
+        // { name: 'Help Desk', link: "/", img: ""  }
     ],
  }
 ];
