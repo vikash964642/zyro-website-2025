@@ -1,6 +1,6 @@
 function FeaturesComparison() {
   return (
-    <section className="min-h-[90vh] flex justify-center items-center ">
+    <section className="mt-[150px]">
      <div className="max-w-screen-lg lg:mx-auto px-4 ">
        <p className="bg-textgradiantMid text-transparent bg-clip-text text-[24px] lg:text-[32px] font-semibold leading-[40px] lg:leading-[56px] text-center">
          Zyro Soundbox vs Others

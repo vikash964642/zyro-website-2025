@@ -244,7 +244,7 @@ function BusinessCard() {
 </div>
 
  <div className='block md:hidden'>
-      <div className='relative  p-[18px] rounded-[10px] border-[0.4px] border-[#A901A3] bg-[#080219]'>
+      <div className='relative  p-[18px] rounded-[10px] border-[0.4px] PayoutCardBorder bg-[#080219]'>
         <h2 className='max-[360px]:text-[21px] max-[400px]:text-[22.5px]  max-[360px]:pr-[0px] text-[24px] mt-[16px] font-semibold mb-[45px] businessCardheaderColor2 pr-[5px]'>
           Your Business Deserves Faster and Smarter Payout
         </h2>
@@ -261,7 +261,7 @@ function BusinessCard() {
         ))} */}
    {CardSlide.slice(0, 3).map((card, index,arr) => (
           <div key={index}   >
-            <div className="bg-[#080219] p-1 w-[34px] h-[34px] rounded-[5.2px] border-[0.341px] border-[#A901A3] flex justify-center items-center">
+            <div className="bg-[#080219] p-1 w-[34px] h-[34px] rounded-[5.2px] PayoutCardBorder flex justify-center items-center">
               <img src={card.img} alt={card.heading} />
             </div>
             <h3 className="max-[360px]:text-[18px] text-[20px] text-[#EAEAEA] font-medium mt-[9px]">{card.heading}</h3>
@@ -285,7 +285,7 @@ function BusinessCard() {
           transition={{ duration: 0.4, ease: "easeInOut" }}
           
         >
-          <div className="bg-[#080219] p-1 w-[34px] h-[34px] rounded-[5.2px] border-[0.341px] border-[#A901A3] flex justify-center items-center">
+          <div className="bg-[#080219] p-1 w-[34px] h-[34px] rounded-[5.2px]  PayoutCardBorder flex justify-center items-center">
             <img src={card.img} alt={card.heading} />
           </div>
           <h3 className="text-[20px] text-[#EAEAEA] font-medium mt-[9px]">{card.heading}</h3>

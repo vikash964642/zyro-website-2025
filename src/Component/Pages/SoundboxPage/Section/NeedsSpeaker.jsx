@@ -24,8 +24,8 @@ function NeedsSpeaker() {
   const handleToggle = () => setShowExtra((prev) => !prev);
 
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
-      <div className="max-w-screen-lg mx-auto mt-[100px] px-[20px] xl:px-0">
+    <section className="mt-[150px]">
+      <div className="max-w-screen-lg mx-auto  px-[20px] xl:px-0">
         {/* Desktop View */}
         <div className="hidden md:block">
           <div className="relative">

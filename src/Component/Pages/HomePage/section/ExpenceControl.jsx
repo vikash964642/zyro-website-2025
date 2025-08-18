@@ -84,7 +84,7 @@ const handleLabelClick = (index) => {
 
 
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
+    <section className="mt-[130px]">
       <div className="max-w-screen-lg mx-auto px-2 sm:px-4 xl:px-0 py-10 lg:py-0">
       <h3 className="text-center text-[26px] md:text-[28px] lg:text-[30px] font-semibold mb-[50px] ExpenceControlHeaderGradient">
         Complete Expense Control at Your Fingertips

@@ -11,7 +11,7 @@ function Scroller() {
   ];
 
   return (
-    <section className="max-w-screen-lg mx-auto scroller-section mt-[131px]">
+    <section className="max-w-screen-lg mx-auto scroller-section mt-[130px]">
       <h3 className="text-[23px] font-normal pb-[32px]">Our Trusted Partners</h3>
       <div className="slider relative">
         <div className="scroller-left-gradient"></div>

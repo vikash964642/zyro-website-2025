@@ -1,9 +1,9 @@
-import multilanguage from '/image/soundbox/multilanguage.webp';
+import multilanguage from '/image/soundbox/multilanguage.svg';
 import mobilemultilanguage from '/image/soundbox/mobileMultilanguage.webp';
 
 function MultiLanguage() {
   return (
-    <section className=' min-h-[90vh] flex justify-center items-center'>
+    <section className=' mt-[150px]'>
       <div className='max-w-screen-lg lg:mx-auto'>
         <div className='relative'>
              <div className="multilanguage-gradient"></div>

@@ -1,9 +1,9 @@
 // import React from 'react'
-import soundBox from "/image/soundbox/soundbox.webp";
+import soundBox from "/image/soundbox/soundbox.svg";
 
 function Form() {
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
+    <section className="mt-[150px]">
       <div className="max-w-screen-lg mx-auto p-3 m-2">
         <div className="gap-[25px] lg:flex justify-between items-center bg-[#0E0624] rounded-[20px] relative p-[20px] overflow-hidden">
           <div className="flex-[6] lg:pl-[76px] mt-[56px] lg:mb-[43px]">

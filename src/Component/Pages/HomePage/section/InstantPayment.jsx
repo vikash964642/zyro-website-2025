@@ -18,7 +18,7 @@ const cards = [
 
 function InstantPayment() {
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
+    <section className="mt-[130px]">
       <div className="max-w-screen-lg mx-4 lg:mx-auto">
 
       <div className="flex justify-center">

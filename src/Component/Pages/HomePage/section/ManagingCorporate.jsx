@@ -4,8 +4,8 @@ import './HomePageCss.css'
 import KnowMoreRightIcon from '../../../../../public/image/HomePage/Icon/KnowMoreRightIcon.svg'
 function ManagingCorporate() {
   return (
-     <section className="min-h-[90vh] flex justify-center items-center">
-          <div className='max-w-screen-lg px-4  xl:px-0 mx-auto mt-[180px] lg:mt-0'>
+     <section className="">
+          <div className='max-w-screen-lg px-4  xl:px-0 mx-auto mt-[130px] '>
 
             <div className='lg:flex justify-between items-center relative'>
                 <div className='lg:w-[50%]'>

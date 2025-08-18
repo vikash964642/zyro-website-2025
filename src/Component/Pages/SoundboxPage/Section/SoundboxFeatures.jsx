@@ -1,8 +1,8 @@
-import soundbox from "/image/soundbox/soundbox.webp";
-import newSoundbox from "/image/soundbox/Newsoundbox.webp";
+import soundbox from "/image/soundbox/soundbox1.svg";
+import newSoundbox from "/image/soundbox/soundbox2.svg";
 function SoundboxFeatures() {
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
+    <section className="mt-[150px]">
       <div className="max-w-screen-lg mx-auto relative ">
     <div className="hidden lg:block">
         <div className="soundboxFeatures-gradient hidden lg:block"></div>
@@ -18,7 +18,7 @@ function SoundboxFeatures() {
             </p>
           </div>
           <div className="cardbg w-[370px] h-[370px] relative rounded-[30px] flex justify-center items-center mr-[70px]">
-            <div className="lg:bg-[#080219] z-10 lg:rounded-[30px]  p-[20px]   absolute  h-[calc(100%-2px)] w-[calc(100%-2px)]">
+            <div className="lg:bg-[#080219] z-10 lg:rounded-[30px]  p-[20px] flex justify-center items-center   absolute  h-[calc(100%-2px)] w-[calc(100%-2px)]">
               <img src={soundbox} alt="" />
             </div>
           </div>
@@ -27,7 +27,7 @@ function SoundboxFeatures() {
       </div>
         <div className=" flex justify-around z-10  lg:absolute lg:top-[300px] w-full mt-[70px] lg:mt-0">
         <div className=" cardbg rounded-[25.5px] w-[314px] h-[347px] flex justify-center items-center ">
-            <div className="bg-[#080219] rounded-[25.5px]  p-[20px]  h-[calc(100%-2px)] w-[calc(100%-2px)]">
+            <div className="bg-[#080219] rounded-[25.5px]  p-[20px] flex justify-center items-center  h-[calc(100%-2px)] w-[calc(100%-2px)]">
             <img src={newSoundbox} alt=""  />
           </div>
         </div>
@@ -56,7 +56,7 @@ function SoundboxFeatures() {
 </div>
 
 <div className="cardbg flex justify-center mx-[20px]">
-  <div className="absolute top-[235px]  bg-[#080219] h-[370px] max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-borderColor flex justify-center items-center">
+  <div className="absolute top-[235px]  bg-[#080219] h-[370px]  max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-borderColor flex justify-center items-center">
 <img src={soundbox} alt="" className="p-[40px]" />
 </div>
 </div>
@@ -75,7 +75,7 @@ function SoundboxFeatures() {
 </div>
 <div className="flex justify-center mx-[20px]">
   <div className="absolute top-[235px]  bg-[#080219] h-[370px] max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-borderColor flex justify-center items-center">
-<img src={newSoundbox} alt="" className="pr-[40px]"/>
+<img src={newSoundbox} alt="" className=""/>
 </div>
 </div>
 </div>

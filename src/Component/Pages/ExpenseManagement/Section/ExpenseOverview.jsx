@@ -29,7 +29,7 @@ const contentData = [
 function ExpenseOverview() {
   return (
    <section className="min-h-[90vh] flex justify-center items-center">
-    <div className='max-w-screen-lg lg:mx-auto mt-[100px] px-[20px] xl:px-[0px] relative'>
+    <div className='max-w-screen-lg lg:mx-auto mt-[100px]  xl:px-[0px] relative'>
     <div className='hidden lg:block expenseOverviewGradiant'></div>
       <h2 className="px-1 text-center lg:text-left text-[28px] lg:text-[34px] lg:leading-[45px] leading-[40px] font-semibold   ExpenseOverviewHeader">
        One Platform, Every Expense Covered
@@ -44,7 +44,7 @@ function ExpenseOverview() {
           
           >
            <div className='cardbg relative  h-[290px] w-[317px] rounded-b-[0px] rounded-t-[13.59px] p-[0.6px]'>
-             <div className="bg-[#080219] left-[1px] right-[1px] top-[1px] absolute  h-[99%]  p-[55px]  rounded-t-[13.59px] rounded-b-[0px]  ">
+             <div className="bg-[#080219] left-[1px] right-[1px] top-[1px] absolute  h-[calc(100%-2px)]  p-[55px]  rounded-t-[13.59px] rounded-b-[0px]  ">
                <img src={item.image} className="" />
              </div>
            </div>
