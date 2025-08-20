@@ -1,3 +1,4 @@
+
 import  {useEffect,useRef, useState } from "react";
 import staticCardImg1 from '../../../../../public/image/Prepaid/staticCardImg1.webp'
 import staticCardImg2 from '../../../../../public/image/Prepaid/staticCardImg2.webp'

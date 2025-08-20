@@ -8,7 +8,7 @@ function Digitize() {
       <div className="max-w-full lg:max-w-screen-lg mx-[12px] lg:mx-auto mt-[100px]">
       <div className="bg-[#0E0624] overflow-hidden relative rounded-[20px]  pt-[93px]  flex flex-col lg:flex-row gap-[140px] lg:gap-0">
             <div className='DigitizeGradient1'></div>
-        <div className="relative mt-[55px] lg:mt-[0px]  flex flex-col justify-start items-center lg:items-start">
+        <div className="relative mt-[55px] lg:mt-[0px] lg:pl-[73px]  flex flex-col justify-start items-center lg:items-start">
          
             <h2 className="max-[360px]:text-[22px] text-[26px] lg:text-[48px] font-semibold text-center lg:text-left text-white90">
               Digitize your Business Expenses

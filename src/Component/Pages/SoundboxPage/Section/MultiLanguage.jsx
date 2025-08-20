@@ -1,9 +1,10 @@
-import multilanguage from '/image/soundbox/multilanguage.webp';
+import multilanguage from '/image/soundbox/multilanguage.svg';
 import mobilemultilanguage from '/image/soundbox/mobileMultilanguage.webp';
 
 function MultiLanguage() {
   return (
-    <section className='max-w-screen-lg lg:mx-auto mt-[109px]'>
+    <section className=' mt-[150px]'>
+      <div className='max-w-screen-lg lg:mx-auto'>
         <div className='relative'>
              <div className="multilanguage-gradient"></div>
             <div className='absolute lg:static top-[44%] lg:top-auto left-0 right-0'>
@@ -18,6 +19,7 @@ function MultiLanguage() {
                 <img src={multilanguage} alt="multilanguage"  height={'483px'} width={'1006.62px'} className='hidden lg:block'/>
                 <img src={mobilemultilanguage} alt="multilanguage"  height={'483px'} width={'1006.62px'} className=' lg:hidden'/>
             </div>
+        </div>
         </div>
     </section>
   )

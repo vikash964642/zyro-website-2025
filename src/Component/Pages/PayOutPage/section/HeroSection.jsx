@@ -1,8 +1,9 @@
-import React from 'react'
+// import React from 'react'
 import './PayOut.css'
 function HeroSection() {
   return (
-      <section className="max-w-screen-lg lg:mx-auto  max-[375px]:px-[20px] px-[35px] xl:px-[0px] relative">
+      <section className="mt-[80px]">
+        <div className='max-w-screen-lg mx-auto  max-[375px]:px-[20px] px-[35px] xl:px-[0px] relative'>
           <div className='HeroSectionGradientLeft'></div>
                 <div className='HeroSectionGradientRight'></div>
         <div className='pt-[120px] lg:pt-[75px]'>
@@ -13,7 +14,7 @@ function HeroSection() {
          <button className='w-[275px] h-[55px] lg:w-[225px] lg:h-[45px] bg-[#4F31B4] rounded-[30px] lg:rounded-[24.77px] text-[#FFF] text-[22px] lg:text-[18px] font-semibold'>Get Started</button>
        </div>
         </div>
-      
+      </div>
       </section>
   )
 }

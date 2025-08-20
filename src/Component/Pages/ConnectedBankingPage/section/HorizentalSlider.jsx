@@ -4,21 +4,21 @@
 
 
 import { useRef } from "react";
-import HorizentalSliderImg1 from '../../../../../public/image/HorizentalSliderConnectedBanking/HorizentalSliderImg1.png'
-import HorizentalSliderImg2 from '../../../../../public/image/HorizentalSliderConnectedBanking/HorizentalSliderImg2.png'
-import HorizentalSliderImg3 from '../../../../../public/image/HorizentalSliderConnectedBanking/HorizentalSliderImg3.png'
-import HorizentalSliderImg4 from '../../../../../public/image/HorizentalSliderConnectedBanking/HorizentalSliderImg4.png'
-import HorizentalSliderImg5 from '../../../../../public/image/HorizentalSliderConnectedBanking/HorizentalSliderImg5.png'
-import HorizentalSliderImg6 from '../../../../../public/image/HorizentalSliderConnectedBanking/HorizentalSliderImg6.png'
+import HorizentalSliderImg1 from '/image/HorizentalSliderConnectedBanking/HorizentalSliderImg1.png'
+import HorizentalSliderImg2 from '/image/HorizentalSliderConnectedBanking/HorizentalSliderImg2.png'
+import HorizentalSliderImg3 from '/image/HorizentalSliderConnectedBanking/HorizentalSliderImg3.png'
+import HorizentalSliderImg4 from '/image/HorizentalSliderConnectedBanking/HorizentalSliderImg4.png'
+import HorizentalSliderImg5 from '/image/HorizentalSliderConnectedBanking/HorizentalSliderImg5.png'
+import HorizentalSliderImg6 from '/image/HorizentalSliderConnectedBanking/HorizentalSliderImg6.png'
 
 // Sample data
 const sliders = [
   { image: HorizentalSliderImg1,heading:"Real-Time Tracking", paragraph: "Our platform provides real-time balance updates, instant transaction tracking, and payment monitoring without any delays." },
-  { image: HorizentalSliderImg2,heading:"Automated Reconciliation", paragraph: "Automatically match payments, bank statements, and records to save time and improve financial accuracy." },
-  { image: HorizentalSliderImg3,heading:"Better Customer Experience", paragraph: "Facilitate faster payment processing and smooth financial services to enhance client satisfaction and trust" },
-  { image: HorizentalSliderImg4,heading:"Customizable Financial Reports", paragraph: "Generate comprehensive financial reports to monitor business performance and support informed decision-making." },
+  { image: HorizentalSliderImg4,heading:"Automated Reconciliation", paragraph: "Automatically match payments, bank statements, and records to save time and improve financial accuracy." },
+  { image: HorizentalSliderImg6,heading:"Better Customer Experience", paragraph: "Facilitate faster payment processing and smooth financial services to enhance client satisfaction and trust" },
+  { image: HorizentalSliderImg3,heading:"Customizable Financial Reports", paragraph: "Generate comprehensive financial reports to monitor business performance and support informed decision-making." },
   { image: HorizentalSliderImg5,heading:"Complete Financial Control", paragraph: "Easily track, manage, and monitor your cash flow for efficient and transparent financial operations." },
-  { image: HorizentalSliderImg6,heading:"Scalability for Growth", paragraph: "From startups to large enterprises, our platform grows and adapts seamlessly with your business needs." },
+  { image: HorizentalSliderImg2,heading:"Scalability for Growth", paragraph: "From startups to large enterprises, our platform grows and adapts seamlessly with your business needs." },
 ];
 
 function HorizentalSlider() {

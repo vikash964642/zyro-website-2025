@@ -52,7 +52,7 @@ export default function VerticleSlider() {
   };
 
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
+    <section className="mt-[130px]">
       <div className="max-w-screen-lg mx-auto px-4 ">
         <h2 className="max-[360px]:text-[25px] text-center text-[28px] lg:text-[48px] text-white90 font-medium mb-12">
         Why <span className="verticlesliderZyroGradient max-[360px]:text-[25px]   text-[28px] lg:text-[48px] font-bold">ZYRO</span> is perfect for your Business

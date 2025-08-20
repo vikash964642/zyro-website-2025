@@ -1,11 +1,12 @@
-import React from 'react'
+// import React from 'react'
 import prepaidcardHeroSection from '../../../../../public/video/prepaidcardHeroSection.mp4';
 import './Prepaid.css';
 function HeroSection() {
   return (
-      <section className="max-w-screen-lg mx-auto px-[30px] xl:px-0 relative ">
+      <section className="min-h-[90vh] flex justify-center items-center ">
+        <div className="max-w-screen-lg mx-auto px-[30px] xl:px-0 relative ">
         <div className='HeroSectionGradient'></div>
-<div className='pt-[80px] lg:pt-[110px]'>
+<div className='pt-[80px] '>
    <div className='flex items-center flex-col'>
      <h2 className='herosectionHeaderGradient max-[360px]:text-[22px] text-[26px] md:text-[30px] lg:text-[36px] font-semibold leading-[39px] lg:leading-[46px] sm:text-center md:w-[670px]'>Your All-in-One Card for Shopping, Travel & More</h2>
     <p className='max-[360px]:text-[13px] text-[16px] sm:text-center leading-[28px] lg:text-[20px] font-normal text-[#A9A9A9] lg:text-center md:w-[600px] pt-[10px]'>From daily spending to travel adventures, manage it all securely and easily, anytime, anywhere with a single card.</p>
@@ -30,7 +31,7 @@ function HeroSection() {
   <button className=' max-[375px]:w-[100%] w-[325px] h-[55px] rounded-[30px] bg-[#4F31B4] text-[#FFF] text-[22px] font-semibold '>Get Started</button>
 </div>
 </div>
-
+</div>
       </section>
 
   )

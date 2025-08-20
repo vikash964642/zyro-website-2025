@@ -36,7 +36,7 @@
   filter: blur(300px);
   position: absolute;
   inset: -9% 16% 68% 13%;
-  z-index: 1;
+  z-index: -1;
 }
 
 .feature-comparison-gradient,

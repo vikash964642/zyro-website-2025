@@ -24,8 +24,8 @@ export default function ConnectedBanking() {
   }, [collaborators.length]);
 
   return (
-    <section  className="min-h-[90vh] flex justify-center items-center">
-      <div className="max-w-screen-lg mx-4 lg:mx-auto mt-[90px] lg:mt-0">
+    <section  className="">
+      <div className="max-w-screen-lg mx-4 lg:mx-auto mt-[130px] lg:mt-[130]">
 <div className="py-10 relative">
   <div className="ConnectedBanking-gradient"></div>
  

@@ -40,7 +40,7 @@ function Footer() {
               </p>
               <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
                 <li>
-                  <Link to="/connectedbanking" onClick={ScrollTop}>
+                  <Link to="/soundboxPage" onClick={ScrollTop}>
                     Zyro Soundbox
                   </Link>
                 </li>

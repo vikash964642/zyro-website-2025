@@ -3,7 +3,7 @@ import languageSoundbox from '../../../../../public/image/HomePage/zyroposmachin
 import KnowMoreRightIcon from '../../../../../public/image/HomePage/Icon/KnowMoreRightIcon.svg'
 function ZyroPosMachine() {
   return (
-     <section className=" min-h-[90vh] flex justify-center items-center ">
+     <section className=" mt-[130px] ">
         <div className='max-w-screen-lg lg:px-[20px] xl:px-0 mx-auto'>
 
             <div className='lg:flex justify-between items-center'>

@@ -10,16 +10,17 @@ const cards = [
     heading: "Approval Workflows",
     paragraph: "Set custom approval rules for transactions and stay in control of every outgoing payment.",
   },
-  {
-    image: Icon2,
-    heading: "Auto-Retry for  Failed Transactions",
-    paragraph: "Never miss a payment, failed transactions are retired automatically without any delay.",
-  },
+ 
   {
     image: Icon3,
     heading: "Auto-reconciliation",
     paragraph:
       "Automatically match and reconcile all transactions with real-time accuracy in a unified dashboard.",
+  },
+   {
+    image: Icon2,
+    heading: "Auto-Retry for  Failed Transactions",
+    paragraph: "Never miss a payment, failed transactions are retired automatically without any delay.",
   },
   {
     image: Icon4,
@@ -49,7 +50,7 @@ function Features() {
             >
               <div className="bg-[#080411] p-[18px] rounded-xl lg:h-[99%] h-[98.9%] w-[99.7%]">
                 <div className="flex justify-center items-center ">
-              <div className="h-[52px] w-[52px] bg-[#080219]  border-[0.377px] flex justify-center items-center border-[#A901A3] rounded-[10.9px]">
+              <div className="h-[52px] w-[52px] bg-[#080219]  border-[0.377px] flex justify-center items-center PayoutCardBorder rounded-[10.9px]">
                     <img
                     src={card.image}
                     alt={card.heading}

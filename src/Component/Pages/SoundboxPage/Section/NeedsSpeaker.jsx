@@ -6,16 +6,16 @@ import Line from "/image/ExpenseManagement/line.svg";
 
 const CardSlide = [
   {
-    heading: "Custom Controls",
-    paragraph: "Set rules, policies, and spending limits",
+    heading: "Boosts Customer Trust",
+    paragraph: "Earn instant credibility with clear, reliable transaction alerts.",
   },
   {
-    heading: "Live Spend Insights",
-    paragraph: "Stay informed with real-time spend alerts",
+    heading: "Robust Data Security",
+    paragraph: "Your data stays protected with advanced encryption and secure protocols.",
   },
   {
-    heading: "Full Automation",
-    paragraph: "Simplify workflows and reduce manual effort",
+    heading: "Smart Dashboard & TMS Access",
+    paragraph: "Easily monitor transactions, manage devices, and access insights in real time.",
   },
 ];
 
@@ -24,8 +24,8 @@ function NeedsSpeaker() {
   const handleToggle = () => setShowExtra((prev) => !prev);
 
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
-      <div className="max-w-screen-lg mx-auto mt-[100px] px-[20px] xl:px-0">
+    <section className="mt-[150px]">
+      <div className="max-w-screen-lg mx-auto  px-[20px] xl:px-0">
         {/* Desktop View */}
         <div className="hidden md:block">
           <div className="relative">
@@ -44,10 +44,10 @@ function NeedsSpeaker() {
               {CardSlide.map((card, index) => (
                 <div key={index} className="relative flex items-center gap-4 px-2">
                   <div className="rounded-xl h-full">
-                    <h3 className="text-[18px] lg:text-[22px] text-[#FFF] font-semibold">
+                    <h3 className="text-[18px] lg:text-[20px] text-[#FFF] font-semibold lg:leading-[31px] leading-[25px]">
                       {card.heading}
                     </h3>
-                    <p className="text-[14px] lg:text-[16px] font-normal text-[#F3F3F3] mt-[16px]">
+                    <p className="text-[16px] lg:font-semibold font-normal lg:leading-[28px] leading-[22px] text-[#F3F3F3] mt-[16px]">
                       {card.paragraph}
                     </p>
                   </div>
