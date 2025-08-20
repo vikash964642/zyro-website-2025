@@ -1,13 +1,13 @@
-import React from 'react'
+// import React from 'react'
 import arrowRight from '../../../../../public/image/ConnectedBanking/arrowRight.svg';
 import BusinessBankingMob from '../../../../../public/image/Prepaid/PrepaidBusinessBanking.svg';
 function BusinessBanking() {
   return (
   <section className="max-w-screen-lg lg:mx-auto mt-[100px]">
-    <div className='bg-[#0E0624] rounded-[20px] px-[25px] lg:pl-[70px] lg:pr-[90px] lg:h-[460px] flex flex-col lg:flex-row gap-[100px] lg:gap-[0px]'>
+    <div className='bg-[#0E0624] rounded-[20px] px-[25px] lg:pl-[20px] lg:pr-[20px] lg:h-[460px] flex flex-col lg:flex-row gap-[100px] lg:gap-[0px]'>
       <div className='relative mt-[55px] lg:mt-[0px] lg:w-[60%] flex flex-col justify-center items-center lg:items-start'>
           <div>
-            <h2 className='max-[360px]:text-[22px] text-[26px] lg:text-[48px] font-semibold text-center lg:text-left text-white90'>Start smart spending today</h2>
+            <h2 className='max-[360px]:text-[22px] text-[26px] lg:text-[48px] font-semibold text-center lg:text-left text-white90 lg:w-[684px]'>Start smart spending today</h2>
             <div className='flex'>
               <p className='max-[360px]:text-[12px] text-[14px] lg:text-[20px] font-normal text-center lg:text-left text-white70 pt-[10px] lg:w-[435px]'>Experience the future of spending with Zyro Prepaid Card</p>
             </div>
@@ -24,7 +24,7 @@ function BusinessBanking() {
  <div className='businessBankingGradient1 w-[200px] h-[250px] lg:w-[300px] lg:h-[300px] z-10'></div>
       </div>
 <div className='flex items-end justify-center lg:justify-start lg:w-[40%] relative'>
-     <img src={BusinessBankingMob}/>
+     <img src={BusinessBankingMob} className='z-10'/>
 
         <div className='w-[200px] h-[250px] lg:w-[300px] lg:h-[300px] businessBankingGradient2'></div>
  

@@ -29,12 +29,12 @@ const contentData = [
 function ExpenseOverview() {
   return (
    <section className="min-h-[90vh] flex justify-center items-center">
-    <div className='max-w-screen-lg lg:mx-auto mt-[100px] px-[20px] xl:px-[0px] relative'>
+    <div className='max-w-screen-lg lg:mx-auto mt-[100px]  xl:px-[0px] relative'>
     <div className='hidden lg:block expenseOverviewGradiant'></div>
       <h2 className="px-1 text-center lg:text-left text-[28px] lg:text-[34px] lg:leading-[45px] leading-[40px] font-semibold   ExpenseOverviewHeader">
        One Platform, Every Expense Covered
       </h2>
-      <p className='px-6 py-3 text-center lg:text-left font-normal text-[16px] leading-[25px] lg:text-[20px] lg:leading-[33px] text-[#959595]'>All your business expense, managed in one place</p>
+      <p className='px-6 lg:px-1 py-3 text-center lg:text-left font-normal text-[16px] leading-[25px] lg:text-[20px] lg:leading-[33px] text-[#959595]'>All your business expense, managed in one place</p>
       <div className="flex flex-wrap flex-col sm:flex-row gap-9 lg:gap-[17px] justify-center items-center xl:justify-between mt-[35px] lg:mt-[45px]">
         {contentData.map((item, index) => (
           <div
@@ -44,7 +44,7 @@ function ExpenseOverview() {
           
           >
            <div className='cardbg relative  h-[290px] w-[317px] rounded-b-[0px] rounded-t-[13.59px] p-[0.6px]'>
-             <div className="bg-[#080219] left-[1px] right-[1px] top-[1px] absolute  h-[99%] p-[55px]  rounded-t-[13.59px] rounded-b-[0px]  ">
+             <div className="bg-[#080219] left-[1px] right-[1px] top-[1px] absolute  h-[calc(100%-2px)]  p-[55px]  rounded-t-[13.59px] rounded-b-[0px]  ">
                <img src={item.image} className="" />
              </div>
            </div>

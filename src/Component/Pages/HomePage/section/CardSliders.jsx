@@ -89,8 +89,8 @@ useEffect(() => {
   };
 
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
-      <div className="max-w-screen-lg mx-auto mt-[100px] lg:mt-0">
+    <section className="">
+      <div className="max-w-screen-lg mx-auto mt-[100px] lg:mt-[130px]">
       <Slider ref={sliderRef} {...settings}>
         {cardsData.map((data, index) => (
           <div key={data.id} className="px-2 ">

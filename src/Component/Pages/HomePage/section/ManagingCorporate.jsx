@@ -7,6 +7,7 @@ function ManagingCorporate() {
      <section className="max-w-screen-lg px-4  xl:px-0 mx-auto mt-[200px] lg:mt-[220px]">
          
 
+
             <div className='lg:flex justify-between items-center relative'>
                 <div className='lg:w-[50%]'>
                     <h2 className="font-medium text-[#FFF]  max-[400px]:text-[26px] text-[28px] lg:text-[36px] max-[375px]:leading-[38px] leading-[44px] lg:leading-[60px] text-center px-[10px] lg:text-left lg:pr-[12px]">Managing <span className='ManagerCorporateHeaderGradient lg:text-[38px] font-semibold'>Corporate Card and Expense Made Easy with Zyro</span></h2>

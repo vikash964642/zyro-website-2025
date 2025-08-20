@@ -15,18 +15,19 @@ const cards = [
     heading: "Instant Payment Notifications",
     paragraph: "Get real-time voice confirmations for every payment.",
   },
+    {
+    image: repeatAlerts,
+    heading: "Repeat Last Payment Alerts",
+    paragraph:
+      "Replay the last payment voice message anytime with a single button press.",
+  },
   {
     image: remoteDeviceControl,
     heading: "Remote Device Control",
     paragraph:
       "Easily monitor & manage your Soundbox via the merchant business app.",
   },
-  {
-    image: repeatAlerts,
-    heading: "Repeat Last Payment Alerts",
-    paragraph:
-      "Replay the last payment voice message anytime with a single button press.",
-  },
+
 ];
 
 function Features() {
@@ -35,10 +36,12 @@ function Features() {
         
       <div className="mt-[131px] max-w-screen-xl mx-auto px-[19px] relative">
         
-        <div className="features-gradient"></div>
-        <p className="bg-textgradiantMid text-transparent bg-clip-text text-[24px] lg:text-[38px] font-semibold leading-[40px] lg:leading-[56px] text-center px-[16px]">
-          Key Features of a Soundbox for Every Business
-        </p>
+        <div className="features-gradient-right"></div>
+       <div className="flex justify-center items-center pb-[55px]">
+         <p className="bg-textgradiantMid  lg:w-[619px] text-transparent bg-clip-text text-[24px] lg:text-[38px] font-semibold leading-[40px] lg:leading-[56px] text-center px-[16px]">
+           Key Features of ZYRO  Soundbox for Every Business
+         </p>
+       </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
           {cards.map((card, index) => (
             <div
@@ -49,7 +52,7 @@ function Features() {
               }}
               className="flex items-center justify-center bg-featurediv  bg-clip-text text-transparent  rounded-xl hover:shadow-md transition duration-300 text-center"
             >
-              <div className="bg-[#080411] p-5 rounded-xl lg:h-[99.2%] h-[98.9%] w-[99.5%]">
+              <div className="bg-[#080411] p-5 rounded-xl lg:h-[98.9%] h-[98.9%] w-[99.5%]">
                 <div className="flex justify-center items-center">
                   <img
                     src={card.image}

@@ -1,12 +1,12 @@
 // import React from 'react'
-import ExpenseCardRequest from "../../../../../public/image/ExpenseManagement/ExpenseCardRequest.webp";
+import ExpenseCardRequest from "/image/ExpenseManagement/expenseCardRequest.webp";
 // import ExpenseAssignCard from "../../../../../public/image/ExpenseManagement/ExpenseAssignCard.webp";
 // import ExpensePhyschicalCard from "../../../../../public/image/ExpenseManagement/ExpensePhyschicalCard.webp";
 
 function CorporateCardManagement() {
   return (
     <section className="min-h-[90vh] flex items-center">
-      <div className="max-w-screen-lg mx-auto lg:mt-[200px]">
+      <div className="max-w-screen-lg mx-auto mt-[100px] lg:mt-0 ">
         <h3 className="CorporateCardHead text-[24px] leading-[32px] lg:text-[34px] lg:leading-[45px] font-semibold text-center px-[24px]">
           Corporate Card Management, Made Easy
         </h3>

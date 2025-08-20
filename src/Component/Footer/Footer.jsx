@@ -1,13 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
-import Facebook from "../../../public/image/FooterImage/Facebook.svg";
-import Instagram from "../../../public/image/FooterImage/Instagram.svg";
-import Youtube from "../../../public/image/FooterImage/Youtube.svg";
-import XTwitter from "../../../public/image/FooterImage/XTwitter.svg";
-import linkedIn from "../../../public/image/FooterImage/LinkedIn.svg";
-import zyrologo from "../../../public/image/zyro-logo.svg";
+import Facebook from "/image/FooterImage/Facebook.svg";
+import Instagram from "/image/FooterImage/Instagram.svg";
+import Youtube from "/image/FooterImage/Youtube.svg";
+import XTwitter from "/image/FooterImage/XTwitter.svg";
+import linkedIn from "/image/FooterImage/LinkedIn.svg";
+import zyrologo from "/image/zyro-logo.svg";
 // import { useNavigate } from 'react-router-dom';
-import GooglePlay from "../../../public/image/FooterImage/playstore.svg";
-import certificatezyro from "../../../public/image/FooterImage/certificatezyro.png";
+import GooglePlay from "/image/FooterImage/playstore.svg";
+import certificatezyro from "/image/FooterImage/certificatezyro.png";
 
 function Footer() {
   const ScrollTop = () => {
@@ -40,7 +40,7 @@ function Footer() {
               </p>
               <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
                 <li>
-                  <Link to="/connectedbanking" onClick={ScrollTop}>
+                  <Link to="/soundboxPage" onClick={ScrollTop}>
                     Zyro Soundbox
                   </Link>
                 </li>
@@ -59,21 +59,21 @@ function Footer() {
                     Prepaid Card
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="" onClick={ScrollTop}>
                     Gift Cards API
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link to="" onClick={ScrollTop}>
                    Billing & Accounting
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link to="" onClick={ScrollTop}>
                    UPI Stack
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="">
@@ -91,15 +91,15 @@ function Footer() {
                     Payout
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="">Bank Account Verification</Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link to="">Escrow Account</Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link to="">Zyro Capital</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -130,11 +130,11 @@ function Footer() {
                     Contact Us
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="" onClick={ScrollTop}>
                     Careers
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className=" max-[1123px]:mr-[15px]   max-[1124px]:mr-[15px]">
@@ -143,18 +143,18 @@ function Footer() {
               </p>
               <ul className="font-normal text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px] text-white70">
                 <li>
-                  <Link to="" onClick={ScrollTop}>
+                  <Link to="/terms-and-conditions" onClick={ScrollTop}>
                     Terms & Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link to="" onClick={ScrollTop}>
+                  <Link to="/privacy-policy" onClick={ScrollTop}>
                     Privacy Policy
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="">Cookies Policy</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -186,21 +186,21 @@ function Footer() {
                    Prepaid Card
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="" onClick={ScrollTop}>
                    Gift Cards API
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link to="" onClick={ScrollTop}>
                    Billing & Accounting
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link to="" onClick={ScrollTop}>
                   UPI Stack
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="pt-[30px]">
@@ -228,11 +228,11 @@ function Footer() {
                     Contact Us
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="" onClick={ScrollTop}>
                     Careers
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -253,7 +253,7 @@ function Footer() {
                     Payout
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="">Bank Account Verification</Link>
                 </li>
                 <li>
@@ -261,7 +261,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link to="">Zyro Capital</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="pt-[80px] min-[768px]:pt-[100px]">
@@ -270,18 +270,18 @@ function Footer() {
               </p>
               <ul className="font-normal text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px] text-white70">
                 <li>
-                  <Link to="" onClick={ScrollTop}>
+                  <Link to="/terms-and-conditions" onClick={ScrollTop}>
                     Terms & Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link to="" onClick={ScrollTop}>
+                  <Link to="/privacy-policy" onClick={ScrollTop}>
                     Privacy Policy
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="">Cookies Policy</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

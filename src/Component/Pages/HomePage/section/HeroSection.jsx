@@ -5,38 +5,51 @@ import { useSwipeable } from "react-swipeable";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
-// import HomePageRightIcon from '../../../../../public/image/HomePage/HomePageRightIcon.webp';
-import KnowMoreRightIcon from '../../../../../public/image/HomePage/Icon/KnowMoreRightIcon.svg'
+import KnowMoreRightIcon from '/image/HomePage/Icon/KnowMoreRightIcon.svg'
 
 
 const slides = [
+   {
+    image: "/image/HomePage/herosectionbanner2.webp",
+     imageMob: "/image/HomePage/herosectionbanner2mob.webp",
+    heading1: "Zyro POS Device",
+    heading2:"",
+    paragraph:
+      "Accepts UPI & Card Payments with a Single Device",
+  },
   {
     image: "./../../../../public/image/HomePage/herosectionbanner.svg",
      imageMob: "./../../../../public/image/HomePage/herosectionbanner.svg",
      link:"/connectedbanking",
+
     heading1: "Accelerate Your Business with our",
     heading2:"Connected Banking Solutions",
     paragraph:
       "Connect and manage all your business current accounts from different banks in a single dashboard with our connected banking.",
   },
   {
+
     image: "./../../../../public/image/HomePage/herosoundbox.svg",
      imageMob: "./../../../../public/image/HomePage/herosoundbox.svg",
         link:"/soundboxPage",
+
     heading1: "Zyro Sound Box",
     heading2:"",
     paragraph:
       "Accept digital payments with our Zyro UPI QR Code. The soundbox offers instant secure audio payment confirmations, ensuring a faster, more reliable and efficient customer experience.",
   },
   {
+
     image: "./../../../../public/image/HomePage/herosection-banner-1.webp",
         imageMob: "./../../../../public/image/HomePage/herosection-banner-1.webp",
            link:"/ExpenseManagement",
+
     heading1: "Simplify, Track, and Control Expense",
     heading2:" in One Place",
     paragraph:
       "Expense management made easy with Zyro. Manage all your business expenses in one place — track, control and optimize easily.",
   },
+
    {
     image: "./../../../../public/image/HomePage/herosection-banner-2.webp",
      imageMob: "./../../../../public/image/HomePage/herosection-banner-2-mob.webp",
@@ -46,6 +59,7 @@ const slides = [
     paragraph:
       "Accepts UPI & Card Payments with a Single Device",
   },
+
 ];
 
 export default function HeroSection() {
@@ -84,6 +98,7 @@ export default function HeroSection() {
         <div className="home-hero_gradient3"></div>
         <div className="home-hero_gradient4"></div>
         {/* <div className="home-hero_gradientBottom"></div> */}
+
       {/* Navigation Buttons */}
       <button
         onClick={handlePrev}

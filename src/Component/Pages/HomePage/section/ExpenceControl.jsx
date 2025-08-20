@@ -85,6 +85,7 @@ const handleLabelClick = (index) => {
 
   return (
     <section className="max-w-screen-lg mx-auto px-2 sm:px-4 xl:px-0 mt-[100px] lg:mt-[200px]">
+
       <h3 className="text-center text-[26px] md:text-[28px] lg:text-[30px] font-semibold mb-[50px] ExpenceControlHeaderGradient">
         Complete Expense Control at Your Fingertips
       </h3>

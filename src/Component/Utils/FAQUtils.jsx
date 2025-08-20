@@ -1,4 +1,5 @@
 
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PropTypes from "prop-types";
@@ -13,7 +14,7 @@ function FAQUtils({ heading, subheading, faq }) {
   };
 
   return (
-    <section>
+    <section >
       <div className="max-w-screen-lg lg:mx-auto mt-[120px] lg:mt-[150px] px-4 xl:px-0 relative">
         <div className="flex justify-center">
           <div className="max-[360px]:w-[275px] max-[400px]:w-[300px] w-[350px] md:w-[400px] lg:w-[443px] faq-utils-bgGradient"></div>
@@ -58,7 +59,7 @@ function FAQUtils({ heading, subheading, faq }) {
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className="max-[360px]:text-[12px] text-[#9E9C9F] lg:text-[16px] text-[14px] font-normal mt-[10px] md:mt-[20px] overflow-hidden"
+                    className="max-[360px]:text-[12px] text-[#9E9C9F] lg:text-[16px] text-[14px] font-normal mt-[10px] md:mt-[20px] overflow-hidden pr-[60px]"
                   >
                     {item.ans}
                   </motion.p>

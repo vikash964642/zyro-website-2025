@@ -24,9 +24,11 @@ export default function ConnectedBanking() {
   }, [collaborators.length]);
 
   return (
+
     <section  className="max-w-screen-lg mx-4 lg:mx-auto mt-[95px] lg:mt-[160px]">
       
 <div className=" relative">
+
   <div className="ConnectedBanking-gradient"></div>
  
         <h1 className="text-[28px] md:text-[40px] lg:text-[60px] text-[#EDEDED] text-center font-semibold">

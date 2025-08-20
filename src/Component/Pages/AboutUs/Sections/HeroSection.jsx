@@ -3,7 +3,7 @@ import './about.css';
 
 function HeroSection() {
   return (
-    <section className='min-h-[70vh] flex justify-center items-center'>
+    <section className='min-h-[90vh] flex justify-center items-center'>
       <div className='max-w-screen-lg mx-auto relative mt-[117px] lg:mt-0'>
         <div className='left-gradiant'></div>
         <div className='center-gradiant'></div>
