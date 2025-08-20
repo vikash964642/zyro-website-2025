@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import collab1 from "/assets/icons/upi.webp";
+// import collab1 from "/assets/icons/upi.webp";
 import collab2 from "/assets/icons/canara-icon.webp";
 import collab3 from "/assets/icons/icicic.webp";
 import collab4 from "/assets/icons/idfc.webp";
@@ -13,7 +13,7 @@ import KnowMoreRightIcon from '../../../../../public/image/HomePage/Icon/KnowMor
 export default function ConnectedBanking() {
   const [currImg, setCurrImg] = useState(0);
 
-  const collaborators = [collab1, collab2, collab3, collab4, collab5, collab6];
+  const collaborators = [ collab2, collab3, collab4, collab5, collab6];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,9 +24,11 @@ export default function ConnectedBanking() {
   }, [collaborators.length]);
 
   return (
-    <section  className="">
-      <div className="max-w-screen-lg mx-4 lg:mx-auto mt-[130px] lg:mt-[130]">
-<div className="py-10 relative">
+
+    <section  className="max-w-screen-lg mx-4 lg:mx-auto mt-[95px] lg:mt-[160px]">
+      
+<div className=" relative">
+
   <div className="ConnectedBanking-gradient"></div>
  
         <h1 className="text-[28px] md:text-[40px] lg:text-[60px] text-[#EDEDED] text-center font-semibold">
@@ -68,7 +70,6 @@ export default function ConnectedBanking() {
           </div>
         </div>
      
-    </div>
     </div>
     </section>
     

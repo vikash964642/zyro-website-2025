@@ -1,10 +1,12 @@
 // import React from 'react'
-import languageSoundbox from '../../../../../public/image/HomePage/soundboxnew.svg'
+
+import languageSoundbox from '../../../../../public/image/HomePage/languageSoundbox.svg'
 import KnowMoreRightIcon from '../../../../../public/image/HomePage/Icon/KnowMoreRightIcon.svg'
 function ZyroSoundBox() {
   return (
-    <section className="mt-[130px]">
-     <div className='max-w-screen-lg lg:px-[20px] xl:px-0 mx-auto '>
+    <section className="max-w-screen-lg lg:px-[20px] xl:px-0 mx-auto mt-[200px]">
+    
+
            <div className='lg:flex justify-between items-center'>
             <div className='lg:w-[50%] p-3'>
                 <h2 className="bg-gradientText bg-clip-text text-transparent font-semibold max-[400px]:text-28px text-[32px] lg:text-[47.74px] leading-[40px] lg:leading-[59.68px] text-center lg:text-left">ZYRO Soundbox</h2>
@@ -20,7 +22,7 @@ function ZyroSoundBox() {
                 <img src={languageSoundbox} alt="" />
             </div>
         </div>
-     </div>
+
     </section>
   )
 }
