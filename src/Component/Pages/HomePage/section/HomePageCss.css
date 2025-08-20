@@ -104,7 +104,7 @@ line-height: 21px; /* 87.5% */
 }
 .sap_ControlFinance{
   background-position-x: center;
-    background-position-y: -5rem;
+    background-position-y: 2rem;
 }
 .sap{
   background-position-x: center;
@@ -367,4 +367,24 @@ background-clip: text;
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width:999px){
+  .sap_ControlFinance{
+  background-position-x: center;
+    background-position-y: 1rem;
+}
+}
+@media (max-width:500px){
+  .sap_ControlFinance{
+  background-position-x: center;
+    background-position-y: 4rem;
+}
+}
+@media (max-width:330px){
+  .sap_ControlFinance{
+  background-position-x: center;
+    background-position-y: 8rem;
+}
 }

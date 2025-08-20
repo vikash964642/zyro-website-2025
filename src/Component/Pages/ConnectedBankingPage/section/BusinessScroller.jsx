@@ -8,19 +8,19 @@ import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 const cardsData = [
   {
     id: 1,
-    image:"../../../../../public/image/BusinessScrollbar/BusinessScrollbarImg1.png",
+    image:"/image/BusinessScrollbar/BusinessScrollbarImg1.png",
     heading: "Unified Dashboard",
     paragraph: "View all your current account details, transactions, and balances clearly in a single dashboard.",
   },
   {
     id: 2,
-    image:"../../../../../public/image/BusinessScrollbar/BusinessScrollbarImg2.png",
+    image:"/image/BusinessScrollbar/BusinessScrollbarImg2.png",
     heading: "Payments Management",
     paragraph: "Make payments to vendors and receive payments from clients directly from the dashboard.",
   },
   {
     id: 3,
-    image:"../../../../../public/image/BusinessScrollbar/BusinessScrollbarImg1.png",
+    image:"/image/BusinessScrollbar/BusinessScrollbarImg1.png",
     heading: "Transparency and Accuracy",
     paragraph: "TEnsure financial records are accurate and transparent, helping to reduce errors and mismatches.",
   },

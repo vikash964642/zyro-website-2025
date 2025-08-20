@@ -1,22 +1,22 @@
 // import React from "react";
 
-import canara from '../../../../../public/image/HomePage/Icon/canaraIcon.jpg'
-import icici from '../../../../../public/image/HomePage/Icon/icici.jpg'
-import idfcIcon from '../../../../../public/image/HomePage/Icon/idfcIcon.jpg'
-import npci from '../../../../../public/image/HomePage/Icon/npci.jpg'
-import pinelabs from '../../../../../public/image/HomePage/Icon/pinelabs.jpg'
-import yesIcon from '../../../../../public/image/HomePage/Icon/yesIcon.jpg'
-import rblicon from '../../../../../public/image/HomePage/Icon/rblicon.jpg'
+import canara from '/image/HomePage/Icon/canaraIcon.jpg'
+import idfcIcon from '/image/HomePage/Icon/idfcIcon.jpg'
+import yesIcon from '/image/HomePage/Icon/yesIcon.jpg'
+import rblicon from '/image/HomePage/Icon/rblicon.jpg'
+import au from '/image/HomePage/Icon/au.svg'
+import fino from '/image/HomePage/Icon/fino.svg'
+import npci from '/image/HomePage/Icon/npci.svg'
 function Scroller() {
   const logos = [
 
-    canara,
-    icici,
-    idfcIcon,
-    pinelabs,
-    npci,
-    rblicon,
     yesIcon,
+    idfcIcon,
+    rblicon,
+    au,
+    fino,
+    canara,
+    npci
    
 
   ];

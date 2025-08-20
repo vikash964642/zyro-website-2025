@@ -6,8 +6,10 @@ import XTwitter from "/image/FooterImage/XTwitter.svg";
 import linkedIn from "/image/FooterImage/LinkedIn.svg";
 import zyrologo from "/image/zyro-logo.svg";
 // import { useNavigate } from 'react-router-dom';
-import GooglePlay from "/image/FooterImage/playstore.svg";
-import certificatezyro from "/image/FooterImage/certificatezyro.png";
+import GooglePlay from "/image/FooterImage/playStore.svg";
+import AppStore from "/image/FooterImage/appStore.svg";
+// import certificatezyro from "/image/FooterImage/certificatezyro.png";
+import certificatezyro from "/image/FooterImage/certificateNew1.svg";
 
 function Footer() {
   const ScrollTop = () => {
@@ -27,10 +29,16 @@ function Footer() {
               process, enhances operational efficiency and ensures precise
               control over your finances.
             </p>
-            <img
-              src={GooglePlay}
-              className="hidden lg:block mt-[30px] cursor-pointer"
-            ></img>
+            <div className="flex gap-3">
+              <img
+                src={GooglePlay}
+                className="hidden lg:block mt-[30px] cursor-pointer"
+              ></img>
+              <img
+                src={AppStore}
+                className="hidden lg:block mt-[30px] cursor-pointer"
+              ></img>
+            </div>
           </div>
 
           <div className="hidden lg:flex lg:justify-around   lg:w-[40%]">
@@ -341,7 +349,10 @@ function Footer() {
         </div>
     </div>
         <div className="mt-[30px] flex lg:hidden items-center justify-center max-[375px]:flex-col max-[375px]:gap-[20px] gap-[50px]">
-          <img src={GooglePlay}></img>
+          <div className="flex gap-2 justify-center">
+            <img src={GooglePlay}></img>
+            <img src={AppStore}></img>
+          </div>
           <div className="flex items-center gap-[20px]">
             <NavLink to="">
               <img src={Facebook} />

@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-// import collab1 from "/assets/icons/upi.webp";
-import collab2 from "/assets/icons/canara-icon.webp";
-import collab3 from "/assets/icons/icicic.webp";
-import collab4 from "/assets/icons/idfc.webp";
-import collab5 from "/assets/icons/rbl.webp";
-import collab6 from "/assets/icons/yes_bank.webp";
+import collab2 from "/image/HomePage/Icon/auconnected.svg";
+import collab3 from "/image/HomePage/Icon/canara.svg";
+import collab4 from "/image/HomePage/Icon/idfc.svg";
+import collab5 from "/image/HomePage/Icon/rbl.svg";
+import collab6 from "/image/HomePage/Icon/yesbank.svg";
 import zyroLogo from "/image/zyro-logo.svg";
 import partnership from "/image/HomePage/partners.png";
 import './HomePageCss.css';
@@ -51,7 +50,7 @@ export default function ConnectedBanking() {
             <img
               src={collaborators[currImg]}
               alt="collaborator"
-              className="object-contain p-7"
+              className="object-contain p-8"
             />
           </div>
 
