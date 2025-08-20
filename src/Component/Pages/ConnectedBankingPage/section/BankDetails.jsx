@@ -1,14 +1,14 @@
-import { useRef, useEffect, useState } from "react";
-import { useSwipeable } from "react-swipeable";
-import BankDetailsImg1 from "../../../../../public/image/ConnectedBanking/BankDetailsImg1.webp";
-import BankDetailsImg2 from "../../../../../public/image/ConnectedBanking/BankDetailsImg2.webp";
-import BankDetailsImg3 from "../../../../../public/image/ConnectedBanking/BankDetailsImg3.webp";
-import BankDetailIconActive1 from "../../../../../public/image/ConnectedBanking/BankDetailIconActive1.svg";
-import BankDetailIconNonActive1 from "../../../../../public/image/ConnectedBanking/BankDetailIconNonActive1.svg";
-import BankDetailIconActive2 from "../../../../../public/image/ConnectedBanking/BankDetailIconActive2.svg";
-import BankDetailIconNonActive2 from "../../../../../public/image/ConnectedBanking/BankDetailIconNonActive2.svg";
-import BankDetailIconActive3 from "../../../../../public/image/ConnectedBanking/BankDetailIconActive3.svg";
-import BankDetailIconNonActive3 from "../../../../../public/image/ConnectedBanking/BankDetailIconNonActive3.svg";
+// import { useRef, useEffect, useState } from "react";
+// import { useSwipeable } from "react-swipeable";
+// import BankDetailsImg1 from "../../../../../public/image/ConnectedBanking/BankDetailsImg1.webp";
+// import BankDetailsImg2 from "../../../../../public/image/ConnectedBanking/BankDetailsImg2.webp";
+// import BankDetailsImg3 from "../../../../../public/image/ConnectedBanking/BankDetailsImg3.webp";
+// import BankDetailIconActive1 from "../../../../../public/image/ConnectedBanking/BankDetailIconActive1.svg";
+// import BankDetailIconNonActive1 from "../../../../../public/image/ConnectedBanking/BankDetailIconNonActive1.svg";
+// import BankDetailIconActive2 from "../../../../../public/image/ConnectedBanking/BankDetailIconActive2.svg";
+// import BankDetailIconNonActive2 from "../../../../../public/image/ConnectedBanking/BankDetailIconNonActive2.svg";
+// import BankDetailIconActive3 from "../../../../../public/image/ConnectedBanking/BankDetailIconActive3.svg";
+// import BankDetailIconNonActive3 from "../../../../../public/image/ConnectedBanking/BankDetailIconNonActive3.svg";
 
 
  import  { useRef, useEffect, useState } from 'react';
