@@ -9,6 +9,7 @@ import yesIcon from '../../../../../public/image/HomePage/Icon/yesIcon.jpg'
 import rblicon from '../../../../../public/image/HomePage/Icon/rblicon.jpg'
 function Scroller() {
   const logos = [
+
     canara,
     icici,
     idfcIcon,

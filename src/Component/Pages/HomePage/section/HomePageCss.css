@@ -37,7 +37,7 @@ background: linear-gradient(0deg, #575E8E 0%, rgba(99, 99, 99, 0.00) 52.5%, rgba
 
    
 
-.home-hero_gradient {
+.home-hero_gradient1 {
     border-radius: 541.022px;
     z-index: -1;
     position: absolute;
@@ -53,9 +53,12 @@ background: linear-gradient(0deg, #575E8E 0%, rgba(99, 99, 99, 0.00) 52.5%, rgba
     opacity: 0.75;
    border-radius: 408.055px;
 background: radial-gradient(39.32% 39.32% at 50% 39.32%, #401C8B 0%, rgba(46, 46, 46, 0.00) 100%);
-    filter: blur(92px);
+    filter: blur(75px);
     inset: 0% 30% 50% 24%;
 } 
+
+
+
 .heroSectionHeadingGradient1{
   background: linear-gradient(234deg, #FFF 0%, #9573DE 53%, #F0EBFA 81.67%, #FFF 100%);
 background-clip: text;
@@ -101,7 +104,7 @@ line-height: 21px; /* 87.5% */
 }
 .sap_ControlFinance{
   background-position-x: center;
-    background-position-y: -106px;
+    background-position-y: -5rem;
 }
 .sap{
   background-position-x: center;
@@ -110,7 +113,7 @@ line-height: 21px; /* 87.5% */
 
 .ControlFinance-gradiant{
   border-radius: 138px;
-  opacity: 1;
+  opacity: 0.4;
   background: linear-gradient(
     178deg,
     rgba(64, 28, 139, 0.6) 80%,
