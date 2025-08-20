@@ -5,7 +5,7 @@ function Scroller() {
     "../../../../../public/image/HomePage/icon/icici.jpg",
     "../../../../../public/image/HomePage/icon/idfc-icon.jpg",
     "../../../../../public/image/HomePage/icon/npci.jpg",
-    "../../../../../public/image/HomePage/icon/pine-labs.jpg",
+    // "../../../../../public/image/HomePage/icon/pine-labs.jpg",
     "../../../../../public/image/HomePage/icon/yes-bank-icon.jpg",
     "../../../../../public/image/HomePage/icon/rbl-icon.jpg",
   ];

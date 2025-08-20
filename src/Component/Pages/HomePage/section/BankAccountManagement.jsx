@@ -52,8 +52,8 @@ function BankAccountManagement() {
   };
 
   return (
-    <section className="min-h-[90vh] lg:flex justify-center items-center">
-     <div className="max-w-screen-lg mx-auto px-[17px] md:px-[20px] xl:px-0 mt-[125px] lg:mt-0">
+    <section className="max-w-screen-lg mx-auto px-[17px] md:px-[20px] xl:px-0 mt-[150px]">
+    
        <div className="hidden lg:flex justify-center">
         <p className=" text-[#FFF]  font-medium lg:text-[36px]  text-center lg:w-[665px]">
           Bank Account <span className="BankAccountManagementHeaderGradient font-semibold">Management Made </span>
@@ -90,9 +90,7 @@ Simple & Easy
             </p>
           </div>
         ))}
-      </div>
-     </div>
-      
+      </div>     
     </section>
   );
 }

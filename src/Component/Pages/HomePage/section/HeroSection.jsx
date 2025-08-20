@@ -11,8 +11,9 @@ import KnowMoreRightIcon from '../../../../../public/image/HomePage/Icon/KnowMor
 
 const slides = [
   {
-    image: "./../../../../public/image/HomePage/herosection-banner.png",
-     imageMob: "./../../../../public/image/HomePage/herosection-banner.png",
+    image: "./../../../../public/image/HomePage/herosectionbanner.svg",
+     imageMob: "./../../../../public/image/HomePage/herosectionbanner.svg",
+     link:"/connectedbanking",
     heading1: "Accelerate Your Business with our",
     heading2:"Connected Banking Solutions",
     paragraph:
@@ -21,6 +22,7 @@ const slides = [
   {
     image: "./../../../../public/image/HomePage/herosoundbox.svg",
      imageMob: "./../../../../public/image/HomePage/herosoundbox.svg",
+        link:"/soundboxPage",
     heading1: "Zyro Sound Box",
     heading2:"",
     paragraph:
@@ -29,6 +31,7 @@ const slides = [
   {
     image: "./../../../../public/image/HomePage/herosection-banner-1.webp",
         imageMob: "./../../../../public/image/HomePage/herosection-banner-1.webp",
+           link:"/ExpenseManagement",
     heading1: "Simplify, Track, and Control Expense",
     heading2:" in One Place",
     paragraph:
@@ -37,6 +40,7 @@ const slides = [
    {
     image: "./../../../../public/image/HomePage/herosection-banner-2.webp",
      imageMob: "./../../../../public/image/HomePage/herosection-banner-2-mob.webp",
+        link:"/posPage",
     heading1: "Zyro POS Device",
     heading2:"",
     paragraph:
@@ -64,18 +68,21 @@ export default function HeroSection() {
     onSwipedLeft: handleNext,
     onSwipedRight: handlePrev,
   });
-useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  }, 4000);
+// useEffect(() => {
+//   const interval = setInterval(() => {
+//     setCurrentSlide((prev) => (prev + 1) % slides.length);
+//   }, 4000);
 
-  return () => clearInterval(interval);
-}, []);
+//   return () => clearInterval(interval);
+// }, []);
 
   return (
    <>
-    <section className="hidden lg:flex items-center justify-center gap-[50px] lg:pt-[105px] pt-[60px] relative">
-        <div className="home-hero_gradient"></div>
+    <section className="hidden lg:flex items-center justify-center gap-[50px] lg:pt-[135px] pt-[80px] relative">
+        <div className="home-hero_gradient1"></div>
+        <div className="home-hero_gradient2"></div>
+        <div className="home-hero_gradient3"></div>
+        <div className="home-hero_gradient4"></div>
         {/* <div className="home-hero_gradientBottom"></div> */}
       {/* Navigation Buttons */}
       <button
@@ -146,7 +153,7 @@ useEffect(() => {
                   </button>
               )}
                 <Link
-                    to=""
+                    to={slide.link}
                     className="text-[#FFF] font-medium md:text-[15.6px] lg:text-[16.45px] text-sm flex md:justify-start justify-center "
                   >
                     Know more <img src={KnowMoreRightIcon} className="pl-[4px]"/>
@@ -181,8 +188,8 @@ useEffect(() => {
      
      
      
-     <section className="block lg:hidden px-[20px]  pt-[40px] relative">
-        <div className="home-hero_gradient"></div>
+     <section className="block lg:hidden px-[20px] lg:pt-[135px] pt-[80px] relative">
+        <div className="home-hero_gradient1"></div>
     
       <div
         className=" overflow-hidden relative"
@@ -261,7 +268,7 @@ useEffect(() => {
  </div>
      )}
              <Link
-                    to=""
+                    to={slide.link}
                     className="text-[#FFF] font-medium text-[16px] flex lg:justify-start justify-center items-center pt-[20px]"
                   >
                     Know more <img src={KnowMoreRightIcon} className="pl-[4px] h-[15px] w-[15px]"/>

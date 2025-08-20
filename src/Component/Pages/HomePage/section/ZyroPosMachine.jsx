@@ -3,8 +3,8 @@ import languageSoundbox from '../../../../../public/image/HomePage/zyroposmachin
 import KnowMoreRightIcon from '../../../../../public/image/HomePage/Icon/KnowMoreRightIcon.svg'
 function ZyroPosMachine() {
   return (
-     <section className=" min-h-[90vh] flex justify-center items-center ">
-        <div className='max-w-screen-lg lg:px-[20px] xl:px-0 mx-auto'>
+     <section className="max-w-screen-lg lg:px-[20px] xl:px-0 mx-auto mt-[180px] lg:mt-[210px]">
+     
 
             <div className='lg:flex justify-between items-center'>
                 <div className='lg:w-[50%] relative'>
@@ -21,7 +21,6 @@ function ZyroPosMachine() {
                     <img src={languageSoundbox} alt=""  className='h-[357px] w-[386px]'/>
                 </div>
             </div>
-        </div>
         </section>
   )
 }

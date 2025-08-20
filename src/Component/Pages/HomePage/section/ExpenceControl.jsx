@@ -1,11 +1,11 @@
 
 import { useRef, useEffect, useState } from 'react';
-import expencecontrol1 from '../../../../../public/image/HomePage/RealTimetracking.webp';
-import expencecontrol2 from '../../../../../public/image/HomePage/FullAutomation.webp';
-import expencecontrol3 from '../../../../../public/image/HomePage/CustomControl.webp';
-import expencecontrol4 from '../../../../../public/image/HomePage/AutomaticReconciliation.webp';
-import expencecontrol5 from '../../../../../public/image/HomePage/language-soundbox.svg';
-import expencecontrol6 from '../../../../../public/image/HomePage/SmartDashboardReports.webp';
+import expencecontrol1 from '../../../../../public/image/HomePage/RealTimetracking.svg';
+import expencecontrol2 from '../../../../../public/image/HomePage/FullAutomation.svg';
+import expencecontrol3 from '../../../../../public/image/HomePage/CustomControl.svg';
+import expencecontrol4 from '../../../../../public/image/HomePage/AutomaticReconciliation.svg';
+import expencecontrol5 from '../../../../../public/image/HomePage/languageSoundbox.svg';
+import expencecontrol6 from '../../../../../public/image/HomePage/SmartDashboardReports.svg';
 
 import Checked from '../../../../../public/image/HomePage/ExpenseRadioChecked.webp';
 import UnChecked from '../../../../../public/image/HomePage/ExpenseRadioUnChecked.webp';
@@ -84,8 +84,7 @@ const handleLabelClick = (index) => {
 
 
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
-      <div className="max-w-screen-lg mx-auto px-2 sm:px-4 xl:px-0 py-10 lg:py-0">
+    <section className="max-w-screen-lg mx-auto px-2 sm:px-4 xl:px-0 mt-[100px] lg:mt-[200px]">
       <h3 className="text-center text-[26px] md:text-[28px] lg:text-[30px] font-semibold mb-[50px] ExpenceControlHeaderGradient">
         Complete Expense Control at Your Fingertips
       </h3>
@@ -176,7 +175,6 @@ const handleLabelClick = (index) => {
             )}
           </div>
         ))}
-      </div>
       </div>
     </section>
   );

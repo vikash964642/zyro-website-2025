@@ -18,8 +18,8 @@ const cards = [
 
 function InstantPayment() {
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
-      <div className="max-w-screen-lg mx-4 lg:mx-auto">
+    <section className="max-w-screen-lg mx-4 lg:mx-auto mt-[170px] lg:mt-[200px]">
+    
 
       <div className="flex justify-center">
         <h2 className="instantPaymentHeaderGradient max-[360px]:w-full w-[325px] lg:w-[531px] text-center font-semibold max-[360px]:text-[22px] text-[27px] lg:text-[45px] leading-[46px] lg:leading-[46px]">
@@ -55,7 +55,7 @@ function InstantPayment() {
           </div>
         ))}
       </div>
-      </div>
+
     </section>
   );
 }
