@@ -26,9 +26,9 @@ export default function ConnectedCardSlider() {
 
 
   return (
-    <section className="max-w-screen-lg lg:mx-auto px-[20px] xl:px-[0px] relative">
+    <section className="max-w-screen-lg lg:mx-auto px-[20px] xl:px-[0px] relative ">
       <div className="ConnectedCardSliderTopGradient"></div>
-   <div className="pt-[100px] lg:pt-[140px]">
+   <div className="pt-[100px] lg:pt-[158px]">
      <div className="flex justify-center">
         <h2 className="text-[24px] md:text-[30px]   lg:text-[34px] font-semibold text-center md:w-[500px] lg:w-[602px]  ConnectedCardSliderHeader">
        Advanced Payout designed to Scale with your Business

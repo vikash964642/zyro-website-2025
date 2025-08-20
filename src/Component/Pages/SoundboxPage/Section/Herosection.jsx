@@ -4,8 +4,8 @@ import languageSoundbox from '/image/soundbox/soundboxnew.svg'
 
 function Herosection() {
   return (
-   <section className="min-h-[90vh] flex justify-center items-center">
-          <div className='max-w-screen-lg mx-auto  mt-[80px] lg:mt-0'>
+   <section className="">
+          <div className='max-w-screen-lg mx-auto  mt-[80px] lg:mt-[150px]'>
              <div className='lg:flex justify-between items-center'>
                  <div className='lg:w-[50%] p-3'>
                      <h2 className="bg-gradientText bg-clip-text text-transparent font-semibold max-[400px]:text-28px text-[32px] lg:text-[40px] leading-[42px] lg:leading-[56px] text-center lg:text-left">ZYRO Soundbox</h2>

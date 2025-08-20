@@ -2,7 +2,7 @@
 import './PayOut.css'
 function HeroSection() {
   return (
-      <section className="min-h-[90vh] flex justify-center items-center">
+      <section className="mt-[80px]">
         <div className='max-w-screen-lg mx-auto  max-[375px]:px-[20px] px-[35px] xl:px-[0px] relative'>
           <div className='HeroSectionGradientLeft'></div>
                 <div className='HeroSectionGradientRight'></div>

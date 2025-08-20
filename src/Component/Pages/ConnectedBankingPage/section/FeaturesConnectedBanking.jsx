@@ -41,7 +41,7 @@ function FeaturesConnectedBanking() {
 ]
   return (
    <>
-    <section className="max-w-screen-lg lg:mx-auto lg:mt-[131px] mt-[100px]">
+    <section className="max-w-screen-lg lg:mx-auto lg:mt-[150px] mt-[110px]">
       <div className='mx-4'>
        <p className="max-[375px]:text-[22px] text-[28px] md:text-[30px] lg:text-[32px] font-semibold text-white text-center">Key<span className='features-heading-gradient'> Features of  Zyro Connected Banking</span></p> 
       <div className='flex justify-center'>
@@ -50,8 +50,8 @@ function FeaturesConnectedBanking() {
       </div>
       <div className="h-[500px] lg:h-[400px] pr-4 overflow-auto feature-scrollbar ml-4 mt-[50px]">
          {features.map((feature,index) => (
-         <div key={index} className='mt-[25px] gradient-border rounded-[16.516px] first:mt-0 lg:h-[133px] lg:w-full flex justify-center items-center'>
-           <div  className=" rounded-[16.516px] w-[calc(100%-2px)] h-[calc(100%-2px)] px-[16px] lg:px-[20px] py-[18px]  flex gap-[18px] mt-[25px] first:mt-0 bg-[#0B051E]">
+         <div key={index} className='mt-[25px] p-[1px] lg:p-0 gradient-border rounded-[16.516px] first:mt-0 lg:h-[133px] lg:w-full flex justify-center items-center'>
+           <div  className=" rounded-[16.516px] w-[calc(100%-2px)] h-[calc(100%-2px)] px-[16px] lg:px-[20px] py-[18px]   flex gap-[18px] mt-[25px] first:mt-0 bg-[#0B051E]">
            <div className='h-[50px] w-[50px] bg-[#4F31B4] rounded-full flex  justify-center items-center'>
              <img src={feature.image} ></img>
            </div>

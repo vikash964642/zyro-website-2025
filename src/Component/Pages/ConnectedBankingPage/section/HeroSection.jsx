@@ -6,7 +6,7 @@ import ConnecteBankingImg from '../../../../../public/image/ConnectedBanking/con
 function HeroSection() {
 
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
+    <section className="lg:mt-[112px] mt-[50px]">
       <div className='max-w-screen-lg mx-auto   relative'>
       <div className="home-hero_gradient"></div>
 

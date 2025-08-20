@@ -4,7 +4,7 @@ import BusinessCard from './section/BusinessCard';
 import FAQ from './section/FAQ';
 import BusinessBanking from './section/BusinessBanking';
 import ConnectedCardSlider from './section/ConnectedCardSlider';
-import Scroller from '../HomePage/section/Scroller';
+// import Scroller from '../HomePage/section/Scroller';
 import BulkPayment from './section/BulkPayment';
 import BuiltBusinessAnimation from './section/BuiltBusinessAnimation';
 import SheduledPayOut from './section/SheduledPayOut';
@@ -13,7 +13,7 @@ function PayOut() {
   return (
  <>
  <HeroSection />
- <Scroller />
+ {/* <Scroller /> */}
  <ConnectedCardSlider />
  <Features />
  <BulkPayment />

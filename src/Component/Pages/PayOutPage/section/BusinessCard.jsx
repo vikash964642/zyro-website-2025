@@ -104,12 +104,12 @@ const CardSlide = [
     paragraph: "Track and reconcile every transaction instantly with real-time visibility and zero spreadsheet work.",
   },
   {
-    img: BusinessCardImg4,
+    img: BusinessCardImg5,
     heading: "Robust Data Security",
     paragraph: "Keep your financial data safe with advanced encryption and RBI-compliant security infrastructure.",
   },
   {
-    img: BusinessCardImg5,
+    img: BusinessCardImg4,
     heading: "Trusted Certification",
     paragraph: "Backed by PCI DSS and ISO certifications for secure and compliant financial operations.",
   },

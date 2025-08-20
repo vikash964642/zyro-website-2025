@@ -15,18 +15,19 @@ const cards = [
     heading: "Instant Payment Notifications",
     paragraph: "Get real-time voice confirmations for every payment.",
   },
+    {
+    image: repeatAlerts,
+    heading: "Repeat Last Payment Alerts",
+    paragraph:
+      "Replay the last payment voice message anytime with a single button press.",
+  },
   {
     image: remoteDeviceControl,
     heading: "Remote Device Control",
     paragraph:
       "Easily monitor & manage your Soundbox via the merchant business app.",
   },
-  {
-    image: repeatAlerts,
-    heading: "Repeat Last Payment Alerts",
-    paragraph:
-      "Replay the last payment voice message anytime with a single button press.",
-  },
+
 ];
 
 function Features() {
@@ -51,7 +52,7 @@ function Features() {
               }}
               className="flex items-center justify-center bg-featurediv  bg-clip-text text-transparent  rounded-xl hover:shadow-md transition duration-300 text-center"
             >
-              <div className="bg-[#080411] p-5 rounded-xl lg:h-[99.2%] h-[98.9%] w-[99.5%]">
+              <div className="bg-[#080411] p-5 rounded-xl lg:h-[98.9%] h-[98.9%] w-[99.5%]">
                 <div className="flex justify-center items-center">
                   <img
                     src={card.image}

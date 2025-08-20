@@ -10,16 +10,17 @@ const cards = [
     heading: "Approval Workflows",
     paragraph: "Set custom approval rules for transactions and stay in control of every outgoing payment.",
   },
-  {
-    image: Icon2,
-    heading: "Auto-Retry for  Failed Transactions",
-    paragraph: "Never miss a payment, failed transactions are retired automatically without any delay.",
-  },
+ 
   {
     image: Icon3,
     heading: "Auto-reconciliation",
     paragraph:
       "Automatically match and reconcile all transactions with real-time accuracy in a unified dashboard.",
+  },
+   {
+    image: Icon2,
+    heading: "Auto-Retry for  Failed Transactions",
+    paragraph: "Never miss a payment, failed transactions are retired automatically without any delay.",
   },
   {
     image: Icon4,
