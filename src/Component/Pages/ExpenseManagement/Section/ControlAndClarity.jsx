@@ -50,8 +50,8 @@ function ControlAndClarity() {
     return () => window.removeEventListener("resize", updateScreen);
   }, []);
   return (
-    <section className=" min-h-[90vh] flex justify-center items-center">
-      <div className="max-w-screen-lg lg:mx-auto mt-[100px] px-[20px] xl:px-[0px]">
+    <section className=" mt-[150px] lg:mt-[200px]">
+      <div className="max-w-screen-lg lg:mx-auto  px-[20px] xl:px-[0px]">
         <div className="hidden md:block">
           <div className="relative">
             <div className="BusinessCardGradient"></div>

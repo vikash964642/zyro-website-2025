@@ -60,8 +60,8 @@ function SmartExpense() {
   };
 
   return (
-    <section className="min-h-[90vh] flex items-center">
-      <div className='max-w-full lg:max-w-screen-lg lg:mx-auto mt-10 relative'>
+    <section className="mt-[200px]">
+      <div className='max-w-full lg:max-w-screen-lg lg:mx-auto  relative'>
       <div className="text-center">
         <p className="smartExpenseHead text-white text-[24px] lg:text-[32px] font-semibold">
           Smart Expense Solution, <br className="hidden lg:block" />

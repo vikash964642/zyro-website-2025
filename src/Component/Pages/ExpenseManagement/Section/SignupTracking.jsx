@@ -57,8 +57,8 @@ function SignupTracking() {
   };
 
   return (
-    <section className="min-h-[90vh] flex items-center">
-      <div className='max-w-full lg:max-w-screen-lg lg:mx-auto  mt-[82px] relative'>
+    <section className="mt-[100px] lg:mt-[200px]">
+      <div className='max-w-full lg:max-w-screen-lg lg:mx-auto   relative'>
       <div className='signupTracking-Gradinat'></div>
       <div className='flex justify-center items-center'>
         <p className="signupTrackinghead text-white text-[28px] max-[360px]:text-[22px] max-[400px]:text-[25px] lg:text-[36px] font-medium text-center w-[382px] lg:w-[587px]">

@@ -28,8 +28,8 @@ const contentData = [
 
 function ExpenseOverview() {
   return (
-   <section className="min-h-[90vh] flex justify-center items-center">
-    <div className='max-w-screen-lg lg:mx-auto mt-[100px]  xl:px-[0px] relative'>
+   <section className=" mt-[140px] lg:mt-[180px]">
+    <div className='max-w-screen-lg mx-auto  xl:px-[0px] relative'>
     <div className='hidden lg:block expenseOverviewGradiant'></div>
       <h2 className="px-1 text-center lg:text-left text-[28px] lg:text-[34px] lg:leading-[45px] leading-[40px] font-semibold   ExpenseOverviewHeader">
        One Platform, Every Expense Covered

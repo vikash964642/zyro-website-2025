@@ -4,8 +4,8 @@ import './Expense.css';
 
 function HeroSection() {
   return (
-    <section className='min-h-[90vh] flex items-center'>
-      <div className='max-w-screen-lg mx-auto relative mt-[80px] lg:mt-0'>
+    <section className='lg:mt-[134px] mt-[50px]'>
+      <div className='max-w-screen-lg mx-auto relative '>
         <div className=' hero-left-gradiant'></div>
               <div className='lg:flex justify-between items-center'>
                   <div className='lg:w-[50%] px-7 lg:p-3'>

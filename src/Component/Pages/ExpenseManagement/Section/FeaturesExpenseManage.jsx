@@ -34,7 +34,7 @@ const cards = [
 
 function FeaturesExpenseManage() {
   return (
-    <section className="min-h-[90vh] flex items-center">
+    <section className="mt-[200px]">
       <div className="max-w-full lg:max-w-screen-lg lg:mx-auto">
         <div className="mt-[131px] max-w-screen-xl mx-auto px-[19px] relative">
           <div className="features-gradient"></div>
