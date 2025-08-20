@@ -1,5 +1,5 @@
 // import React from 'react'
-import ExpenseCardRequest from "../../../../../public/image/ExpenseManagement/ExpenseCardRequest.webp";
+import ExpenseCardRequest from "/image/ExpenseManagement/expenseCardRequest.webp";
 // import ExpenseAssignCard from "../../../../../public/image/ExpenseManagement/ExpenseAssignCard.webp";
 // import ExpensePhyschicalCard from "../../../../../public/image/ExpenseManagement/ExpensePhyschicalCard.webp";
 

@@ -1,13 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
-import Facebook from "../../../public/image/FooterImage/Facebook.svg";
-import Instagram from "../../../public/image/FooterImage/Instagram.svg";
-import Youtube from "../../../public/image/FooterImage/Youtube.svg";
-import XTwitter from "../../../public/image/FooterImage/XTwitter.svg";
-import linkedIn from "../../../public/image/FooterImage/LinkedIn.svg";
-import zyrologo from "../../../public/image/zyro-logo.svg";
+import Facebook from "/image/FooterImage/Facebook.svg";
+import Instagram from "/image/FooterImage/Instagram.svg";
+import Youtube from "/image/FooterImage/Youtube.svg";
+import XTwitter from "/image/FooterImage/XTwitter.svg";
+import linkedIn from "/image/FooterImage/LinkedIn.svg";
+import zyrologo from "/image/zyro-logo.svg";
 // import { useNavigate } from 'react-router-dom';
-import GooglePlay from "../../../public/image/FooterImage/playstore.svg";
-import certificatezyro from "../../../public/image/FooterImage/certificatezyro.png";
+import GooglePlay from "/image/FooterImage/playstore.svg";
+import certificatezyro from "/image/FooterImage/certificatezyro.png";
 
 function Footer() {
   const ScrollTop = () => {

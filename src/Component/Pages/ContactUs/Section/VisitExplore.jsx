@@ -34,7 +34,7 @@ function VisitExplore() {
               Noida-201301, Uttar Pradesh, India
             </p>
           </div>
-          <div>
+          <div className="lg:w-[50%]">
             <p className="text-[20px] font-semibold leading-[20px] text-[#FEFEFE]">
               LOCATION
             </p>

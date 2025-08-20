@@ -1,4 +1,5 @@
 // import React from "react";
+
 import canara from '../../../../../public/image/HomePage/Icon/canaraIcon.jpg'
 import icici from '../../../../../public/image/HomePage/Icon/icici.jpg'
 import idfcIcon from '../../../../../public/image/HomePage/Icon/idfcIcon.jpg'
@@ -16,6 +17,7 @@ function Scroller() {
     rblicon,
     yesIcon,
    
+
   ];
 
   return (

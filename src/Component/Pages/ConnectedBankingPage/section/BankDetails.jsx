@@ -10,9 +10,23 @@ import BankDetailIconNonActive2 from "../../../../../public/image/ConnectedBanki
 import BankDetailIconActive3 from "../../../../../public/image/ConnectedBanking/BankDetailIconActive3.svg";
 import BankDetailIconNonActive3 from "../../../../../public/image/ConnectedBanking/BankDetailIconNonActive3.svg";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+
+ import  { useRef, useEffect, useState } from 'react';
+ import { useSwipeable } from "react-swipeable";
+    import BankDetailsImg1 from '/image/ConnectedBanking/BankDetailsImg1.webp';
+      import BankDetailsImg2 from '/image/ConnectedBanking/BankDetailsImg2.webp';
+        import BankDetailsImg3 from '/image/ConnectedBanking/BankDetailsImg3.webp';
+import BankDetailIconActive1 from '/image/ConnectedBanking/BankDetailIconActive1.svg';
+ import BankDetailIconNonActive1 from '/image/ConnectedBanking/BankDetailIconNonActive1.svg';  
+ import BankDetailIconActive2 from '/image/ConnectedBanking/BankDetailIconActive2.svg';
+ import BankDetailIconNonActive2 from '/image/ConnectedBanking/BankDetailIconNonActive2.svg'; 
+ import BankDetailIconActive3 from '/image/ConnectedBanking/BankDetailIconActive3.svg';
+ import BankDetailIconNonActive3 from '/image/ConnectedBanking/BankDetailIconNonActive3.svg'; 
+  
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+
 
 // const labels = [
 //   'Real Time Card Tracking',

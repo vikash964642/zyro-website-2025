@@ -1,7 +1,9 @@
+
 // import soundbox from "/image/soundbox/soundbox1.svg";
 // import newSoundbox from "/image/soundbox/soundbox2.svg";
 import hightQuality from "../../../../../public/video/highqualityQR.webm";
 import betterSpeaker from "../../../../../public/video/betterspeackerqr.webm";
+
 function SoundboxFeatures() {
   return (
     <section className="mt-[150px]">
