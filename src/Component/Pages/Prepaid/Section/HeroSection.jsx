@@ -1,5 +1,5 @@
 // import React from 'react'
-import prepaidcardHeroSection from '../../../../../public/video/prepaidcardHeroSection.mp4';
+import prepaidcardHeroSection from '/video/prepaidcardHeroSection.webm';
 import './Prepaid.css';
 function HeroSection() {
   return (

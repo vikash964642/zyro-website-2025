@@ -224,3 +224,86 @@ background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) 0%, #8D31F5 100%, #F
 filter: blur(58.3769645690918px);
 }
 }
+
+
+
+
+.rotateSection { 
+      position: relative; 
+      width: 300px; 
+      height: 300px; 
+      margin: auto;
+    }
+
+    .zyroLogo {
+      width: 100px; 
+      height: 35px;
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+
+    .orbit {
+      position: absolute;
+      width: 250px; height: 250px;
+      border-radius: 50%;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px dashed grey ; /* Orbit line */
+      /* Glow effect */
+    }
+
+    .bankLogo {
+      position: absolute;
+      width: 81px;
+       height: 81px;
+      transform: translate(-50%, -50%);
+    }
+
+    /* -------- Responsive -------- */
+
+/* Tablets (768px se neeche) */
+@media (max-width: 768px) {
+  .rotateSection {
+    width: 220px;
+    height: 220px;
+  }
+
+  .zyroLogo {
+    width: 80px;
+    height: 28px;
+  }
+
+  .orbit {
+    width: 180px;
+    height: 180px;
+  }
+
+  .bankLogo {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/* Mobiles (min 320px - 480px) */
+@media (max-width: 480px) {
+  .rotateSection {
+    width: 180px;
+    height: 180px;
+  }
+
+  .zyroLogo {
+    width: 65px;
+    height: 22px;
+  }
+
+  .orbit {
+    width: 140px;
+    height: 140px;
+  }
+
+  .bankLogo {
+    width: 45px;
+    height: 45px;
+  }
+}
