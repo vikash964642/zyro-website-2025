@@ -2,37 +2,37 @@ import './ConnectedBankingCss.css';
 function FeaturesConnectedBanking() {
     const features = [
   {
-    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon1.svg",
+    image: "/image/ConnectedBanking/FeaturesBankingIcon1.svg",
     heading: "Multi-Bank Account Management",
     paragraph:
       "Easily link all your current bank accounts and manage them conveniently from a single dashboard with complete control over your finances.",
   },
     {
-    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon2.svg",
+    image: "/image/ConnectedBanking/FeaturesBankingIcon2.svg",
     heading: "Real-Time Syncing",
     paragraph:
       "Get real-time updated on balances, transactions, and activity across all your linked business accounts for accurate tracking and control.",
   },
     {
-    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon3.svg",
+    image: "/image/ConnectedBanking/FeaturesBankingIcon3.svg",
     heading: "API Integrations",
     paragraph:
       "Seamlessly connect our tools with your existing systems, ensure smooth operations, and access clear & concise documentation for efficient implementation.",
   },
     {
-    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon4.svg",
+    image: "/image/ConnectedBanking/FeaturesBankingIcon4.svg",
     heading: "Bulk Payments & Payouts",
     paragraph:
       "Easily make bulk payments to vendors or employees by uploading an excel file in just a single click for secure processing.",
   },
     {
-    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon5.svg",
+    image: "/image/ConnectedBanking/FeaturesBankingIcon5.svg",
     heading: "Multiple Payment Mode",
     paragraph:
       "Choose from IMPS, NEFT, and RTGS to make your payments smooth, secure and timely-ensuring reliable transfers whenever you need them.",
   },
     {
-    image: "../../../../../public/image/ConnectedBanking/FeaturesBankingIcon6.svg",
+    image: "/image/ConnectedBanking/FeaturesBankingIcon6.svg",
     heading: "Cash Flow Management",
     paragraph:
       "Get complete cash flow visibility by linking multiple accounts and tracking all outgoing transactions from a single dashboard.",

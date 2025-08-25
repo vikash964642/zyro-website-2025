@@ -4,6 +4,7 @@ import CustomControl from "../../../../../public/video/CustomControl.webm";
 import FullAutomation from "../../../../../public/video/FullAutomation.webm";
 import AutomaticReconciliation from "../../../../../public/video/AutomaticReconciliation.webm";
 import SamrtDashboardReport from "../../../../../public/video/SamrtDashboardReport.webm";
+import EasyReimbursements from "../../../../../public/video/EasyReimbursements.webm";
 // import expencecontrol1 from '../../../../../public/image/HomePage/RealTimetracking.svg';
 // import expencecontrol2 from '../../../../../public/image/HomePage/FullAutomation.svg';
 // import expencecontrol3 from '../../../../../public/image/HomePage/CustomControl.svg';
@@ -31,10 +32,10 @@ const features = [
     label: "Automatic Reconciliations",
     video: AutomaticReconciliation,
   },
-  // {
-  //   label: 'Easy Reimbursements',
-  //   image: expencecontrol5,
-  // },
+  {
+    label: 'Easy Reimbursements',
+    video: EasyReimbursements,
+  },
   {
     label: "Smart Dashboards & Reports",
     video: SamrtDashboardReport,

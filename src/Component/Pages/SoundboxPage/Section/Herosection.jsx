@@ -1,9 +1,77 @@
 // import React from 'react'
 // import languageSoundbox from '/image/soundbox/soundboxnew.svg';
-import Rotatepart from "/image/soundbox/rotatePart.png";
-import soundBox1212 from "/image/soundbox/soundbox1212.png";
+// import Rotatepart from "/image/soundbox/rotatePart.png";
+import { useEffect } from "react";
+import { gsap } from "gsap";
 
-function Herosection() {
+import soundBox1212 from "/image/soundbox/soundbox12121.webp";
+import english from "/image/soundbox/English.svg"
+import marathi from "/image/soundbox/marathi.svg"
+import malyalam from "/image/soundbox/malyalam.svg"
+import punjabi from "/image/soundbox/punjabi.svg"
+import tamil from "/image/soundbox/tamil.svg"
+import kannad from "/image/soundbox/kannad.svg"
+import hindi from "/image/soundbox/hindi.svg"
+import gujrati from "/image/soundbox/gujrati.svg"
+import './Soundbox.css'
+
+function Herosection() { 
+   useEffect(() => {
+    const Language = document.querySelectorAll(".Language");
+
+    const positionLogos = () => {
+      let orbitRadius = 140;
+      let center = 140;
+
+      // ✅ Responsive adjustments
+      if (window.innerWidth <= 480) { 
+        orbitRadius = 120;   // Mobile
+        center = 120;
+      } else if (window.innerWidth <= 768) { 
+        orbitRadius = 135;  // Tablet
+        center = 135;
+      }
+
+      const total = Language.length;
+
+      // Position each bank logo around orbit
+      Language.forEach((logo, i) => {
+        const angle = (i / total) * Math.PI * 2;
+        const x = center + orbitRadius * Math.cos(angle);
+        const y = center + orbitRadius * Math.sin(angle);
+        logo.style.left = `${x}px`;
+        logo.style.top = `${y}px`;
+      });
+    };
+
+    // Run initially + on resize
+    positionLogos();
+    window.addEventListener("resize", positionLogos);
+
+    // ✅ Orbit rotation
+    gsap.to(".orbit1", {
+      rotation: 360,
+      transformOrigin: "50% 50%",
+      repeat: -1,
+      ease: "linear",
+      duration: 20,
+    });
+
+    // ✅ Counter-rotate logos so they stay upright
+    Language.forEach((logo) => {
+      gsap.to(logo, {
+        rotation: -360,
+        transformOrigin: "50% 50%",
+        repeat: -1,
+        ease: "linear",
+        duration: 20,
+      });
+    });
+
+    return () => {
+      window.removeEventListener("resize", positionLogos);
+    };
+  }, []);
   return (
     <section className="">
       <div className="max-w-screen-lg mx-auto  mt-[80px] lg:mt-[150px]">
@@ -22,17 +90,24 @@ function Herosection() {
             </div>
           </div>
           <div className="flex justify-center items-center lg:w-[50%] px-[30px] lg:px-[0px] ">
-            <div className="relative">
-              <img
-                src={Rotatepart}
-                alt=""
-                className="h-[350px] w-[350px] animate-spin"
-                style={{ animationDuration: "9s" }} // slow continuous rotation
-              />
-              <div className="absolute top-[23%] right-[28%]">
-                <img src={soundBox1212} alt="" />
-              </div>
-            </div>
+            <div className="HeroRotateSection">
+                         {/* Center Zyro Logo */}
+                         <div className="SoundboxImg">
+                           <img src={soundBox1212} alt="Soundbox Image" />
+                         </div>
+           
+                         {/* Orbit container */}
+                         <div className="orbit1">
+                           <img src={gujrati} className="Language" />
+                           <img src={hindi} className="Language" />
+                           <img src={kannad} className="Language" />
+                           <img src={tamil} className="Language" />
+                           <img src={punjabi} className="Language" />
+                           <img src={malyalam} className="Language" />
+                           <img src={marathi} className="Language" />
+                           <img src={english} className="Language" />
+                         </div>
+                       </div>
           </div>
 
           <p className="lg:hidden  text-white max-[400px]:text-19px text-[20px]  font-medium leading-[36px] mt-[44px] align-middle text-center px-[35px] ">

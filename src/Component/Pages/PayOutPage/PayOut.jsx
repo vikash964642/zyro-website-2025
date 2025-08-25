@@ -9,9 +9,13 @@ import BulkPayment from './section/BulkPayment';
 import BuiltBusinessAnimation from './section/BuiltBusinessAnimation';
 import SheduledPayOut from './section/SheduledPayOut';
 import Features from './section/Features';
+import CustomHelmet from "../../Utils/Helmet"
+
 function PayOut() {
   return (
  <>
+                       <CustomHelmet  title={"Zyro Payout: Send instant Bulk Payout Automation for Businesses"} content={"Zyro Payout empowers businesses with Bulk Payout APIs to automate vendor payments, salaries, & refunds—delivering instant, secure,& reliable bulk payouts."} />
+
  <HeroSection />
  {/* <Scroller /> */}
  <ConnectedCardSlider />

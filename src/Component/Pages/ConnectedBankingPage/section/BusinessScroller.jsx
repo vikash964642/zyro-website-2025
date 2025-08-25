@@ -1,27 +1,30 @@
 import { useEffect, useRef, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import "./ConnectedBankingCss.css";
+import Unified from '/video/Unified.webm';
+import PaymentsManagement from '/video/PaymentsManagement.webm';
+import Transparency from '/video/Transparency.webm';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
 const cardsData = [
   {
     id: 1,
-    image: "/image/BusinessScrollbar/BusinessScrollbarImg1.png",
+    video: Unified,
     heading: "Unified Dashboard",
     paragraph:
       "View all your current account details, transactions, and balances clearly in a single dashboard.",
   },
   {
     id: 2,
-    image: "/image/BusinessScrollbar/BusinessScrollbarImg2.png",
+    video: PaymentsManagement,
     heading: "Payments Management",
     paragraph:
       "Make payments to vendors and receive payments from clients directly from the dashboard.",
   },
   {
     id: 3,
-    image: "/image/BusinessScrollbar/BusinessScrollbarImg1.png",
+    video: Transparency,
     heading: "Transparency and Accuracy",
     paragraph:
       "Ensure financial records are accurate and transparent, helping to reduce errors and mismatches.",
@@ -96,9 +99,9 @@ export default function SnapScrollAutoSync() {
               key={card.id}
               data-index={index}
               ref={(el) => (headingRefs.current[index] = el)}
-              className="h-[450px] flex items-center justify-center px-6 snap-start"
+              className="h-[450px] flex items-center justify-center snap-start"
             >
-              <img src={card.image} alt={card.heading} />
+              <video src={card.video} loop muted autoPlay playsInline />
             </div>
           ))}
         </div>
@@ -160,7 +163,7 @@ export default function SnapScrollAutoSync() {
                   </p>
                 </div>
                 <div className="w-full flex justify-center items-center bg-[#080219] pt-[20px] px-[16px] pb-[27px] border-[0.129px] border-[#646464] rounded-[12.8px] mt-[20px]">
-                  <img src={slide.image} alt={`Slide ${index + 1}`} />
+                  <video src={slide.video} loop muted autoPlay playsInline />
                 </div>
               </div>
             ))}

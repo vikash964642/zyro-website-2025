@@ -25,14 +25,14 @@ function App() {
       
         <Routes>
           <Route path="/" element={<HomePage />} /> 
-           <Route path="/connectedbanking" element={<ConnectedBanking/>}  />
-           <Route path="/payout" element={<PayOut/>} />
-           <Route path="/soundboxPage" element={<SoundboxPage/>}  />
-           <Route path="/ExpenseManagement" element={<ExpenseManagement/>}  />
-             <Route path="/prepaidPage" element={<Prepaid/>}  />
-                <Route path="/posPage" element={<Pos/>}  />
-                <Route path="/About-us" element={<AboutUs/>}  />
-                <Route path="/ContactUs" element={<ContactUs/>}  />
+           <Route path="/connected-banking" element={<ConnectedBanking/>}  />
+           <Route path="/payout-payment" element={<PayOut/>} />
+           <Route path="/smart-soundbox-speaker" element={<SoundboxPage/>}  />
+           <Route path="/expense-management-tracking-software" element={<ExpenseManagement/>}  />
+             <Route path="/prepaid-cards" element={<Prepaid/>}  />
+                <Route path="/pos-machine-system" element={<Pos/>}  />
+                <Route path="/about-us" element={<AboutUs/>}  />
+                <Route path="/contact-us" element={<ContactUs/>}  />
                 <Route path="/terms-and-conditions" element={<Terms/>}  />
                 <Route path="/privacy-policy" element={<Privacy/>}  />
 

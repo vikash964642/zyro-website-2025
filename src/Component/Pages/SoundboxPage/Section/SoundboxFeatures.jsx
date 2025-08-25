@@ -25,8 +25,8 @@ function SoundboxFeatures() {
                   <div className="lg:bg-[#080219] z-10 lg:rounded-[30px]  p-[9px] flex justify-center items-center   absolute  h-[calc(100%-2px)] w-[calc(100%-2px)]">
                     {/* <img src={soundbox} alt="" /> */}
                     <video
-                      src={hightQuality}
-                      
+                     
+                        src={betterSpeaker}
                       autoPlay
                       loop
                       muted
@@ -42,7 +42,7 @@ function SoundboxFeatures() {
                 <div className="bg-[#080219] rounded-[25.5px]  p-[9px] flex justify-center items-center  h-[calc(100%-2px)] w-[calc(100%-3px)]">
                   {/* <img src={newSoundbox} alt="" /> */}
                   <video
-                    src={betterSpeaker}
+                     src={hightQuality}
                     
                     autoPlay
                     loop
@@ -82,7 +82,7 @@ function SoundboxFeatures() {
                 <div className="absolute top-[235px]  bg-[#080219] h-[370px]  max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-borderColor flex justify-center items-center">
                   {/* <img src={soundbox} alt="" className="p-[40px]" /> */}
                   <video
-                      src={hightQuality}
+                        src={betterSpeaker}
                       autoPlay
                       loop
                       muted
@@ -110,7 +110,8 @@ function SoundboxFeatures() {
                 <div className="absolute top-[235px]  bg-[#080219] h-[370px] max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-borderColor flex justify-center items-center">
                   {/* <img src={newSoundbox} alt="" className="" /> */}
                   <video
-                    src={betterSpeaker}
+                  
+                    src={hightQuality}
                     autoPlay
                     loop
                     muted

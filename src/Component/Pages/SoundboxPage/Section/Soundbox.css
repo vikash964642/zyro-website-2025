@@ -1,4 +1,4 @@
-/* .features-gradient-right {
+.features-gradient-right {
   border-radius: 175.5px;
   opacity: 1;
   background: linear-gradient(
@@ -165,241 +165,86 @@ background: linear-gradient(180deg, #1A1235 0%, #0B051E 100%);
   }
 }
 
+/* Hero section language rotation */
+.HeroRotateSection { 
+      position: relative; 
+      width: 300px; 
+      height: 300px; 
+      margin: auto;
+    }
 
+    .SoundboxImg {
+      width: 184px; 
+      height: 187px;
+      position: absolute; 
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
 
-.solar-system {
-  position: relative;
-  width: clamp(280px, 80vw, 500px);
-  height: clamp(280px, 80vw, 500px);
-  margin: auto;
-}
+    .orbit1 {
+      position: absolute;
+      width: 283px;
+      height: 283px;
+      border-radius: 50%;
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px dashed grey ; /* Orbit line */
+      /* Glow effect */
+    }
 
-.sun {
-  width: clamp(60px, 15vw, 120px);
-  height: clamp(60px, 15vw, 120px);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
+    .Language {
+      position: absolute;
+      width: 35px;
+       height: 15px;
+      transform: translate(-50%, -50%);
+      background-color: black;
+    }
 
-.orbit {
-  position: absolute;
-  width: 85%;
-  height: 85%;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 2px dashed rgba(255, 255, 255, 0.4);
-}
+    /* Tablets (768px se neeche) */
+@media (max-width: 768px) {
+  .HeroRotateSection {
+    width: 300px;
+    height: 400px;
+  }
 
-.planet {
-  position: absolute;
-  width: clamp(45px, 12vw, 70px);
-  height: clamp(45px, 12vw, 70px);
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .SoundboxImg {
+    width: 160px;
+    height: 160px;
+  }
 
-.planet img {
-  width: 90%;
-  height: 90%;
-  object-fit: contain;
-  display: block;
-} */
+  .orbit1 {
+    width: 270px;
+    height: 270px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 🌌 Solar System */
-.solar-system {
-  position: relative;
-  width: clamp(280px, 80vw, 500px);
-  height: clamp(280px, 80vw, 500px);
-  margin: auto;
-}
-
-.sun {
-  width: clamp(60px, 15vw, 120px);
-  height: clamp(60px, 15vw, 120px);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-
-.orbit {
-  position: absolute;
-  width: 85%;
-  height: 85%;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 2px dashed rgba(255, 255, 255, 0.4);
-}
-
-.planet {
-  position: absolute;
-  width: clamp(45px, 12vw, 70px);
-  height: clamp(45px, 12vw, 70px);
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.planet img {
-  width: 90%;
-  height: 90%;
-  object-fit: contain;
-  display: block;
-}
-
-/* 🌈 Gradient Backgrounds */
-.features-gradient-right {
-  border-radius: 175.5px;
-  opacity: 1;
-  background: linear-gradient(90deg, rgba(64, 28, 200, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
-  filter: blur(103px);
-  position: absolute;
-  inset: 37% -7% 22% 68%;
-  z-index: -1;
-}
-
-.features-gradient-left {
-  border-radius: 175.5px;
-  opacity: 1;
-  background: linear-gradient(90deg, rgba(64, 28, 200, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
-  filter: blur(103px);
-  position: absolute;
-  inset: 32% 54% 9% 8%;
-  z-index: -1;
-}
-
-.multilanguage-gradient {
-  border-radius: 175.5px;
-  opacity: 1;
-  background: linear-gradient(252deg, rgba(64, 28, 200, 0.8) 0%, rgba(255, 255, 255, 0.6) 100%);
-  filter: blur(300px);
-  position: absolute;
-  inset: -9% 16% 68% 13%;
-  z-index: -1;
-}
-
-.feature-comparison-gradient,
-.feature-comparison-gradient1,
-.feature-comparison-gradient2 {
-  border-radius: 175.5px;
-  opacity: 1;
-  background: linear-gradient(97deg, rgba(64, 28, 139, 0.8) 0%, rgba(255, 255, 255, 0.7) 100%);
-  filter: blur(183px);
-  position: absolute;
-  z-index: 1;
-}
-
-.feature-comparison-gradient {
-  inset: 19% 79% 17% 9%;
-}
-
-.feature-comparison-gradient1 {
-  inset: 19% 48% 17% 38%;
-}
-
-.feature-comparison-gradient2 {
-  inset: 19% 15% 17% 71%;
-}
-
-.form-soundbox-gradient {
-  border-radius: 175.5px;
-  opacity: 1;
-  background: linear-gradient(97deg, rgba(23, 9, 49, 0.8) 0%, rgba(98, 83, 126, 0.6) 100%);
-  filter: blur(100px);
-  position: absolute;
-  inset: 35% 2% 3% 68%;
-}
-
-.cardbg {
-  background: linear-gradient(90deg, rgba(121, 121, 121, 1) 0%, rgba(111, 65, 210, 1) 100%);
-}
-
-.form-input-gradient {
-  border-radius: 175.5px;
-  opacity: 1;
-  background: linear-gradient(97deg, rgba(164, 137, 255, 0.8) 0%, rgba(52, 52, 52, 0.6) 100%);
-  filter: blur(100px);
-  position: absolute;
-  inset: 61% 70% 1% 0%;
-}
-
-.soundboxFeatures-gradient {
-  border-radius: 175.5px;
-  opacity: 1;
-  background: linear-gradient(97deg, rgba(164, 137, 255, 0.8) 0%, rgba(52, 52, 52, 0.6) 100%);
-  filter: blur(400px);
-  position: absolute;
-  inset: 0% 0% 42% 0%;
-  z-index: 1;
-}
-
-/* 🎨 Backgrounds */
-.custom-bg {
-  background-image: url("/image/soundbox/halfmoon_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.SoundBoxBackgroundGradient {
-  border-radius: 30px;
-  background: linear-gradient(180deg, #1A1235 0%, #0B051E 100%);
-}
-
-.SoundBoxBackgroundGradient-mob {
-  height: 500px;
-  border-radius: 30px;
-  background: linear-gradient(180deg, #1A1235 0%, #0B051E 100%);
-}
-
-/*  Responsive Tweaks */
-@media (max-width: 1190px) {
-  .features-gradient-right {
-    inset: 4% 0% 74% 8%;
+  .Language {
+   width: 46px;
+    height: 21px;
   }
 }
 
-@media (max-width: 999px) {
-  .features-gradient-right {
-    inset: 4% 10% 74% 8%;
+/* Mobiles (min 320px - 480px) */
+@media (max-width: 480px) {
+  .HeroRotateSection {
+    width:330px;
+    height: 330px;
   }
 
-  .feature-comparison-gradient1 {
-    inset: 19% 34% 17% 30%;
+  .SoundboxImg {
+    width: 140px;
+    height: 140px;
   }
 
-  .form-soundbox-gradient {
-    opacity: 0.6;
-    inset: 67% 6% 1% 6%;
+  .orbit1 {
+    width: 240px;
+    height: 240px;
+  }
+
+  .Language {
+    width: 40px;
+    height: 18px;
   }
 }
