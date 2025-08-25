@@ -6,11 +6,10 @@ import XTwitter from "/image/FooterImage/XTwitter.svg";
 import linkedIn from "/image/FooterImage/LinkedIn.svg";
 import zyrologo from "/image/zyro-logo.svg";
 // import { useNavigate } from 'react-router-dom';
-import GooglePlay from "/image/FooterImage/playStore.svg";
-import AppStore from "/image/FooterImage/appStore.svg";
+import GooglePlay from "../../../public/image/FooterImage/playStore.svg";
+import AppStore from "../../../public/image/FooterImage/appStore.svg";
 // import certificatezyro from "/image/FooterImage/certificatezyro.png";
-import certificatezyro from "/image/FooterImage/certificateNew1.svg";
-
+import certificatezyro from "../../../public/image/FooterImage/certificateNew1.svg";
 function Footer() {
   const ScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });

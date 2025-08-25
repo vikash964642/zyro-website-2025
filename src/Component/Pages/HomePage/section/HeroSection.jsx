@@ -81,9 +81,9 @@ export default function HeroSection() {
     <>
       <section className="hidden lg:flex items-center justify-center gap-[50px] lg:pt-[135px] pt-[80px] relative">
         <div className="home-hero_gradient1"></div>
-        <div className="home-hero_gradient2"></div>
+        {/* <div className="home-hero_gradient2"></div>
         <div className="home-hero_gradient3"></div>
-        <div className="home-hero_gradient4"></div>
+        <div className="home-hero_gradient4"></div> */}
         {/* <div className="home-hero_gradientBottom"></div> */}
 
         {/* Navigation Buttons */}
