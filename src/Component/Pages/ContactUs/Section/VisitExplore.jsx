@@ -3,8 +3,8 @@ import locationIcon from "/image/contact/location.svg";
 
 function VisitExplore() {
   return (
-    <section className="min-h-[90vh] ">
-      <div className="max-w-screen-lg mx-auto pt-[130px]">
+    <section className="mt-[150px] lg:mt-[250px] ">
+      <div className="max-w-screen-lg mx-auto ">
         <div className="pl-[26px] pr-[16px]">
           <h3 className="visitHeader text-[24px] lg:text-[34px] leading-[32px] lg:leading-[46px] font-semibold">
             Visit us and Explore our <br /> Workspace Today!
