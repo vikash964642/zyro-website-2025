@@ -23,6 +23,7 @@
   position: absolute;
   inset: 32% 54% 9% 8%;
   z-index: -1;
+  overflow: hidden;
 }
 
 .multilanguage-gradient {
@@ -37,6 +38,7 @@
   position: absolute;
   inset: -9% 16% 68% 13%;
   z-index: -1;
+  overflow: hidden;
 }
 
 .feature-comparison-gradient,
@@ -53,6 +55,7 @@
   position: absolute;
   inset: 19% 79% 17% 9%;
   z-index: 1;
+  overflow: hidden;
 }
 .feature-comparison-gradient1 {
   inset: 19% 48% 17% 38%;
