@@ -11,14 +11,14 @@ function ZyroPosMachine() {
           <h2 className=" text-white90 font-semibold max-[400px]:text-[26px] text-[32px] lg:text-[48px] leading-[40px] lg:leading-[59.68px] text-center lg:text-left">
             ZYRO POS Machine
           </h2>
-          <p className="pr-[20px] mt-[19px] lg:mt-[17px] lg:mb-[38px] max-[400px]:text-[24px] text-[28px] leading-[40px] font-medium text-center lg:text-left lg:text-[36px] text-[#FFF] ">
+          <p className="pr-[20px] mt-[19px] lg:mt-[17px] lg:mb-[25px] max-[400px]:text-[24px] text-[28px] leading-[40px] font-medium text-center lg:text-left lg:text-[36px] text-[#FFF] ">
             {" "}
             <span className="ZyroPosMachineHeaderGradient font-semibold">
               Fast, Flexible
             </span>{" "}
             and Built for In-Store Payments
           </p>
-          <p className="text-[#9E9C9F] text-[14px] lg:text-[20px] font-normal leading-[26px] mt-[18px] align-middle text-center lg:text-left px-[40px] lg:px-[0px] ">
+          <p className="text-[#9E9C9F] text-[14px] lg:text-[20px] font-normal leading-[26px] lg:leading-[33px] align-middle text-center lg:text-left px-[40px] lg:px-[0px] ">
             Whether you run a retail shop, cafe, restaurant, spa, or salon- our
             all-in-one POS system helps you manage sales and accept payments
             easily.

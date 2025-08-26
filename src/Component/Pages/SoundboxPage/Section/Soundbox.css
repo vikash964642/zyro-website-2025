@@ -201,10 +201,9 @@ background: linear-gradient(180deg, #1A1235 0%, #0B051E 100%);
 
     .Language {
       position: absolute;
-      width: 35px;
-       height: 15px;
+      width: 55px;
+       height: 35px;
       transform: translate(-50%, -50%);
-      background-color: black;
     }
 
     /* Tablets (768px se neeche) */
@@ -215,8 +214,8 @@ background: linear-gradient(180deg, #1A1235 0%, #0B051E 100%);
   }
 
   .SoundboxImg {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
   }
 
   .orbit1 {

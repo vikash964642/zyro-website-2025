@@ -53,7 +53,7 @@ function BankAccountManagement() {
 
   return (
 
-    <section className="max-w-screen-lg mx-auto px-[17px] md:px-[20px] xl:px-0 mt-[150px]">
+    <section className="max-w-screen-lg mx-auto px-[17px] md:px-[20px] xl:px-0 mt-[173px]">
     
 
        <div className="hidden lg:flex justify-center">

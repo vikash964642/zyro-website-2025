@@ -5,13 +5,13 @@ import KnowMoreRightIcon from '/image/HomePage/Icon/KnowMoreRightIcon.svg'
 // import languageSoundbox from '/image/HomePage/languageSoundbox.svg'
 import { useEffect } from "react";
 import { gsap } from "gsap";
-
+import {Link} from "react-router-dom"
 import soundBox1212 from "/image/soundbox/soundbox12121.webp";
-import english from "/image/soundbox/English.svg";
-import marathi from "/image/soundbox/marathi.svg";
+import english from "/image/soundbox/english.svg";
+import bangla from "/image/soundbox/bangla.svg";
 import malyalam from "/image/soundbox/malyalam.svg";
 import punjabi from "/image/soundbox/punjabi.svg";
-import tamil from "/image/soundbox/tamil.svg";
+import tamil from "/image/soundbox/marathi.svg";
 import kannad from "/image/soundbox/kannad.svg";
 import hindi from "/image/soundbox/hindi.svg";
 import gujrati from "/image/soundbox/gujrati.svg";
@@ -20,8 +20,8 @@ function ZyroSoundBox() {
     const Language = document.querySelectorAll(".Language");
 
     const positionLogos = () => {
-      let orbitRadius = 140;
-      let center = 140;
+      let orbitRadius = 142;
+      let center = 135;
 
       // ✅ Responsive adjustments
       if (window.innerWidth <= 480) {
@@ -73,7 +73,7 @@ function ZyroSoundBox() {
     };
   }, []);
   return (
-    <section className="max-w-screen-lg lg:px-[20px] xl:px-0 mx-auto mt-[200px]">
+    <section className="max-w-screen-lg lg:px-[20px] xl:px-0 mx-auto mt-[220px]">
       <div className="lg:flex justify-between items-center">
         <div className="lg:w-[50%] p-3">
           <h2 className="bg-gradientText bg-clip-text text-transparent font-semibold max-[400px]:text-28px text-[32px] lg:text-[47.74px] leading-[40px] lg:leading-[59.68px] text-center lg:text-left">
@@ -85,17 +85,17 @@ function ZyroSoundBox() {
             </p>
           </div>
           <div className="flex justify-center lg:justify-start mt-[39px]">
-            <button className="text-white w-[150px] h-[40px] bg-[#4F31B4] rounded-[30px] text-[18.6px] font-medium text-center flex items-center justify-center gap-[3px]">
+            <Link to="/smart-soundbox-speaker" className="text-white w-[150px] h-[40px] bg-[#4F31B4] rounded-[30px] text-[18.6px] font-medium text-center flex items-center justify-center gap-[3px]">
               Know more{" "}
               <img
                 src={KnowMoreRightIcon}
                 alt=""
                 className="h-[13px] w-[13px]"
               />
-            </button>
+            </Link>
           </div>
         </div>
-        <div className="flex justify-center items-center lg:w-[50%] px-[30px] lg:px-[0px] mt-[87px] lg:mt-[52px]">
+        <div className="flex justify-center items-center lg:w-[50%] px-[30px] lg:px-[0px] mt-[87px] lg:mt-0">
           {/* <img src={languageSoundbox} alt="" /> */}
           <div className="HeroRotateSection">
             {/* Center Zyro Logo */}
@@ -111,7 +111,7 @@ function ZyroSoundBox() {
               <img src={tamil} className="Language" />
               <img src={punjabi} className="Language" />
               <img src={malyalam} className="Language" />
-              <img src={marathi} className="Language" />
+              <img src={bangla} className="Language" />
               <img src={english} className="Language" />
             </div>
           </div>
