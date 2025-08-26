@@ -1,6 +1,6 @@
 
-import arrowRight from '../../../../../public/image/ConnectedBanking/arrowRight.svg';
-import BusinessBankingMob from '../../../../../public/image/ConnectedBanking/BusinessBankingMob.svg';
+import arrowRight from '/image/ConnectedBanking/arrowRight.svg';
+import BusinessBankingMob from '/image/ConnectedBanking/BusinessBankingMob.svg';
 function BusinessBanking() {
   return (
   <section className="max-w-screen-lg mx-[12px] lg:mx-auto mt-[100px]">

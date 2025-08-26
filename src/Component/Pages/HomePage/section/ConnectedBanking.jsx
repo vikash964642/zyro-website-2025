@@ -7,7 +7,7 @@ import collab6 from "/image/HomePage/Icon/yesbank.svg";
 import zyroLogo from "/image/zyro-logo.svg";
 import partnership from "/image/HomePage/partners.png";
 import './HomePageCss.css';
-import KnowMoreRightIcon from '../../../../../public/image/HomePage/Icon/KnowMoreRightIcon.svg'
+import KnowMoreRightIcon from '/image/HomePage/Icon/KnowMoreRightIcon.svg'
 
 export default function ConnectedBanking() {
   const [currImg, setCurrImg] = useState(0);

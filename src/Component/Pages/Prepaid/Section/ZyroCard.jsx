@@ -1,8 +1,8 @@
 
-import ZyroCardImg1 from '../../../../../public/image/Prepaid/ZyroCardImg1.svg'
-import ZyroCardImg2 from '../../../../../public/image/Prepaid/ZyroCardImg2.svg'
-import ZyroCardImg3 from '../../../../../public/image/Prepaid/ZyroCardImg3.svg'
-import ZyroATMCardImg from '../../../../../public/image/Prepaid/ZyroATMCardImg.webp'
+import ZyroCardImg1 from '/image/Prepaid/ZyroCardImg1.svg'
+import ZyroCardImg2 from '/image/Prepaid/ZyroCardImg2.svg'
+import ZyroCardImg3 from '/image/Prepaid/ZyroCardImg3.svg'
+import ZyroATMCardImg from '/image/Prepaid/ZyroATMCardImg.webp'
 function ZyroCard() {
   return (
     <section className="max-w-screen-lg mx-auto px-[12px] xl:px-0 relative lg:mt-[200px] mt-[110px]">

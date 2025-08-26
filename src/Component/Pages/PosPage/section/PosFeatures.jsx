@@ -1,8 +1,8 @@
-import PosFeatureImg1 from '../../../../../public/image/Pos/PosFeatureImg1.webp';
-import PosFeatureImg2 from '../../../../../public/image/Pos/PosFeatureImg2.webp';
-import PosFeatureImg3 from '../../../../../public/image/Pos/PosFeatureImg3.webp';
-import PosFeatureImg4 from '../../../../../public/image/Pos/PosFeatureImg4.webp';
-import PosFeatureImg5 from '../../../../../public/image/Pos/PosFeatureImg5.webp';
+import PosFeatureImg1 from '/image/Pos/PosFeatureImg1.webp';
+import PosFeatureImg2 from '/image/Pos/PosFeatureImg2.webp';
+import PosFeatureImg3 from '/image/Pos/PosFeatureImg3.webp';
+import PosFeatureImg4 from '/image/Pos/PosFeatureImg4.webp';
+import PosFeatureImg5 from '/image/Pos/PosFeatureImg5.webp';
 import './Pos.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

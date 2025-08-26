@@ -10,7 +10,7 @@ function Herosection() {
     const [isOpen2,setOpen2]=useState(false);
        const [isOpen3,setOpen3]=useState(false);
   const handleClickOpen1=()=>{
-setOpen1(true)
+setOpen1(true);
   }
     const handleClickClose1=()=>{
 setOpen1(false)
@@ -38,8 +38,11 @@ setOpen3(false)
   }, [isOpen1,isOpen2,isOpen3]);
   return (
     <section className="mt-[105px]">
+      {(isOpen1 || isOpen2 || isOpen3) && (
+  <div className="fixed inset-0 z-20 bg-[#2B2B2BBA] opacity-[0.58]"></div>
+)}
       <div className="max-w-screen-lg mx-auto">
-        <div className="relative">
+        <div className="relative" >
           <h1 className="contacthead  text-[25px] lg:text-[38px] lg:leading-[46px] leading-[36px] font-semibold text-center">
             We are here to help you!
           </h1>
@@ -104,7 +107,7 @@ setOpen3(false)
       animate={{ scale: 1, opacity: 1 }}
       exit={{ scale: 0.8, opacity: 0 }}
       transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed inset-0 top-[77px] z-50  flex justify-center items-start md:items-center"
+      className="fixed inset-0 top-[77px] z-30  flex justify-center items-start md:items-center"
     >
 
   <div className="FormBorder  md:rounded-[8px] w-full md:w-[600px] lg:w-[915px]  h-screen md:h-auto max-h-screen md:max-h-[90vh]  overflow-y-auto">
@@ -175,7 +178,7 @@ setOpen3(false)
       animate={{ scale: 1, opacity: 1 }}
       exit={{ scale: 0.8, opacity: 0 }}
       transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed inset-0 top-[77px] z-50  flex justify-center items-start md:items-center"
+      className="fixed inset-0 top-[77px] z-30  flex justify-center items-start md:items-center"
     >
 
 <div className="FormBorder md:rounded-[8px] w-full md:w-[600px] lg:w-[915px]  h-screen md:h-auto max-h-screen md:max-h-[90vh]  overflow-y-auto">
@@ -246,7 +249,7 @@ setOpen3(false)
       animate={{ scale: 1, opacity: 1 }}
       exit={{ scale: 0.8, opacity: 0 }}
       transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed inset-0 top-[77px] z-50  flex justify-center items-start md:items-center"
+      className="fixed inset-0 top-[77px] z-30  flex justify-center items-start md:items-center"
     >
 
    <div className="FormBorder  md:rounded-[8px] w-full md:w-[600px] lg:w-[915px]  h-screen md:h-auto max-h-screen md:max-h-[90vh] overflow-y-auto">

@@ -8,9 +8,9 @@ import FeaturesExpenseManage from './Section/FeaturesExpenseManage';
 import SmartExpense from './Section/SmartExpense';
 import FAQ from './Section/FAQ';
 import Digitize from './Section/Digitize';
+import RoleBased from './Section/RoleBased';
 import CustomHelmet from "../../Utils/Helmet"
 
-// import RoleBased from './Section/RoleBased';
 
 function ExpenseManagement() {
   return (
@@ -21,7 +21,7 @@ function ExpenseManagement() {
     <CorporateCardManagement />
     <ExpenseOverview />
     <ControlAndClarity />
-    {/* <RoleBased /> */}
+    <RoleBased />
     <SignupTracking />
     <FeaturesExpenseManage />
     <SmartExpense />

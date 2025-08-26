@@ -1,7 +1,7 @@
 
-import SmartControlImg1 from '../../../../../public/image/Prepaid/SmartControlImg1.webp'
-import SmartControlImg2 from '../../../../../public/image/Prepaid/SmartControlImg2.webp'
-import SmartControlImg3 from '../../../../../public/image/Prepaid/SmartControlImg3.webp'
+import SmartControlImg1 from '/image/Prepaid/SmartControlImg1.webp'
+import SmartControlImg2 from '/image/Prepaid/SmartControlImg2.webp'
+import SmartControlImg3 from '/image/Prepaid/SmartControlImg3.webp'
 function SmartControl() {
   return (
    <section className="max-w-screen-lg mx-auto px-[12px] xl:px-0 relative lg:mt-[150px] mt-[110px]">

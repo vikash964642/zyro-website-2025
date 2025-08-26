@@ -1,4 +1,5 @@
 
+
 // import posBulkPayments from '../../../../../public/image/PayOut/posBulkPayments.webp';
 import posBulkPayments from '/video/DisburseBulk.webm';
 import './PayOut.css';

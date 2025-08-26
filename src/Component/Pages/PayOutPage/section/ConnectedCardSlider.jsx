@@ -1,6 +1,6 @@
 
-import CardPayOutImg1 from "../../../../../public/image/PayOut/CardPayOutImg1.svg";
-import CardPayOutImg2 from "../../../../../public/image/PayOut/CardPayOutImg2.svg";
+import CardPayOutImg1 from "/image/PayOut/CardPayOutImg1.svg";
+import CardPayOutImg2 from "/image/PayOut/CardPayOutImg2.svg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './PayOut.css';

@@ -1,10 +1,10 @@
 // import React from 'react'
-import InstantPaymentIcon1 from "../../../../../public/image/HomePage/Icon/InstantPaymentIcon1.svg";
-import InstantPaymentIcon2 from "../../../../../public/image/HomePage/Icon/InstantPaymentIcon2.svg";
-import InstantPaymentIcon3 from "../../../../../public/image/HomePage/Icon/InstantPaymentIcon3.svg";
-import InstantPaymentIcon4 from "../../../../../public/image/HomePage/Icon/InstantPaymentIcon4.svg";
-import InstantPaymentIcon5 from "../../../../../public/image/HomePage/Icon/InstantPaymentIcon5.svg";
-import InstantPaymentIcon6 from "../../../../../public/image/HomePage/Icon/InstantPaymentIcon6.svg";
+import InstantPaymentIcon1 from "/image/HomePage/Icon/InstantPaymentIcon1.svg";
+import InstantPaymentIcon2 from "/image/HomePage/Icon/InstantPaymentIcon2.svg";
+import InstantPaymentIcon3 from "/image/HomePage/Icon/InstantPaymentIcon3.svg";
+import InstantPaymentIcon4 from "/image/HomePage/Icon/InstantPaymentIcon4.svg";
+import InstantPaymentIcon5 from "/image/HomePage/Icon/InstantPaymentIcon5.svg";
+import InstantPaymentIcon6 from "/image/HomePage/Icon/InstantPaymentIcon6.svg";
 
 
 const cards = [

@@ -1,7 +1,7 @@
-import React from 'react'
-import ListCardImg1 from '../../../../../public/image/Prepaid/ListCardImg1.webp'
-import ListCardImg2 from '../../../../../public/image/Prepaid/ListCardImg2.webp'
-import ListCardImg3 from '../../../../../public/image/Prepaid/ListCardImg3.webp'
+
+import ListCardImg1 from '/image/Prepaid/ListCardImg1.webp'
+import ListCardImg2 from '/image/Prepaid/ListCardImg2.webp'
+import ListCardImg3 from '/image/Prepaid/ListCardImg3.webp'
 function ListCard() {
   return (
        <section className="max-w-screen-lg mx-auto px-[12px] xl:px-0 relative lg:mt-[80px] mt-[110px] ">

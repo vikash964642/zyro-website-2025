@@ -1,5 +1,5 @@
 
-import SheduledPayOutImg1 from '../../../../../public/image/PayOut/SheduledPayOutImg1.svg';
+import SheduledPayOutImg1 from '/image/PayOut/SheduledPayOutImg1.svg';
 function SheduledPayOut() {
   return (
   <section className="max-w-screen-lg lg:mx-auto mt-[150px]">

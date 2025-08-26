@@ -7,19 +7,19 @@
 // import "swiper/css/pagination";
 // import "swiper/css/navigation";
 // import "./Pos.css"; // We'll use this for custom styling if needed
-// import PosMachineImg from '../../../../../public/image/Pos/PosMachineImg.webp';
+// import PosMachineImg from '/image/Pos/PosMachineImg.webp';
 
-// import Grocery from '../../../../../public/image/Pos/PosSystemSliderGroceryImg.webp';
-// import Logistic from '../../../../../public/image/Pos/PosSystemSliderLogisticImg.webp';
-// import RetailSupermarket1 from '../../../../../public/image/Pos/PosSystemSliderRetail&SupermarketImg1.webp';
-// import RetailSupermarket2 from '../../../../../public/image/Pos/PosSystemSliderRetail&SupermarketImg2.webp';
-// import RestaurantCafe from '../../../../../public/image/Pos/PosSystemSliderRestaurant&CafeImg.webp';
-// import ElectronicShop from '../../../../../public/image/Pos/PosSystemSliderElectronic&ShopImg.webp';
-// import HealthCare from '../../../../../public/image/Pos/PosSystemSliderHealthcareImg.webp';
-// import Travel from '../../../../../public/image/Pos/PosSystemSliderTravelImg.webp';
-// import Hospitality from '../../../../../public/image/Pos/PosSystemSliderHospitalityImg.webp';
-// import Entertainment1 from '../../../../../public/image/Pos/PosSystemSliderEntertainmentImg1.webp';
-// import Entertainment2 from '../../../../../public/image/Pos/PosSystemSliderEntertainmentImg2.webp';
+// import Grocery from '/image/Pos/PosSystemSliderGroceryImg.webp';
+// import Logistic from '/image/Pos/PosSystemSliderLogisticImg.webp';
+// import RetailSupermarket1 from '/image/Pos/PosSystemSliderRetail&SupermarketImg1.webp';
+// import RetailSupermarket2 from '/image/Pos/PosSystemSliderRetail&SupermarketImg2.webp';
+// import RestaurantCafe from '/image/Pos/PosSystemSliderRestaurant&CafeImg.webp';
+// import ElectronicShop from '/image/Pos/PosSystemSliderElectronic&ShopImg.webp';
+// import HealthCare from '/image/Pos/PosSystemSliderHealthcareImg.webp';
+// import Travel from '/image/Pos/PosSystemSliderTravelImg.webp';
+// import Hospitality from '/image/Pos/PosSystemSliderHospitalityImg.webp';
+// import Entertainment1 from '/image/Pos/PosSystemSliderEntertainmentImg1.webp';
+// import Entertainment2 from '/image/Pos/PosSystemSliderEntertainmentImg2.webp';
 
 
 // const CardList=[
@@ -132,19 +132,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "./Pos.css"; // Your custom CSS for animation etc.
-import PosMachineImg from '../../../../../public/image/Pos/PosMachineImg.webp';
+import PosMachineImg from '/image/Pos/PosMachineImg.webp';
 
-import Grocery from '../../../../../public/image/Pos/PosSystemSliderGroceryImg.webp';
-import Logistic from '../../../../../public/image/Pos/PosSystemSliderLogisticImg.webp';
-import RetailSupermarket1 from '../../../../../public/image/Pos/PosSystemSliderRetail&SupermarketImg1.webp';
-import RetailSupermarket2 from '../../../../../public/image/Pos/PosSystemSliderRetail&SupermarketImg2.webp';
-import RestaurantCafe from '../../../../../public/image/Pos/PosSystemSliderRestaurant&CafeImg.webp';
-import ElectronicShop from '../../../../../public/image/Pos/PosSystemSliderElectronic&ShopImg.webp';
-import HealthCare from '../../../../../public/image/Pos/PosSystemSliderHealthcareImg.webp';
-import Travel from '../../../../../public/image/Pos/PosSystemSliderTravelImg.webp';
-import Hospitality from '../../../../../public/image/Pos/PosSystemSliderHospitalityImg.webp';
-import Entertainment1 from '../../../../../public/image/Pos/PosSystemSliderEntertainmentImg1.webp';
-import Entertainment2 from '../../../../../public/image/Pos/PosSystemSliderEntertainmentImg2.webp';
+import Grocery from '/image/Pos/PosSystemSliderGroceryImg.webp';
+import Logistic from '/image/Pos/PosSystemSliderLogisticImg.webp';
+import RetailSupermarket1 from '/image/Pos/PosSystemSliderRetail&SupermarketImg1.webp';
+import RetailSupermarket2 from '/image/Pos/PosSystemSliderRetail&SupermarketImg2.webp';
+import RestaurantCafe from '/image/Pos/PosSystemSliderRestaurant&CafeImg.webp';
+import ElectronicShop from '/image/Pos/PosSystemSliderElectronic&ShopImg.webp';
+import HealthCare from '/image/Pos/PosSystemSliderHealthcareImg.webp';
+import Travel from '/image/Pos/PosSystemSliderTravelImg.webp';
+import Hospitality from '/image/Pos/PosSystemSliderHospitalityImg.webp';
+import Entertainment1 from '/image/Pos/PosSystemSliderEntertainmentImg1.webp';
+import Entertainment2 from '/image/Pos/PosSystemSliderEntertainmentImg2.webp';
 
 
 const CardList=[

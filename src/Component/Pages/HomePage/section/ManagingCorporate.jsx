@@ -1,7 +1,7 @@
 // import React from 'react'
-import ManageingCorporate from '../../../../../public/image/HomePage/managing-corporate.png';
+import ManageingCorporate from '/image/HomePage/managing-corporate.png';
 import './HomePageCss.css'
-import KnowMoreRightIcon from '../../../../../public/image/HomePage/Icon/KnowMoreRightIcon.svg'
+import KnowMoreRightIcon from '/image/HomePage/Icon/KnowMoreRightIcon.svg'
 function ManagingCorporate() {
   return (
      <section className="max-w-screen-lg px-4  xl:px-0 mx-auto mt-[200px] lg:mt-[220px]">

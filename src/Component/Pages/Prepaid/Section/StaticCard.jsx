@@ -1,8 +1,8 @@
 
 import  {useEffect,useRef, useState } from "react";
-import staticCardImg1 from '../../../../../public/image/Prepaid/staticCardImg1.webp'
-import staticCardImg2 from '../../../../../public/image/Prepaid/staticCardImg2.webp'
-import staticCardImg3 from '../../../../../public/image/Prepaid/staticCardImg3.webp'
+import staticCardImg1 from '/image/Prepaid/staticCardImg1.webp'
+import staticCardImg2 from '/image/Prepaid/staticCardImg2.webp'
+import staticCardImg3 from '/image/Prepaid/staticCardImg3.webp'
 
 const cardData = [
   {

@@ -1,5 +1,5 @@
-import PosMachineFeaturesImg1 from '../../../../../public/image/Pos/PosMachineFeaturesImg1.webp';
-import PosMachineFeaturesMobImg1 from '../../../../../public/image/Pos/PosMachineFeaturesMobImg1.webp';
+import PosMachineFeaturesImg1 from '/image/Pos/PosMachineFeaturesImg1.webp';
+import PosMachineFeaturesMobImg1 from '/image/Pos/PosMachineFeaturesMobImg1.webp';
 function PosMachineFeatures() {
   return (
 <section className="max-w-screen-lg lg:mx-auto px-[20px] xl:px-[0px] mt-[180px] lg:mt-[150px] relative">
