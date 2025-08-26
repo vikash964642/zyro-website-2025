@@ -21,7 +21,7 @@ const CustomHelmet = ({ title,content,pageURL }) => {
 CustomHelmet.propTypes = {
   title: PropTypes.string.isRequired, 
   content: PropTypes.string.isRequired,
-  pageURL:PropTypes.string.isRequired, 
+  pageURL:PropTypes.string, 
 };
 
 export default CustomHelmet;

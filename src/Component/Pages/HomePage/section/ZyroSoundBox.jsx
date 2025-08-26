@@ -1,9 +1,8 @@
 // import React from 'react'
 
-import languageSoundbox from '/image/HomePage/languageSoundbox.svg'
-import KnowMoreRightIcon from '/image/HomePage/Icon/KnowMoreRightIcon.svg'
 // import languageSoundbox from '/image/HomePage/languageSoundbox.svg'
 import KnowMoreRightIcon from '/image/HomePage/Icon/KnowMoreRightIcon.svg'
+// import languageSoundbox from '/image/HomePage/languageSoundbox.svg'
 import { useEffect } from "react";
 import { gsap } from "gsap";
 

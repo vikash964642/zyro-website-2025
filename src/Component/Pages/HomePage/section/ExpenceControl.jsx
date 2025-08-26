@@ -4,12 +4,7 @@ import CustomControl from "/video/CustomControl.webm";
 import FullAutomation from "/video/FullAutomation.webm";
 import AutomaticReconciliation from "/video/AutomaticReconciliation.webm";
 import SamrtDashboardReport from "/video/SamrtDashboardReport.webm";
-// import expencecontrol1 from '/image/HomePage/RealTimetracking.svg';
-// import expencecontrol2 from '/image/HomePage/FullAutomation.svg';
-// import expencecontrol3 from '/image/HomePage/CustomControl.svg';
-// import expencecontrol4 from '/image/HomePage/AutomaticReconciliation.svg';
-// import expencecontrol5 from '/image/HomePage/languageSoundbox.svg';
-// import expencecontrol6 from '/image/HomePage/SmartDashboardReports.svg';
+import EasyReimbursements from "/video/EasyReimbursements.webm";
 
 import Checked from "/image/HomePage/ExpenseRadioChecked.webp";
 import UnChecked from "/image/HomePage/ExpenseRadioUnChecked.webp";
