@@ -1,8 +1,8 @@
 
 import { useEffect, useRef, useState } from "react";
-import PosHeroSection1 from '../../../../../public/video/PosHeroSection1.mp4';
-import PosHeroSection2 from '../../../../../public/video/PosHeroSection2.mp4';
-import PosHeroSection3 from '../../../../../public/video/PosHeroSection3.mp4';
+import PosHeroSection1 from '/video/PosHeroSection1.mp4';
+import PosHeroSection2 from '/video/PosHeroSection2.mp4';
+import PosHeroSection3 from '/video/PosHeroSection3.mp4';
 
 const cardData = [
   { video: PosHeroSection3, SubHeader: "SWIPE" },

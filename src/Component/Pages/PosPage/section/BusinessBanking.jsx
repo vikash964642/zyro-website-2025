@@ -1,6 +1,6 @@
-import React from 'react'
-import arrowRight from '../../../../../public/image/ConnectedBanking/arrowRight.svg';
-import BusinessBankingImg from '../../../../../public/image/Pos/BusinessBanking.webp';
+
+import arrowRight from '/image/ConnectedBanking/arrowRight.svg';
+import BusinessBankingImg from '/image/Pos/BusinessBanking.webp';
 function BusinessBanking() {
   const handleClick=()=>{
     console.log("click");

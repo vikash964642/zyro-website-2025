@@ -1,4 +1,4 @@
-import PrepaidZyroPaySpending from '../../../../../public/video/PrepaidZyroPaySpending.mp4'
+import PrepaidZyroPaySpending from '/video/PrepaidZyroPaySpending.mp4'
 function ZyroPaySpending() {
   return (
   <section className="max-w-screen-lg mx-auto px-[12px] xl:px-0 relative lg:mt-[80px] mt-[110px]">

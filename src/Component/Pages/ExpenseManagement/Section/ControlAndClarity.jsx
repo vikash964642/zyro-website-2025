@@ -1,35 +1,37 @@
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import AngleDown from "/image/AngleDown.png";
-import bgGradiant from "/image/ExpenseManagement/bgGradiant.webp";
-import ExpenseCustomcontrol from "/image/ExpenseManagement/ExpenseCustomcontrol.webp";
-import ExpenseLiveSpend from "/image/ExpenseManagement/ExpenseLiveSpend.webp";
-import ExpenseFullAutomation from "/image/ExpenseManagement/ExpenseFullAutomation.webp";
-import Line from "../../../../../public/image/ExpenseManagement/line.svg";
 
+import bgGradiant from "/image/ExpenseManagement/bgGradiant.webp";
+import ExpenseCustomcontrol from "/image/ExpenseManagement/ExpenseCustomcontrol.svg";
+import ExpenseLiveSpend from "/image/ExpenseManagement/ExpenseLiveSpend.svg";
+import ExpenseFullAutomation from "/image/ExpenseManagement/ExpenseFullAutomation.svg";
+import Line from "../../../../../public/image/ExpenseManagement/line.svg";
+import HorizentalSeperator from "../../../../../public/image/ExpenseManagement/HorizentalSeperator.svg";
 const CardSlide = [
   {
     img: ExpenseCustomcontrol,
-    heading: "Custom Controls",
+    heading1: "Custom",
+    heading2:" Controls",
     paragraph: "Set rules, policies, and spending limits",
   },
   {
     img: ExpenseLiveSpend,
-    heading: "Live Spend Insights",
+    heading1: "Live Spend ",
+    heading2:" Insights",
     paragraph: "Stay informed with real-time spend alerts",
   },
   {
     img: ExpenseFullAutomation,
-    heading: "Full Automation",
+    heading1: "Full ",
+    heading2: "Automation",
     paragraph: "Simplify workflows and reduce manual effort",
   },
 ];
 
 function ControlAndClarity() {
   const [, setScreen] = useState("lg"); // default to lg
-  const [showExtra, setShowExtra] = useState(false);
+  // const [showExtra, setShowExtra] = useState(false);
 
-  const handleToggle = () => setShowExtra((prev) => !prev);
+  // const handleToggle = () => setShowExtra((prev) => !prev);
 
   // Cards to display (all vs first 4)
 
@@ -51,16 +53,16 @@ function ControlAndClarity() {
   }, []);
   return (
     <section className=" mt-[150px] lg:mt-[200px]">
-      <div className="max-w-screen-lg lg:mx-auto  px-[20px] xl:px-[0px]">
+      <div className="max-w-screen-lg lg:mx-auto  px-[7px] md:px-[20px]  xl:px-[0px]">
         <div className="hidden md:block">
           <div className="relative">
             <div className="BusinessCardGradient"></div>
           </div>
 
-          <h2 className="text-[34px] font-semibold text-center text-[#FFF] businessCardheaderColor1 px-[180px]">
+          <h2 className="md:text-[30px] lg:text-[34px] font-semibold text-center ControlAndClarityHeaderGradient ">
             Get Full Control & Clarity Over Every Spend
           </h2>
-          <p className="text-[16px] leading-[25px] font-normal lg:text-center text-[#A9A9A9] pt-[25px]">
+          <p className="text-[16px] leading-[25px] font-normal text-center text-[#A9A9A9] pt-[15px]">
             Monitor every rupee in real-time speed accuracy{" "}
           </p>
 
@@ -81,13 +83,14 @@ function ControlAndClarity() {
                   imgClass = "block";
                 }
                 if (index === 1 || index === 4) {
-                  plClass = "md:pl-[15px] min-[900px]:pl-[30px] lg:pl-[35px]";
-                  prClass = "md:pr-[8px] lg:pr-[14px]";
-                } else if (index === 0 || index === 3) {
+                  plClass = "md:pl-[34px] min-[900px]:pl-[30px] lg:pl-[60px]";
+                  prClass = "md:pr-[8px] lg:pr-[30px]";
+                }
+                 else if (index === 0 || index === 3) {
                   plClass = "pl-[5px]";
-
                   prClass = "pr-[22px] lg:pr-[52px]";
-                } else if (index === 2 || index === 5) {
+                } 
+                else if (index === 2 || index === 5) {
                   plClass = "md:pl-[34px] lg:pl-[60px]";
                   prClass = "md:pr-[8px] lg:pr-[0px]";
                 }
@@ -96,15 +99,15 @@ function ControlAndClarity() {
                     <div
                       className={`rounded-xl overflow-hidden ${plClass} ${prClass}  transition duration-300 hover:shadow-xl h-full`}
                     >
-                      <div className="bg-[#080219] w-[47px] h-[47px] rounded-[8px]  flex justify-center items-center">
+                      <div className="bg-[#080219] w-[52px] h-[52px] border-[0.377px] ExpenseCardBorder rounded-[10.9px]  flex justify-center items-center">
                         <img
                           src={card.img}
-                          alt={card.heading}
+                        
                           className="max-w-full max-h-full object-contain"
                         />
                       </div>
                       <h3 className="text-[18px] lg:text-[22px]  text-[#FFF] font-medium lg:font-semibold mt-[9px]">
-                        {card.heading}
+                        {card.heading1}<span>{card.heading2}</span>
                       </h3>
                       <p className="text-[14px] lg:text-[16px] font-normal text-[#F3F3F3] mt-[16px]">
                         {card.paragraph}
@@ -120,34 +123,51 @@ function ControlAndClarity() {
         </div>
 
         <div className="block md:hidden">
-          <div className="relative  p-[18px] rounded-[10px] border-[0.4px] ExpenseCardBorder bg-[#080219]">
-            <h2 className="max-[360px]:text-[21px] max-[400px]:text-[22.5px]  max-[360px]:pr-[0px] text-[24px] mt-[16px] font-semibold mb-[45px] businessCardheaderColor2 pr-[5px]">
-              Your Business Deserves Faster and Smarter Payout
+          <div className="relative pt-[50px] pb-[80px]  px-[22px] rounded-[10px] overflow-hidden  bg-[#080219]">
+            <div className="ControlAndClarityGradientTop"></div>
+              <div className="ControlAndClarityGradientMiddle"></div>
+                <div className="ControlAndClarityGradientBottom"></div>
+            <h2 className="max-[360px]:text-[21px] max-[400px]:text-[22.5px]  max-[360px]:pr-[0px] text-[24px] font-semibold pt-[28px] ControlAndClarityHeaderGradient ">
+            Get Full Control & Clarity Over Every Spend
             </h2>
+                   <p className="max-[360px]:text-[14px] text-[16px]  font-normal lg:text-center text-[#A9A9A9] pt-[6px]">
+            Monitor every rupee in real-time speed accuracy
+          </p>
+<div className="grid  max-[360px]:grid-cols-1 grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-[65px] max-[360px]:flex max-[360px]:flex-col max-[360px]:items-center mt-[54px]">
 
-            {CardSlide.slice(0, 3).map((card, index, arr) => (
+            {CardSlide.map((card, index) => (
               <div key={index}>
-                <div className="bg-[#080219] p-1 w-[34px] h-[34px] rounded-[5.2px] border-[0.341px] ExpenseCardBorder flex justify-center items-center">
-                  <img src={card.img} alt={card.heading} />
+                <div className="flex items-center gap-[17px]">
+
+                <div className="bg-[#080219] p-2 w-[40px] h-[40px] rounded-[8.389px] border-[0.341px] ExpenseCardBorder flex justify-center items-center">
+                  <img src={card.img}  />
                 </div>
-                <h3 className="max-[360px]:text-[18px] text-[20px] text-[#EAEAEA] font-medium mt-[9px]">
-                  {card.heading}
+                <div>
+                  <h3 className=" text-[13.741px] text-[#E5E5E5] font-semibold ">
+                  {card.heading1}
                 </h3>
-                <p className="max-[360px]:text-[13px] text-[16px] font-normal text-[#777A88] mt-[16px]">
+                 <h3 className="text-[13.741px] text-[#E5E5E5] font-semibold">
+                  {card.heading2}
+                </h3>
+                </div>
+                </div>
+                <img src={HorizentalSeperator} className="mt-[13.5px]"/>
+                <p className=" text-[12.5px] font-medium w-[150px] text-[#E5E5E5] mt-[13px]">
                   {card.paragraph}
                 </p>
-                <div
+                {/* <div
                   className={`mb-6 mt-[32px] ${
                     index !== arr.length - 1 || showExtra
                       ? " border-businessCardBorder1"
                       : ""
                   }`}
-                ></div>
+                ></div> */}
               </div>
             ))}
+</div>
             {/* Animate only the extra cards (5th and 6th) */}
 
-            <AnimatePresence>
+            {/* <AnimatePresence>
               {showExtra &&
                 CardSlide.slice(3).map((card, index, arr) => {
                   const isLast = index === arr.length - 1;
@@ -191,7 +211,7 @@ function ControlAndClarity() {
                   }`}
                 />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

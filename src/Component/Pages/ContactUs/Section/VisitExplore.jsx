@@ -18,19 +18,19 @@ function VisitExplore() {
 
         <div className="px-[10px] flex flex-col lg:flex-row gap-[60px] items-center lg:items-end">
           <div className="border-[0.97px] border-borderColor rounded-[23.16px]  w-[300px] lg:w-[50%] mt-[51px] pl-[33px] pt-[30px]">
-            <div className="flex  items-center gap-1">
+            <div className="flex  items-center gap-[12px]">
               <img src={locationIcon} alt="" className="h-[32px] w-[32px]" />
               <p className="text-white text-[24px] leading-[46px] font-semibold">
                 Our Registered
               </p>
             </div>
-            <p className="text-[#F0F0F0] text-[18px] leading-[30px] font-normal">
+            <p className="text-[#F0F0F0] text-[18px] leading-[30px] font-normal pt-[30px]">
               KGC Infotech Pvt. Ltd.
             </p>
-            <p className="text-[#F0F0F0] text-[18px] leading-[30px] font-normal py-[10px]">
+            <p className="text-[#F0F0F0] text-[18px] leading-[30px] font-normal pt-[20px]">
               H-31, 5th Floor, Sector-63
             </p>
-            <p className="text-[#F0F0F0] text-[18px] leading-[30px] font-normal pb-[20px]  ">
+            <p className="text-[#F0F0F0] text-[18px] leading-[30px] font-normal pt-[20px] pb-[20px]  ">
               Noida-201301, Uttar Pradesh, India
             </p>
           </div>

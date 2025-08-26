@@ -1,18 +1,18 @@
 import { useRef, useEffect, useState } from "react";
-import RealTimeTracking from "../../../../../public/video/RealTimeTracking.webm";
-import CustomControl from "../../../../../public/video/CustomControl.webm";
-import FullAutomation from "../../../../../public/video/FullAutomation.webm";
-import AutomaticReconciliation from "../../../../../public/video/AutomaticReconciliation.webm";
-import SamrtDashboardReport from "../../../../../public/video/SamrtDashboardReport.webm";
-// import expencecontrol1 from '../../../../../public/image/HomePage/RealTimetracking.svg';
-// import expencecontrol2 from '../../../../../public/image/HomePage/FullAutomation.svg';
-// import expencecontrol3 from '../../../../../public/image/HomePage/CustomControl.svg';
-// import expencecontrol4 from '../../../../../public/image/HomePage/AutomaticReconciliation.svg';
-// import expencecontrol5 from '../../../../../public/image/HomePage/languageSoundbox.svg';
-// import expencecontrol6 from '../../../../../public/image/HomePage/SmartDashboardReports.svg';
+import RealTimeTracking from "/video/RealTimeTracking.webm";
+import CustomControl from "/video/CustomControl.webm";
+import FullAutomation from "/video/FullAutomation.webm";
+import AutomaticReconciliation from "/video/AutomaticReconciliation.webm";
+import SamrtDashboardReport from "/video/SamrtDashboardReport.webm";
+// import expencecontrol1 from '/image/HomePage/RealTimetracking.svg';
+// import expencecontrol2 from '/image/HomePage/FullAutomation.svg';
+// import expencecontrol3 from '/image/HomePage/CustomControl.svg';
+// import expencecontrol4 from '/image/HomePage/AutomaticReconciliation.svg';
+// import expencecontrol5 from '/image/HomePage/languageSoundbox.svg';
+// import expencecontrol6 from '/image/HomePage/SmartDashboardReports.svg';
 
-import Checked from "../../../../../public/image/HomePage/ExpenseRadioChecked.webp";
-import UnChecked from "../../../../../public/image/HomePage/ExpenseRadioUnChecked.webp";
+import Checked from "/image/HomePage/ExpenseRadioChecked.webp";
+import UnChecked from "/image/HomePage/ExpenseRadioUnChecked.webp";
 
 const features = [
   {

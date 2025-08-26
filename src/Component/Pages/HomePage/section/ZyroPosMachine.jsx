@@ -1,7 +1,7 @@
 // import React from 'react'
-// import languageSoundbox from "../../../../../public/image/HomePage/zyroposmachine.png";
-import KnowMoreRightIcon from "../../../../../public/image/HomePage/Icon/KnowMoreRightIcon.svg";
-import ZyroPosVideo from "../../../../../public/video/zyroPos.webm";
+// import languageSoundbox from "/image/HomePage/zyroposmachine.png";
+import KnowMoreRightIcon from "/image/HomePage/Icon/KnowMoreRightIcon.svg";
+import ZyroPosVideo from "/video/zyroPos.webm";
 function ZyroPosMachine() {
   return (
     <section className="max-w-screen-lg lg:px-[20px] xl:px-0 mx-auto mt-[180px] lg:mt-[210px]">

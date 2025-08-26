@@ -1,10 +1,10 @@
 // import React from 'react'
-// import BusinessCardImg1 from '../../../../../public/image/PayOut/BusinessCardImg1.png';
-// import BusinessCardImg2 from '../../../../../public/image/PayOut/BusinessCardImg2.png';
-// import BusinessCardImg3 from '../../../../../public/image/PayOut/BusinessCardImg3.png';
-// import BusinessCardImg4 from '../../../../../public/image/PayOut/BusinessCardImg4.png';
-// import BusinessCardImg5 from '../../../../../public/image/PayOut/BusinessCardImg5.png';
-// import BusinessCardImg6 from '../../../../../public/image/PayOut/BusinessCardImg6.png';
+// import BusinessCardImg1 from '/image/PayOut/BusinessCardImg1.png';
+// import BusinessCardImg2 from '/image/PayOut/BusinessCardImg2.png';
+// import BusinessCardImg3 from '/image/PayOut/BusinessCardImg3.png';
+// import BusinessCardImg4 from '/image/PayOut/BusinessCardImg4.png';
+// import BusinessCardImg5 from '/image/PayOut/BusinessCardImg5.png';
+// import BusinessCardImg6 from '/image/PayOut/BusinessCardImg6.png';
 // const CardSlide=[
 //     {
 //         img:BusinessCardImg1,
@@ -79,14 +79,14 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import './PayOut.css';
-import BusinessCardImg1 from '../../../../../public/image/PayOut/BusinessCardImg1.png';
-import BusinessCardImg2 from '../../../../../public/image/PayOut/BusinessCardImg2.png';
-import BusinessCardImg3 from '../../../../../public/image/PayOut/BusinessCardImg3.png';
-import BusinessCardImg4 from '../../../../../public/image/PayOut/BusinessCardImg4.png';
-import BusinessCardImg5 from '../../../../../public/image/PayOut/BusinessCardImg5.png';
-import BusinessCardImg6 from '../../../../../public/image/PayOut/BusinessCardImg6.png';
-import AngleDown from '../../../../../public/image/AngleDown.png';
-import BusinessCardPayoutBG from '../../../../../public/image/PayOut/BusinessCardPayoutBG.png';
+import BusinessCardImg1 from '/image/PayOut/BusinessCardImg1.png';
+import BusinessCardImg2 from '/image/PayOut/BusinessCardImg2.png';
+import BusinessCardImg3 from '/image/PayOut/BusinessCardImg3.png';
+import BusinessCardImg4 from '/image/PayOut/BusinessCardImg4.png';
+import BusinessCardImg5 from '/image/PayOut/BusinessCardImg5.png';
+import BusinessCardImg6 from '/image/PayOut/BusinessCardImg6.png';
+import AngleDown from '/image/AngleDown.png';
+import BusinessCardPayoutBG from '/image/PayOut/BusinessCardPayoutBG.png';
 const CardSlide = [
   {
     img: BusinessCardImg1,

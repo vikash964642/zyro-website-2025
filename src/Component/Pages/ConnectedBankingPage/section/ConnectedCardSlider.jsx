@@ -1,7 +1,7 @@
 // import { useEffect } from "react";
 // import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import ConnecteBankingImg1 from "../../../../../public/image/ConnectedBanking/ConnecteBankingImg1.png";
+// import ConnecteBankingImg1 from "/image/ConnectedBanking/ConnecteBankingImg1.png";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -124,9 +124,9 @@
 // }
 
 
-import ConnecteBankingImg1 from "../../../../../public/image/ConnectedBanking/ConnecteBankingImg1.svg";
-import ConnecteBankingImg2 from "../../../../../public/image/ConnectedBanking/ConnecteBankingImg2.svg";
-import ConnecteBankingImg3 from "../../../../../public/image/ConnectedBanking/ConnecteBankingImg3.svg";
+import ConnecteBankingImg1 from "/image/ConnectedBanking/ConnecteBankingImg1.svg";
+import ConnecteBankingImg2 from "/image/ConnectedBanking/ConnecteBankingImg2.svg";
+import ConnecteBankingImg3 from "/image/ConnectedBanking/ConnecteBankingImg3.svg";
 const contentData = [
   {
     image: ConnecteBankingImg1,

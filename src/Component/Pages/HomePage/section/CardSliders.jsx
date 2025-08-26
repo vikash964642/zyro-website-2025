@@ -3,7 +3,7 @@ import { useRef, useState ,useEffect} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import sliderImg1 from "../../../../../public/image/sliderImg1.png"
+import sliderImg1 from "/image/sliderImg1.png"
 
 const cardsData = [
     { id: 1,image:sliderImg1, heading: "Card 1",paragraph:"1 Offer your customers the option to pay in easy EMIs using their credit or debit cards, backed by a wide network of our leading banking partners." },

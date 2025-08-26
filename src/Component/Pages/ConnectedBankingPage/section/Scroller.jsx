@@ -2,13 +2,13 @@
 // import React from "react";
 function Scroller() {
   const logos = [
-    "../../../../../public/image/HomePage/icon/canara-icon.jpg",
-    "../../../../../public/image/HomePage/icon/icici.jpg",
-    "../../../../../public/image/HomePage/icon/idfc-icon.jpg",
-    "../../../../../public/image/HomePage/icon/npci.jpg",
-    "../../../../../public/image/HomePage/icon/pine-labs.jpg",
-    "../../../../../public/image/HomePage/icon/yes-bank-icon.jpg",
-    "../../../../../public/image/HomePage/icon/rbl-icon.jpg"
+    "/image/HomePage/icon/canara-icon.jpg",
+    "/image/HomePage/icon/icici.jpg",
+    "/image/HomePage/icon/idfc-icon.jpg",
+    "/image/HomePage/icon/npci.jpg",
+    "/image/HomePage/icon/pine-labs.jpg",
+    "/image/HomePage/icon/yes-bank-icon.jpg",
+    "/image/HomePage/icon/rbl-icon.jpg"
     
   ];
 

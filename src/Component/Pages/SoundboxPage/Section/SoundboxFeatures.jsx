@@ -1,8 +1,8 @@
 
 // import soundbox from "/image/soundbox/soundbox1.svg";
 // import newSoundbox from "/image/soundbox/soundbox2.svg";
-import hightQuality from "../../../../../public/video/highqualityQR.webm";
-import betterSpeaker from "../../../../../public/video/betterspeackerqr.webm";
+import hightQuality from "/video/highqualityQR.webm";
+import betterSpeaker from "/video/betterspeackerqr.webm";
 
 function SoundboxFeatures() {
   return (

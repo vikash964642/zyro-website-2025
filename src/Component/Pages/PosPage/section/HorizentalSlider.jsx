@@ -4,11 +4,11 @@
 
 
 import { useRef } from "react";
-import HorizentalSliderImg1 from '../../../../../public/image/Pos/HorizentalSliderImg1.webp'
-import HorizentalSliderImg2 from '../../../../../public/image/Pos/HorizentalSliderImg2.webp'
-import HorizentalSliderImg3 from '../../../../../public/image/Pos/HorizentalSliderImg3.webp'
-import HorizentalSliderImg4 from '../../../../../public/image/Pos/HorizentalSliderImg4.webp'
-import HorizentalSliderImg5 from '../../../../../public/image/Pos/HorizentalSliderImg5.webp'
+import HorizentalSliderImg1 from '/image/Pos/HorizentalSliderImg1.webp'
+import HorizentalSliderImg2 from '/image/Pos/HorizentalSliderImg2.webp'
+import HorizentalSliderImg3 from '/image/Pos/HorizentalSliderImg3.webp'
+import HorizentalSliderImg4 from '/image/Pos/HorizentalSliderImg4.webp'
+import HorizentalSliderImg5 from '/image/Pos/HorizentalSliderImg5.webp'
 
 // Sample data
 const sliders = [

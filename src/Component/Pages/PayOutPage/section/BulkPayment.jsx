@@ -1,5 +1,5 @@
 
-import posBulkPayments from '../../../../../public/image/PayOut/posBulkPayments.webp';
+import posBulkPayments from '/image/PayOut/posBulkPayments.webp';
 import './PayOut.css';
 function BulkPayment() {
   return (
