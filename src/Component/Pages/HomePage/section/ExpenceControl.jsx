@@ -31,10 +31,10 @@ const features = [
     label: "Automatic Reconciliations",
     video: AutomaticReconciliation,
   },
-  // {
-  //   label: 'Easy Reimbursements',
-  //   image: expencecontrol5,
-  // },
+  {
+    label: 'Easy Reimbursements',
+    video: EasyReimbursements,
+  },
   {
     label: "Smart Dashboards & Reports",
     video: SamrtDashboardReport,

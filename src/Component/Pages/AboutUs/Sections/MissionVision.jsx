@@ -3,7 +3,7 @@ import missionImage from '/image/AboutUs/missionVision.webp';
 
 function MissionVision() {
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
+    <section className="mt-[230px] lg:mt-[134px]">
         <div className='max-w-screen-lg mx-auto flex flex-col lg:flex-row justify-between relative bg-[#110A27] py-[50px]'>
             <div className='leftGradiant'></div>
             <div className='CenterGradiant'></div>

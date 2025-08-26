@@ -39,7 +39,7 @@ const cardData = [
 
 function Corevalue() {
   return (
-    <section className="min-h-[80vh] flex justify-center items-center">
+    <section className="mt-[227px] lg:mt-[200px]">
       <div className="max-w-screen-lg mx-auto px-4 relative">
         <h3 className="coreheader text-center text-[34px] leading-[46px] font-semibold">
           Our Core Values

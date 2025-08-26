@@ -1,10 +1,12 @@
 // import React from 'react'
-import roadMap from '/image/AboutUs/roadMap.webp';
-import roadMapMob from '/image/AboutUs/roadMapMob.webp';
+// import roadMap from '/image/AboutUs/roadMap.webp';
+// import roadMapMob from '/image/AboutUs/roadMapMob.webp';
+import roadMapVideo from '/video/RoadMap.webm';
+import roadMapMobVideo from '/video/RoadMapVertical.webm';
 
 function WhoWeAre() {
   return (
-    <section className="min-h-[90vh] flex justify-center items-center">
+    <section className="mt-[250px] lg:mt-[185px]">
   <div className="max-w-screen-lg mx-auto relative">
     <div>
       <h2 className="whoWeHeader lg:text-[34px] text-[24px] leading-[32px] font-semibold lg:leading-[46px] text-center">
@@ -19,8 +21,8 @@ function WhoWeAre() {
     </div>
     <div className='bgGradiant'></div>
     <div className='flex justify-center items-center pt-[89px] px-[20px]'>
-        <img src={roadMap} alt=""  className='hidden lg:block'/>
-        <img src={roadMapMob} alt="" className='block lg:hidden'/>
+        <video src={roadMapVideo} muted loop autoPlay playsInline   className='hidden lg:block'/>
+        <video src={roadMapMobVideo} muted loop autoPlay playsInline className='block lg:hidden'/>
     </div>
   </div>
 </section>

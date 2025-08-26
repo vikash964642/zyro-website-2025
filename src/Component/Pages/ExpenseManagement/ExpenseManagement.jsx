@@ -9,10 +9,14 @@ import SmartExpense from './Section/SmartExpense';
 import FAQ from './Section/FAQ';
 import Digitize from './Section/Digitize';
 import RoleBased from './Section/RoleBased';
+import CustomHelmet from "../../Utils/Helmet"
+
 
 function ExpenseManagement() {
   return (
     <>
+                          <CustomHelmet  title={"Best Expense Management Tracking Software System in India"} content={"Best Expense Management Tracking Software System in India to simplify business finances, control spending, & boost efficiency with smart automation. Quotenow!"} />
+
     <HeroSection />
     <CorporateCardManagement />
     <ExpenseOverview />

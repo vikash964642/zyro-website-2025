@@ -24,7 +24,7 @@ function Footer() {
             <img src={zyrologo}></img>
             <p className="text-white70 pt-[30px] text-[14px] lg:text-[15px]">
               ZYRO is designed to empower businesses by providing a
-              next-generation banking platform that streamlines financial
+              next-generation banking platform that simplifies financial
               process, enhances operational efficiency and ensures precise
               control over your finances.
             </p>
@@ -47,22 +47,22 @@ function Footer() {
               </p>
               <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
                 <li>
-                  <Link to="/soundboxPage" onClick={ScrollTop}>
+                  <Link to="/smart-soundbox-speaker" onClick={ScrollTop}>
                     Zyro Soundbox
                   </Link>
                 </li>
                 <li>
-                  <Link to="/posPage" onClick={ScrollTop}>
+                  <Link to="/pos-machine-system" onClick={ScrollTop}>
                     Zyro POS
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ExpenseManagement" onClick={ScrollTop}>
+                  <Link to="/expense-management-tracking-software" onClick={ScrollTop}>
                    Expense Management
                   </Link>
                 </li>
                 <li>
-                  <Link to="/prepaidPage" onClick={ScrollTop}>
+                  <Link to="/prepaid-cards" onClick={ScrollTop}>
                     Prepaid Card
                   </Link>
                 </li>
@@ -89,12 +89,12 @@ function Footer() {
               </p>
               <ul className="font-normal text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px] text-white70">
                 <li>
-                  <Link to="/connectedbanking" onClick={ScrollTop}>
+                  <Link to="/connected-banking" onClick={ScrollTop}>
                     Connected Banking
                   </Link>
                 </li>
                 <li>
-                  <Link to="/payout" onClick={ScrollTop}>
+                  <Link to="/payout-payment" onClick={ScrollTop}>
                     Payout
                   </Link>
                 </li>
@@ -123,17 +123,17 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About-us" onClick={ScrollTop}>
+                  <Link to="/about-us" onClick={ScrollTop}>
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="" onClick={ScrollTop}>
+                  <Link to="https://zyro.in/blog/" onClick={ScrollTop}>
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ContactUs" onClick={ScrollTop}>
+                  <Link to="/contact-us" onClick={ScrollTop}>
                     Contact Us
                   </Link>
                 </li>
@@ -174,22 +174,22 @@ function Footer() {
               </p>
               <ul className="font-normal text-white70 text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px]">
                 <li>
-                  <Link to="/soundboxPage" onClick={ScrollTop}>
+                  <Link to="/smart-soundbox-speaker" onClick={ScrollTop}>
                     Zyro Soundbox
                   </Link>
                 </li>
                 <li>
-                  <Link to="/posPage" onClick={ScrollTop}>
+                  <Link to="/pos-machine-system" onClick={ScrollTop}>
                     Zyro POS
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ExpenseManagement" onClick={ScrollTop}>
+                  <Link to="/expense-management-tracking-software" onClick={ScrollTop}>
                    Expense Management
                   </Link>
                 </li>
                 <li>
-                  <Link to="/prepaidPage" onClick={ScrollTop}>
+                  <Link to="/prepaid-cards" onClick={ScrollTop}>
                    Prepaid Card
                   </Link>
                 </li>
@@ -221,17 +221,17 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About-us" onClick={ScrollTop}>
+                  <Link to="/about-us" onClick={ScrollTop}>
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="" onClick={ScrollTop}>
+                  <Link to="https://zyro.in/blog/" onClick={ScrollTop}>
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link to="/ContactUs" onClick={ScrollTop}>
+                  <Link to="/contact-us" onClick={ScrollTop}>
                     Contact Us
                   </Link>
                 </li>
@@ -251,12 +251,12 @@ function Footer() {
               </p>
               <ul className="font-normal text-[13px] md:text-[15px] leading-[25px] md:leading-[35px] pt-[10px] text-white70">
                 <li>
-                  <Link to="/connectedbanking" onClick={ScrollTop}>
+                  <Link to="/connected-banking" onClick={ScrollTop}>
                     Connected Banking
                   </Link>
                 </li>
                 <li>
-                  <Link to="/payout" onClick={ScrollTop}>
+                  <Link to="/payout-payment" onClick={ScrollTop}>
                     Payout
                   </Link>
                 </li>
@@ -329,7 +329,7 @@ function Footer() {
               href="tel:9560050703"
               className="text-[14px] font-normal leading-[21px] text-[#9E9C9F]"
             >
-              H-143, Ground Floor, Sector 63 Noida, Uttar Pradesh 201301
+              H-31, 5th Floor, Sector-63 Noida, Uttar-Pradesh 201301
             </p>
  
 
@@ -404,7 +404,7 @@ function Footer() {
                 href="tel:9560050703"
                 className="text-[14px] font-normal leading-[21px] text-[#9E9C9F]"
               >
-                H-143, Ground Floor, Sector 63 Noida, Uttar Pradesh 201301
+                H-31, 5th Floor, Sector-63 Noida, Uttar-Pradesh 201301
               </p>
             </div>
           </div>
