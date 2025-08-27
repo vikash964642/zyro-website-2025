@@ -5,14 +5,14 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 
 import soundBox1212 from "/image/soundbox/soundbox12121.webp";
-import english from "/image/soundbox/English.svg"
-import marathi from "/image/soundbox/marathi.svg"
-import malyalam from "/image/soundbox/malyalam.svg"
-import punjabi from "/image/soundbox/punjabi.svg"
-import tamil from "/image/soundbox/tamil.svg"
-import kannad from "/image/soundbox/kannad.svg"
-import hindi from "/image/soundbox/hindi.svg"
-import gujrati from "/image/soundbox/gujrati.svg"
+import english from "/image/soundbox/english.svg";
+import bangla from "/image/soundbox/bangla.svg";
+import malyalam from "/image/soundbox/malyalam.svg";
+import punjabi from "/image/soundbox/punjabi.svg";
+import tamil from "/image/soundbox/marathi.svg";
+import kannad from "/image/soundbox/kannad.svg";
+import hindi from "/image/soundbox/hindi.svg";
+import gujrati from "/image/soundbox/gujrati.svg";
 import './Soundbox.css'
 
 function Herosection() { 
@@ -104,7 +104,7 @@ function Herosection() {
                            <img src={tamil} className="Language" />
                            <img src={punjabi} className="Language" />
                            <img src={malyalam} className="Language" />
-                           <img src={marathi} className="Language" />
+                           <img src={bangla} className="Language" />
                            <img src={english} className="Language" />
                          </div>
                        </div>

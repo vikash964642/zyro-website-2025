@@ -38,23 +38,44 @@ background: linear-gradient(0deg, #575E8E 0%, rgba(99, 99, 99, 0.00) 52.5%, rgba
    
 
 .home-hero_gradient1 {
-    border-radius: 541.022px;
+
     z-index: -1;
     position: absolute;
-    opacity: 0.75;
-    background: linear-gradient(180deg, rgba(64, 28, 139, 0.80) 0%, rgba(255, 255, 255, 0.00) 100%);
-    filter: blur(92px);
-    inset: 0% 30% 50% 24%;
+border-radius: 541.022px;
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(64, 28, 139, 0.80) 0%, rgba(255, 255, 255, 0.00) 100%);
+filter: blur(65px);
+    inset: 0% 30% 50% 20%
 } 
 
+.home-hero_gradient2 {
+
+    z-index: -1;
+    position: absolute;
+border-radius: 541.022px;
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(96, 30, 249, 0.52) 0%, rgba(255, 255, 255, 0.00) 100%);
+filter: blur(91.38888549804688px);
+
+    inset: 0% 0% 46% 51%;
+}
+.home-hero_gradient3 {
+
+    z-index: -1;
+    position: absolute;
+background: linear-gradient(180deg, rgba(96, 30, 249, 0.24) 0%, rgba(255, 255, 255, 0.00) 100%);
+opacity: 0.75;
+filter: blur(100px);
+    inset: 28% 70% 5% 0%;
+}
 .home-hero_gradientBottom {
     z-index: -1;
     position: absolute;
     opacity: 0.75;
-   border-radius: 408.055px;
+border-radius: 408.055px;
 background: radial-gradient(39.32% 39.32% at 50% 39.32%, #401C8B 0%, rgba(46, 46, 46, 0.00) 100%);
-    filter: blur(75px);
-    inset: 0% 30% 50% 24%;
+    filter: blur(22px);
+  inset:10% 29% 0% -26%;
 } 
 
 
@@ -154,7 +175,7 @@ background: linear-gradient(180deg, rgba(64, 28, 139, 0.44) 0%, rgba(255, 255, 2
     filter: blur(182.388885px);
     position: absolute;
     z-index: -1;
-    inset: 7% -3% -19% -2%;
+    inset: 7% 0% 0% 0%;
 }
 .VerticleSliderGradient{
     border-radius: 50%;

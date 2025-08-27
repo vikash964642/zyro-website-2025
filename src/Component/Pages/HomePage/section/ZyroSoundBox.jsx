@@ -95,12 +95,12 @@ function ZyroSoundBox() {
             </Link>
           </div>
         </div>
-        <div className="flex justify-center items-center lg:w-[50%] px-[30px] lg:px-[0px] mt-[87px] lg:mt-0">
+        <div className="flex justify-center items-center lg:w-[50%] lg:px-[0px] mt-[87px] lg:mt-0">
           {/* <img src={languageSoundbox} alt="" /> */}
-          <div className="HeroRotateSection">
+          <div className="HeroRotateSection overflow-hidden">
             {/* Center Zyro Logo */}
             <div className="SoundboxImg">
-              <img src={soundBox1212} alt="Soundbox Image" />
+              <img src={soundBox1212} alt="Soundbox-Image" />
             </div>
 
             {/* Orbit container */}
