@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 import collab2 from "/image/HomePage/Icon/auconnected.svg";
 import collab3 from "/image/HomePage/Icon/canara.svg";
 import collab4 from "/image/HomePage/Icon/idfc.svg";
@@ -40,9 +41,10 @@ export default function ConnectedBanking() {
         </div>
 
        <div className="flex justify-center"> 
-        <button className="bg-[#4F31B4] text-white px-6 py-2 rounded-3xl mt-[35px] mb-[90px] flex items-center ">
+        
+        <Link to='/connected-banking' className="bg-[#4F31B4] text-white px-6 py-2 rounded-3xl mt-[35px] mb-[90px] flex items-center ">
           Know more <img src={KnowMoreRightIcon} className="pl-[4px] h-[15px] w-[15px]"/>
-        </button>
+        </Link>
         </div>
 
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-[22px] md:gap-[36px]">
