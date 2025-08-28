@@ -15,8 +15,10 @@ import KnowMoreRightIcon from "/image/HomePage/Icon/KnowMoreRightIcon.svg";
 const slides = [
   {
     image: "/image/HomePage/herosectionbanner2.webp",
+
     imageMob: "/image/HomePage/herosectionbanner2mob.webp",
-    link: "/posPage",
+    link: "/pos-machine-system",
+
     heading1: "Zyro POS Device",
     heading2: "",
     paragraph: "Accepts UPI & Card Payments with a Single Device",
@@ -25,7 +27,7 @@ const slides = [
   {
     image: "/image/HomePage/herosoundbox.svg",
     imageMob: "/image/HomePage/herosoundbox.svg",
-    link: "/soundboxPage",
+    link: "/smart-soundbox-speaker",
 
     heading1: "Zyro Sound Box",
     heading2: "",
@@ -35,7 +37,7 @@ const slides = [
   {
     image: "/image/HomePage/herosectionBanner1.webp",
     imageMob: "/image/HomePage/herosectionBanner1.webp",
-    link: "/ExpenseManagement",
+    link: "/expense-management-tracking-software",
 
     heading1: "Simplify, Track, and Control Expense",
     heading2: " in One Place",
@@ -45,7 +47,7 @@ const slides = [
   {
     image: "/image/HomePage/herosectionbanner.svg",
     imageMob: "/image/HomePage/herosectionbanner.svg",
-    link: "/connectedbanking",
+    link: "/connected-banking",
 
     heading1: "Accelerate Your Business with our ",
     heading2: "Connected Banking Solutions",
