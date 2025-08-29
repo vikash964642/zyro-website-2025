@@ -1,4 +1,4 @@
-import { Outlet, NavLink, useNavigate } from "react-router-dom";
+import { Outlet,  useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Logo from "/image/zyro-logo.svg";
 import NavLinks from "./NavLinks";
@@ -25,8 +25,8 @@ const Navbar = () => {
   return (
     <>
       <nav className="lg:bg-white bg-[#D9D9D9] sticky top-0 z-50">
-        <div className="flex items-center font-medium justify-between lg:border-b pb-2 lg:pb-0 ">
-          <div className="flex justify-between z-50 pt-8 lg:w-auto w-full ml-9 lg:ml-[45px] lg:pt-0 ">
+        <div className="h-[74px] lg:h-[70px] lg:pl-[51px] px-[25px] lg:px-0 flex items-center font-medium justify-between lg:border-b  ">
+          <div className="flex justify-between z-50  lg:w-auto w-full ">
             <img src={Logo} alt="logo" className="lg:cursor-pointer h-9 custom-style" onClick={handleClickHome}/>
             <div className="flex lg:hidden">
               
@@ -40,8 +40,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center mr-8">
-            <ul className="lg:flex hidden lg:text-[13px] xl:text-[17.5px] items-center  gap-5 lg:gap-[30px] font-[inter]">
+          <div className="flex justify-center items-center lg:mr-8">
+            <ul className="lg:flex hidden lg:text-[13px] xl:text-[17.5px] items-center  gap-5 lg:gap-[52px] font-[inter]">
             <NavLinks handleClick={handleClick} />
             <Outlet />
               {/* <li>
@@ -65,11 +65,11 @@ const Navbar = () => {
 
           {/* Mobile nav */}
           <ul
-            className={`lg:hidden bg-[#110A2A]  z-[99] bg-mobileMenuSape fixed overflow-hidden text-[#D9D9D9] w-full text-[22px] top-[4.8rem] overflow-y-auto bottom-0 pb-11 px-[30px] transition-left duration-500 ease-in-out  ${
+            className={`lg:hidden bg-[#110A2A]  z-[99] bg-mobileMenuSape fixed overflow-hidden text-[#D9D9D9] w-full text-[22px] top-[73px] overflow-y-auto bottom-0 pb-11 px-[30px] transition-left duration-500 ease-in-out  ${
               open ? "left-0" : "left-[-100%]"
             }`}
           >
-             
+             <div className="mobileMenuGradient"></div>
             <NavLinks handleClick={handleClick}  />
             {/* <li className=" border-light-gray-600 pb-[13px]">
               <NavLink

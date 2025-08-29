@@ -1,7 +1,8 @@
-// import React from 'react'
+
 // import languageSoundbox from "/image/HomePage/zyroposmachine.png";
 import KnowMoreRightIcon from "/image/HomePage/Icon/KnowMoreRightIcon.svg";
 import ZyroPosVideo from "/video/zyroPos.webm";
+import {Link } from "react-router-dom"
 function ZyroPosMachine() {
   return (
     <section className="max-w-screen-lg lg:px-[20px] xl:px-0 mx-auto mt-[180px] lg:mt-[210px]">
@@ -24,14 +25,14 @@ function ZyroPosMachine() {
             easily.
           </p>
           <div className="flex justify-center lg:justify-start mt-[39px]">
-            <button className="text-white w-[150px] h-[40px] bg-[#4F31B4] rounded-[30px] text-[18.6px] font-medium flex items-center justify-center gap-[3px]">
+            <Link to='/pos-machine-system' className="text-white w-[150px] h-[40px] bg-[#4F31B4] rounded-[30px] text-[18.6px] font-medium flex items-center justify-center gap-[3px]">
               Know more{" "}
               <img
                 src={KnowMoreRightIcon}
                 alt=""
                 className="h-[13px] w-[13px]"
               />
-            </button>
+            </Link>
           </div>
         </div>
         <div className="lg:w-[50%] flex justify-center lg:justify-end px-[20px] md:px-0 mt-[100px] lg:mt-0">

@@ -8,6 +8,7 @@ import zyroLogo from "/image/zyro-logo.svg";
 import partnership from "/image/HomePage/partners.png";
 import './HomePageCss.css';
 import KnowMoreRightIcon from '/image/HomePage/Icon/KnowMoreRightIcon.svg'
+import { Link } from "react-router-dom";
 
 export default function ConnectedBanking() {
   const [currImg, setCurrImg] = useState(0);
@@ -40,13 +41,13 @@ export default function ConnectedBanking() {
         </div>
 
        <div className="flex justify-center"> 
-        <button className="bg-[#4F31B4] text-white px-6 py-2 rounded-3xl mt-[35px] mb-[90px] flex items-center ">
+        <Link to='/connected-banking' className="bg-[#4F31B4] text-white px-6 py-2 rounded-3xl mt-[35px] mb-[90px] flex items-center ">
           Know more <img src={KnowMoreRightIcon} className="pl-[4px] h-[15px] w-[15px]"/>
-        </button>
+        </Link>
         </div>
 
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-[22px] md:gap-[36px]">
-          <div className="flex items-center justify-center overflow-hidden w-[182px] h-[182px] bg-white rounded-full">
+          <div className="flex items-center justify-center overflow-hidden w-[128px] h-[128px] lg:w-[182px] lg:h-[182px] bg-white rounded-full">
             <img
               src={collaborators[currImg]}
               alt="collaborator"
@@ -57,10 +58,10 @@ export default function ConnectedBanking() {
           <img
             src={partnership}
             alt="partnership"
-            className="w-20 md:w-[76px] object-contain"
+            className="w-[53px] md:w-[76px] object-contain"
           />
 
-          <div className="flex items-center justify-center overflow-hidden w-[182px] h-[182px] bg-white rounded-full">
+          <div className="flex items-center justify-center overflow-hidden w-[128px] h-[128px] lg:w-[182px] lg:h-[182px] bg-white rounded-full">
             <img
               src={zyroLogo}
               alt="Zyro logo"

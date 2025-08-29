@@ -15,6 +15,7 @@ import AboutUs from "./Component/Pages/AboutUs/AboutUs";
 import ContactUs from "./Component/Pages/ContactUs/ContactUs";
 import Terms from "./Component/Pages/Terms";
 import Privacy from "./Component/Pages/Privacy";
+import UPIStack from "./Component/Pages/UPIStack/UPIStack";
 
 function App() {
   // usePreventZoom();
@@ -29,12 +30,13 @@ function App() {
            <Route path="/payout-payment" element={<PayOut/>} />
            <Route path="/smart-soundbox-speaker" element={<SoundboxPage/>}  />
            <Route path="/expense-management-tracking-software" element={<ExpenseManagement/>}  />
-             <Route path="/prepaid-cards" element={<Prepaid/>}  />
-                <Route path="/pos-machine-system" element={<Pos/>}  />
-                <Route path="/about-us" element={<AboutUs/>}  />
-                <Route path="/contact-us" element={<ContactUs/>}  />
-                <Route path="/terms-and-conditions" element={<Terms/>}  />
-                <Route path="/privacy-policy" element={<Privacy/>}  />
+           <Route path="/prepaid-cards" element={<Prepaid/>}  />
+           <Route path="/pos-machine-system" element={<Pos/>}  />
+             <Route path="/upi-stack" element={<UPIStack/>}  />
+            <Route path="/about-us" element={<AboutUs/>}  />
+            <Route path="/contact-us" element={<ContactUs/>}  />
+            <Route path="/terms-and-conditions" element={<Terms/>}  />
+            <Route path="/privacy-policy" element={<Privacy/>}  />
 
          
         </Routes>

@@ -16,7 +16,7 @@ const slides = [
   {
     image: "/image/HomePage/herosectionbanner2.webp",
     imageMob: "/image/HomePage/herosectionbanner2mob.webp",
-    link: "/posPage",
+    link: "/pos-machine-system",
     heading1: "Zyro POS Device",
     heading2: "",
     paragraph: "Accepts UPI & Card Payments with a Single Device",
@@ -25,7 +25,7 @@ const slides = [
   {
     image: "/image/HomePage/herosoundbox.svg",
     imageMob: "/image/HomePage/herosoundbox.svg",
-    link: "/soundboxPage",
+    link: "/smart-soundbox-speaker",
 
     heading1: "Zyro Sound Box",
     heading2: "",
@@ -35,7 +35,7 @@ const slides = [
   {
     image: "/image/HomePage/herosectionBanner1.webp",
     imageMob: "/image/HomePage/herosectionBanner1.webp",
-    link: "/ExpenseManagement",
+    link: "/expense-management-tracking-software",
 
     heading1: "Simplify, Track, and Control Expense",
     heading2: " in One Place",
@@ -45,7 +45,7 @@ const slides = [
   {
     image: "/image/HomePage/herosectionbanner.svg",
     imageMob: "/image/HomePage/herosectionbanner.svg",
-    link: "/connectedbanking",
+    link: "/connected-banking",
 
     heading1: "Accelerate Your Business with our ",
     heading2: "Connected Banking Solutions",
@@ -160,7 +160,7 @@ export default function HeroSection() {
 
               {/* Right Image */}
               <div className="p-[25px] md:p-[0px] lg:w-[45%] w-full flex justify-center items-center relative">
-                <img src={slide.image} alt={`Slide ${index + 1}`} />
+                <img src={slide.image} alt={`Slide ${index + 1} `} className={` ${index === 0 ? "h-[450px] w-[379px]":"" }  ${index === 1 ? "h-[453px] w-[460px]":""} ${index === 3 ? "h-[370px] w-[370px]":""}`}/>
                 {index === 3 && <div className="home-hero_gradientBottom"></div>}
               </div>
             </div>
@@ -181,20 +181,20 @@ export default function HeroSection() {
 
 
 
-      <section className="block lg:hidden px-[20px]  pt-[20px] relative">
+      <section className="block lg:hidden px-[20px]  pt-[50px] relative">
       <div className="home-hero_gradient1"></div>
 
       <Swiper
   modules={[Autoplay]}
   slidesPerView={1}
   loop={true}
-  autoplay={{ delay: 4000, disableOnInteraction: false }}
+  autoplay={{ delay: 3000, disableOnInteraction: false }}
   onSlideChangeTransitionEnd={(swiper) => setCurrentSlide(swiper.realIndex)} // sync after animation
   className="overflow-hidden relative"
 >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col justify-between min-h-[500px]">
+            <div className=" flex flex-col justify-center  gap-[25px] ">
               {/* Heading */}
               <div className="text-center ">
                 {index === 3 && (
@@ -226,7 +226,7 @@ export default function HeroSection() {
 
               {/* Paragraph */}
               {index!==3 &&(
-                <div className="text-center mt-[10px]">
+                <div className="text-center ">
                 <p
                   className={`text-white70 max-[350px]:text-[15px] max-[375px]:text-[16px] max-[400px]:text-[17px] text-[18px] font-normal leading-[22px] ${index===0 ? "text-white90 text-[20px] font-medium leading-[24px]":""}
                    
@@ -238,7 +238,7 @@ export default function HeroSection() {
               )}
 
               {/* Image */}
-              <div className="flex justify-center items-center mt-[10px]">
+              <div className="flex justify-center items-center ">
                 <img
                   src={slide.imageMob}
                   alt={`Slide ${index + 1}`}
@@ -252,14 +252,14 @@ export default function HeroSection() {
                       : ""
                   } ${
                     index === 2
-                      ? "max-[360px]:h-[185px] max-[360px]:w-[275px]  w-[300px] h-[200px] mt-[100px]"
+                      ? "max-[360px]:h-[185px] max-[360px]:w-[275px]  w-[300px] h-[200px] mt-[50px]"
                       : ""
-                  } ${index === 0 ? "w-[255px] h-[390px]" : ""}`}
+                  } ${index === 0 ? "w-[254px] h-[389px]" : ""}`}
                 />
               </div>
 
  {index===3 &&(
-                <div className="text-center mt-[10px]">
+                <div className="text-center ">
                 <p
                   className={`text-white80 max-[360px]:text-[13px]  text-[14px] font-normal }`} >
                   {slide.paragraph}
@@ -268,7 +268,7 @@ export default function HeroSection() {
               )}
 
               {/* Button */}
-              <div className="flex justify-center mt-[15px]">
+              <div className="flex justify-center ">
                 <button
                   className="bg-[#4F31B4] max-[375px]:w-[100%] w-[325px] h-[50px] rounded-[30px] text-[20px] text-[#FFF] font-medium"
                 >
@@ -277,7 +277,7 @@ export default function HeroSection() {
               </div>
 
               {/* Link */}
-              <div className="flex justify-center mt-[20px]">
+              <div className="flex justify-center ">
                 <Link
                   to={slide.link}
                   className="text-[#FFF] font-medium text-[16px] flex justify-center items-center"
@@ -289,7 +289,7 @@ export default function HeroSection() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className=" flex justify-center items-center">
+      <div className=" flex justify-center items-center mt-[20px]">
 {slides.map((_, index) => (
   <div
     key={index}

@@ -1,0 +1,80 @@
+.CompleteSolutionHeaderGradient{
+    background: linear-gradient(90deg, #EDEDED 16.83%, #9573DE 50%, #F8F8F8 64.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.CompleteSolBoxHeaderGradient{
+    background: linear-gradient(180deg, #4F31B4 0%, #D8D8D8 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.CompleteSol-gradient-left{
+background: linear-gradient(180deg, rgba(64, 28, 139, 0.44) 0%, rgba(255, 255, 255, 0.00) 100%);
+opacity: 0.75;
+filter: blur(91.38px);
+position:absolute;
+z-index:-1;
+  inset:45% 65% 13% 11%;;
+}
+.CompleteSol-gradient-Right{
+  background: linear-gradient(180deg, rgba(64, 28, 139, 0.44) 0%, rgba(255, 255, 255, 0.00) 100%);
+opacity: 0.75;
+filter: blur(91.38px);  
+position:absolute;
+z-index:-1;
+  inset:45% 9% 13% 67%;
+}
+.CompleteSol-gradient-Top{
+   border-radius: 175.5px;
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(64, 28, 139, 0.59) 0%, rgba(255, 255, 255, 0.00) 100%);
+filter: blur(91.38888549804688px);
+position:absolute; 
+z-index:-1;
+  inset:2% 29% 65% 30%;
+}
+.upiIssuingHeaderGradient{
+    background: linear-gradient(234deg, #FFF 38.94%, #9573DE 72.6%, #FFF 89.42%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.UPIIssuingStackGradientTop{
+      border-radius: 200px;
+  opacity: 1;
+  background: linear-gradient(7deg,rgba(79, 49, 180, 1) 6%, rgba(34, 21, 78, 1) 100% );
+  filter: blur(120px);
+position:absolute; 
+z-index:20;
+  inset:0% 15% 72% 51%;
+}
+ .UPIIssuingStackGradient1{
+  border-radius: 200px;
+  opacity: 1;
+  background: linear-gradient(7deg,rgba(79, 49, 180, 1) 6%, rgba(34, 21, 78, 1) 100% );
+  filter: blur(120px);
+position:absolute; 
+z-index:20;
+  inset:72% 65% 0% 0%;
+ }
+.UPIIssuingStackGradient2{
+  border-radius: 200px;
+  opacity: 1;
+  background: linear-gradient(7deg,rgba(79, 49, 180, 1) 6%, rgba(34, 21, 78, 1) 100% );
+  filter: blur(120px);
+position:absolute; 
+z-index:20;
+  inset:66% 0% 1% 60%;
+ }
+
+.upiIssuingBorderGradient{
+        background: linear-gradient(129deg, rgba(169, 1, 163, 0.60) 0%, rgba(111, 65, 210, 0.5) 100%);
+}
+@media(max-width:639px){
+  .CompleteSol-gradient-Top{
+      inset:2% 0% 69% 0%;
+  }  
+}
