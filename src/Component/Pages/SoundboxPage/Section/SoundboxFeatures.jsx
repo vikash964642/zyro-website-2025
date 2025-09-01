@@ -7,9 +7,9 @@ import betterSpeaker from "/video/betterspeackerqr.webm";
 function SoundboxFeatures() {
   return (
     <section className="mt-[150px]">
-      <div className="max-w-screen-lg mx-auto relative ">
+      <div className="max-w-screen-lg mx-auto relative overflow-hidden lg:rounded-[25px] ">
         <div className="hidden lg:block">
-          <div className="soundboxFeatures-gradient hidden lg:block"></div>
+          <div className="soundboxFeatures-gradient  hidden lg:block"></div>
           <div className="min-h-[700px] relative">
             <div className="SoundBoxBackgroundGradient lg:relative lg:h-[500px] pt-[25px]">
               <div className=" flex flex-col lg:flex-row  justify-between  ">

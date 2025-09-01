@@ -5,7 +5,7 @@ export const links = [
         { name: 'Zyro Soundbox', link: "/smart-soundbox-speaker", img: "zyroSoundboxIcon"},
         { name: 'Zyro POS', link: "/pos-machine-system", img: "zyroPosIcon"  },
         // { name: 'Gift Card API', link: "", img: "giftCardApi"  },
-        // { name: 'UPI Stack', link: "", img: "upiStackIcon"  },
+        { name: 'UPI Stack', link: "/upi-stack", img: "upiStackIcon"  },
     ],
     sublinks2: [
 
@@ -28,12 +28,12 @@ export const links = [
     ],
  }
  ,
-    { name: 'Resources', submenu: true, sublinks: [
-        { name: 'Terms & Conditions', link: "/terms-and-conditions", img: ""  },
-        { name: 'Privacy Policy', link: "/privacy-policy", img: ""  },
-        // { name: 'Cookies Policy', link: "", img: ""  }
-    ],
- },
+//     { name: 'Resources', submenu: true, sublinks: [
+//         { name: 'Terms & Conditions', link: "/terms-and-conditions", img: ""  },
+//         { name: 'Privacy Policy', link: "/privacy-policy", img: ""  },
+//         // { name: 'Cookies Policy', link: "", img: ""  }
+//     ],
+//  },
      { name: 'Company', submenu: true, sublinks: [
         { name: 'Home', link: "/", img: ""  },
         { name: 'About Us', link: "/about-us", img: ""  },

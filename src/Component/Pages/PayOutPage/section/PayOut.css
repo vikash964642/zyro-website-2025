@@ -4,15 +4,15 @@
   z-index: -1;
 border-radius: 382px;
 background: linear-gradient(180deg, #A489FF 0%, #343434 100%);
-filter: blur(115px);
+filter: blur(200px);
 }
 .HeroSectionGradientRight{
       position: absolute;
   inset:0% 0% 25% 80%;
   z-index: -1;
-border-radius: 382px;
-background: linear-gradient(180deg, #A489FF 0%, #343434 100%);
-filter: blur(115px);
+border-radius: 361px;
+background: linear-gradient(180deg, #170931 0%, #62537E 100%);
+filter: blur(200px);
 }
 .ConnectedCardSliderTopGradient{
     position: absolute;
@@ -134,7 +134,30 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+.PayoutbusinessBankingGradient1{
+  border-radius: 382px;
+background: linear-gradient(180deg, #A489FF 0%, #343434 100%);
+filter: blur(200px);
+  position: absolute;
+    inset: 54% 70% 0% -12%;
+ 
+}
+.PayoutbusinessBankingGradient2{
+border-radius: 382px;
+background: linear-gradient(180deg, #A489FF 0%, #343434 100%);
+filter: blur(200px);
+  position: absolute;
+    inset:55% 22% 0% -33%;;  
+    z-index:-1;
+}
 @media (max-width:1024px){
+   .PayoutbusinessBankingGradient1{
+inset:-33% -2% 65% 62%;
+   } 
+  
+    .PayoutbusinessBankingGradient2{
+inset: -6% -6% 0% -33%;
+   }
 .bulkPaymentHeaderGradient{
   background: linear-gradient(234deg, #FFF 7.67%, #9573DE 82.67%, #FFF 100%);
 background-clip: text;

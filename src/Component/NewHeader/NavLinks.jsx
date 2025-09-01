@@ -214,7 +214,7 @@ const [hoveredSublink2Index, setHoveredSublink2Index] = useState(null);
           <div
             className="relative   text-left md:cursor-pointer group"
             onMouseEnter={() => handleLinkMouseEnter(link.name)}
-        onMouseLeave={handleLinkMouseLeave}
+   onMouseLeave={handleLinkMouseLeave}
             onClick={() => handleLinkClick(link.name)}
           >
             
@@ -233,7 +233,7 @@ const [hoveredSublink2Index, setHoveredSublink2Index] = useState(null);
                 }
               }}
             >
-              <p className={`text-[18px] text-[#D9D9D9] lg:text-[16px] font-medium lg:text-[#181818] md:pt-[25px] py-[20px] flex justify-between items-center md:pr-0 pr-5 group hover:text-primary focus:text-primary lg:border-hidden border-t-[0.5px]  border-[#414141]   `}>
+              <p className={`text-[18px] text-[#D9D9D9] lg:text-[16px] font-medium lg:text-[#181818]  py-[20px] md:py-0 flex justify-between items-center md:pr-0 pr-5 group hover:text-primary focus:text-primary lg:border-hidden ${index!==0 ? "border-t-[0.5px] border-[#414141]" :" "}     `}>
                 {link.name}
            
 {link.submenu && (
@@ -248,19 +248,19 @@ const [hoveredSublink2Index, setHoveredSublink2Index] = useState(null);
             
 
            {link.name === "Banking" && (
-  <span className="hidden lg:flex lg:text-[16px] font-medium text-[#181818] ml-2">+</span>
+  <span className="hidden lg:flex lg:text-[16px] font-medium text-[#181818]">+</span>
 )}
               </p>
             </Link>
 
             {link.submenu && activeLink === link.name && (
-              <div className="lg:absolute  top-full lg:mt-[1px] left-0 z-50  max-h-[180px] lg:max-h-none overflow-auto">
+              <div className="lg:absolute  lg:top-[20px] lg:mt-[1px] left-0 z-50  max-h-[180px] lg:max-h-none overflow-auto">
                 <div
                   className={`${
                     link.name === "Product" || link.name === "Banking"
                       ? "lg:flex lg:justify-between lg:w-[550px]"
                       : "lg:w-[275px]"
-                  } lg:px-6 lg:py-6 border-[#C3C3C3] lg:bg-white lg:border-t-0 lg:border-x lg:border-b lg:rounded-b-lg shadow-md`}
+                  } lg:px-6 lg:py-6  lg:bg-white  lg:rounded-b-lg shadow-md`}
                 >
                   {/* COLUMN 1: sublinks */}
                   <div className={`flex flex-col  `}>
