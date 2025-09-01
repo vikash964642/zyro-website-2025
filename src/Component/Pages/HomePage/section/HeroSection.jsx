@@ -15,8 +15,10 @@ import KnowMoreRightIcon from "/image/HomePage/Icon/KnowMoreRightIcon.svg";
 const slides = [
   {
     image: "/image/HomePage/herosectionbanner2.webp",
+
     imageMob: "/image/HomePage/herosectionbanner2mob.webp",
     link: "/pos-machine-system",
+
     heading1: "Zyro POS Device",
     heading2: "",
     paragraph: "Accepts UPI & Card Payments with a Single Device",

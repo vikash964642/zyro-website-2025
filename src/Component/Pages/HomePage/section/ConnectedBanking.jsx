@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 import collab2 from "/image/HomePage/Icon/auconnected.svg";
 import collab3 from "/image/HomePage/Icon/canara.svg";
 import collab4 from "/image/HomePage/Icon/idfc.svg";
@@ -8,7 +9,7 @@ import zyroLogo from "/image/zyro-logo.svg";
 import partnership from "/image/HomePage/partners.png";
 import './HomePageCss.css';
 import KnowMoreRightIcon from '/image/HomePage/Icon/KnowMoreRightIcon.svg'
-import { Link } from "react-router-dom";
+
 
 export default function ConnectedBanking() {
   const [currImg, setCurrImg] = useState(0);

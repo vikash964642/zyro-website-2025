@@ -1,5 +1,7 @@
 
 // import languageSoundbox from "/image/HomePage/zyroposmachine.png";
+import {Link} from "react-router-dom";
+
 import KnowMoreRightIcon from "/image/HomePage/Icon/KnowMoreRightIcon.svg";
 import ZyroPosVideo from "/video/zyroPos.webm";
 import {Link } from "react-router-dom"
