@@ -156,6 +156,7 @@ background-clip: text;
   border-radius: 382px;
 background: linear-gradient(180deg, #A489FF 0%, #343434 100%);
 filter: blur(180px);
+opacity:0.4;
 
 }
 .HerosectionGradient2{

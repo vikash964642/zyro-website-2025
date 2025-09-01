@@ -101,3 +101,11 @@ body {
 }
 
 
+.mobileMenuGradient{
+  position:absolute;
+  border-radius: 192px;
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(79, 49, 180, 0.65) 0%, rgba(255, 255, 255, 0.00) 100%);
+filter: blur(100px);
+  inset:0% 0% 38% 48%;
+}

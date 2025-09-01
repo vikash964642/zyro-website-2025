@@ -5,7 +5,7 @@ function Form() {
   return (
     <section className="mt-[150px]">
       <div className="max-w-screen-lg mx-auto p-3 m-2">
-        <div className="gap-[25px] lg:flex justify-between items-center bg-[#0E0624] rounded-[20px] relative p-[20px] overflow-hidden">
+        <div className="gap-[25px] lg:flex justify-between items-center bg-[#0E0624] rounded-[20px] relative p-[20px] z-40 overflow-hidden">
           <div className="flex-[6] lg:pl-[76px] mt-[56px] lg:mb-[43px]">
             <p className="text-[#ffffff] lg:text-[38px] text-[26px] leading-[34px] lg:leading-[150%] font-semibold">
               Get a Call Back
@@ -26,7 +26,7 @@ function Form() {
               <button className="text-[17px] font-semibold text-[#FFF] bg-[#4F31B4] rounded-[46px] h-[46px] lg:h-[55px] w-[197px] mt-[40px]">Submit</button>
             </div>
           </div>
-          <div className="form-input-gradient hidden lg:block"></div>
+          <div className="form-input-gradient "></div>
           <div className="form-soundbox-gradient"></div>
           <div className="flex-[4] custom-bg flex justify-center items-center z-10">
             <img src={soundBox} alt="soundBox" />

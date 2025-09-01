@@ -1,9 +1,10 @@
-// import React from 'react'
+
 // import languageSoundbox from "/image/HomePage/zyroposmachine.png";
 import {Link} from "react-router-dom";
 
 import KnowMoreRightIcon from "/image/HomePage/Icon/KnowMoreRightIcon.svg";
 import ZyroPosVideo from "/video/zyroPos.webm";
+import {Link } from "react-router-dom"
 function ZyroPosMachine() {
   return (
     <section className="max-w-screen-lg lg:px-[20px] xl:px-0 mx-auto mt-[180px] lg:mt-[210px]">

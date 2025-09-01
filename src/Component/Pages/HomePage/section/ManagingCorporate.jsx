@@ -1,6 +1,4 @@
-// import React from 'react'
-import {Link} from "react-router-dom";
-
+import {Link} from 'react-router-dom'
 import ManageingCorporate from '/image/HomePage/managing-corporate.png';
 import './HomePageCss.css'
 import KnowMoreRightIcon from '/image/HomePage/Icon/KnowMoreRightIcon.svg'
