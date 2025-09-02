@@ -152,7 +152,8 @@ export default function ConnectedCardSlider() {
  
 
   return (
-    <section className="max-w-screen-lg lg:mx-auto mt-[100px] lg:mt-[200px] px-[20px] xl:px-[0px]">
+    <section className="max-w-screen-lg lg:mx-auto mt-[100px] lg:mt-[200px] px-[20px] xl:px-[0px] relative">
+      <div className="ConnectedCardSliderGradient"></div>
       <h2 className="text-[28px] lg:text-[31.72px] font-semibold text-[#FFF] text-center lg:text-left">
         How Zyro{" "}
         <span className="text-[28px] lg:text-[32px] font-semibold connectedBankingCardGradient1">

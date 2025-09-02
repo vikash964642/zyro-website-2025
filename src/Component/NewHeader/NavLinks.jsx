@@ -233,7 +233,7 @@ const [hoveredSublink2Index, setHoveredSublink2Index] = useState(null);
                 }
               }}
             >
-              <p className={`text-[18px] text-[#D9D9D9] lg:text-[16px] font-medium lg:text-[#181818]  py-[20px] md:py-0 flex justify-between items-center md:pr-0 pr-5 group hover:text-primary focus:text-primary lg:border-hidden ${index!==0 ? "border-t-[0.5px] border-[#414141]" :" "}     `}>
+              <p className={`text-[18px] text-[#D9D9D9] lg:text-[16px] font-medium lg:text-[#181818]  py-[20px] lg:py-0 flex justify-between items-center md:pr-0 pr-5 group hover:text-primary focus:text-primary lg:border-hidden ${index!==0 ? "border-t-[0.5px] border-[#414141]" :" "}     `}>
                 {link.name}
            
 {link.submenu && (
@@ -254,7 +254,7 @@ const [hoveredSublink2Index, setHoveredSublink2Index] = useState(null);
             </Link>
 
             {link.submenu && activeLink === link.name && (
-              <div className="lg:absolute  lg:top-[20px] lg:mt-[1px] left-0 z-50  max-h-[180px] lg:max-h-none overflow-auto">
+              <div className="lg:absolute  lg:top-[20px] lg:mt-[1px] left-0 z-50  max-h-[180px] sm:max-h-full lg:max-h-none overflow-auto">
                 <div
                   className={`${
                     link.name === "Product" || link.name === "Banking"

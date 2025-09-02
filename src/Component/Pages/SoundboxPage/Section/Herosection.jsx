@@ -74,10 +74,11 @@ function Herosection() {
   }, []);
   return (
     <section className="">
-      <div className="max-w-screen-lg mx-auto  mt-[80px] lg:mt-[150px]">
+      <div className="max-w-screen-lg mx-auto  mt-[80px] lg:mt-[150px] relative">
+        <div className="SoundBoxHerosectionGradient"></div>
         <div className="lg:flex justify-between items-center">
           <div className="lg:w-[50%] p-3">
-            <h2 className="bg-gradientText bg-clip-text text-transparent font-semibold max-[400px]:text-28px text-[32px] lg:text-[40px] leading-[42px] lg:leading-[56px] text-center lg:text-left">
+            <h2 className="bg-gradientText bg-clip-text text-transparent font-semibold max-[400px]:text-28px text-[32px] sm:text-[36px] lg:text-[40px] leading-[42px] lg:leading-[56px] text-center lg:text-left">
               ZYRO Soundbox
             </h2>
             <p className="hidden lg:block text-white max-[400px]:text-19px text-[20px] lg:text-[24px] font-medium leading-[39px] mt-[12px] align-middle text-center lg:text-left lg:pr-[40px]">
@@ -110,9 +111,11 @@ function Herosection() {
                        </div>
           </div>
 
-          <p className="lg:hidden  text-white max-[400px]:text-19px text-[20px]  font-medium leading-[36px] mt-[44px] align-middle text-center px-[35px] ">
+       <div className="flex justify-center lg:hidden mt-[44px] max-[360px]:px-[20px] px-[35px] sm:px-0">
+           <p className=" sm:w-[500px] text-white max-[400px]:text-19px text-[20px] sm:text-[24px] font-medium leading-[36px]  align-middle text-center ">
             The Smart Way to Accept Payments with Instant Voice Alerts
           </p>
+       </div>
           <div className="text-center lg:text-left mt-[39px] lg:hidden ">
             <button className="text-white w-[224px] h-[46px] bg-[#4F31B4] rounded-[24.77px] text-[18px] font-medium text-center">
               Get Your Speaker
