@@ -23,24 +23,24 @@ function UPIIsuuingStack() {
             </div>
               <div className="relative z-40">
                      <div className='flex gap-[9px] lg:gap-[16.50px] items-center flex-col md:flex-row'>
-                        <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[24.6px] flex justify-center items-center'>
-                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
+                        <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[19.755px] lg:rounded-[24.6px] flex justify-center items-center'>
+                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[19.755px] lg:rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
                             <p className='text-[13px] lg:text-[16px] font-medium text-[#FFF]'>User</p>
                             </div>
 
                         </div>
                         <img src={UPIIssuingArrowHorizental} className="hidden md:block"/>
                           <img src={UPIIssuingArrowVertical} className="block md:hidden h-[40px]"/>
-                        <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[24.6px] flex justify-center items-center'>
-                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
+                        <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[19.755px] lg:rounded-[24.6px] flex justify-center items-center'>
+                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[19.755px] lg:rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
                             <p className='text-[13px] lg:text-[16px] font-medium text-[#FFF]'>ZYRO TPAP</p>
                             </div>
 
                         </div>
                     <img src={UPIIssuingArrowHorizental} className="hidden md:block"/>
                           <img src={UPIIssuingArrowVertical} className="block md:hidden h-[40px]"/>
-                        <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[24.6px] flex justify-center items-center'>
-                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
+                        <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[19.755px] lg:rounded-[24.6px] flex justify-center items-center'>
+                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[19.755px] lg:rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
                             <p className='text-[13px] lg:text-[16px] font-medium text-[#FFF]'>Issuing Bank</p>
                             </div>
 
@@ -51,15 +51,15 @@ function UPIIsuuingStack() {
        <img src={UPIIssuingArrowVertical}/>
  </div>
       <div className='flex gap-[9px] lg:gap-[16.50px] items-center '>
-                        <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[24.6px] flex justify-center items-center'>
-                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
+                        <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[19.755px] lg:rounded-[24.6px] flex justify-center items-center'>
+                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[19.755px] lg:rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
                             <p className='text-[13px] lg:text-[16px] font-medium text-[#FFF] text-center'>Beneficiary Bank</p>
                             </div>
 
                         </div>
                         <img src={UPIIssuingArrowHorizental} />
-                           <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[24.6px] flex justify-center items-center'>
-                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
+                           <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[19.755px] lg:rounded-[24.6px] flex justify-center items-center'>
+                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[19.755px] lg:rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
                             <p className='text-[13px] lg:text-[16px] font-medium text-[#FFF]'>NPCI</p>
                             </div>
 
@@ -73,15 +73,15 @@ function UPIIsuuingStack() {
        <img src={UPIIssuingArrowVertical} className="h-[40px] max-[400px]:pl-0 max-[411px]:pr-[45px] pl-[230px]"/>
  </div>
       <div className='flex gap-[16.50px] items-center max-[411px]:justify-end justify-center w-full max-[411px]:pl-0 pl-[51px]'>
-                        <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[24.6px] flex justify-center items-center'>
-                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
+                        <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[19.755px] lg:rounded-[24.6px] flex justify-center items-center'>
+                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[19.755px] lg:rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
                             <p className='text-[13px] lg:text-[16px] font-medium text-[#FFF] text-center'>Beneficiary Bank</p>
                             </div>
 
                         </div>
                         <img src={UPIIssuingArrowHorizentalLeft} className="w-[40px]"/>
-                           <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[24.6px] flex justify-center items-center'>
-                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
+                           <div className='upiIssuingBorderGradient h-[85px] w-[102px] lg:h-[107.4px] lg:w-[128.4px] rounded-[19.755px] lg:rounded-[24.6px] flex justify-center items-center'>
+                            <div className='h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-[19.755px] lg:rounded-[24.6px] bg-[#080219] flex justify-center items-center'>
                             <p className='text-[13px] lg:text-[16px] font-medium text-[#FFF]'>NPCI</p>
                             </div>
 
