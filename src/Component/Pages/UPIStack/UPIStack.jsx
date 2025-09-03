@@ -15,12 +15,12 @@ function UPIStack() {
   <HeroSection />
   <CompleteSolution />
   <UPIIsuuingStack />
-  <UPIAdvantages/>
-  <Wehelp/>
 
   <UPIAcquiringStack />
   <UPIPlugin />
   <ZyroUPICore />
+  <UPIAdvantages/>
+  <Wehelp/>
   </>
   )
 }
