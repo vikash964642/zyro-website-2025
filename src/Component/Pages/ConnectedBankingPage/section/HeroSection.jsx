@@ -3,10 +3,11 @@ import { gsap } from "gsap";
 
 // ✅ Bank logos
 import canaraMove from "/image/ConnectedBanking/canaraMove.svg";
-import iciciMove from "/image/ConnectedBanking/iciciMove.svg";
+// import iciciMove from "/image/ConnectedBanking/iciciMove.svg";
+import AUSmallMove from "/image/ConnectedBanking/AUSmallMove.svg";
 import idfcMove from "/image/ConnectedBanking/idfcMove.svg";
 import yesMove from "/image/ConnectedBanking/yesMove.svg";
-import rblMove from "/image/ConnectedBanking/rblMove.svg";
+// import rblMove from "/image/ConnectedBanking/rblMove.svg";
 import zyrologo from "/image/zyro-logo.svg";
 import "./ConnectedBankingCss.css"; 
 
@@ -115,10 +116,10 @@ function HeroSection() {
               {/* Orbit container */}
               <div className="orbit">
                 <img src={canaraMove} className="bankLogo" />
-                <img src={iciciMove} className="bankLogo" />
+                {/* <img src={iciciMove} className="bankLogo" /> */}
                 <img src={idfcMove} className="bankLogo" />
                 <img src={yesMove} className="bankLogo" />
-                <img src={rblMove} className="bankLogo" />
+                <img src={AUSmallMove} className="bankLogo" />
               </div>
             </div>
           </div>

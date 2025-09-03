@@ -1,7 +1,7 @@
 // import React from 'react'
 // import RoleBasedimg from '/image/ExpenseManagement/roleBased.webp';
 // import RoleBasedimgMob from '/image/ExpenseManagement/roleBasedMob.webp';
-import RoleBasedVideo from '../../../../../public/video/ExpenceRoleBased.webm';
+import RoleBasedVideo from '/video/ExpenceRoleBased.webm';
 
 function RoleBased() {
   return (

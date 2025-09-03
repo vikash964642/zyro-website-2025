@@ -257,10 +257,10 @@ const [hoveredSublink2Index, setHoveredSublink2Index] = useState(null);
               <div className="lg:absolute  lg:top-[20px] lg:mt-[1px] left-0 z-50  max-h-[180px] sm:max-h-full lg:max-h-none overflow-auto">
                 <div
                   className={`${
-                    link.name === "Product" || link.name === "Banking"
+                    link.name === "Product"
                       ? "lg:flex lg:justify-between lg:w-[550px]"
                       : "lg:w-[275px]"
-                  } lg:px-6 lg:py-6  lg:bg-white  lg:rounded-b-lg shadow-md`}
+                  } lg:px-6 lg:pt-[30px] lg:pb-6  lg:bg-white  lg:rounded-b-lg shadow-md`}
                 >
                   {/* COLUMN 1: sublinks */}
                   <div className={`flex flex-col  `}>
