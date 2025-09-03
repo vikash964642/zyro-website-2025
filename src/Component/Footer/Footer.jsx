@@ -93,11 +93,11 @@ function Footer() {
                     Connected Banking
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/payout-payment" onClick={ScrollTop}>
                     Payout
                   </Link>
-                </li>
+                </li> */}
                 {/* <li>
                   <Link to="">Bank Account Verification</Link>
                 </li> */}
@@ -255,11 +255,11 @@ function Footer() {
                     Connected Banking
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/payout-payment" onClick={ScrollTop}>
                     Payout
                   </Link>
-                </li>
+                </li> */}
                 {/* <li>
                   <Link to="">Bank Account Verification</Link>
                 </li>

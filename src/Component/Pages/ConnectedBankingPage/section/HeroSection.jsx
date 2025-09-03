@@ -3,10 +3,11 @@ import { gsap } from "gsap";
 
 // ✅ Bank logos
 import canaraMove from "/image/ConnectedBanking/canaraMove.svg";
-import iciciMove from "/image/ConnectedBanking/iciciMove.svg";
+// import iciciMove from "/image/ConnectedBanking/iciciMove.svg";
+import AUSmallMove from "/image/ConnectedBanking/AUSmallMove.svg";
 import idfcMove from "/image/ConnectedBanking/idfcMove.svg";
 import yesMove from "/image/ConnectedBanking/yesMove.svg";
-import rblMove from "/image/ConnectedBanking/rblMove.svg";
+// import rblMove from "/image/ConnectedBanking/rblMove.svg";
 import zyrologo from "/image/zyro-logo.svg";
 import "./ConnectedBankingCss.css"; 
 
@@ -71,7 +72,7 @@ function HeroSection() {
   return (
     <section className="lg:mt-[112px] mt-[50px]">
       <div className="max-w-screen-lg mx-auto relative">
-        <div className="home-hero_gradient"></div>
+        <div className="ConnectedHeroSecGradient1"></div>
 
         <div className="flex flex-col-reverse lg:flex-row items-center">
           {/* Left content */}
@@ -87,7 +88,7 @@ function HeroSection() {
             </h1>
 
             <div className="flex justify-center lg:justify-start">
-              <p className="text-[#9E9C9F] text-[14px] md:text-[14.5px] lg:text-[20px] sm:w-[80%] lg:w-[100%] md:mt-[18px] mt-[30px] text-center lg:text-left">
+              <p className="text-[#9E9C9F] text-[14px] md:text-[14.5px] lg:text-[20px] sm:w-[80%] lg:w-[100%] max-[360px]:px-[20px] px-[30px] sm:px-0  mt-[30px] sm:mt-[60px] lg:mt-[18px] text-center lg:text-left">
                 Connect and manage all your business accounts in one place with
                 Zyro Connected Banking. Simplify vendor payments, access
                 real-time insights, enable smooth integration and automate
@@ -96,15 +97,16 @@ function HeroSection() {
               </p>
             </div>
 
-            <div className="flex gap-[20px] lg:gap-[35px] items-center mt-[50px] lg:mt-[35px] flex-col lg:flex-row">
-              <button className="bg-[#4F31B4] rounded-[24px] h-[44px] max-[375px]:w-[100%] w-[325px] lg:w-[148px] text-[#FFF] text-[18px] font-semibold">
+            <div className="flex gap-[20px] lg:gap-[35px] items-center mt-[50px] lg:mt-[53px] flex-col lg:flex-row max-[375px]:px-[20px]">
+              <button className="bg-[#4F31B4] rounded-[24px] h-[44px]  max-[375px]:w-[100%] w-[325px] lg:w-[148px] text-[#FFF] text-[18px] font-semibold">
                 Get Started
               </button>
             </div>
           </div>
 
           {/* Right Orbit Section */}
-          <div className="pt-[45px] lg:pt-0 lg:w-[45%] w-full flex justify-center items-center">
+          <div className="pt-[45px] sm:pt-[60px] lg:pt-0 lg:w-[45%] w-full flex justify-center items-center relative">
+                    <div className="ConnectedHeroSecGradient2"></div>
             <div className="rotateSection">
               {/* Center Zyro Logo */}
               <div className="zyroLogo">
@@ -114,17 +116,17 @@ function HeroSection() {
               {/* Orbit container */}
               <div className="orbit">
                 <img src={canaraMove} className="bankLogo" />
-                <img src={iciciMove} className="bankLogo" />
+                {/* <img src={iciciMove} className="bankLogo" /> */}
                 <img src={idfcMove} className="bankLogo" />
                 <img src={yesMove} className="bankLogo" />
-                <img src={rblMove} className="bankLogo" />
+                <img src={AUSmallMove} className="bankLogo" />
               </div>
             </div>
           </div>
 
           {/* Mobile heading */}
           <div className="block lg:hidden">
-            <h1 className="max-[360px]:text-[28px] font-semibold text-[32px] leading-[38px] bg-gradientText bg-clip-text text-transparent text-center">
+            <h1 className="max-[360px]:text-[28px] font-semibold text-[32px] sm:text-[40px] leading-[38px] sm:leading-[55px] bg-gradientText bg-clip-text text-transparent text-center">
               Connected Banking
             </h1>
             <p className="max-[360px]:text-[20px] font-medium text-[22px] text-white90 leading-[24px] text-center pt-[10px]">

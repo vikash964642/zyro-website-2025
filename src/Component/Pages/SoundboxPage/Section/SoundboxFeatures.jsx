@@ -79,7 +79,7 @@ function SoundboxFeatures() {
               </div>
 
               <div className="cardbg flex justify-center mx-[20px]">
-                <div className="absolute top-[235px]  bg-[#080219] h-[370px]  max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-borderColor flex justify-center items-center">
+                <div className="absolute top-[235px]  bg-[#080219] h-[370px]  max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[20px] border-[0.627px] border-borderColor flex justify-center items-center">
                   {/* <img src={soundbox} alt="" className="p-[40px]" /> */}
                   <video
                         src={betterSpeaker}
@@ -107,7 +107,7 @@ function SoundboxFeatures() {
                 </div>
               </div>
               <div className="flex justify-center mx-[20px]">
-                <div className="absolute top-[235px]  bg-[#080219] h-[370px] max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[30px] border-[0.627px] border-borderColor flex justify-center items-center">
+                <div className="absolute top-[235px]  bg-[#080219] h-[370px] max-[350px]:w-[280px] max-[375px]:w-[320px] min-[375px]:w-[335px] min-[400px]:w-[370px]  rounded-[20px] border-[0.627px] border-borderColor flex justify-center items-center">
                   {/* <img src={newSoundbox} alt="" className="" /> */}
                   <video
                   

@@ -41,7 +41,8 @@ function FeaturesConnectedBanking() {
 ]
   return (
    <>
-    <section className="max-w-screen-lg lg:mx-auto lg:mt-[150px] mt-[110px]">
+    <section className="max-w-screen-lg lg:mx-auto lg:mt-[150px] mt-[110px] relative">
+      <div className='FeaturesConnectedBankingGradient1'></div>
       <div className='mx-4'>
        <p className="max-[375px]:text-[22px] text-[28px] md:text-[30px] lg:text-[32px] font-semibold text-white text-center">Key<span className='features-heading-gradient'> Features of  Zyro Connected Banking</span></p> 
       <div className='flex justify-center'>

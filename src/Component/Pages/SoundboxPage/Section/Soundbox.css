@@ -204,7 +204,17 @@ background: linear-gradient(180deg, #1A1235 0%, #0B051E 100%);
       transform: translate(-50%, -50%);
     }
 
-    /* Tablets (768px se neeche) */
+@media (max-width: 1023px) {
+  .SoundBoxHerosectionGradient{
+    border-radius: 266.708px;
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(79, 49, 180, 0.86) 0%, rgba(255, 255, 255, 0.00) 100%);
+filter: blur(45.05208206176758px);
+position:absolute;
+inset:-14% 15% 100% 15%;
+  }
+
+}
 @media (max-width: 768px) {
   .HeroRotateSection {
     width: 300px;
