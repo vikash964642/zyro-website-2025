@@ -150,7 +150,7 @@ export default function SnapScrollAutoSync() {
             {cardsData.map((slide, index) => (
               <div
                 key={index}
-                className="flex-none w-[calc(100%-3.4rem)] flex flex-col items-center max-[375px]:px-[25px] px-[35px] py-[20px] bg-[#0B051E] border-[0.3px] border-[#A901A3] rounded-[10px] mx-[27px]"
+                className="flex-none w-[calc(100%-3.4rem)] flex flex-col items-center max-[375px]:px-[25px] px-[35px] py-[20px] bg-[#0B051E] ConnectedBusinessScrollerBorder mx-[27px]"
               >
                 <div className="w-full">
                   <p className="text-[#FFFFFF] text-[18px] font-medium max-[375px]:text-[16px]">
@@ -171,7 +171,7 @@ export default function SnapScrollAutoSync() {
         </div>
 
         {/* Prev / Next Buttons */}
-        <div className="flex justify-center gap-5 mt-4">
+        <div className="flex justify-center gap-5 mt-[45px]">
           <button
             onClick={handlePrev}
             className="rounded-full w-[22px] h-[22px] flex justify-center items-center border-[1.5px] border-[#6E6E6E] text-[#6E6E6E] hover:border-[#FFF] hover:text-[#FFF]"

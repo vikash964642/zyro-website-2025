@@ -4,6 +4,8 @@ function HeroSection() {
   return (
             <section className=" mt-[83px] lg:mt-[92px] relative">
                 <div className='HeroSectionTopGradient'></div>
+                 <div className='HeroSectionImageGradient1'></div>
+                   <div className='HeroSectionImageGradient2'></div>
                <div className="max-w-screen-lg lg:mx-auto ">
                 <h2 className='HeroSectionHeaderGradient max-[375px]:px-[40px] px-[50px] sm:px-0 text-center text-[26px] sm:text-[32px] md:text-[34px] lg:text-[38px] font-semibold lg:leading-[55px]'>India’s Scalable UPI Infrastructure</h2>
                 <div className='flex justify-center pt-[8px]'>

@@ -213,14 +213,16 @@ filter: blur(160px);
 .PosbusinessBankingGradient1{
 inset: 0% 0% 79% 50%;
 }
-}
-@media (max-width:767px){
   .HerosectionGradient1{
         inset: 28% 55% 35% 0%;
   }
-  .HerosectionGradient2{
+    .HerosectionGradient2{
     display:none;
   }
+}
+@media (max-width:767px){
+
+
 .PosFeatureGradientTop1{
    inset:5% 7% 68% 8%;
 }

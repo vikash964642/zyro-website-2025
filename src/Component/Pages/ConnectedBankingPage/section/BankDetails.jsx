@@ -164,7 +164,8 @@ function BankDetails() {
         </div>
 
         {/* Image Section - One at a time */}
-        <div className="w-full md:w-1/2 flex justify-end">
+        <div className="w-full md:w-1/2 flex justify-end relative">
+        <div className='BankDetailsRightGradient'></div>
           <div
             ref={scrollContainerRef}
             className=" h-[255px] overflow-y-scroll scroll-smooth snap-y space-y-[15px] snap-mandatory no-scrollbar"

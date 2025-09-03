@@ -6,12 +6,12 @@ import SquareShadowBox from '/image/PayOut/SquareShadowBox.png'
 import SquareShadowBox2 from '/image/PayOut/SquareShadowBox2.png'
 import BgSape_mob from '/image/PayOut/bg_sape_Mob.png';
 import BgSape from '/image/PayOut/bg_sape.png'
-
+//  "Gaming & Rewards",
 const cardData = [
   "HR & Payroll",         // [0,0]
   "Vendor Payments",      // [0,1]
   "Fintech & Lending",    // [1,0]
-  "Gaming & Rewards",     // [1,1]
+  "Voucher & Rewards",     // [1,1]
   "Logistics & Fleet",    // [1,2]
   "EdTech & Coaching",    // [2,1]
   "Agencies & Services",  // [2,2]
