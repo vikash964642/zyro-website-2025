@@ -271,7 +271,7 @@ function Footer() {
                 </li> */}
               </ul>
             </div>
-            <div className="pt-[80px] min-[768px]:pt-[100px]">
+            <div className="pt-[105px] min-[768px]:pt-[100px]">
               <p className="text-white90 font-medium text-[16px] leading-[21px]">
                 Resources
               </p>
@@ -321,7 +321,7 @@ function Footer() {
             </a>
           </div>
 
-          <div className="flex gap-[20px] pt-[5px]">
+          {/* <div className="flex gap-[20px] pt-[5px]">
             <p className="text-[14px] font-medium leading-[21px] text-white90">
               Address:
             </p>
@@ -332,40 +332,28 @@ function Footer() {
               H-31, 5th Floor, Sector-63 Noida, Uttar-Pradesh 201301
             </p>
  
-
-
-
- 
-
-
-  {/* <div className="[writing-mode:vertical-lr] rotate-180 text-purple-400 text-xl font-bold">
-    Bottom to Top
-  </div> */}
-
-
-
-          </div>
+          </div> */}
         </div>
     </div>
-        <div className="mt-[30px] flex lg:hidden items-center justify-center max-[375px]:flex-col max-[375px]:gap-[20px] gap-[50px]">
-          <div className="flex gap-2 justify-center">
+        <div className="mt-[30px] flex lg:hidden  justify-start min-[425px]:justify-center flex-wrap max-[375px]:flex-col max-[375px]:gap-[20px] gap-[30px]">
+          <div className="flex max-[375px]:justify-between max-[350px]:gap-1  min-[375px]:gap-5">
             <img src={GooglePlay}></img>
             <img src={AppStore}></img>
           </div>
           <div className="flex items-center gap-[20px]">
-            <NavLink to="">
+            <NavLink to="https://www.facebook.com/zyrobank/?ti=as" target="_blank">
               <img src={Facebook} />
             </NavLink>
-            <NavLink to="https://www.instagram.com/shopaver/">
+            <NavLink to="https://www.instagram.com/my_zyro/?utm_medium=copy_link" target="_blank">
               <img src={Instagram} className=""></img>
             </NavLink>
             <NavLink>
               <img src={Youtube} className=""></img>
             </NavLink>
-            <NavLink to="https://www.linkedin.com/company/shopaver/">
+            <NavLink to="https://www.linkedin.com/company/myzyro/" target="_blank">
               <img src={linkedIn} className=""></img>
             </NavLink>
-            <NavLink t="https://x.com/ShopaverApp">
+            <NavLink to="https://x.com/myzyro" target="_blank">
               <img src={XTwitter} className=""></img>
             </NavLink>
           </div>
@@ -396,7 +384,7 @@ function Footer() {
               </a>
             </div>
 
-            <div className="flex items-center gap-[20px] pt-[5px]">
+            {/* <div className="flex items-center gap-[20px] pt-[5px]">
               <p className="text-[14px] font-medium leading-[21px] text-white90">
                 Address:
               </p>
@@ -406,26 +394,26 @@ function Footer() {
               >
                 H-31, 5th Floor, Sector-63 Noida, Uttar-Pradesh 201301
               </p>
-            </div>
+            </div> */}
           </div>
           <img src={certificatezyro}></img>
         </div>
         <div className="border-t border-white20 mt-[35px]"></div>
         <div className="flex justify-center lg:justify-between items-center mt-[30px]">
           <div className="hidden lg:flex items-center gap-[20px] ">
-            <NavLink to="">
+            <NavLink to="https://www.facebook.com/zyrobank/?ti=as" target="_blank">
               <img src={Facebook} />
             </NavLink>
-            <NavLink to="https://www.instagram.com/shopaver/">
+            <NavLink to="https://www.instagram.com/my_zyro/?utm_medium=copy_link" target="_blank">
               <img src={Instagram} className=""></img>
             </NavLink>
             <NavLink>
               <img src={Youtube} className=""></img>
             </NavLink>
-            <NavLink to="https://www.linkedin.com/company/shopaver/">
+            <NavLink to="https://www.linkedin.com/company/myzyro/" target="_blank">
               <img src={linkedIn} className=""></img>
             </NavLink>
-            <NavLink t="https://x.com/ShopaverApp">
+            <NavLink to="https://x.com/myzyro" target="_blank">
               <img src={XTwitter} className=""></img>
             </NavLink>
           </div>

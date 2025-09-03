@@ -1,7 +1,12 @@
 // import React from 'react'
+import { Link } from 'react-router-dom';
 import arrowRight from '/image/ConnectedBanking/arrowRight.svg';
 import BusinessBankingMob from '/image/Prepaid/PrepaidBusinessBanking.svg';
+
 function BusinessBanking() {
+   const ScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
   <section className="max-w-screen-lg lg:mx-auto mt-[100px]">
     <div className='bg-[#0E0624] rounded-[20px] px-[25px] lg:px-[55px] lg:h-[460px] flex flex-col lg:flex-row gap-[100px] lg:gap-[0px] overflow-hidden'>
@@ -13,14 +18,14 @@ function BusinessBanking() {
             </div>
         </div>
 
-           <div className='relative  mt-[40px] cursor-pointer z-20'>
+           <Link to='/contact-us' onClick={ScrollTop} className='relative  mt-[40px] cursor-pointer z-20'>
             <div className=' w-[180px] h-[50px] bg-[#4F31B4] rounded-[44px] flex justify-center items-center'>
-                <p className='text-[16px] font-semibold text-[#FFF]'>Get Started</p>
+                <p className='text-[16px] font-semibold text-[#FFF]'>Get Your Card</p>
             </div>
             <div className='h-[50px] w-[50px] bg-[#FBF9F1] rounded-[50%] absolute top-0 left-[158px] flex justify-center items-center'>
                 <img src={arrowRight}/>
             </div>
-        </div>
+        </Link>
  <div className='PrepaidbusinessBankingGradient1 '></div>
       </div>
 <div className='flex items-end justify-center lg:justify-start lg:w-[40%] relative'>

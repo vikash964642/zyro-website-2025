@@ -1,8 +1,12 @@
-// import React from 'react'
+
 import ExpenseHero from '/image/ExpenseManagement/ExpenseHero.webp';
 import './Expense.css';
+import { Link } from 'react-router-dom';
 
 function HeroSection() {
+   const ScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <section className='lg:mt-[134px] mt-[50px]'>
       <div className='max-w-screen-lg mx-auto relative '>
@@ -15,16 +19,16 @@ function HeroSection() {
                      <div className='flex justify-center lg:justify-start  mt-[11px] mb-[58px] lg:mb-[47px]'>
                        <p className="sm:w-[550px] lg:w-full text-heroDesc px-5 sm:px-0 text-[16px] lg:text-[20px] font-normal leading-[30px]   text-center lg:text-left lg:pr-[40px]">Simplify expense tracking, card & finance management, reimbursements, and policy compliance, all in one smart solution built for growing businesses</p>
                      </div>
-                      <div className='text-center lg:text-left mt-[39px] hidden lg:block'>
-                            <button className="text-white w-[224px] h-[46px] bg-[#4F31B4] rounded-[24.77px] text-[18px] font-medium text-center">Get Started</button>
+                      <div className='lg:flex  lg:justify-start  mt-[39px] hidden'>
+                            <Link to='/contact-us' onClick={ScrollTop} className="text-white w-[224px] h-[46px] bg-[#4F31B4] rounded-[24.77px] text-[18px] font-medium flex justify-center items-center">Get Started</Link>
       
                       </div>
                   </div>
                   <div className='flex justify-center items-center lg:w-[50%] px-[30px] lg:px-[0px] '>
                       <img src={ExpenseHero} alt="" className='sm:w-[484px] sm:h-[331px] lg:w-auto lg:h-auto'/>
                   </div>
-                   <div className='text-center lg:text-left mt-[39px] lg:hidden '>
-                            <button className="text-white w-[224px] h-[46px] bg-[#4F31B4] rounded-[24.77px] text-[18px] font-medium text-center">Get Started</button>
+                   <div className='flex justify-center mt-[39px] lg:hidden '>
+                            <Link to='/contact-us' onClick={ScrollTop} className="text-white w-[224px] h-[46px] bg-[#4F31B4] rounded-[24.77px] text-[18px] font-medium flex justify-center items-center">Get Started</Link>
       
                       </div>
               </div>

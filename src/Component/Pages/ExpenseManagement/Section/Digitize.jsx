@@ -3,6 +3,9 @@ import arrowRight from "/image/ConnectedBanking/arrowRight.svg";
 import digitalizebusiness from "/image/ExpenseManagement/digitalizebusiness.webp";
 
 function Digitize() {
+   const ScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <section className="">
       <div className="max-w-full lg:max-w-screen-lg mx-[12px] lg:mx-auto mt-[100px]">
@@ -15,7 +18,7 @@ function Digitize() {
             </h2>
           
 
-          <Link className="relative  mt-[40px] cursor-pointer z-20">
+          <Link to='/contact-us' onClick={ScrollTop} className="relative  mt-[40px] cursor-pointer z-20">
             <div className=" w-[199px] h-[52px] bg-[#4F31B4] rounded-[44px] flex justify-center items-center">
               <p className="text-[16px] font-semibold text-[#FFF]">
                 Get Started Today

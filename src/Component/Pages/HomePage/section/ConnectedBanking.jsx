@@ -23,7 +23,9 @@ export default function ConnectedBanking() {
 
     return () => clearInterval(interval);
   }, [collaborators.length]);
-
+ const ScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
 
     <section  className="max-w-screen-lg mx-4 lg:mx-auto mt-[95px] lg:mt-[160px]">
@@ -42,7 +44,7 @@ export default function ConnectedBanking() {
         </div>
 
        <div className="flex justify-center"> 
-        <Link to='/connected-banking' className="bg-[#4F31B4] text-white px-6 py-2 rounded-3xl mt-[35px] mb-[90px] flex items-center ">
+        <Link to='/connected-banking' className="bg-[#4F31B4] text-white px-6 py-2 rounded-3xl mt-[35px] mb-[90px] flex items-center " onClick={ScrollTop}>
           Know more <img src={KnowMoreRightIcon} className="pl-[4px] h-[15px] w-[15px]"/>
         </Link>
         </div>

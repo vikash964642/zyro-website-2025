@@ -59,7 +59,9 @@ const slides = [
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-
+  const ScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
  
@@ -142,17 +144,17 @@ export default function HeroSection() {
 
                 <div className="flex gap-[20px] lg:gap-[35px] items-center mt-[35px] flex-col lg:flex-row">
                   {index !== 1 ? (
-                    <button className="bg-[#4F31B4] rounded-[24.77px] h-[45px] w-[148px] text-[#FFF] text-[18px] font-semibold">
+                    <Link to='/contact-us' onClick={ScrollTop} className="bg-[#4F31B4] rounded-[24.77px] h-[45px] w-[148px] text-[#FFF] text-[18px] font-semibold flex justify-center items-center">
                       Get Started
-                    </button>
+                    </Link>
                   ) : (
-                    <button className="bg-[#4F31B4] rounded-[24.77px] h-[48px] w-[218px] text-[#FFF] text-[20px] font-semibold">
+                    <Link to='/contact-us' onClick={ScrollTop} className="bg-[#4F31B4] rounded-[24.77px] h-[48px] w-[218px] text-[#FFF] text-[20px] font-semibold flex justify-center items-center">
                       Get Your Speaker
-                    </button>
+                    </Link>
                   )}
 
                   <Link
-                    to={slide.link}
+                    to={slide.link} onClick={ScrollTop}
                     className="text-[#FFF] font-medium md:text-[15.6px] lg:text-[16.45px] text-sm flex md:justify-start justify-center"
                   >
                     Know more <img src={KnowMoreRightIcon} className="pl-[4px]" />
@@ -271,16 +273,16 @@ export default function HeroSection() {
 
               {/* Button */}
               <div className="flex justify-center ">
-                <button
-                  className="bg-[#4F31B4] max-[375px]:w-[100%] w-[325px] h-[50px] rounded-[30px] text-[20px] text-[#FFF] font-medium"
+                <Link to='/contact-us' onClick={ScrollTop}
+                  className="bg-[#4F31B4] max-[375px]:w-[100%] w-[325px] h-[50px] rounded-[30px] text-[20px] text-[#FFF] font-medium flex justify-center items-center"
                 >
                   {index === 1 ? "Get Your Speaker" : "Get Started"}
-                </button>
+                </Link>
               </div>
 
               {/* Link */}
               <div className="flex justify-center ">
-                <Link
+                <Link onClick={ScrollTop}
                   to={slide.link}
                   className="text-[#FFF] font-medium text-[16px] flex justify-center items-center"
                 >

@@ -8,13 +8,13 @@ function FeaturesConnectedBanking() {
       "Easily link all your current bank accounts and manage them conveniently from a single dashboard with complete control over your finances.",
   },
     {
-    image: "/image/ConnectedBanking/FeaturesBankingIcon2.svg",
+    image: "/image/ConnectedBanking/FeaturesBankingIcon3.svg",
     heading: "Real-Time Syncing",
     paragraph:
       "Get real-time updated on balances, transactions, and activity across all your linked business accounts for accurate tracking and control.",
   },
     {
-    image: "/image/ConnectedBanking/FeaturesBankingIcon3.svg",
+    image: "/image/ConnectedBanking/FeaturesBankingIcon2.svg",
     heading: "API Integrations",
     paragraph:
       "Seamlessly connect our tools with your existing systems, ensure smooth operations, and access clear & concise documentation for efficient implementation.",

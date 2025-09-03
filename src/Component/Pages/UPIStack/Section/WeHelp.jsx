@@ -4,6 +4,9 @@ import weHelpMob from "/image/UPIStack/weHelpMob.webp"
 import {Link} from 'react-router-dom';
 
 function Wehelp(){
+     const ScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
     return(
             <section className="max-w-screen-lg mx-auto mt-[125px] lg:mt-[197px] ">
                <div className='bg-[#0E0624] overflow-hidden rounded-[20px] lg:pl-[70px]  lg:h-[460px] flex flex-col lg:flex-row gap-[100px] lg:gap-[0px] relative mx-[11px] lg:mx-0'>
@@ -12,7 +15,7 @@ function Wehelp(){
                      <div>
                        <h2 className='max-[360px]:text-[22px] text-[26px] lg:text-[48px] font-semibold text-center lg:text-left text-white90 px-[25px] lg:px-0'>We Help You Succeed in Every Transaction</h2>
                    </div>
-           <Link to='/contact-us'>
+           <Link to='/contact-us' onClick={ScrollTop}>
                       <div className='relative  mt-[40px] cursor-pointer z-20' >
                        <div className=' w-[180px] h-[50px] bg-[#4F31B4] rounded-[44px] flex justify-center items-center'>
                            <p className='text-[16px] font-semibold text-[#FFF]'>Contact Us</p>

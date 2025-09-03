@@ -17,24 +17,26 @@ const cardData = [
       "You are at the center of everything we do. Your needs, aspirations, and feedback guide our innovation and shape our journey.",
     icon: customer,
   },
-  {
-    title: "Empowering Growth at Every Step",
+    {
+    title: "Tech-Driven Growth",
     description:
-      "We believe finance should be transparent, accessible, and user-first. Our tools are designed to put control, clarity, and confidence in your hands.",
-    icon: empowering,
+      "Powered by innovation and smart tech, we deliver intelligent, scalable, and future-ready solutions built to grow with you.",
+    icon: techdrivenIcon,
   },
+
   {
     title: "Innovative Fintech Solutions",
     description:
       "We build smart financial tools to simplify complexity and change how money works for businesses and individuals.",
     icon: innovative,
   },
-  {
-    title: "Tech-Driven Growth",
+    {
+    title: "Empowering Growth at Every Step",
     description:
-      "Powered by innovation and smart tech, we deliver intelligent, scalable, and future-ready solutions built to grow with you.",
-    icon: techdrivenIcon,
+      "We believe finance should be transparent, accessible, and user-first. Our tools are designed to put control, clarity, and confidence in your hands.",
+    icon: empowering,
   },
+
 ];
 
 function Corevalue() {
@@ -60,7 +62,7 @@ function Corevalue() {
                 alt={card.title}
                 className="w-[52px] h-[52px] mb-5"
               />
-              <h3 className="text-[#FFFFFF] lg:text-[20px] text-[18px] font-semibold mb-4">
+              <h3 className="text-[#FFFFFF] lg:text-[20px] text-[18px] font-semibold mb-4 lg:w-[210px] text-center">
                 {card.title}
               </h3>
               <p className="text-[#A9A9A9] text-[14px] lg:text-[16px] font-normal">

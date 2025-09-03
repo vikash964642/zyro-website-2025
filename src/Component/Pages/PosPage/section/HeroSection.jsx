@@ -1,20 +1,21 @@
 
 import { useEffect, useRef, useState } from "react";
-import PosHeroSection1 from '/video/PosHeroSection1.mp4';
-import PosHeroSection2 from '/video/PosHeroSection2.mp4';
-import PosHeroSection3 from '/video/PosHeroSection3.mp4';
+import {Link} from 'react-router-dom'
+import PosHeroSection1 from '/video/PosHeroSection1.webm';
+import PosHeroSection2 from '/video/PosHeroSection2.webm';
+import PosHeroSection3 from '/video/PosHeroSection3.webm';
 
 const cardData = [
-  { video: PosHeroSection3, SubHeader: "SWIPE" },
+  { video: PosHeroSection1, SubHeader: "SWIPE" },
   { video: PosHeroSection2, SubHeader: "TAP" },
-  { video: PosHeroSection1, SubHeader: "INSERT" },
+  { video: PosHeroSection3, SubHeader: "INSERT" },
 ];
 
 function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const videoRef = useRef(null);
 
-  const currentSlide = cardData[currentIndex];
+  // const currentSlide = cardData[currentIndex];
 
   // Function to go to next video
   const handleVideoEnd = () => {
@@ -31,6 +32,10 @@ function HeroSection() {
     }
   }, [currentIndex]);
 
+
+   const ScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
    
     <section className=" bg-[#0E0624] relative px-[15px] md:px-[30px] pb-[60px] lg:pb-0 xl:px-0 overflow-hidden">
@@ -53,7 +58,7 @@ function HeroSection() {
         {cardData[currentIndex].SubHeader}
       </span>
      <div className="hidden lg:flex justify-center lg:justify-start mt-[55px]">
-         <button className=" md:w-[225px] md:h-[46px] bg-[#4F31B4] md:rounded-[24.77px] md:text-[18px] font-semibold text-[#FFF] ">Get your speaker</button>
+         <Link to='/contact-us' onClick={ScrollTop} className=" md:w-[225px] md:h-[46px] bg-[#4F31B4] md:rounded-[24.77px] md:text-[18px] font-semibold text-[#FFF] flex justify-center items-center">Get your speaker</Link>
      </div>
     </div>
 
@@ -74,7 +79,7 @@ function HeroSection() {
     <div className="HerosectionGradient2"></div>
   </div>
    <div className="flex lg:hidden justify-center lg:justify-start ">
-         <button className="max-[400px]:w-[100%] w-[350px] h-[59.8px]  bg-[#4F31B4] rounded-[32.075px]  text-[23.52px] font-semibold text-[#FFF] ">Get your speaker</button>
+         <Link to='/contact-us' onClick={ScrollTop} className="max-[400px]:w-[100%] w-[350px] h-[59.8px]  bg-[#4F31B4] rounded-[32.075px]  text-[23.52px] font-semibold text-[#FFF] flex justify-center items-center">Get your speaker</Link>
      </div>
 
 </section>

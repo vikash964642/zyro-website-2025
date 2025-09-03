@@ -2,6 +2,7 @@
 import { useState,useEffect } from "react";
 import CrossMark from '/image/CrossMark.svg'
 import ContactFormImg3 from '/image/contact/ContactFormImg3.svg';
+import arrowImg from '/image/contact/arrow.svg';
 import "./contact.css";
 import { motion, AnimatePresence } from "framer-motion";
 function Herosection() {
@@ -61,8 +62,9 @@ setOpen3(false)
                   assist you with any queries or issues related to our services.
                 </p>
                    </div>
-                <button className="h-[37px] w-[147px] rounded-[24.77px] bg-[#4F31B4] " onClick={handleClickOpen1}>
+                <button className="h-[37px] w-[147px] rounded-[24.77px] bg-[#4F31B4] flex justify-center items-center gap-2" onClick={handleClickOpen1}>
                   <p className="text-[14px] leading-[20px] font-medium text-white">Get Support </p>
+                  <img src={arrowImg} alt="" className="h-[10.1px] w-[11.8px]" />
                 </button>
            
              </div>
@@ -76,8 +78,9 @@ setOpen3(false)
                   Interested in our services? Our sales experts are here to discuss how we can support your business needs
                 </p>
                       </div>
-                <button className="h-[37px] w-[147px] rounded-[24.77px] bg-[#4F31B4]" onClick={handleClickOpen2}>
+                <button className="h-[37px] w-[147px] rounded-[24.77px] bg-[#4F31B4] flex justify-center items-center gap-2" onClick={handleClickOpen2}>
                   <p className="text-[14px] leading-[20px] font-medium text-white">Contact Sales  </p>
+                  <img src={arrowImg} alt="" className="h-[10.1px] w-[11.8px]" />
                 </button>
         
              </div>
@@ -91,8 +94,9 @@ setOpen3(false)
                   Let’s collaborate! We are always open to strategic partnerships that drive innovation and growth in the digital banking space.
                 </p>
                    </div>
-                <button className="h-[37px] w-[147px] rounded-[24.77px] bg-[#4F31B4] " onClick={handleClickOpen3}>
+                <button className="h-[37px] w-[147px] rounded-[24.77px] bg-[#4F31B4] flex justify-center items-center gap-2" onClick={handleClickOpen3}>
                   <p className="text-[14px] leading-[20px] font-medium text-white">Partner Now  </p>
+                  <img src={arrowImg} alt="" className="h-[10.1px] w-[11.8px]" />
                 </button>
            
              </div>

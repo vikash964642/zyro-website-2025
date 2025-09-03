@@ -17,7 +17,7 @@ function Faq() {
   },
   {
     ques: "How long does the battery last?",
-    ans: "The QR Soundbox has a long battery life of up to 15 days on a single charge.",
+    ans: "The QR Soundbox has a long battery life of up to 4 days on a single charge.",
   },
   {
     ques: "Can I receive payment notifications in different languages?",

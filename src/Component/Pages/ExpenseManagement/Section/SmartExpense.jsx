@@ -98,7 +98,7 @@ function SmartExpense() {
               <h3 className="text-white text-[13px] lg:text-[17px] lg:leading-[30px] leading-[22.5px] font-semibold">
                 {card.heading}
               </h3>
-              <p className="text-[#9E9C9F] text-[12px] lg:text-[16px] lg:leading-[23.46px] leading-[18px] font-normal pt-[10px]">
+              <p className="text-[#9E9C9F] text-[12px] lg:text-[16px] lg:leading-[23.46px] leading-[18px] font-normal pt-[10px] pl-[10px]">
                 {card.paragraph}
               </p>
             </div>

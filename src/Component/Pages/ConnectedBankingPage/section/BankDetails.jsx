@@ -28,35 +28,19 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 
-// const labels = [
-//   'Real Time Card Tracking',
-//   'Spend Limits for Every Employee',
-//   'Instant Notifications',
-//   'Export Transactions Easily',
-//   'Advanced Fraud Detection',
-//   'Track Receipts Effortlessly',
-// ];
 
-// const images = [
-//   expencecontrol1,
-//   expencecontrol2,
-//   expencecontrol3,
-//   expencecontrol4,
-//   expencecontrol5,
-//   expencecontrol6,
-// ];
 const contentData = [
   {
     IconActive: BankDetailIconActive1,
     IconNonActive: BankDetailIconNonActive1,
     label: "Enter the bank details",
-    image: BankDetailsImg1,
+    image: BankDetailsImg2,
   },
   {
     IconActive: BankDetailIconActive2,
     IconNonActive: BankDetailIconNonActive2,
     label: "Upload your excel file with a simple drag-and-drop",
-    image: BankDetailsImg2,
+    image: BankDetailsImg1,
   },
   {
     IconActive: BankDetailIconActive3,
@@ -71,13 +55,6 @@ function BankDetails() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Scroll to image when label is clicked
-  // const handleLabelClick = (index) => {
-  //   imageRefs.current[index]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  //   setActiveIndex(index);
-  // };
-
-  // Observe which image is in view
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -125,20 +102,10 @@ function BankDetails() {
         vendors or employees directly from your connected bank account.
       </p>
       <div className="hidden lg:flex gap-6  mt-[40px]">
-        {/* Label Section */}
+   
         <div className="w-full md:w-1/2 sticky top-0 space-y-[25px]">
           {contentData.map((item, index) => (
-            // <label
-            //   key={index}
-            //   onClick={() => handleLabelClick(index)}
-            //   className={`block p-[2px] cursor-pointer border-l-[2.34px] text-[20px] font-normal ${
-            //     activeIndex === index ? ' border-[#FFF] text-[#FFF]' : 'border-[#ACACAC] text-[#959595]'
-            //   }`}
-            // >
-            //   <div className="flex items-center px-4 py-4 rounded-md">
-            //     <span>{item.label}</span>
-            //   </div>
-            // </label>
+            
             <div key={index} className="flex items-center gap-[30px]">
               <img
                 src={

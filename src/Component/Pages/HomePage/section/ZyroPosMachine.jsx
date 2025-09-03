@@ -5,6 +5,9 @@ import KnowMoreRightIcon from "/image/HomePage/Icon/KnowMoreRightIcon.svg";
 import ZyroPosVideo from "/video/zyroPos.webm";
 
 function ZyroPosMachine() {
+   const ScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <section className="max-w-screen-lg lg:px-[20px] xl:px-0 mx-auto mt-[180px] lg:mt-[210px]">
       <div className="lg:flex justify-between items-center">
@@ -26,7 +29,7 @@ function ZyroPosMachine() {
             easily.
           </p>
           <div className="flex justify-center lg:justify-start mt-[39px]">
-            <Link to='/pos-machine-system' className="text-white w-[150px] h-[40px] bg-[#4F31B4] rounded-[30px] text-[18.6px] font-medium flex items-center justify-center gap-[3px]">
+            <Link to='/pos-machine-system' onClick={ScrollTop} className="text-white w-[150px] h-[40px] bg-[#4F31B4] rounded-[30px] text-[18.6px] font-medium flex items-center justify-center gap-[3px]">
               Know more{" "}
               <img
                 src={KnowMoreRightIcon}

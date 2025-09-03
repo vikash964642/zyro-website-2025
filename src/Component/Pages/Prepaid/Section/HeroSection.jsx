@@ -1,7 +1,11 @@
-// import React from 'react'
+
 import prepaidcardHeroSection from '/video/prepaidcardHeroSection.webm';
 import './Prepaid.css';
+import { Link } from 'react-router-dom';
 function HeroSection() {
+   const ScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
       <section className="max-w-screen-lg mx-auto px-[30px] xl:px-0 relative  ">
      
@@ -11,7 +15,7 @@ function HeroSection() {
      <h2 className='herosectionHeaderGradient max-[360px]:text-[22px] text-[26px] sm:text-[30px] lg:text-[36px] font-semibold leading-[39px] lg:leading-[46px] sm:text-center sm:w-[500px] lg:w-[670px]'>Your All-in-One Card for Shopping, Travel & More</h2>
     <p className='max-[360px]:text-[13px] text-[16px] sm:text-center leading-[28px] sm:text-[18px] lg:text-[20px] font-normal text-[#A9A9A9] lg:text-center sm:w-[550px] lg:w-[600px] pt-[10px]'>From daily spending to travel adventures, manage it all securely and easily, anytime, anywhere with a single card.</p>
 
-        <button className='hidden md:block md:w-[225px] md:h-[45px] rounded-[24.75px] bg-[#4F31B4] text-[#FFF] lg:text-[22px] font-semibold md:mt-[25px]'>Get Started</button>
+        <Link to='/contact-us' onClick={ScrollTop} className='hidden  md:w-[225px] md:h-[45px] rounded-[24.75px] bg-[#4F31B4] text-[#FFF] lg:text-[22px] font-semibold md:mt-[25px] md:flex justify-center items-center'>Get Started</Link>
    </div>
 
 
@@ -28,7 +32,7 @@ function HeroSection() {
 </video>
 </div>
 <div className='flex justify-center md:hidden mt-[60px]'>
-  <button className=' max-[375px]:w-[100%] w-[325px] h-[55px] rounded-[30px] bg-[#4F31B4] text-[#FFF] text-[22px] font-semibold '>Get Started</button>
+  <Link to='/contact-us' onClick={ScrollTop} className=' max-[375px]:w-[100%] w-[325px] h-[55px] rounded-[30px] bg-[#4F31B4] text-[#FFF] text-[22px] font-semibold flex justify-center items-center'>Get Started</Link>
 </div>
 </div>
 

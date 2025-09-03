@@ -30,7 +30,7 @@ function FeaturesComparison() {
                },
                {
                  feature: "Battery Backup",
-                 zyro: "Up to 5 days",
+                 zyro: "Up to 4 days",
                  others: "1-2 days",
                },
                {

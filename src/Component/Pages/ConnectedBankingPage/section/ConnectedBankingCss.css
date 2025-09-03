@@ -175,6 +175,7 @@ background: linear-gradient(180deg, rgba(64, 28, 139, 0.59) 0%, rgba(255, 255, 2
 filter: blur(91.38888549804688px);
 position:absolute;
 inset:-33% 4% 16% 12%;
+z-index:-1;
 }
 .connectedBankingCardGradient1{
   background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
