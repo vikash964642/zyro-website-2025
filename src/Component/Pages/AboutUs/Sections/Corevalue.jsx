@@ -96,12 +96,7 @@ function Corevalue() {
 
         {/* Mobile View - Horizontal Scroll */}
 <div
-  className="sm:hidden overflow-x-auto mt-[35px] hide-scrollbar "
-  style={{
-          maxWidth: "288px",        
-          height: "276px",
-  }}
->
+  className="sm:hidden overflow-x-auto mt-[35px] hide-scrollbar ">
   <div className="flex gap-3">
     {cardData.map((card, index) => (
       <div
