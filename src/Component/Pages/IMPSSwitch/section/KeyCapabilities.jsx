@@ -18,7 +18,7 @@
 const cards = [
   {
 
-    heading: "All IMPS Transaction Types",
+    heading: "Manage Fund Transfers",
     paragraph: "Supports P2P, P2M, and other IMPS transfers",
   },
   {
@@ -34,22 +34,23 @@ const cards = [
   },
   {
   
-    heading: "Robust Security",
+    heading: "Account Validation",
     paragraph:
-      "End-to-end encryption and regulatory compliance for safe processing",
+      "Instant bank account verification via Penny drop method",
   },
- {
-  
-    heading: "Dynamic App Manager",
-    paragraph:
-      "Enables upgrades, feature rollouts, and configuration changes without disruption",
-  },
-   {
+     {
   
     heading: "Web UI with MIS Reports",
     paragraph:
       "Centralized dashboards for real-time analytics and management",
   },
+ {
+  
+    heading: "Bulk Payments",
+    paragraph:
+      "Manage large-scale payment with ease",
+  },
+
 ];
 function KeyCapabilities() {
   return (
@@ -74,16 +75,32 @@ function KeyCapabilities() {
               }}
               className="flex items-center justify-center rounded-[16.5px] sm:rounded-[11.4px]"
             >
-              <div className="text-center bg-[#0B051E] rounded-[16.5px] sm:rounded-[11.4px] lg:pt-[38px] max-[400px]:py-[30px] py-[44px] md:py-[35px] lg:pb-[32px]  h-[calc(100%-2px)] w-[calc(100%-2px)]">
+              <div className="text-center bg-[#0B051E] rounded-[16.5px] sm:rounded-[11.4px] pt-[42px] pb-[45px] lg:pt-[38px] lg:pb-[32px] h-[calc(100%-2px)] w-[calc(100%-2px)]">
                
                 <p className="CompleteSolBoxHeaderGradient   font-semibold text-[20px] md:text-[18px] leading-[24.11px] lg:leading-[22px] px-[15px]">
                   {card.heading}
                 </p>
-              <div className="flex justify-center pt-[10px] lg:pt-[17px]">
+              <div className="flex justify-center pt-[10px] lg:pt-[14px]">
                   <p className={` text-[#9E9C9F] text-[16px] md:text-[14px] font-normal leading-[22px] max-[375px]:px-[20px] px-[30px] md:px-[10px] lg:px-[25px]`}>
                   {card.paragraph}
                 </p>
               </div>
+              {
+  index === cards.length - 1 && (
+  <div className="flex justify-center"> 
+      <div  style={{
+                background:
+                  " linear-gradient(180deg,rgba(79, 49, 180, 1) 6%, rgba(34, 21, 78, 1) 100%)",
+              }}
+              className="flex items-center justify-center rounded-[11.5px] w-[112px] h-[22px] mt-[12px]">
+      <div className="bg-[#0B051E] flex justify-center items-center rounded-[11.5px] h-[calc(100%-2px)] w-[calc(100%-2px)]">
+<p className="text-[#633AEB] text-[12px] font-normal ">Coming soon</p>
+      </div>
+    </div>
+  </div>
+  )
+}
+
               </div>
             </div>
           ))}

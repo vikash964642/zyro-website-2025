@@ -1,6 +1,6 @@
 
 import ChannelIntegrationImg from '/image/IMPSSwitch/ChannelIntegrationImg.svg';
-import ChannelIntegrationMob from '/image/IMPSSwitch/ChannelIntegrationMob.svg';
+import ChannelIntegrationImgMob from '/image/IMPSSwitch/ChannelIntegrationImgMob.svg';
 function ChannelIntegration() {
   return (
       <section className=" mt-[160px] lg:mt-[220px] px-[20px] xl:px-0 relative">
@@ -18,7 +18,7 @@ function ChannelIntegration() {
 
             <div className='mt-[35px] lg:mt-[22px] flex justify-center'>
                 <img src={ChannelIntegrationImg} alt="multilanguage"   className='hidden md:block'/>
-                <img src={ChannelIntegrationMob} alt="multilanguage"   className='sm:w-full md:hidden'/>
+                <img src={ChannelIntegrationImgMob} alt="multilanguage"   className='sm:w-full md:hidden'/>
             </div>
        
          </div>

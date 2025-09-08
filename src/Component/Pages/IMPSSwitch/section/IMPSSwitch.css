@@ -1,5 +1,5 @@
 .IMPSSwitchHeroSectionHeaderGradient{
-    background: linear-gradient(234deg, #FFF 38.94%, #9573DE 72.6%, #FFF 89.42%);
+background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -9,7 +9,7 @@ background-clip: text;
 opacity: 0.75;
 filter: blur(91.38px); 
 position:absolute;
-inset:0% 65% 16% 0%;
+inset:0% 65% 8% 0%;
 z-index:-1;
 }
 
@@ -188,7 +188,8 @@ z-index:-1;
 }
 @media(max-width:1023px){
 .IMPSHeroSectionGradient{
-    border-radius: 266.708px;
+ border-radius: 266.708px;
+opacity: 0.75;
 background: linear-gradient(180deg, rgba(79, 49, 180, 0.86) 0%, rgba(255, 255, 255, 0.00) 100%);
 filter: blur(45.05208206176758px);
 inset:-15% 10% 100% 10%;
@@ -266,6 +267,15 @@ filter: blur(91.38888549804688px);
       inset: 25% 63% 10% 0%;
 }
 .IMPSScaleSecurityGradient2{
+    display:none;
+}
+.BankStartupGradient1{
+    inset: 0% 33% 61% 30%;
+}
+.BankStartupGradient2{
+    inset: 62% 29% 0% 32%;
+}
+.BankStartupGradient3{
     display:none;
 }
 }

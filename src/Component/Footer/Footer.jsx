@@ -66,16 +66,16 @@ function Footer() {
                     Prepaid Card
                   </Link>
                 </li>
-                {/* <li>
-                  <Link to="" onClick={ScrollTop}>
-                    Gift Cards API
+                <li>
+                  <Link to="/upi-stack" onClick={ScrollTop}>
+                    UPI Stack
                   </Link>
-                </li> */}
-                {/* <li>
-                  <Link to="" onClick={ScrollTop}>
-                   Billing & Accounting
+                </li>
+                <li>
+                     <Link to="/imps-switch" onClick={ScrollTop}>
+                   IMPS Switch & BANL
                   </Link>
-                </li> */}
+                </li>
                 {/* <li>
                   <Link to="" onClick={ScrollTop}>
                    UPI Stack
@@ -193,16 +193,16 @@ function Footer() {
                    Prepaid Card
                   </Link>
                 </li>
-                {/* <li>
-                  <Link to="" onClick={ScrollTop}>
-                   Gift Cards API
+                <li>
+                 <Link to="/upi-stack" onClick={ScrollTop}>
+                    UPI Stack
                   </Link>
-                </li> */}
-                {/* <li>
-                  <Link to="" onClick={ScrollTop}>
-                   Billing & Accounting
+                </li>
+                <li>
+                  <Link to="/imps-switch" onClick={ScrollTop}>
+                   IMPS Switch & BANL
                   </Link>
-                </li> */}
+                </li>
                 {/* <li>
                   <Link to="" onClick={ScrollTop}>
                   UPI Stack
@@ -271,7 +271,7 @@ function Footer() {
                 </li> */}
               </ul>
             </div>
-            <div className="pt-[105px] min-[768px]:pt-[100px]">
+            <div className="pt-[154px] min-[768px]:pt-[100px]">
               <p className="text-white90 font-medium text-[16px] leading-[21px]">
                 Resources
               </p>

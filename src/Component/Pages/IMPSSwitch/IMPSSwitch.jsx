@@ -19,8 +19,9 @@ function IMPSSwitch() {
    <IMPSScaleSecurity />
    <ChannelIntegration />
    <BankStartup />
-   <RealTimeBeneficiary />
    <BeneficiaryAccount />
+   <RealTimeBeneficiary />
+   
    <BANLSlider />
    <DigitalPayment />
    </>

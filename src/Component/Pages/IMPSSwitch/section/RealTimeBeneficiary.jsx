@@ -7,13 +7,17 @@ function RealTimeBeneficiary() {
          <div className="max-w-screen-lg lg:mx-auto relative">
              
             
-    <p className='RealTimeBeneficiaryHeaderGradient text-[24px] sm:text-[34px] lg:text-[38px] font-semibold lg:leading-[55px] text-center'>
+<div className='flex justify-center'>
+      <p className='w-[280px] sm:w-full RealTimeBeneficiaryHeaderGradient text-[24px] sm:text-[34px] lg:text-[38px] font-semibold lg:leading-[55px] text-center'>
 Real-Time Beneficiary Name Validation
     </p>
+</div>
 
-      <p className=' text-[16px] font-normal leading-[26px] text-center text-[#9E9C9F] pt-[10px]'>
+<div className='flex justify-center  pt-[10px]'>
+        <p className='w-[320px] sm:w-full text-[16px] font-normal leading-[26px] text-center text-[#9E9C9F]'>
    Build trust & ensure payment accuracy with instant confirmation
     </p>
+</div>
 
 
             <div className='mt-[33px] lg:mt-[30px] flex justify-center'>
