@@ -130,44 +130,46 @@ setOpen3(false)
         </div>
 
         {/* Form */}
-        <div className="md:flex items-center gap-[15px] pt-[30px] md:pt-[45px]">
-          <input
-            type="text"
-            placeholder="Full Name"
-            className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-0"
-          />
-          <input
-            type="text"
-            placeholder="Company Name"
-            className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] md:mt-0"
-          />
-        </div>
-
-        <div className="md:flex items-center gap-[15px] lg:pt-[21px]">
-          <input
-            type="text"
-            placeholder="Email ID"
-            className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
-          />
-          <input
-            type="text"
-            placeholder="Mobile"
-            className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
-          />
-        </div>
-
-        <div className="pt-[20px] lg:pt-[21px]">
-          <textarea
-            placeholder="Query"
-            className="bg-[#ECECEC] rounded-[6px] h-[125px] w-full md:w-[400px]  lg:w-[560px] px-[22px] pt-[17px] text-[16px] text-[#292929] outline-none"
-          />
-        </div>
-
-        <div className="flex justify-center lg:justify-start pt-[50px] md:pt-[35px] ">
-          <button className="bg-[#4F31B4] h-[55px] max-[400px]:w-full w-[290px] rounded-[24.77px] text-[20px] font-semibold text-[#FFF]">
-            Send
-          </button>
-        </div>
+      <form>
+          <div className="md:flex items-center gap-[15px] pt-[30px] md:pt-[45px]">
+            <input
+              type="text"
+              placeholder="Full Name"
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-0"
+            />
+            <input
+              type="text"
+              placeholder="Company Name"
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] md:mt-0"
+            />
+          </div>
+        
+          <div className="md:flex items-center gap-[15px] lg:pt-[21px]">
+            <input
+              type="text"
+              placeholder="Email ID"
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
+            />
+            <input
+              type="text"
+              placeholder="Mobile"
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
+            />
+          </div>
+        
+          <div className="pt-[20px] lg:pt-[21px]">
+            <textarea
+              placeholder="Query"
+              className="bg-[#ECECEC] rounded-[6px] h-[125px] w-full md:w-[400px]  lg:w-[560px] px-[22px] pt-[17px] text-[16px] text-[#292929] outline-none"
+            />
+          </div>
+        
+          <div className="flex justify-center lg:justify-start pt-[50px] md:pt-[35px] ">
+            <button className="bg-[#4F31B4] h-[55px] max-[400px]:w-full w-[290px] rounded-[24.77px] text-[20px] font-semibold text-[#FFF]">
+              Send
+            </button>
+          </div>
+      </form>
       </div>
   </div>
     </motion.div>
@@ -201,44 +203,46 @@ setOpen3(false)
         </div>
 
         {/* Form */}
-        <div className="md:flex items-center gap-[15px] pt-[30px] md:pt-[45px]">
-          <input
-            type="text"
-            placeholder="Full Name"
-            className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-0"
-          />
-          <input
-            type="text"
-            placeholder="Company Name"
-            className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] md:mt-0"
-          />
-        </div>
-
-        <div className="md:flex items-center gap-[15px] lg:pt-[21px]">
-          <input
-            type="text"
-            placeholder="Email ID"
-            className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
-          />
-          <input
-            type="text"
-            placeholder="Mobile"
-            className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
-          />
-        </div>
-
-        <div className="pt-[20px] lg:pt-[21px]">
-          <textarea
-            placeholder="Query"
-            className="bg-[#ECECEC] rounded-[6px] h-[125px] w-full md:w-[400px]  lg:w-[560px] px-[22px] pt-[17px] text-[16px] text-[#292929] outline-none"
-          />
-        </div>
-
-        <div className="flex justify-center lg:justify-start pt-[50px] md:pt-[35px] ">
-          <button className="bg-[#4F31B4] h-[55px] max-[400px]:w-full w-[290px] rounded-[24.77px] text-[20px] font-semibold text-[#FFF]">
-            Send
-          </button>
-        </div>
+       <form>
+         <div className="md:flex items-center gap-[15px] pt-[30px] md:pt-[45px]">
+           <input
+             type="text"
+             placeholder="Full Name"
+             className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-0"
+           />
+           <input
+             type="text"
+             placeholder="Company Name"
+             className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] md:mt-0"
+           />
+         </div>
+        
+         <div className="md:flex items-center gap-[15px] lg:pt-[21px]">
+           <input
+             type="text"
+             placeholder="Email ID"
+             className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
+           />
+           <input
+             type="text"
+             placeholder="Mobile"
+             className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
+           />
+         </div>
+        
+         <div className="pt-[20px] lg:pt-[21px]">
+           <textarea
+             placeholder="Query"
+             className="bg-[#ECECEC] rounded-[6px] h-[125px] w-full md:w-[400px]  lg:w-[560px] px-[22px] pt-[17px] text-[16px] text-[#292929] outline-none"
+           />
+         </div>
+        
+         <div className="flex justify-center lg:justify-start pt-[50px] md:pt-[35px] ">
+           <button className="bg-[#4F31B4] h-[55px] max-[400px]:w-full w-[290px] rounded-[24.77px] text-[20px] font-semibold text-[#FFF]">
+             Send
+           </button>
+         </div>
+       </form>
       </div>
 </div>
     </motion.div>

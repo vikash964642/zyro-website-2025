@@ -23,8 +23,8 @@ const Navbar = () => {
   }
 
   return (
-    <>
-      <nav className="lg:bg-white bg-[#D9D9D9] sticky top-0 z-50">
+    <section className="lg:bg-white bg-[#D9D9D9] sticky top-0 z-50">
+      <nav className=" max-w-screen-lg mx-auto">
         <div className="h-[74px] lg:h-[70px] lg:pl-[51px] px-[25px] lg:px-0 flex items-center font-medium justify-between lg:border-b  ">
           <div className="flex justify-between z-50  lg:w-auto w-full ">
             <img src={Logo} alt="logo" className="lg:cursor-pointer h-9 custom-style" onClick={handleClickHome}/>
@@ -90,7 +90,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-    </>
+    </section>
   );
 };
 
