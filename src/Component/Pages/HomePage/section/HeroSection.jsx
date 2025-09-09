@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-
+import { useNavigate } from "react-router-dom";
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -58,10 +58,18 @@ const slides = [
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
 
   const ScrollTop = () => {
+     
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+   const handleLinkClick = (pageName) => {
+      ScrollTop();
+    navigate("/contact-us", { state: { pageName } }); 
+  
+  };
+
   return (
     <>
  
@@ -144,13 +152,23 @@ export default function HeroSection() {
 
                 <div className="flex gap-[20px] lg:gap-[35px] items-center mt-[35px] flex-col lg:flex-row">
                   {index !== 1 ? (
-                    <Link to='/contact-us' onClick={ScrollTop} className="bg-[#4F31B4] rounded-[24.77px] h-[45px] w-[148px] text-[#FFF] text-[18px] font-semibold flex justify-center items-center">
+                    <button   onClick={() =>
+    handleLinkClick(
+      index === 0
+        ? "Pos"
+        : index === 2
+        ? "Control Expense"
+        : index === 3
+        ? "Connected Banking"
+        : "Other"
+    )
+  } className="bg-[#4F31B4] rounded-[24.77px] h-[45px] w-[148px] text-[#FFF] text-[18px] font-semibold flex justify-center items-center">
                       Get Started
-                    </Link>
+                    </button>
                   ) : (
-                    <Link to='/contact-us' onClick={ScrollTop} className="bg-[#4F31B4] rounded-[24.77px] h-[48px] w-[218px] text-[#FFF] text-[20px] font-semibold flex justify-center items-center">
+                    <button  onClick={() => handleLinkClick("SoundBoxs")} className="bg-[#4F31B4] rounded-[24.77px] h-[48px] w-[218px] text-[#FFF] text-[20px] font-semibold flex justify-center items-center">
                       Get Your Speaker
-                    </Link>
+                    </button>
                   )}
 
                   <Link
@@ -273,11 +291,22 @@ export default function HeroSection() {
 
               {/* Button */}
               <div className="flex justify-center ">
-                <Link to='/contact-us' onClick={ScrollTop}
+                <button onClick={() =>
+    handleLinkClick(
+      index === 0 ? "Pos"
+        : 
+        index === 1 ? "SoundBox"
+        : 
+        index === 2 ? "Expense Management"
+        : 
+        index === 3 ? "Connected Banking "
+         : "Other"
+    )
+  }
                   className="bg-[#4F31B4] max-[375px]:w-[100%] w-[325px] h-[50px] rounded-[30px] text-[20px] text-[#FFF] font-medium flex justify-center items-center"
                 >
                   {index === 1 ? "Get Your Speaker" : "Get Started"}
-                </Link>
+                </button>
               </div>
 
               {/* Link */}
