@@ -29,14 +29,18 @@ function Footer() {
               control over your finances.
             </p>
             <div className="flex gap-3">
-              <img
-                src={GooglePlay}
-                className="hidden lg:block mt-[30px] cursor-pointer"
-              ></img>
-              <img
-                src={AppStore}
-                className="hidden lg:block mt-[30px] cursor-pointer"
-              ></img>
+              <a href="https://play.google.com/store/apps/details?id=com.ZYRO" target="_blank">
+                <img
+                  src={GooglePlay}
+                  className="hidden lg:block mt-[30px] cursor-pointer"
+                ></img>
+              </a>
+              <a href='https://apps.apple.com/in/app/zyro/id6743227331' target="_blank">
+                <img
+                  src={AppStore}
+                  className="hidden lg:block mt-[30px] cursor-pointer"
+                ></img>
+              </a>
             </div>
           </div>
 
@@ -337,8 +341,14 @@ function Footer() {
     </div>
         <div className="mt-[30px] flex lg:hidden  justify-start min-[425px]:justify-center flex-wrap max-[375px]:flex-col max-[375px]:gap-[20px] gap-[30px]">
           <div className="flex max-[375px]:justify-between max-[350px]:gap-1  min-[375px]:gap-5">
-            <img src={GooglePlay}></img>
-            <img src={AppStore}></img>
+            <a href="https://play.google.com/store/apps/details?id=com.ZYRO" target="_blank">
+              <img src={GooglePlay}></img>
+            </a>
+          
+            <a href='https://apps.apple.com/in/app/zyro/id6743227331' target="_blank">
+               <img src={AppStore}></img>
+           
+           </a>
           </div>
           <div className="flex items-center gap-[20px]">
             <NavLink to="https://www.facebook.com/zyrobank/?ti=as" target="_blank">
