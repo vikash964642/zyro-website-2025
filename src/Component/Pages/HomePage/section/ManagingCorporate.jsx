@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
-import ManageingCorporate from '/image/HomePage/managing-corporate.png';
+// import ManageingCorporate from '/image/HomePage/managing-corporate.png';
+import ManageingCorporate from '/image/ExpenseManagement/ExpenseHero.webp'
 import './HomePageCss.css'
 import KnowMoreRightIcon from '/image/HomePage/Icon/KnowMoreRightIcon.svg'
 function ManagingCorporate() {
@@ -12,7 +13,7 @@ function ManagingCorporate() {
 
 
             <div className='lg:flex justify-between items-center relative'>
-                <div className='lg:w-[50%]'>
+                <div className='lg:w-[50%] sm:px-[70px] md:px-[100px] lg:px-0'>
                     <h2 className="font-medium text-[#FFF]  max-[400px]:text-[26px] text-[28px] lg:text-[36px] max-[375px]:leading-[38px] leading-[44px] lg:leading-[55px] text-center lg:text-left lg:pr-[12px]">Managing <span className='ManagerCorporateHeaderGradient lg:text-[38px] font-semibold'>Corporate Card and Expense Made Easy with Zyro</span></h2>
                     <p className="text-white80 lg:text-[#9E9C9F] text-[14px] lg:text-[20px] font-normal leading-[20px] lg:leading-[33.6px] mt-[18px] align-middle text-center lg:text-left ">Say goodbye to spreadsheets, delays, reimbursements, and manual entries. Zyro makes it simple to track and manage your corporate card spending and expense automatically, accurately, and in real time.</p>
                     <div className='flex justify-center lg:justify-start mt-[39px]'>
@@ -22,7 +23,7 @@ function ManagingCorporate() {
                 </div>
                 <div className='lg:w-[50%] flex justify-center lg:justify-end mt-[80px] lg:mt-0'>
                         <div className="ManagingCorporate-gradient"></div>
-                    <img src={ManageingCorporate} alt="" />
+                    <img src={ManageingCorporate} alt="" className='sm:w-[380px] sm::h-[260px]'/>
                   
                 </div>
             </div>

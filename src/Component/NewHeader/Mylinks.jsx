@@ -12,6 +12,7 @@ export const links = [
         { name: 'Expense Management', link: "/expense-management-tracking-software", img: "expenseManagementIcon" },
         // { name: 'Billing & Accounting', link: "", img: "billingAccountingIcon"  },
         { name: 'Prepaid Card', link: "/prepaid-cards", img: "prepaidCard"  }, 
+           { name: 'IMPS Switch & BANL', link: "/imps-switch", img: "prepaidCard"  }, 
     ],
  },
 
