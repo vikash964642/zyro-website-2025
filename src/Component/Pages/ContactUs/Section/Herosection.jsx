@@ -71,9 +71,9 @@ const validate = (name, value) => {
     case "fullName":
       if (!value.trim()) return "Full Name is required";
       break;
-    case "companyName":
-      if (!value.trim()) return "Company Name is required";
-      break;
+    // case "companyName":
+    //   if (!value.trim()) return "Company Name is required";
+    //   break;
     case "email":
       if (!value) return "Email is required";
       if (!/\S+@\S+\.\S+/.test(value)) return "Enter a valid email";
@@ -82,9 +82,9 @@ const validate = (name, value) => {
       if (!value) return "Mobile number is required";
       if (!/^\d{10}$/.test(value)) return "Enter a valid 10-digit mobile number";
       break;
-    case "query":
-      if (!value.trim()) return "Please enter your query";
-      break;
+    // case "query":
+    //   if (!value.trim()) return "Please enter your query";
+    //   break;
     default:
       return "";
   }
@@ -159,6 +159,7 @@ const handleSubmit = async (e) => {
         });
          setErrors({});
          alert(response.data.message);
+         console.log(formData);
       } 
       else {
         alert("Something went wrong, please try again");
@@ -269,58 +270,58 @@ const handleSubmit = async (e) => {
 
         {/* Form */}
       <form onSubmit={handleSubmit}>
-          <div className="md:flex items-center gap-[15px] pt-[30px] md:pt-[45px]">
-           <div>
+          <div className="sm:flex  gap-[15px] pt-[30px] md:pt-[45px]">
+           <div className=" w-full sm:w-[50%]  lg:w-[375px]">
              <input
               type="text"
               name="fullName"
               placeholder="Full Name" value={formData.fullName}
             onChange={handleChange}
-              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-0"
+              className="bg-[#ECECEC] rounded-[6px] h-[55px]  w-full px-[22px] text-[16px] text-[#292929] outline-none mt-0"
             />
              {errors.fullName && (
             <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>
           )}
            </div>
             
-           <div>
+           <div className=" w-full sm:w-[50%]  lg:w-[375px] mt-[20px] sm:mt-0">
              <input
               type="text"
               placeholder="Company Name" 
                name="companyName"
             value={formData.companyName}
             onChange={handleChange}
-              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] md:mt-0"
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full px-[22px] text-[16px] text-[#292929] outline-none "
             />
-             {errors.companyName && (
+             {/* {errors.companyName && (
             <p className="text-red-500 text-sm mt-1">{errors.companyName}</p>
-          )}
+          )} */}
            </div>
             
           </div>
         
-          <div className="md:flex items-center gap-[15px] lg:pt-[21px]">
-           <div>
+          <div className="sm:flex  gap-[15px] sm:mt-[21px]">
+           <div className=" w-full sm:w-[50%]  lg:w-[375px] mt-[20px] sm:mt-0">
              <input
               type="text"
                  name="email"
               placeholder="Email ID" value={formData.email}
             onChange={handleChange}
-              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full px-[22px] text-[16px] text-[#292929] outline-none "
             />
              {errors.email && (
             <p className="text-red-500 text-sm mt-1">{errors.email}</p>
           )}
            </div>
             
-           <div>
+           <div className=" w-full sm:w-[50%]  lg:w-[375px] mt-[20px] sm:mt-0">
              <input
               type="text"
               placeholder="Mobile"  
                name="mobile"
               value={formData.mobile}
             onChange={handleChange}
-              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full px-[22px] text-[16px] text-[#292929] outline-none "
             />
             {errors.mobile && (
             <p className="text-red-500 text-sm mt-1">{errors.mobile}</p>
@@ -329,17 +330,17 @@ const handleSubmit = async (e) => {
             
           </div>
         
-          <div className="pt-[20px] lg:pt-[21px]">
+          <div className="mt-[20px] lg:mt-[21px]">
             <textarea
               placeholder="Query"  
                  name="query"
               value={formData.query}
           onChange={handleChange}
-              className="bg-[#ECECEC] rounded-[6px] h-[125px] w-full md:w-[400px]  lg:w-[560px] px-[22px] pt-[17px] text-[16px] text-[#292929] outline-none"
+              className="bg-[#ECECEC] rounded-[6px] h-[125px] w-full sm:w-[400px]  lg:w-[560px] px-[22px] pt-[17px] text-[16px] text-[#292929] outline-none"
             />
-             {errors.query && (
+             {/* {errors.query && (
           <p className="text-red-500 text-sm mt-1">{errors.query}</p>
-        )}
+        )} */}
           </div>
         
           <div className="flex justify-center lg:justify-start pt-[50px] md:pt-[35px] ">
@@ -382,58 +383,58 @@ const handleSubmit = async (e) => {
 
         {/* Form */}
       <form onSubmit={handleSubmit}>
-          <div className="md:flex items-center gap-[15px] pt-[30px] md:pt-[45px]">
-           <div>
+          <div className="sm:flex  gap-[15px] pt-[30px] md:pt-[45px]">
+           <div className=" w-full sm:w-[50%]  lg:w-[375px]">
              <input
               type="text"
               name="fullName"
               placeholder="Full Name" value={formData.fullName}
             onChange={handleChange}
-              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-0"
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full  px-[22px] text-[16px] text-[#292929] outline-none mt-0"
             />
              {errors.fullName && (
             <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>
           )}
            </div>
             
-           <div>
+           <div className=" w-full sm:w-[50%]  lg:w-[375px] mt-[20px] sm:mt-0">
              <input
               type="text"
               placeholder="Company Name" 
                name="companyName"
             value={formData.companyName}
             onChange={handleChange}
-              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] md:mt-0"
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full px-[22px] text-[16px] text-[#292929] outline-none "
             />
-             {errors.companyName && (
+             {/* {errors.companyName && (
             <p className="text-red-500 text-sm mt-1">{errors.companyName}</p>
-          )}
+          )} */}
            </div>
             
           </div>
         
-          <div className="md:flex items-center gap-[15px] lg:pt-[21px]">
-           <div>
+          <div className="sm:flex items-center gap-[15px] sm:pt-[21px]">
+           <div className=" w-full sm:w-[50%]  lg:w-[375px] mt-[20px] sm:mt-0">
              <input
               type="text"
                  name="email"
               placeholder="Email ID" value={formData.email}
             onChange={handleChange}
-              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full px-[22px] text-[16px] text-[#292929] outline-none "
             />
              {errors.email && (
             <p className="text-red-500 text-sm mt-1">{errors.email}</p>
           )}
            </div>
             
-           <div>
+           <div className=" w-full sm:w-[50%]  lg:w-[375px] mt-[20px] sm:mt-0">
              <input
               type="text"
               placeholder="Mobile"  
                name="mobile"
               value={formData.mobile}
             onChange={handleChange}
-              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full px-[22px] text-[16px] text-[#292929] outline-none "
             />
             {errors.mobile && (
             <p className="text-red-500 text-sm mt-1">{errors.mobile}</p>
@@ -442,17 +443,17 @@ const handleSubmit = async (e) => {
             
           </div>
         
-          <div className="pt-[20px] lg:pt-[21px]">
+          <div className="pt-[20px] sm:pt-[21px]">
             <textarea
               placeholder="Query"  
                  name="query"
               value={formData.query}
           onChange={handleChange}
-              className="bg-[#ECECEC] rounded-[6px] h-[125px] w-full md:w-[400px]  lg:w-[560px] px-[22px] pt-[17px] text-[16px] text-[#292929] outline-none"
+              className="bg-[#ECECEC] rounded-[6px] h-[125px] w-full sm:w-[400px]  lg:w-[560px] px-[22px] pt-[17px] text-[16px] text-[#292929] outline-none"
             />
-             {errors.query && (
+             {/* {errors.query && (
           <p className="text-red-500 text-sm mt-1">{errors.query}</p>
-        )}
+        )} */}
           </div>
         
           <div className="flex justify-center lg:justify-start pt-[50px] md:pt-[35px] ">

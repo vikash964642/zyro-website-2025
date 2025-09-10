@@ -174,7 +174,16 @@ opacity: 0.75;
 background: linear-gradient(180deg, rgba(64, 28, 139, 0.59) 0%, rgba(255, 255, 255, 0.00) 100%);
 filter: blur(91.38888549804688px);
 position:absolute;
-inset:-33% 4% 16% 12%;
+inset:-33% 0% 16% 12%;
+z-index:-1;
+}
+.BankDetailsTopGradient{
+
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(64, 28, 139, 0.59) 0%, rgba(255, 255, 255, 0.00) 100%);
+filter: blur(91.38888549804688px);
+position:absolute;
+inset:-33% 58% 70% -10%;
 z-index:-1;
 }
 .connectedBankingCardGradient1{
@@ -258,6 +267,14 @@ filter: blur(100px);
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+}
+.BusinessScrollerGradient1{
+border-radius: 266.977px;
+opacity: 0.2;
+background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) 0%, rgba(141, 49, 245, 0.72) 100%, rgba(255, 255, 255, 0.72) 100%);
+filter: blur(58.3769645690918px);
+position:absolute;
+inset:-7% 30% 64% 30%;
 }
 .ConnectedHeroSecGradient1{
   border-radius: 266.708px;

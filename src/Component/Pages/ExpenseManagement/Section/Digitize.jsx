@@ -1,10 +1,17 @@
-import { Link } from "react-router-dom";
+
 import arrowRight from "/image/ConnectedBanking/arrowRight.svg";
 import digitalizebusiness from "/image/ExpenseManagement/digitalizebusiness.webp";
+import { useNavigate } from "react-router-dom";
 
 function Digitize() {
+    const navigate = useNavigate();
    const ScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+     const handleLinkClick = (pageName) => {
+        ScrollTop();
+    navigate("/contact-us", { state: { pageName } }); 
+  
   };
   return (
     <section className="">
@@ -18,7 +25,7 @@ function Digitize() {
             </h2>
           
 
-          <Link to='/contact-us' onClick={ScrollTop} className="relative  mt-[40px] cursor-pointer z-20">
+          <button onClick={() => handleLinkClick("Expense Management")} className="relative  mt-[40px] cursor-pointer z-20">
             <div className=" w-[199px] h-[52px] bg-[#4F31B4] rounded-[44px] flex justify-center items-center">
               <p className="text-[16px] font-semibold text-[#FFF]">
                 Get Started Today
@@ -27,7 +34,7 @@ function Digitize() {
             <div className="h-[52px] w-[52px] bg-[#FBF9F1] rounded-[50%] absolute top-0 left-[176px] flex justify-center items-center">
               <img src={arrowRight} />
             </div>
-          </Link>
+          </button>
           <div className="absolute DizitizebusinessGradient-left "></div>
         </div>
         <div className="flex items-end justify-center lg:justify-start">

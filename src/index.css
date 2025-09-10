@@ -108,4 +108,28 @@ opacity: 0.75;
 background: linear-gradient(180deg, rgba(79, 49, 180, 0.65) 0%, rgba(255, 255, 255, 0.00) 100%);
 filter: blur(100px);
   inset:0% 0% 38% 48%;
+  z-index:-1;
+}
+
+.FooterGradient1{
+  border-radius: 686px;
+opacity: 0.2;
+background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) 0%, #8D31F5 100%, #FFF 100%);
+filter: blur(150px);
+position:absolute;
+inset:-5% 23% 0% 24%;
+z-index:-1;
+}
+
+@media(max-width:1023px){
+  .FooterGradient1{
+    border-radius: 192px;
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(79, 49, 180, 0.65) 0%, rgba(255, 255, 255, 0.00) 100%);
+filter: blur(100px);
+position:absolute;
+inset:9% 0% 55% 55%;
+z-index:-1;
+
+  }
 }
