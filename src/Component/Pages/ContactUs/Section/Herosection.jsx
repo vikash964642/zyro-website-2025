@@ -269,6 +269,7 @@ const handleSubmit = async (e) => {
         </div>
 
         {/* Form */}
+
       <form onSubmit={handleSubmit}>
           <div className="sm:flex  gap-[15px] pt-[30px] md:pt-[45px]">
            <div className=" w-full sm:w-[50%]  lg:w-[375px]">
@@ -341,6 +342,7 @@ const handleSubmit = async (e) => {
              {/* {errors.query && (
           <p className="text-red-500 text-sm mt-1">{errors.query}</p>
         )} */}
+
           </div>
         
           <div className="flex justify-center lg:justify-start pt-[50px] md:pt-[35px] ">
@@ -382,6 +384,7 @@ const handleSubmit = async (e) => {
         </div>
 
         {/* Form */}
+
       <form onSubmit={handleSubmit}>
           <div className="sm:flex  gap-[15px] pt-[30px] md:pt-[45px]">
            <div className=" w-full sm:w-[50%]  lg:w-[375px]">
@@ -462,6 +465,7 @@ const handleSubmit = async (e) => {
             </button>
           </div>
       </form>
+
       </div>
 </div>
     </motion.div>

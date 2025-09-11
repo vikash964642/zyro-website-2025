@@ -3,7 +3,6 @@
 import canara from '/image/HomePage/Icon/canaraIcon.jpg'
 import idfcIcon from '/image/HomePage/Icon/idfcIcon.jpg'
 import yesIcon from '/image/HomePage/Icon/yesIcon.jpg'
-import rblicon from '/image/HomePage/Icon/rblicon.jpg'
 import au from '/image/HomePage/Icon/au.svg'
 import fino from '/image/HomePage/Icon/fino.svg'
 import npci from '/image/HomePage/Icon/npci.svg'
@@ -12,7 +11,6 @@ function Scroller() {
 
     yesIcon,
     idfcIcon,
-    rblicon,
     au,
     fino,
     canara,

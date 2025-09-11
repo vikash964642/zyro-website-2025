@@ -3,7 +3,6 @@ import {Link} from "react-router-dom";
 import collab2 from "/image/HomePage/Icon/auconnected.svg";
 import collab3 from "/image/HomePage/Icon/canara.svg";
 import collab4 from "/image/HomePage/Icon/idfc.svg";
-import collab5 from "/image/HomePage/Icon/rbl.svg";
 import collab6 from "/image/HomePage/Icon/yesbank.svg";
 import zyroLogo from "/image/zyro-logo.svg";
 import partnership from "/image/HomePage/partners.png";
@@ -14,7 +13,7 @@ import KnowMoreRightIcon from '/image/HomePage/Icon/KnowMoreRightIcon.svg'
 export default function ConnectedBanking() {
   const [currImg, setCurrImg] = useState(0);
 
-  const collaborators = [ collab2, collab3, collab4, collab5, collab6];
+  const collaborators = [ collab2, collab3, collab4, collab6];
 
   useEffect(() => {
     const interval = setInterval(() => {
