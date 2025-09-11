@@ -10,7 +10,7 @@ import yesMove from "/image/ConnectedBanking/yesMove.svg";
 // import rblMove from "/image/ConnectedBanking/rblMove.svg";
 import zyrologo from "/image/zyro-logo.svg";
 import "./ConnectedBankingCss.css"; 
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function HeroSection() {
   useEffect(() => {
@@ -69,18 +69,23 @@ function HeroSection() {
       window.removeEventListener("resize", positionLogos);
     };
   }, []);
-
+  const navigate = useNavigate();
    const ScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+     const handleLinkClick = (pageName) => {
+        ScrollTop();
+    navigate("/contact-us", { state: { pageName } }); 
+  
+  };
   return (
-    <section className="lg:mt-[112px] mt-[50px]">
+    <section className="lg:px-6 lg:mt-[112px] mt-[50px]">
       <div className="max-w-screen-lg mx-auto relative">
         <div className="ConnectedHeroSecGradient1"></div>
 
         <div className="flex flex-col-reverse lg:flex-row items-center">
           {/* Left content */}
-          <div className="lg:w-[55%] w-full lg:px-6">
+          <div className="lg:w-[55%] w-full ">
             <h1 className="hidden lg:block">
               <span className="ConnectedHeroHeaderGradient lg:text-[42px] lg:font-semibold">
                 Connected Banking
@@ -102,9 +107,9 @@ function HeroSection() {
             </div>
 
             <div className="flex gap-[20px] lg:gap-[35px] items-center mt-[50px] lg:mt-[53px] flex-col lg:flex-row max-[375px]:px-[20px]">
-              <Link to='/contact-us' onClick={ScrollTop} className="bg-[#4F31B4] rounded-[24px] h-[44px]  max-[375px]:w-[100%] w-[325px] lg:w-[148px] text-[#FFF] text-[18px] font-semibold flex justify-center items-center">
+              <button onClick={() => handleLinkClick("Connected Banking")} className="bg-[#4F31B4] rounded-[24px] h-[44px]  max-[375px]:w-[100%] w-[325px] lg:w-[148px] text-[#FFF] text-[18px] font-semibold flex justify-center items-center">
                 Get Started
-              </Link>
+              </button>
             </div>
           </div>
 

@@ -1,11 +1,17 @@
 import arrowRight from '/image/ConnectedBanking/arrowRight.svg';
 import weHelp from "/image/UPIStack/weHelp.webp"
 import weHelpMob from "/image/UPIStack/weHelpMob.webp"
-import {Link} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function Wehelp(){
+   const navigate = useNavigate();
      const ScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+     const handleLinkClick = (pageName) => {
+        ScrollTop();
+    navigate("/contact-us", { state: { pageName } }); 
+  
   };
     return(
             <section className="max-w-screen-lg mx-auto mt-[125px] lg:mt-[197px] ">
@@ -15,7 +21,7 @@ function Wehelp(){
                      <div>
                        <h2 className='max-[360px]:text-[22px] text-[26px] lg:text-[48px] font-semibold text-center lg:text-left text-white90 px-[25px] lg:px-0'>We Help You Succeed in Every Transaction</h2>
                    </div>
-           <Link to='/contact-us' onClick={ScrollTop}>
+           <button onClick={() => handleLinkClick("UPI Stack Page")}>
                       <div className='relative  mt-[40px] cursor-pointer z-20' >
                        <div className=' w-[180px] h-[50px] bg-[#4F31B4] rounded-[44px] flex justify-center items-center'>
                            <p className='text-[16px] font-semibold text-[#FFF]'>Contact Us</p>
@@ -24,7 +30,7 @@ function Wehelp(){
                            <img src={arrowRight}/>
                        </div>
                    </div>
-            </Link>
+            </button>
                  </div>
            <div className='flex items-end justify-center lg:justify-start lg:w-[44%] relative  '>
                 <img src={weHelp} className=' lg:absolute hidden lg:block z-[15]'/>

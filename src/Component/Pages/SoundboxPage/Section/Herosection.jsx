@@ -2,7 +2,7 @@
 // import languageSoundbox from '/image/soundbox/soundboxnew.svg';
 // import Rotatepart from "/image/soundbox/rotatePart.png";
 import { useEffect } from "react";
-import {Link} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 import { gsap } from "gsap";
 
 import soundBox1212 from "/image/soundbox/soundbox12121.webp";
@@ -73,9 +73,14 @@ function Herosection() {
       window.removeEventListener("resize", positionLogos);
     };
   }, []);
-
+ const navigate = useNavigate();
    const ScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+     const handleLinkClick = (pageName) => {
+        ScrollTop();
+    navigate("/contact-us", { state: { pageName } }); 
+  
   };
   return (
     <section className="">
@@ -90,9 +95,9 @@ function Herosection() {
               The Smart Way to Accept Payments with Instant Voice Alerts
             </p>
             <div className="text-center lg:text-left mt-[39px] hidden lg:block">
-              <Link to='/contact-us' onClick={ScrollTop} className="text-white w-[224px] h-[46px] bg-[#4F31B4] rounded-[24.77px] text-[18px] font-medium text-center flex justify-center items-center">
+              <button onClick={() => handleLinkClick("SoundBox")} className="text-white w-[224px] h-[46px] bg-[#4F31B4] rounded-[24.77px] text-[18px] font-medium text-center flex justify-center items-center">
                 Get Your Speaker
-              </Link>
+              </button>
             </div>
           </div>
           <div className="flex justify-center items-center lg:w-[50%] px-[30px] lg:px-[0px] ">
@@ -122,9 +127,9 @@ function Herosection() {
           </p>
        </div>
           <div className="flex justify-center mt-[39px] lg:hidden ">
-            <Link to='/contact-us' onClick={ScrollTop} className="text-white w-[224px] h-[46px] bg-[#4F31B4] rounded-[24.77px] text-[18px] font-medium text-center flex justify-center items-center">
+            <button onClick={() => handleLinkClick("SoundBox")} className="text-white w-[224px] h-[46px] bg-[#4F31B4] rounded-[24.77px] text-[18px] font-medium text-center flex justify-center items-center">
               Get Your Speaker
-            </Link>
+            </button>
           </div>
         </div>
       </div>

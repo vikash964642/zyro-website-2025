@@ -1,9 +1,15 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import arrowRight from '/image/ConnectedBanking/arrowRight.svg';
 import BusinessBankingImg from '/image/Pos/BusinessBanking.webp';
 function BusinessBanking() {
+   const navigate = useNavigate();
  const ScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+     const handleLinkClick = (pageName) => {
+        ScrollTop();
+    navigate("/contact-us", { state: { pageName } }); 
+  
   };
   return (
   <section className="max-w-screen-lg lg:mx-auto mt-[100px]">
@@ -15,14 +21,14 @@ function BusinessBanking() {
             <p className='max-[360px]:text-[12px] text-[14px] lg:text-[16px] font-normal text-center lg:text-left text-white70 pt-[10px]'>Join the future of payments with Zyro POS.</p>
         </div>
 
-           <Link to='/contact-us' className='relative  mt-[40px] cursor-pointer z-20' onClick={ScrollTop}>
+           <button onClick={() => handleLinkClick("Pos Page")} className='relative  mt-[40px] cursor-pointer z-20' >
             <div className=' w-[180px] h-[50px] bg-[#4F31B4] rounded-[44px] flex justify-center items-center'>
                 <p className='text-[16px] font-semibold text-[#FFF]'>Contact Sales</p>
             </div>
             <div className='h-[50px] w-[50px] bg-[#FBF9F1] rounded-[50%] absolute top-0 left-[158px] flex justify-center items-center'>
                 <img src={arrowRight}/>
             </div>
-        </Link>
+        </button>
  
       </div>
 <div className='flex items-end justify-center lg:justify-start lg:w-[35%] relative'>

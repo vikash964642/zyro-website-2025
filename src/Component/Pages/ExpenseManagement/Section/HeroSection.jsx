@@ -1,11 +1,17 @@
 
 import ExpenseHero from '/image/ExpenseManagement/ExpenseHero.webp';
 import './Expense.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function HeroSection() {
+    const navigate = useNavigate();
    const ScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+     const handleLinkClick = (pageName) => {
+        ScrollTop();
+    navigate("/contact-us", { state: { pageName } }); 
+  
   };
   return (
     <section className='lg:mt-[134px] mt-[50px]'>
@@ -20,7 +26,7 @@ function HeroSection() {
                        <p className=" max-[360px]:px-[15px] max-[360px]:w-full w-[334px] sm:w-[550px] lg:w-full text-heroDesc  text-[16px] lg:text-[20px] font-normal leading-[30px]   text-center lg:text-left lg:pr-[40px]">Simplify expense tracking, card & finance management, reimbursements, and policy compliance, all in one smart solution built for growing businesses</p>
                      </div>
                       <div className='hidden lg:flex  lg:justify-start  mt-[45px] '>
-                            <Link to='/contact-us' onClick={ScrollTop} className="text-white w-[224px] h-[46px] bg-[#4F31B4] rounded-[24.77px] text-[18px] font-semibold flex justify-center items-center">Get Started</Link>
+                            <button onClick={() => handleLinkClick("Expense Management")} className="text-white w-[224px] h-[46px] bg-[#4F31B4] rounded-[24.77px] text-[18px] font-semibold flex justify-center items-center">Get Started</button>
       
                       </div>
                   </div>
@@ -28,7 +34,7 @@ function HeroSection() {
                       <img src={ExpenseHero} alt="" className='sm:w-[484px] sm:h-[331px] lg:w-auto lg:h-auto'/>
                   </div>
                    <div className='flex justify-center mt-[39px] max-[360px]:px-[20px] lg:hidden '>
-                            <Link to='/contact-us' onClick={ScrollTop} className="text-white  max-[360px]:w-full w-[325px] h-[55px] bg-[#4F31B4] rounded-[24.77px] text-[22px] font-semibold flex justify-center items-center">Get Started</Link>
+                            <button onClick={() => handleLinkClick("Expense Management")} className="text-white  max-[360px]:w-full w-[325px] h-[55px] bg-[#4F31B4] rounded-[24.77px] text-[22px] font-semibold flex justify-center items-center">Get Started</button>
       
                       </div>
               </div>

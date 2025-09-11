@@ -93,7 +93,9 @@ function BankDetails() {
     onSwipedRight: handlePrev,
   });
   return (
-    <section className="max-w-screen-lg lg:mx-auto lg:px-[40px] mt-[120px] lg:mt-[200px]">
+ <section className='lg:px-[40px] mt-[120px] lg:mt-[220px]'>
+     <div className="max-w-screen-lg lg:mx-auto relative">
+      <div className='BankDetailsTopGradient'></div>
       <h3 className="BankDetailsHeaderGradient max-[375px]:text-[24px] text-[28px] lg:text-[32px] text-center lg:text-left font-semibold mb-[20px] lg:mb-[24px] px-[30px] lg:px-0">
         Make Bulk Transfers in Three Easy Steps
       </h3>
@@ -206,7 +208,8 @@ function BankDetails() {
           </button>
         </div>
       </div>
-    </section>
+    </div>
+ </section>
   );
 }
 

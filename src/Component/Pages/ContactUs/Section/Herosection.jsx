@@ -5,23 +5,36 @@ import ContactFormImg3 from '/image/contact/ContactFormImg3.svg';
 import arrowImg from '/image/contact/arrow.svg';
 import "./contact.css";
 import { motion, AnimatePresence } from "framer-motion";
+import axios from "axios";
+import { useLocation } from "react-router-dom";
+
+
 function Herosection() {
   
   const [isOpen1,setOpen1]=useState(false);
     const [isOpen2,setOpen2]=useState(false);
        const [isOpen3,setOpen3]=useState(false);
+         const [supportType, setSupportType] = useState("Customer Support");
+   const location = useLocation();
   const handleClickOpen1=()=>{
 setOpen1(true);
+ setSupportType("Customer Support");
+ setFormData(prev => ({ ...prev, supportType: "Customer Support" }));
+
   }
     const handleClickClose1=()=>{
 setOpen1(false)
+ setErrors({});
   }
 
     const handleClickOpen2=()=>{
 setOpen2(true)
+ setSupportType("Merchant Support");
+   setFormData(prev => ({ ...prev, supportType: "Merchant Support" }));
   }
     const handleClickClose2=()=>{
 setOpen2(false)
+ setErrors({});
   }
      const handleClickOpen3=()=>{
 setOpen3(true)
@@ -37,6 +50,132 @@ setOpen3(false)
     }
     return () => (document.body.style.overflow = "auto"); // cleanup
   }, [isOpen1,isOpen2,isOpen3]);
+
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+  companyName: "",
+  email: "",
+  mobile: "",       // ✅ rename from mobile → phone
+  query: "",
+  pageName: location.state?.pageName || "Contact Page", 
+  supportType: supportType 
+  });
+
+  const [errors, setErrors] = useState({});
+
+
+  // Handle input change
+const validate = (name, value) => {
+  switch (name) {
+    case "fullName":
+      if (!value.trim()) return "Full Name is required";
+      break;
+    // case "companyName":
+    //   if (!value.trim()) return "Company Name is required";
+    //   break;
+    case "email":
+      if (!value) return "Email is required";
+      if (!/\S+@\S+\.\S+/.test(value)) return "Enter a valid email";
+      break;
+    case "mobile":
+      if (!value) return "Mobile number is required";
+      if (!/^\d{10}$/.test(value)) return "Enter a valid 10-digit mobile number";
+      break;
+    // case "query":
+    //   if (!value.trim()) return "Please enter your query";
+    //   break;
+    default:
+      return "";
+  }
+  return "";
+};
+
+  // Validate form
+const handleChange = (e) => {
+  const { name, value } = e.target;
+
+  setFormData({
+    ...formData,
+    [name]: value,
+  });
+
+  // Re-validate this field on change
+  const errorMsg = validate(name, value);
+  setErrors({
+    ...errors,
+    [name]: errorMsg,
+  });
+};
+
+// Validate all fields at once
+const validateForm = () => {
+  let newErrors = {};
+
+  Object.keys(formData).forEach((key) => {
+    const errorMsg = validate(key, formData[key]);
+    if (errorMsg) newErrors[key] = errorMsg;
+  });
+
+  return newErrors;
+};
+
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const validationErrors = validateForm(); // ✅ sahi function call
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    return; // ❌ API call skip
+  }
+
+  try {
+    const response = await axios.post(
+      "https://pgsuit.xoomsales.com/api/ZyroCustomer/AddCustomer",
+      {
+        fullName: formData.fullName,
+        companyName: formData.companyName,
+        email: formData.email,
+        phone: formData.mobile,  // ✅ consistent key use karo
+        query: formData.query,
+        pageName: formData.pageName,
+        supportType: formData.supportType
+      }
+    );
+
+
+  console.log(response.data)
+  if (response.data.success) {
+        // setApiMessage(res.data.message); // ✅ "Customer added successfully."
+        setFormData({
+          fullName: "",
+          companyName: "",
+          email: "",
+          mobile: "",
+          query: "",
+          pageName: "Contact Page",
+          supportType: "General",
+        });
+         setErrors({});
+         alert(response.data.message);
+         console.log(formData);
+      } 
+      else {
+        alert("Something went wrong, please try again");
+      }
+    }
+  
+  catch (error) {
+    console.error("API Error:", error);
+    alert("API Error:", error);
+    
+  }
+};
+
+
+
+
   return (
     <section className="mt-[105px]">
       {(isOpen1 || isOpen2 || isOpen3) && (
@@ -130,38 +269,80 @@ setOpen3(false)
         </div>
 
         {/* Form */}
-      <form>
-          <div className="md:flex items-center gap-[15px] pt-[30px] md:pt-[45px]">
-            <input
+
+      <form onSubmit={handleSubmit}>
+          <div className="sm:flex  gap-[15px] pt-[30px] md:pt-[45px]">
+           <div className=" w-full sm:w-[50%]  lg:w-[375px]">
+             <input
               type="text"
-              placeholder="Full Name"
-              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-0"
+              name="fullName"
+              placeholder="Full Name" value={formData.fullName}
+            onChange={handleChange}
+              className="bg-[#ECECEC] rounded-[6px] h-[55px]  w-full px-[22px] text-[16px] text-[#292929] outline-none mt-0"
             />
-            <input
+             {errors.fullName && (
+            <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>
+          )}
+           </div>
+            
+           <div className=" w-full sm:w-[50%]  lg:w-[375px] mt-[20px] sm:mt-0">
+             <input
               type="text"
-              placeholder="Company Name"
-              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] md:mt-0"
+              placeholder="Company Name" 
+               name="companyName"
+            value={formData.companyName}
+            onChange={handleChange}
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full px-[22px] text-[16px] text-[#292929] outline-none "
             />
+             {/* {errors.companyName && (
+            <p className="text-red-500 text-sm mt-1">{errors.companyName}</p>
+          )} */}
+           </div>
+            
           </div>
         
-          <div className="md:flex items-center gap-[15px] lg:pt-[21px]">
-            <input
+          <div className="sm:flex  gap-[15px] sm:mt-[21px]">
+           <div className=" w-full sm:w-[50%]  lg:w-[375px] mt-[20px] sm:mt-0">
+             <input
               type="text"
-              placeholder="Email ID"
-              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
+                 name="email"
+              placeholder="Email ID" value={formData.email}
+            onChange={handleChange}
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full px-[22px] text-[16px] text-[#292929] outline-none "
             />
-            <input
+             {errors.email && (
+            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+          )}
+           </div>
+            
+           <div className=" w-full sm:w-[50%]  lg:w-[375px] mt-[20px] sm:mt-0">
+             <input
               type="text"
-              placeholder="Mobile"
-              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
+              placeholder="Mobile"  
+               name="mobile"
+              value={formData.mobile}
+            onChange={handleChange}
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full px-[22px] text-[16px] text-[#292929] outline-none "
             />
+            {errors.mobile && (
+            <p className="text-red-500 text-sm mt-1">{errors.mobile}</p>
+          )}
+           </div>
+            
           </div>
         
-          <div className="pt-[20px] lg:pt-[21px]">
+          <div className="mt-[20px] lg:mt-[21px]">
             <textarea
-              placeholder="Query"
-              className="bg-[#ECECEC] rounded-[6px] h-[125px] w-full md:w-[400px]  lg:w-[560px] px-[22px] pt-[17px] text-[16px] text-[#292929] outline-none"
+              placeholder="Query"  
+                 name="query"
+              value={formData.query}
+          onChange={handleChange}
+              className="bg-[#ECECEC] rounded-[6px] h-[125px] w-full sm:w-[400px]  lg:w-[560px] px-[22px] pt-[17px] text-[16px] text-[#292929] outline-none"
             />
+             {/* {errors.query && (
+          <p className="text-red-500 text-sm mt-1">{errors.query}</p>
+        )} */}
+
           </div>
         
           <div className="flex justify-center lg:justify-start pt-[50px] md:pt-[35px] ">
@@ -203,46 +384,88 @@ setOpen3(false)
         </div>
 
         {/* Form */}
-       <form>
-         <div className="md:flex items-center gap-[15px] pt-[30px] md:pt-[45px]">
-           <input
-             type="text"
-             placeholder="Full Name"
-             className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-0"
-           />
-           <input
-             type="text"
-             placeholder="Company Name"
-             className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] md:mt-0"
-           />
-         </div>
+
+      <form onSubmit={handleSubmit}>
+          <div className="sm:flex  gap-[15px] pt-[30px] md:pt-[45px]">
+           <div className=" w-full sm:w-[50%]  lg:w-[375px]">
+             <input
+              type="text"
+              name="fullName"
+              placeholder="Full Name" value={formData.fullName}
+            onChange={handleChange}
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full  px-[22px] text-[16px] text-[#292929] outline-none mt-0"
+            />
+             {errors.fullName && (
+            <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>
+          )}
+           </div>
+            
+           <div className=" w-full sm:w-[50%]  lg:w-[375px] mt-[20px] sm:mt-0">
+             <input
+              type="text"
+              placeholder="Company Name" 
+               name="companyName"
+            value={formData.companyName}
+            onChange={handleChange}
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full px-[22px] text-[16px] text-[#292929] outline-none "
+            />
+             {/* {errors.companyName && (
+            <p className="text-red-500 text-sm mt-1">{errors.companyName}</p>
+          )} */}
+           </div>
+            
+          </div>
         
-         <div className="md:flex items-center gap-[15px] lg:pt-[21px]">
-           <input
-             type="text"
-             placeholder="Email ID"
-             className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
-           />
-           <input
-             type="text"
-             placeholder="Mobile"
-             className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full md:w-[50%] lg:w-[375px] px-[22px] text-[16px] text-[#292929] outline-none mt-[20px] lg:mt-0"
-           />
-         </div>
+          <div className="sm:flex items-center gap-[15px] sm:pt-[21px]">
+           <div className=" w-full sm:w-[50%]  lg:w-[375px] mt-[20px] sm:mt-0">
+             <input
+              type="text"
+                 name="email"
+              placeholder="Email ID" value={formData.email}
+            onChange={handleChange}
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full px-[22px] text-[16px] text-[#292929] outline-none "
+            />
+             {errors.email && (
+            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+          )}
+           </div>
+            
+           <div className=" w-full sm:w-[50%]  lg:w-[375px] mt-[20px] sm:mt-0">
+             <input
+              type="text"
+              placeholder="Mobile"  
+               name="mobile"
+              value={formData.mobile}
+            onChange={handleChange}
+              className="bg-[#ECECEC] rounded-[6px] h-[55px] w-full px-[22px] text-[16px] text-[#292929] outline-none "
+            />
+            {errors.mobile && (
+            <p className="text-red-500 text-sm mt-1">{errors.mobile}</p>
+          )}
+           </div>
+            
+          </div>
         
-         <div className="pt-[20px] lg:pt-[21px]">
-           <textarea
-             placeholder="Query"
-             className="bg-[#ECECEC] rounded-[6px] h-[125px] w-full md:w-[400px]  lg:w-[560px] px-[22px] pt-[17px] text-[16px] text-[#292929] outline-none"
-           />
-         </div>
+          <div className="pt-[20px] sm:pt-[21px]">
+            <textarea
+              placeholder="Query"  
+                 name="query"
+              value={formData.query}
+          onChange={handleChange}
+              className="bg-[#ECECEC] rounded-[6px] h-[125px] w-full sm:w-[400px]  lg:w-[560px] px-[22px] pt-[17px] text-[16px] text-[#292929] outline-none"
+            />
+             {/* {errors.query && (
+          <p className="text-red-500 text-sm mt-1">{errors.query}</p>
+        )} */}
+          </div>
         
-         <div className="flex justify-center lg:justify-start pt-[50px] md:pt-[35px] ">
-           <button className="bg-[#4F31B4] h-[55px] max-[400px]:w-full w-[290px] rounded-[24.77px] text-[20px] font-semibold text-[#FFF]">
-             Send
-           </button>
-         </div>
-       </form>
+          <div className="flex justify-center lg:justify-start pt-[50px] md:pt-[35px] ">
+            <button className="bg-[#4F31B4] h-[55px] max-[400px]:w-full w-[290px] rounded-[24.77px] text-[20px] font-semibold text-[#FFF]">
+              Send
+            </button>
+          </div>
+      </form>
+
       </div>
 </div>
     </motion.div>
