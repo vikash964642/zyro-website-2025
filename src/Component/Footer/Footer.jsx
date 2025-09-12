@@ -14,8 +14,9 @@ function Footer() {
   const ScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  
   return (
-    <section className="relative">
+    <section className="relative overflow-hidden">
       <div className="FooterGradient1"></div>
    <div className="border-white20 border-solid border-t-[1px]  lg:mt-[120px] mt-[80px]"></div>
       <div className="bg-secondary p-[20px] min-[450px]:px-[50px] lg:p-[50px] pt-[30px]">

@@ -143,6 +143,9 @@ filter: blur(91.38888549804688px);
   border-radius: 50%;
 background: linear-gradient(180deg, #170931 0%, #62537E 100%);
 filter: blur(200px);
+z-index:20;
+inset:25% -24% 0% -10%;
+
 }
 
 .businessBankingGradient1{
@@ -150,8 +153,7 @@ filter: blur(200px);
   border-radius: 50%;
 background: linear-gradient(180deg, #A489FF 0%, #343434 100%);
 filter: blur(200px);
-left:0px;
-top:200px;
+inset:53% 78% 0% 0%;
 }
 .BankDetailsHeaderGradient{
   background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
@@ -293,6 +295,9 @@ filter: blur(113.53790283203125px);
 }
 .ConnectedCardSliderGradient{
 inset: -12% 27% 99% 26%;
+}
+.businessBankingGradient1{
+  inset:0% 0% 80% 50%
 }
 }
 

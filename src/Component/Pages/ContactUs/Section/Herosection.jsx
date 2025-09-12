@@ -7,10 +7,10 @@ import "./contact.css";
 import { motion, AnimatePresence } from "framer-motion";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 
 function Herosection() {
-  
+    const navigate = useNavigate();
   const [isOpen1,setOpen1]=useState(false);
     const [isOpen2,setOpen2]=useState(false);
        const [isOpen3,setOpen3]=useState(false);
@@ -158,8 +158,7 @@ const handleSubmit = async (e) => {
           supportType: "General",
         });
          setErrors({});
-         alert(response.data.message);
-         console.log(formData);
+      navigate("/thank-you")
       } 
       else {
         alert("Something went wrong, please try again");

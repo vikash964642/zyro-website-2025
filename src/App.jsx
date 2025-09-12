@@ -17,6 +17,8 @@ import Terms from "./Component/Pages/Terms";
 import Privacy from "./Component/Pages/Privacy";
 import UPIStack from "./Component/Pages/UPIStack/UPIStack";
 import IMPSSwitch from "./Component/Pages/IMPSSwitch/IMPSSwitch";
+import PageNotFound from "./Component/Pages/PageNotFound/PageNotFound";
+import ThankYou from "./Component/Pages/ThankYou/ThankYou";
 function App() {
   // usePreventZoom();
   return (
@@ -38,7 +40,8 @@ function App() {
             <Route path="/terms-and-conditions" element={<Terms/>}  />
             <Route path="/privacy-policy" element={<Privacy/>}  />
              <Route path="/imps-switch" element={<IMPSSwitch/>}  />
-
+             <Route path="*" element={<PageNotFound/>}  />
+              <Route path="/thank-you" element={<ThankYou/>}  />
          
         </Routes>
          <Footer />
