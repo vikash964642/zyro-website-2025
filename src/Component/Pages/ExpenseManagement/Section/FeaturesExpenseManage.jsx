@@ -39,7 +39,7 @@ function FeaturesExpenseManage() {
         <div className="mt-[131px] max-w-screen-xl mx-auto px-[19px] relative">
           <div className="features-gradient"></div>
           <div className="flex justify-center items-center lg:block">
-            <p className="featuremanagementHead max-[400px]:w-[320px] w-[390px] lg:w-[693px] text-[24px] lg:text-[34px] font-semibold leading-[39px] lg:leading-[45px] lg:text-left text-center ">
+            <p className="featuremanagementHead max-[400px]:w-[320px] w-[390px] sm:w-[500px] lg:w-[693px] text-[24px] lg:text-[34px] font-semibold leading-[39px] lg:leading-[45px] lg:text-left text-center ">
               Run your Business smarter with better Expense Management software
             </p>
           </div>

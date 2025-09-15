@@ -61,18 +61,17 @@ function SmartExpense() {
 
   return (
     <section className="mt-[200px]">
-      <div className='max-w-full lg:max-w-screen-lg lg:mx-auto  relative'>
-      <div className="text-center">
-        <p className="smartExpenseHead text-white text-[24px] lg:text-[32px] font-semibold">
-          Smart Expense Solution, <br className="hidden lg:block" />
-          Designed for You
+      <div className='max-w-full lg:max-w-screen-lg lg:mx-auto px-[15px] xl:px-0  relative'>
+      <div className="flex justify-center">
+        <p className="w-[320px] lg:w-[450px] smartExpenseHead text-white text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-center">
+          Smart Expense Solution, Designed for You
         </p>
       </div>
             <div className='smartExpense-gradiant'></div>
       {/* Scroll container */}
       <div
         ref={scrollRef}
-        className={`flex gap-4 mt-[68px] lg:mt-[80px] overflow-x-auto lg:overflow-x-hidden pb-2 cursor-grab hide-scrollbar`}
+        className={`flex gap-[13.5px] lg:gap-[18px] mt-[42px] lg:mt-[36px] overflow-x-auto lg:overflow-x-hidden pb-2 cursor-grab hide-scrollbar`}
         style={{
           scrollSnapType: 'x mandatory',
           WebkitOverflowScrolling: 'touch'
@@ -87,18 +86,18 @@ function SmartExpense() {
             key={index}
             className="bg-[#0B051E] rounded-[16px] p-[21px] w-[221px] lg:w-[295px] lg:h-[364px] h-[273px] text-left border-[0.6px] border-[#4F31B4] flex-shrink-0 scroll-snap-start"
           >
-            <div>
+            <div className='h-[100px] lg:h-[134px] w-full'>
               <img
                 src={card.image}
                 alt={card.heading}
-                className="h-[100px] w-[177px] lg:h-[134px] lg:w-[237px] object-contain"
+                className="h-full w-full "
               />
             </div>
             <div className="pt-[23px]">
               <h3 className="text-white text-[13px] lg:text-[17px] lg:leading-[30px] leading-[22.5px] font-semibold">
                 {card.heading}
               </h3>
-              <p className="text-[#9E9C9F] text-[12px] lg:text-[16px] lg:leading-[23.46px] leading-[18px] font-normal pt-[10px] pl-[10px]">
+              <p className="text-[#9E9C9F] text-[12px] lg:text-[16px] lg:leading-[23.46px] leading-[18px] font-normal pt-[10px] ">
                 {card.paragraph}
               </p>
             </div>

@@ -57,6 +57,7 @@ background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) -18.15%, rgba(255, 2
 filter: blur(150px);
 position:absolute;
   inset:-10% 5% -10% 5%;
+  z-index:-1;
 }
 .features-heading-gradient{
   background: linear-gradient(90deg, #EDEDED 0%, #9573DE 50%, #F8F8F8 64.42%);
@@ -92,6 +93,9 @@ inset:-12% 25% 74% 25%;
     linear-gradient(#080219, #080219) padding-box, /* inner background */
     linear-gradient(rgba(169, 1, 163, 0.3), rgba(111, 65, 210, 0.4)) border-box;
   border-radius: 10px;
+}
+.ConnectedBusinessScrollerBorder2{
+  background: linear-gradient(124deg,rgba(100, 100, 100, 1) 0%, rgba(111, 65, 210, 1) 36%, rgba(173, 173, 173, 1) 98%);
 }
 .ConnectedSliderBorder {
   border: 0.6px solid transparent;
@@ -276,7 +280,7 @@ opacity: 0.2;
 background: linear-gradient(32deg, rgba(141, 49, 245, 0.00) 0%, rgba(141, 49, 245, 0.72) 100%, rgba(255, 255, 255, 0.72) 100%);
 filter: blur(58.3769645690918px);
 position:absolute;
-inset:-7% 30% 64% 30%;
+inset:-7% 28% 64% 28%;
 }
 .ConnectedHeroSecGradient1{
   border-radius: 266.708px;
@@ -318,6 +322,12 @@ filter: blur(91.38888549804688px);
 position:absolute;
 inset:-11% 10% 85% 10%;
 }
+.BusinessScrollerGradient1{
+  inset:-7% 10% 64% 10%;
+}
+.ConnectedHeroSecGradient2{
+  inset:12% 15% 5% 15%;
+  }
 }
 
 
@@ -325,9 +335,10 @@ inset:-11% 10% 85% 10%;
 
 .rotateSection { 
       position: relative; 
-      width: 300px; 
-      height: 300px; 
-      margin: auto;
+      width: 350px; 
+      height: 350px; 
+          overflow:hidden;
+   
     }
 
     .zyroLogo {
@@ -358,33 +369,10 @@ inset:-11% 10% 85% 10%;
     /* -------- Responsive -------- */
 
 /* Tablets (768px se neeche) */
-@media (max-width: 768px) {
-  .rotateSection {
-    width: 220px;
-    height: 220px;
-  }
-
-  .zyroLogo {
-    width: 80px;
-    height: 28px;
-  }
-
-  .orbit {
-    width: 180px;
-    height: 180px;
-  }
-
-  .bankLogo {
-    width: 55px;
-    height: 55px;
-  }
-}
-
-/* Mobiles (min 320px - 480px) */
-@media (max-width: 480px) {
-  .rotateSection {
-    width: 180px;
-    height: 180px;
+@media (max-width: 767px) {
+.rotateSection {
+    width: 350px;
+    height: 350px;
   }
 
   .zyroLogo {
@@ -393,12 +381,74 @@ inset:-11% 10% 85% 10%;
   }
 
   .orbit {
-    width: 140px;
-    height: 140px;
+    width: 250px;
+    height: 250px;
   }
 
   .bankLogo {
-    width: 45px;
-    height: 45px;
+    width: 70px;
+    height: 70px;
   }
+}
+
+/* Mobiles (min 320px - 480px) */
+@media (max-width: 480px) {
+  .rotateSection {
+    width: 350px;
+    height: 350px;
+  }
+
+  .zyroLogo {
+    width: 65px;
+    height: 22px;
+  }
+
+  .orbit {
+    width: 220px;
+    height: 220px;
+  }
+
+  .bankLogo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .rotateSection {
+    width: 260px;
+    height: 260px;
+  }
+
+  .zyroLogo {
+    width: 65px;
+    height: 22px;
+  }
+
+  .orbit {
+    width: 180px;
+    height: 180px;
+  }
+
+  .bankLogo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 360px) {
+    .rotateSection {
+    width: 250px;
+    height: 250px;
+
+  }
+  .bankLogo {
+    width: 50px;
+    height: 50px;
+  } 
+   .orbit {
+    width: 180px;
+    height: 180px;
+  } 
 }

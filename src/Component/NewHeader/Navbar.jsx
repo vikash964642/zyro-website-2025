@@ -54,20 +54,6 @@ const getStoreLink = () => {
             <ul className="lg:flex hidden lg:text-[13px] xl:text-[17.5px] items-center  gap-5 lg:gap-[52px] font-[inter]">
             <NavLinks handleClick={handleClick} />
             <Outlet />
-              {/* <li>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "py-[28px] px-3 inline-block text-primary"
-                      : "py-[28px] px-3 inline-block hover:text-primary"
-                  }
-                  onClick={handleClick}
-                >
-                  Company
-                </NavLink>
-              </li> */}
-             
               
             </ul>
           </div>

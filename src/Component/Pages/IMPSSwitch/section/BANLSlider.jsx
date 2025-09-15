@@ -93,7 +93,7 @@ function BANLSlider() {
               }} className='flex justify-center items-center rounded-[15.4px] w-[296px] h-[340px] flex-shrink-0 scroll-snap-start'>
   <div
        
-            className="bg-[#0B051E] rounded-[15.4px] p-[30px]  w-[calc(100%-2px)]  h-[calc(100%-2px)] "
+            className="bg-[#0B051E] rounded-[15.4px] p-[30px]  w-[calc(100%-2.5px)]  h-[calc(100%-2.5px)] "
           >
             <div>
               <img
