@@ -306,7 +306,7 @@ function Footer() {
         </div>
     <div className="flex min-[425px]:justify-center lg:hidden mt-[25px]">
           <div className="">
-          <div className="flex items-center gap-[20px]">
+          {/* <div className="flex items-center gap-[20px]">
             <p className="text-[14px] font-medium leading-[21px] text-white90">
               Support:
             </p>
@@ -316,7 +316,7 @@ function Footer() {
             >
               +919560050703
             </a>
-          </div>
+          </div> */}
           <div className="flex items-center gap-[40px] pt-[8px]">
             <p className="text-[14px] font-medium leading-[21px] text-white90">
               Email:
@@ -375,7 +375,7 @@ function Footer() {
 
         <div className="hidden lg:flex justify-between items-end pt-[30px]">
           <div>
-            <div className="flex items-center gap-[20px]">
+            {/* <div className="flex items-center gap-[20px]">
               <p className="text-[14px] font-medium leading-[21px] text-white90">
                 Support:
               </p>
@@ -385,7 +385,7 @@ function Footer() {
               >
                 +919560050703
               </a>
-            </div>
+            </div> */}
             <div className="flex items-center gap-[40px] pt-[8px]">
               <p className="text-[14px] font-medium leading-[21px] text-white90">
                 Email:
@@ -432,7 +432,7 @@ function Footer() {
             </NavLink>
           </div>
           <p className="text-[12px] lg:text-[14px] text-white70 font-normal">
-            © 2024 KGC Infotech Pvt.Ltd.. All Rights Reserved.
+            © 2025 KGC Infotech Pvt.Ltd.. All Rights Reserved.
           </p>
         </div>
       </div>
