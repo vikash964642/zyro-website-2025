@@ -31,7 +31,7 @@ function HeroSection() {
       }
         else if (window.innerWidth <= 480) { 
         orbitRadius = 100;   // Mobile
-        center = 100;
+        center = 110;
       }
       else if (window.innerWidth < 768) { 
         orbitRadius = 120;  // Tablet

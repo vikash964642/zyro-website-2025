@@ -65,7 +65,7 @@ export default function HeroSection() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
    const handleLinkClick = (pageName) => {
-      ScrollTop();
+      // ScrollTop();
     navigate("/contact-us", { state: { pageName } }); 
   
   };
@@ -87,7 +87,7 @@ export default function HeroSection() {
       
    <button
         
-          className="hero-prev absolute z-20 lg:left-[50px] xl:left-[90px] min-[1450px]:left-[8%] min-[1750px]:left-[15%] top-[50%] text-[18px] text-[#8E8C92]  rounded-full w-[40px] h-[40px] border-[2px] border-[#8E8C92] lg:flex justify-center items-center hidden"
+          className="hero-prev absolute z-20 lg:left-[50px]   min-[1450px]:left-[8%] min-[1750px]:left-[15%] top-[50%] text-[18px] text-[#8E8C92]  rounded-full w-[40px] h-[40px] border-[2px] border-[#8E8C92] lg:flex justify-center items-center hidden"
         >
           <FontAwesomeIcon icon={faAngleLeft} />
         </button>
@@ -194,7 +194,7 @@ export default function HeroSection() {
 
         <button
           
-          className="hero-next cursor-pointer absolute z-20 lg:right-[50px] xl:right-[90px] min-[1450px]:right-[8%] min-[1750px]:right-[15%] top-[50%] text-[18px] text-[#8E8C92]  rounded-full w-[40px] h-[40px] border-[2px] border-[#8E8C92] lg:flex justify-center items-center hidden"
+          className="hero-next cursor-pointer absolute z-20 lg:right-[50px]  min-[1450px]:right-[8%] min-[1750px]:right-[15%] top-[50%] text-[18px] text-[#8E8C92]  rounded-full w-[40px] h-[40px] border-[2px] border-[#8E8C92] lg:flex justify-center items-center hidden"
         >
           <FontAwesomeIcon icon={faAngleRight} />
         </button>

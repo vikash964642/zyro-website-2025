@@ -1,47 +1,195 @@
-// import React from 'react'
-import ExpenseCardRequest from "/image/ExpenseManagement/expenseCardRequest.webp";
-// import ExpenseAssignCard from "../../../../../public/image/ExpenseManagement/ExpenseAssignCard.webp";
-// import ExpensePhyschicalCard from "../../../../../public/image/ExpenseManagement/ExpensePhyschicalCard.webp";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import { Autoplay,Pagination  } from 'swiper/modules';
+import CorporateCardManagementImg1 from "/image/ExpenseManagement/expenseCardRequest.webp";
+ import CorporateCardManagementImg2 from "/image/ExpenseManagement/ExpenseAssignCard.webp";
+ import CorporateCardManagementImg3 from "/image/ExpenseManagement/ExpensePhyschicalCard.webp";
+const cardsData = [
+  {
 
+   image:CorporateCardManagementImg1,
+    heading: "Card Request",
+    paragraph:
+      "Employees request cards with digital approvals",
+  },
+  {
+
+   image:CorporateCardManagementImg2,
+    heading: "Assign Users",
+    paragraph:
+      "Allocate cards with spending limits and role-based access",
+  },
+  {
+
+      image:CorporateCardManagementImg3,
+    heading: "Generate Cards",
+    paragraph:
+      "Instantly issue physical cards",
+  },
+];
 function CorporateCardManagement() {
   return (
     <section className="mt-[130px] lg:mt-[200px]">
-      <div className="max-w-screen-lg mx-auto  ">
-        <h3 className="CorporateCardHead text-[24px] leading-[32px] lg:text-[34px] lg:leading-[45px] font-semibold text-center px-[24px]">
+      <div className="max-w-screen-lg mx-auto  relative">
+         <div className="hidden md:block corporateCard-GradientTop "></div>
+    <div className='flex justify-center px-[10px]'>
+          <h3 className="CorporateCardHead max-w-[360px] sm:max-w-[100%] text-[24px] leading-[32px] sm:text-[30px] lg:text-[34px] lg:leading-[45px] font-semibold text-center ">
           Corporate Card Management, Made Easy
         </h3>
-        <p className="leading-[29px] text-center text-[16px] lg:leading-[25px] font-normal text-[#A9A9A9] pt-[14px] px-[56px]">
+    </div>
+      <div className='flex justify-center pt-[14px]'>
+          <p className="max-w-[300px] sm:max-w-[100%] leading-[29px] text-center text-[16px] lg:leading-[25px] font-normal text-[#A9A9A9] ">
           One dashboard to issue, assign, and control every card
         </p>
+      </div>
 
-        <div className="flex relative overflow-hidden justify-between items-center flex-col lg:flex-row bg-[#110A27] lg:bg-bgCorporateCard lg:border-[0.97px] lg:border-borderColor rounded-[23.16px] mt-[47px] lg:mt-[60px] px-[34px]">
-          <div className="lg:hidden block corporateCard-Gradient corporateCard-Gradient-2"></div>
-          <div className="lg:hidden block corporateCard-Gradient corporateCard-Gradient-1"></div>
-          <div className="flex">
-            <div className="hidden lg:block">
+        <div className="flex items-center relative   bg-[#110A27] lg:bg-bgCorporateCard lg:border-[0.97px] lg:border-borderColor rounded-[23.16px] mt-[47px] lg:mt-[60px] md:px-[25px] lg:px-[34px] md:py-[25px] overflow-hidden">
+          <div className="md:hidden block corporateCard-Gradient1 "></div>
+          <div className="md:hidden block corporateCard-Gradient2 "></div>
+         
+
+   <div className="hidden md:block">
               <p className="corporate-gradiant_line"></p>
             </div>
+           <Swiper
+       className='h-full'
+        modules={[Autoplay,Pagination]}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        loop={true}
+         pagination={{
+    el: ".custom-Pos-pagination", // connect to custom div
+    clickable: true,
+    renderBullet: (index, className) => {
+      return `<span class="${className} PosCustom-dot"></span>`;
+    },
+  }}
+      >
+        {cardsData.map((card, index) => (
+          <SwiperSlide key={index}>
+           
+<div className='flex justify-between items-center flex-col md:flex-row gap-[40px] md:gap-0'>
+ 
+         
 
-            <div className="pl-[34px] flex flex-col justify-center  pt-[36px] lg:pt-0">
-              <p className="text-[32.9px] leading-[46.26px] lg:text-[34px] lg:leading-[56px] font-semibold text-center lg:text-left text-[#FFFFFF]">
-                Card Request
+            <div className="md:pl-[34px] flex flex-col justify-center  pt-[36px] lg:pt-0">
+              <p className="max-[360px]:text-[30px] text-[32.9px] leading-[46.26px] lg:text-[34px] lg:leading-[56px] font-semibold text-center md:text-left text-[#FFFFFF]">
+               {card.heading}
               </p>
-              <p className="text-[16.45px] leading-[28px] font-normal text-center lg:text-left text-[#AFAFAF] pt-[15px]">
-                Employees request cards with digital approvals
+         <div className='flex justify-center md:justify-start pt-[13px] lg:pt-[14px]'>
+               <p className={`max-[360px]:text-[15px] text-[16.45px] md:text-[16px] leading-[28px] font-normal text-center md:text-left text-[#AFAFAF]  ${(index===0 || index ===1) ? 'w-[300px] md:w-[287px]' : 'w-full md:w-[215px]'}`}>
+                {card.paragraph}
               </p>
+         </div>
             </div>
-          </div>
-          <div>
+   
+          <div className='px-[10px] sm:px-0'>
             <img
-              src={ExpenseCardRequest}
+              src={card.image}
               alt=""
-              className="lg:h-[333px] lg:w-[405px]"
+               className="max-h-[333px] h-full w-full max-w-[405px] md:h-[300px] md:w-[350px] lg:h-[333px] lg:w-[405px] "
             />
-          </div>
+          </div> 
+</div>
+         
+    
+          </SwiperSlide>
+        ))}
+            </Swiper>
         </div>
       </div>
+        <div className=" flex justify-center md:hidden custom-Pos-pagination mt-[21px]"></div>
     </section>
   );
 }
 
 export default CorporateCardManagement;
+
+
+
+// import PosFeatureImg1 from '/image/Pos/PosFeatureImg1.webp';
+// import PosFeatureImg2 from '/image/Pos/PosFeatureImg2.webp';
+// import PosFeatureImg3 from '/image/Pos/PosFeatureImg3.webp';
+// import PosFeatureImg4 from '/image/Pos/PosFeatureImg4.webp';
+// import PosFeatureImg5 from '/image/Pos/PosFeatureImg5.webp';
+// import './Pos.css';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/autoplay';
+// import { Autoplay,Pagination  } from 'swiper/modules';
+// const CardData=[
+//     {
+//         image:PosFeatureImg1,
+//         heading:"Multiple Payment Methods",
+//         paragraph:"Accept payments via UPI, Cards, EMI, Payment Link and Wallets"
+//     },
+//        {
+//         image:PosFeatureImg2,
+//         heading:"Long-Lasting Battery",
+//         paragraph:"Full-day usage without charging interruptions"
+//     },
+//        {
+//         image:PosFeatureImg3,
+//         heading:"High-Speed Connectivity",
+//         paragraph:"Full-day usage without charging interruptions"
+//     },
+//        {
+//         image:PosFeatureImg4,
+//         heading:"Built-in-Printer",
+//         paragraph:"Instant & Clear receipts with built-in-high-speed thermal printer."
+//     },
+//        {
+//         image:PosFeatureImg5,
+//         heading:"Real-Time Payment Alerts",
+//         paragraph:"On-Screen notifications for every successful transaction."
+//     },
+// ]
+// function PosFeatures() {
+//   return (
+//     <section className="max-w-screen-lg mx-auto px-[12px] xl:px-0  mt-[100px] lg:mt-[120px]">
+//      <div className='flex justify-center'>
+//       <h2 className='text-center text-[24px] sm:text-[30px] lg:text-[34px] sm:w-[480px] lg:w-[570px] leading-[32px] md:leading-[40px] lg:leading-[48px] font-semibold PaymentHeaderGradient'>Advanced POS Features that Simplify all Payments</h2> 
+//      </div>
+//       <div className='h-[580px] overflow-hidden md:h-[445px]  mt-[45px] md:mt-[40px] relative  bg-[#0E0624] rounded-[23px] '>
+//         <div className='PosFeatureGradientTop1'></div>
+       
+//  <Swiper
+//        className='h-full'
+//         modules={[Autoplay,Pagination]}
+//         autoplay={{ delay: 2000, disableOnInteraction: false }}
+//         loop={true}
+//          pagination={{
+//     el: ".custom-Pos-pagination", // connect to custom div
+//     clickable: true,
+//     renderBullet: (index, className) => {
+//       return `<span class="${className} PosCustom-dot"></span>`;
+//     },
+//   }}
+//       >
+//         {CardData.map((card, index) => (
+//           <SwiperSlide key={index}>
+           
+
+//               <div className='flex flex-col md:flex-row h-full max-[360px]:px-[15px] max-[400px]:px-[25px] px-[40px] md:px-0'>
+//                 <div className='md:w-[50%] relative h-[40%] md:h-full pt-[45px] md:pt-0 md:pl-[30px] lg:pl-[57px] flex flex-col md:justify-center  items-center md:items-start'>
+//                 <h3 className='max-[360px]:text-[28px] max-[400px]:text-[31px] text-[32.895px] lg:text-[36px] font-semibold text-[#FFF] text-center md:text-left md:w-[340px]'>{card.heading}</h3>
+//                 <div className='hidden md:block w-[1px] h-[117px] PaymentBorderLineGradient mt-[18px]'></div>
+//                 <p className='max-[360px]:text-[14px] max-[400px]:text-[15.5px] text-[16.44px] lg:text-[18px] font-normal text-[#C7C9D1] pt-[15px] text-center md:text-left md:pr-[80px]'>{card.paragraph}</p>
+//                  <div className='PosFeatureGradientBottom1'></div>
+//                 </div>
+//                 <div className='relative md:w-[50%] h-[60%] md:h-full flex flex-col justify-center items-center'>
+//                   <img src={card.image} className='max-[360px]:w-[258px] max-[360px]:h-[230px] w-[298px] h-[258px]'/>
+// <div className='PosFeatureGradientBottom2'></div>
+//                 </div>
+//               </div>
+    
+//           </SwiperSlide>
+//         ))}
+//             </Swiper>
+//       </div>
+//       <div className=" flex justify-center md:hidden custom-Pos-pagination mt-[21px]"></div>
+//     </section>    
+//   )
+// }
+
+// export default PosFeatures

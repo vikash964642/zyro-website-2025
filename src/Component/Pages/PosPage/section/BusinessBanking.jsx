@@ -3,11 +3,11 @@ import arrowRight from '/image/ConnectedBanking/arrowRight.svg';
 import BusinessBankingImg from '/image/Pos/BusinessBanking.webp';
 function BusinessBanking() {
    const navigate = useNavigate();
- const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+//  const ScrollTop = () => {
+//     window.scrollTo({ top: 0, behavior: "smooth" });
+//   };
      const handleLinkClick = (pageName) => {
-        ScrollTop();
+        // ScrollTop();
     navigate("/contact-us", { state: { pageName } }); 
   
   };

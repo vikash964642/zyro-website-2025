@@ -51,7 +51,11 @@ setOpen3(false)
     return () => (document.body.style.overflow = "auto"); // cleanup
   }, [isOpen1,isOpen2,isOpen3]);
 
+ useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // 👈 scroll to top on mount
+  }, []);
 
+  
   const [formData, setFormData] = useState({
     fullName: "",
   companyName: "",
@@ -501,12 +505,12 @@ const handleSubmit = async (e) => {
         </div>
           <h3 className="text-[24px] lg:text-[26px] font-semibold modalHeaderGradient3 pt-[45px] md:pt-[39px] text-center">Our team is ready to assist you</h3>
           
-            <p className="hidden md:block text-[14px] lg:text-[16px] font-medium text-[#A9A9A9] lg:w-[480px] text-center pt-[21px] leading-[28px]">Email us at <a href="mailto:support@zyro.com" className="text-[#FFF] pb-[2px] border-b-[2px]">support@myzyro.com</a> or call <a href="tel:+919560050703" className="text-[#FFF]">+91-9560050703</a>, and we’ll get back to you shortly.</p>
+            <p className="hidden md:block text-[14px] lg:text-[16px] font-medium text-[#A9A9A9] lg:w-[480px] text-center pt-[21px] leading-[28px]">Email us at <a href="mailto:support@zyro.com" className="text-[#FFF] pb-[2px] border-b-[2px]">support@myzyro.com</a> or call <a href="tel:+919560050703" className="text-[#FFF]">+91-9560050701</a>, and we’ll get back to you shortly.</p>
             <div className="block md:hidden pt-[8px]">
               <p className="text-[14px] lg:text-[16px] font-medium text-[#A9A9A9] lg:w-[480px] text-center  leading-[28px]">
                 Email us at <a href="mailto:support@zyro.com" className="text-[#FFF] pb-[2px] border-b-[2px]">support@myzyro.com</a> or call
               </p>
-              <p className="text-[14px] lg:text-[16px] font-medium text-[#A9A9A9] lg:w-[480px] text-center leading-[28px]"><a href="tel:+919560050703" className="text-[#FFF]">+91-9560050703</a>, and we’ll get back to you shortly.</p>
+              <p className="text-[14px] lg:text-[16px] font-medium text-[#A9A9A9] lg:w-[480px] text-center leading-[28px]"><a href="tel:+919560050703" className="text-[#FFF]">+91-9560050701</a>, and we’ll get back to you shortly.</p>
             </div>
           </div>
         </div>
