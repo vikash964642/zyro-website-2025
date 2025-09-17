@@ -2,7 +2,9 @@
 import soundBox from "/image/soundbox/soundbox.svg";
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 function Form() {
+      const navigate = useNavigate();
   const [formData, setFormData] = useState({
       fullName: "",
     email: "",
@@ -74,7 +76,7 @@ function Form() {
     const validationErrors = validateForm(); // ✅ sahi function call
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
-      return; // ❌ API call skip
+      return; 
     }
   
     try {
@@ -103,8 +105,9 @@ function Form() {
             pageName: "SoundBox Page",
           });
            setErrors({});
-           alert(response.data.message);
-           console.log(formData);
+          //  alert(response.data.message);
+          //  console.log(formData);
+             navigate("/thank-you")
         } 
         else {
           alert("Something went wrong, please try again");

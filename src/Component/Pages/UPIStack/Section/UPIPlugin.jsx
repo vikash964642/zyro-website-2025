@@ -1,4 +1,4 @@
-import React from 'react'
+
 import UPIPluginImg1 from "/image/UPIStack/UPIPluginImg1.webp";
 
 function UPIPlugin() {

@@ -1,20 +1,20 @@
 import { Link, NavLink } from "react-router-dom";
 import Facebook from "/image/FooterImage/Facebook.svg";
 import Instagram from "/image/FooterImage/Instagram.svg";
-// import Youtube from "/image/FooterImage/Youtube.svg";
+import Youtube from "/image/FooterImage/Youtube.svg";
 import XTwitter from "/image/FooterImage/XTwitter.svg";
 import linkedIn from "/image/FooterImage/LinkedIn.svg";
 import zyrologo from "/image/zyro-logo.svg";
 import { useNavigate } from 'react-router-dom';
-import GooglePlay from "../../../public/image/FooterImage/playStore.svg";
-import AppStore from "../../../public/image/FooterImage/appStore.svg";
+import GooglePlay from "/image/FooterImage/playStore.svg";
+import AppStore from "/image/FooterImage/appStore.svg";
 // import certificatezyro from "/image/FooterImage/certificatezyro.png";
-import certificatezyro from "../../../public/image/FooterImage/certificateNew1.svg";
+import certificatezyro from "/image/FooterImage/certificateNew1.svg";
 function Footer() {
   const navigate = useNavigate();
   
   const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   };
   const handleHomeClick =()=>{
   ScrollTop();
@@ -45,13 +45,13 @@ function Footer() {
               <a href="https://play.google.com/store/apps/details?id=com.ZYRO" target="_blank">
                 <img
                   src={GooglePlay}
-                  className="hidden lg:block  cursor-pointer"
+                  className="hidden lg:block h-[45px] w-[152px] cursor-pointer "
                 ></img>
               </a>
               <a href='https://apps.apple.com/in/app/zyro/id6743227331' target="_blank">
                 <img
                   src={AppStore}
-                  className="hidden lg:block  cursor-pointer"
+                  className="hidden lg:block  h-[45px] w-[141px] cursor-pointer"
                 ></img>
               </a>
 
@@ -356,11 +356,11 @@ function Footer() {
         <div className="mt-[30px] flex lg:hidden  justify-start min-[450px]:justify-center flex-wrap max-[375px]:flex-col max-[375px]:gap-[20px] gap-[30px]">
           <div className="flex max-[375px]:justify-between max-[350px]:gap-1  min-[375px]:gap-5">
             <a href="https://play.google.com/store/apps/details?id=com.ZYRO" target="_blank">
-              <img src={GooglePlay}></img>
+              <img src={GooglePlay} className="h-[32px] w-[108.5px]"></img>
             </a>
           
             <a href='https://apps.apple.com/in/app/zyro/id6743227331' target="_blank">
-               <img src={AppStore}></img>
+               <img src={AppStore} className="h-[32px] w-[96px]"></img>
            
            </a>
           </div>
@@ -371,9 +371,9 @@ function Footer() {
             <NavLink to="https://www.instagram.com/my_zyro/?utm_medium=copy_link" target="_blank">
               <img src={Instagram} className=""></img>
             </NavLink>
-            {/* <NavLink>
+            <NavLink to="https://www.youtube.com/@Zyro-y9l" target="_blank">
               <img src={Youtube} className=""></img>
-            </NavLink> */}
+            </NavLink>
             <NavLink to="https://www.linkedin.com/company/myzyro/" target="_blank">
               <img src={linkedIn} className=""></img>
             </NavLink>
@@ -431,9 +431,9 @@ function Footer() {
             <NavLink to="https://www.instagram.com/my_zyro/?utm_medium=copy_link" target="_blank">
               <img src={Instagram} className=""></img>
             </NavLink>
-            {/* <NavLink>
+            <NavLink to="https://www.youtube.com/@Zyro-y9l" target="_blank">
               <img src={Youtube} className=""></img>
-            </NavLink> */}
+            </NavLink>
             <NavLink to="https://www.linkedin.com/company/myzyro/" target="_blank">
               <img src={linkedIn} className=""></img>
             </NavLink>

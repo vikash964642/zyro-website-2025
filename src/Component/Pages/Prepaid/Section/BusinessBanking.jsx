@@ -35,7 +35,7 @@ function BusinessBanking() {
  <div className='PrepaidbusinessBankingGradient1 '></div>
       </div>
 <div className='flex items-end justify-center lg:justify-start lg:w-[40%] relative'>
-     <img src={BusinessBankingMob} className='z-10'/>
+     <img src={BusinessBankingMob} className='z-10 sm:h-[358px] sm:w-[367px]'/>
 
         <div className=' PrepaidbusinessBankingGradient2'></div>
  

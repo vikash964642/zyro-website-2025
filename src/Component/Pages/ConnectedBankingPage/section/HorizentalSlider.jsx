@@ -82,7 +82,7 @@ function HorizentalSlider() {
               <img
                 src={slider.image}
                 alt={slider.paragraph}
-                className="h-[38px] lg:h-[56px] w-[38px] lg:w-[56px]"
+                className={` lg:h-auto lg:w-auto ${index===0 ? 'h-[37.85px] w-[37.82px]':''} ${index===1 ? 'h-[ 36.746px] w-[36.331px]':''} ${index===2 ? 'h-[ 36.746px] w-[36.331px]':''}`}
               />
             </div>
         </div>

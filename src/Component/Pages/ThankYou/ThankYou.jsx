@@ -8,9 +8,14 @@ import ThankYouPageBGImg3 from '/image/ThankYouPageBGImg3.webp';
 import ThankYouPageBGImg4 from '/image/ThankYouPageBGImg4.webp';
 import ThankYouPageBGImg5 from '/image/ThankYouPageBGImg5.webp';
 function ThankYou() {
+   const ScrollTop = () => {
+    window.scrollTo({ top: 0 });
+  };
      const navigate = useNavigate();
       useEffect(() => {
+          ScrollTop();
     const timer = setTimeout(() => {
+    
       navigate("/"); 
     }, 5000); 
 

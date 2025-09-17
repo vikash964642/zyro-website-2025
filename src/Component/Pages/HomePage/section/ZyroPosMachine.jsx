@@ -6,7 +6,7 @@ import ZyroPosVideo from "/video/zyroPos.webm";
 
 function ZyroPosMachine() {
    const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   };
   return (
     <section className="max-w-screen-lg lg:px-[20px] xl:px-0 mx-auto mt-[180px] lg:mt-[210px]">

@@ -8,7 +8,7 @@ import AngleDown from '/image/AngleDown.png';
 
 const NavLinks = ({ handleClick }) => {
   const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   };
 
   const [activeLink, setActiveLink] = useState(null);

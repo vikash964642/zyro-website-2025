@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function HeroSection() {
     const navigate = useNavigate();
    const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   };
      const handleLinkClick = (pageName) => {
         ScrollTop();

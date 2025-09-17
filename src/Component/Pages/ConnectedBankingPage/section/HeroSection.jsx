@@ -17,8 +17,8 @@ function HeroSection() {
     const bankLogos = document.querySelectorAll(".bankLogo");
 
     const positionLogos = () => {
-      let orbitRadius = 125;
-      let center = 125;
+      let orbitRadius = 120;
+      let center = 120;
 
       // ✅ Responsive adjustments
       if (window.innerWidth <= 375) { 
@@ -80,7 +80,7 @@ function HeroSection() {
   }, []);
   const navigate = useNavigate();
    const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   };
      const handleLinkClick = (pageName) => {
         ScrollTop();

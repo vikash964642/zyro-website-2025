@@ -5,7 +5,7 @@ import './HomePageCss.css'
 import KnowMoreRightIcon from '/image/HomePage/Icon/KnowMoreRightIcon.svg'
 function ManagingCorporate() {
      const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   };
   return (
      <section className="max-w-screen-lg px-4  xl:px-0 mx-auto mt-[200px] lg:mt-[220px]">
