@@ -124,24 +124,23 @@ filter: blur(91.38888549804688px);
   inset: -10% 28% 58% 26%;
   z-index: 1;
 }
-.corporateCard-Gradient{
+.corporateCard-Gradient1{
   
-    border-radius: 138px;
-  background: linear-gradient(
-    178deg,
-    rgba(64, 28, 139, 0.6) 80%,
-    rgba(255, 255, 255, 0.76) 0%
-  );
-  position: absolute;
-  z-index: 1;
-  opacity: 1;
-  filter: blur(61px);
+      border-radius: 175.5px;
+    opacity: 0.5;
+    background: linear-gradient(178deg, rgba(64, 28, 139, 0.6) 80%, rgba(255, 255, 255, 0.76) 0%);
+    filter: blur(182px);
+    position: absolute;
+    inset: 0% 0% 66% 0%;
+    z-index: -1;
 }
-.corporateCard-Gradient-1{
-  inset: 77% 0% -15% 0%;
-}
-.corporateCard-Gradient-2{
-  inset: -14% 0% 72% 0%;
+.corporateCard-GradientTop{
+  position:absolute;
+  border-radius: 138px;
+opacity: 0.75;
+background: linear-gradient(180deg, rgba(64, 28, 139, 0.59) 0%, rgba(255, 255, 255, 0.00) 100%);
+filter: blur(91.38888549804688px);
+    inset: -10% 35% 72% 34%;
 }
 /* Signup and tracking end */
 

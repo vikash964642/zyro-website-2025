@@ -62,10 +62,10 @@ export default function HeroSection() {
 
   const ScrollTop = () => {
      
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0});
   };
    const handleLinkClick = (pageName) => {
-      ScrollTop();
+      // ScrollTop();
     navigate("/contact-us", { state: { pageName } }); 
   
   };
@@ -87,7 +87,7 @@ export default function HeroSection() {
       
    <button
         
-          className="hero-prev absolute z-20 lg:left-[50px] xl:left-[90px] min-[1450px]:left-[8%] min-[1750px]:left-[15%] top-[50%] text-[18px] text-[#8E8C92]  rounded-full w-[40px] h-[40px] border-[2px] border-[#8E8C92] lg:flex justify-center items-center hidden"
+          className="hero-prev absolute z-20 lg:left-[50px]   min-[1450px]:left-[8%] min-[1750px]:left-[15%] top-[50%] text-[18px] text-[#8E8C92]  rounded-full w-[40px] h-[40px] border-[2px] border-[#8E8C92] lg:flex justify-center items-center hidden"
         >
           <FontAwesomeIcon icon={faAngleLeft} />
         </button>
@@ -162,8 +162,8 @@ export default function HeroSection() {
         ? "Connected Banking"
         : "Other"
     )
-  } className="bg-[#4F31B4] rounded-[24.77px] h-[45px] w-[148px] text-[#FFF] text-[18px] font-semibold flex justify-center items-center">
-                      Get Started
+  } className="bg-[#4F31B4] rounded-[24.77px] h-[46px] w-[218px] text-[#FFF] text-[18px] font-semibold flex justify-center items-center">
+                      Get Your Device
                     </button>
                   ) : (
                     <button  onClick={() => handleLinkClick("SoundBoxs")} className="bg-[#4F31B4] rounded-[24.77px] h-[48px] w-[218px] text-[#FFF] text-[20px] font-semibold flex justify-center items-center">
@@ -182,7 +182,7 @@ export default function HeroSection() {
 
               {/* Right Image */}
               <div className="p-[25px] md:p-[0px] lg:w-[45%] w-full flex justify-center items-center relative">
-                <img src={slide.image} alt={`Slide ${index + 1} `} className={` ${index === 0 ? "h-[450px] w-[379px]":"" }  ${index === 1 ? "h-[453px] w-[460px]":""} ${index === 3 ? "h-[370px] w-[370px]":""}`}/>
+                <img src={slide.image} alt={`Slide ${index + 1} `} className={` ${index === 0 ? "h-[450px] w-[379px]":"" }  ${index === 1 ? "h-[453px] w-[460px]":""} ${index === 2 ? "h-[255px] w-[385px]":""} ${index === 3 ? "h-[370px] w-[370px]":""}`}/>
                 {index === 3 && <div className="home-hero_gradientBottom"></div>}
               </div>
             </div>
@@ -194,7 +194,7 @@ export default function HeroSection() {
 
         <button
           
-          className="hero-next cursor-pointer absolute z-20 lg:right-[50px] xl:right-[90px] min-[1450px]:right-[8%] min-[1750px]:right-[15%] top-[50%] text-[18px] text-[#8E8C92]  rounded-full w-[40px] h-[40px] border-[2px] border-[#8E8C92] lg:flex justify-center items-center hidden"
+          className="hero-next cursor-pointer absolute z-20 lg:right-[50px]  min-[1450px]:right-[8%] min-[1750px]:right-[15%] top-[50%] text-[18px] text-[#8E8C92]  rounded-full w-[40px] h-[40px] border-[2px] border-[#8E8C92] lg:flex justify-center items-center hidden"
         >
           <FontAwesomeIcon icon={faAngleRight} />
         </button>
@@ -305,7 +305,7 @@ export default function HeroSection() {
   }
                   className="bg-[#4F31B4] max-[375px]:w-[100%] w-[325px] h-[50px] rounded-[30px] text-[20px] text-[#FFF] font-medium flex justify-center items-center"
                 >
-                  {index === 1 ? "Get Your Speaker" : "Get Started"}
+                  {index === 1 ? "Get Your Speaker" : "Get Your Device"}
                 </button>
               </div>
 

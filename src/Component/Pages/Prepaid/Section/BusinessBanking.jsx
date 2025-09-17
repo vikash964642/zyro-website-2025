@@ -5,11 +5,11 @@ import BusinessBankingMob from '/image/Prepaid/PrepaidBusinessBanking.svg';
 
 function BusinessBanking() {
     const navigate = useNavigate();
-   const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  //  const ScrollTop = () => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
      const handleLinkClick = (pageName) => {
-        ScrollTop();
+        // ScrollTop();
     navigate("/contact-us", { state: { pageName } }); 
   
   };
@@ -35,7 +35,7 @@ function BusinessBanking() {
  <div className='PrepaidbusinessBankingGradient1 '></div>
       </div>
 <div className='flex items-end justify-center lg:justify-start lg:w-[40%] relative'>
-     <img src={BusinessBankingMob} className='z-10'/>
+     <img src={BusinessBankingMob} className='z-10 sm:h-[358px] sm:w-[367px]'/>
 
         <div className=' PrepaidbusinessBankingGradient2'></div>
  

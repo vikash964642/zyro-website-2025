@@ -84,7 +84,7 @@ Simple & Easy
               <img
                 src={slider.image}
                 alt={slider.paragraph}
-                className="h-[50px] lg:h-[56px] w-[50px] lg:w-[56px]"
+                className=" w-[50px]  lg:w-[56px]"
               />
             </div>
             <p className="text-white text-[15px] lg:text-[16px] lg:font-semibold font-medium leading-[24px] align-middle ml-[17px] mr-[9px] mt-[19.51px]">

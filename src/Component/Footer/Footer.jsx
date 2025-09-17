@@ -5,24 +5,35 @@ import Youtube from "/image/FooterImage/Youtube.svg";
 import XTwitter from "/image/FooterImage/XTwitter.svg";
 import linkedIn from "/image/FooterImage/LinkedIn.svg";
 import zyrologo from "/image/zyro-logo.svg";
-// import { useNavigate } from 'react-router-dom';
-import GooglePlay from "../../../public/image/FooterImage/playStore.svg";
-import AppStore from "../../../public/image/FooterImage/appStore.svg";
+import { useNavigate } from 'react-router-dom';
+import GooglePlay from "/image/FooterImage/playStore.svg";
+import AppStore from "/image/FooterImage/appStore.svg";
 // import certificatezyro from "/image/FooterImage/certificatezyro.png";
-import certificatezyro from "../../../public/image/FooterImage/certificateNew1.svg";
+import certificatezyro from "/image/FooterImage/certificateNew1.svg";
 function Footer() {
+  const navigate = useNavigate();
+  
   const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
+  };
+  const handleHomeClick =()=>{
+  ScrollTop();
+    navigate('/');
+  }
+  const handleLinkClick = (pageName) => {
+      // ScrollTop();
+      navigate("/contact-us", { state: { pageName } }); 
+  
   };
   return (
-    <section className="relative">
+    <section className="relative overflow-hidden">
       <div className="FooterGradient1"></div>
    <div className="border-white20 border-solid border-t-[1px]  lg:mt-[120px] mt-[80px]"></div>
       <div className="bg-secondary p-[20px] min-[450px]:px-[50px] lg:p-[50px] pt-[30px]">
          
         <div className="flex lg:justify-between    flex-col lg:flex-row  ">
           <div className=" lg:w-[30%]">
-            <img src={zyrologo}></img>
+            <img src={zyrologo} className="cursor-pointer" onClick={handleHomeClick}></img>
             <p className="text-white70 pt-[30px] text-[14px] lg:text-[15px]">
               ZYRO is designed to empower businesses by providing a
               next-generation banking platform that simplifies financial
@@ -34,13 +45,13 @@ function Footer() {
               <a href="https://play.google.com/store/apps/details?id=com.ZYRO" target="_blank">
                 <img
                   src={GooglePlay}
-                  className="hidden lg:block  cursor-pointer"
+                  className="hidden lg:block h-[45px] w-[152px] cursor-pointer "
                 ></img>
               </a>
               <a href='https://apps.apple.com/in/app/zyro/id6743227331' target="_blank">
                 <img
                   src={AppStore}
-                  className="hidden lg:block  cursor-pointer"
+                  className="hidden lg:block  h-[45px] w-[141px] cursor-pointer"
                 ></img>
               </a>
 
@@ -140,9 +151,9 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact-us" onClick={ScrollTop}>
+                  <button  onClick={() => handleLinkClick("Footer")}>
                     Contact Us
-                  </Link>
+                  </button>
                 </li>
                 {/* <li>
                   <Link to="" onClick={ScrollTop}>
@@ -173,7 +184,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-[25px] flex justify-between gap-0 min-[425px]:justify-center min-[425px]:gap-[80px] lg:hidden ">
+        <div className="mt-[25px] flex justify-between gap-0 min-[450px]:justify-center min-[450px]:gap-[80px] lg:hidden ">
           <div>
             <div className="">
               <p className="text-white90 font-medium text-[16px] leading-[21px]">
@@ -238,9 +249,9 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact-us" onClick={ScrollTop}>
+                  <button onClick={() => handleLinkClick("Footer")}>
                     Contact Us
-                  </Link>
+                  </button>
                 </li>
                 {/* <li>
                   <Link to="" onClick={ScrollTop}>
@@ -303,9 +314,9 @@ function Footer() {
         <div className="flex justify-center lg:hidden pt-[40px]">
           <img src={certificatezyro} className="rounded-[7.83px]"></img>
         </div>
-    <div className="flex min-[425px]:justify-center lg:hidden mt-[25px]">
+    <div className="flex min-[450px]:justify-center lg:hidden mt-[25px]">
           <div className="">
-          <div className="flex items-center gap-[20px]">
+          {/* <div className="flex items-center gap-[20px]">
             <p className="text-[14px] font-medium leading-[21px] text-white90">
               Support:
             </p>
@@ -315,7 +326,7 @@ function Footer() {
             >
               +919560050703
             </a>
-          </div>
+          </div> */}
           <div className="flex items-center gap-[40px] pt-[8px]">
             <p className="text-[14px] font-medium leading-[21px] text-white90">
               Email:
@@ -342,14 +353,14 @@ function Footer() {
           </div> */}
         </div>
     </div>
-        <div className="mt-[30px] flex lg:hidden  justify-start min-[425px]:justify-center flex-wrap max-[375px]:flex-col max-[375px]:gap-[20px] gap-[30px]">
+        <div className="mt-[30px] flex lg:hidden  justify-start min-[450px]:justify-center flex-wrap max-[375px]:flex-col max-[375px]:gap-[20px] gap-[30px]">
           <div className="flex max-[375px]:justify-between max-[350px]:gap-1  min-[375px]:gap-5">
             <a href="https://play.google.com/store/apps/details?id=com.ZYRO" target="_blank">
-              <img src={GooglePlay}></img>
+              <img src={GooglePlay} className="h-[32px] w-[108.5px]"></img>
             </a>
           
             <a href='https://apps.apple.com/in/app/zyro/id6743227331' target="_blank">
-               <img src={AppStore}></img>
+               <img src={AppStore} className="h-[32px] w-[96px]"></img>
            
            </a>
           </div>
@@ -360,7 +371,7 @@ function Footer() {
             <NavLink to="https://www.instagram.com/my_zyro/?utm_medium=copy_link" target="_blank">
               <img src={Instagram} className=""></img>
             </NavLink>
-            <NavLink>
+            <NavLink to="https://www.youtube.com/@Zyro-y9l" target="_blank">
               <img src={Youtube} className=""></img>
             </NavLink>
             <NavLink to="https://www.linkedin.com/company/myzyro/" target="_blank">
@@ -374,7 +385,7 @@ function Footer() {
 
         <div className="hidden lg:flex justify-between items-end pt-[30px]">
           <div>
-            <div className="flex items-center gap-[20px]">
+            {/* <div className="flex items-center gap-[20px]">
               <p className="text-[14px] font-medium leading-[21px] text-white90">
                 Support:
               </p>
@@ -384,7 +395,7 @@ function Footer() {
               >
                 +919560050703
               </a>
-            </div>
+            </div> */}
             <div className="flex items-center gap-[40px] pt-[8px]">
               <p className="text-[14px] font-medium leading-[21px] text-white90">
                 Email:
@@ -420,7 +431,7 @@ function Footer() {
             <NavLink to="https://www.instagram.com/my_zyro/?utm_medium=copy_link" target="_blank">
               <img src={Instagram} className=""></img>
             </NavLink>
-            <NavLink>
+            <NavLink to="https://www.youtube.com/@Zyro-y9l" target="_blank">
               <img src={Youtube} className=""></img>
             </NavLink>
             <NavLink to="https://www.linkedin.com/company/myzyro/" target="_blank">
@@ -431,7 +442,7 @@ function Footer() {
             </NavLink>
           </div>
           <p className="text-[12px] lg:text-[14px] text-white70 font-normal">
-            © 2024 KGC Infotech Pvt.Ltd.. All Rights Reserved.
+            © 2025 KGC Infotech Pvt.Ltd.. All Rights Reserved.
           </p>
         </div>
       </div>

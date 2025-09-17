@@ -17,16 +17,25 @@ function HeroSection() {
     const bankLogos = document.querySelectorAll(".bankLogo");
 
     const positionLogos = () => {
-      let orbitRadius = 125;
-      let center = 125;
+      let orbitRadius = 120;
+      let center = 120;
 
       // ✅ Responsive adjustments
-      if (window.innerWidth <= 480) { 
-        orbitRadius = 75;   // Mobile
-        center = 70;
-      } else if (window.innerWidth <= 768) { 
-        orbitRadius = 90;  // Tablet
+      if (window.innerWidth <= 375) { 
+        orbitRadius = 85;   // Mobile
         center = 90;
+      } 
+        else if (window.innerWidth <= 400) { 
+        orbitRadius = 105;   // Mobile
+        center = 110;
+      }
+        else if (window.innerWidth <= 480) { 
+        orbitRadius = 100;   // Mobile
+        center = 110;
+      }
+      else if (window.innerWidth < 768) { 
+        orbitRadius = 120;  // Tablet
+        center = 120;
       }
 
       const total = bankLogos.length;
@@ -71,7 +80,7 @@ function HeroSection() {
   }, []);
   const navigate = useNavigate();
    const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   };
      const handleLinkClick = (pageName) => {
         ScrollTop();
@@ -97,7 +106,7 @@ function HeroSection() {
             </h1>
 
             <div className="flex justify-center lg:justify-start">
-              <p className="text-[#9E9C9F] text-[14px] md:text-[14.5px] lg:text-[20px] sm:w-[80%] lg:w-[100%] max-[360px]:px-[20px] px-[30px] sm:px-0  mt-[30px] sm:mt-[60px] lg:mt-[18px] text-center lg:text-left">
+              <p className="text-[#9E9C9F] text-[14px] md:text-[14.5px] lg:text-[20px] sm:w-[80%] lg:w-[100%] max-[360px]:px-[20px] px-[30px] sm:px-0  mt-[30px] sm:mt-[20px] lg:mt-[18px] text-center lg:text-left">
                 Connect and manage all your business accounts in one place with
                 Zyro Connected Banking. Simplify vendor payments, access
                 real-time insights, enable smooth integration and automate
@@ -114,7 +123,7 @@ function HeroSection() {
           </div>
 
           {/* Right Orbit Section */}
-          <div className="pt-[45px] sm:pt-[60px] lg:pt-0 lg:w-[45%] w-full flex justify-center items-center relative">
+          <div className=" lg:w-[45%] w-full flex justify-center items-center relative">
                     <div className="ConnectedHeroSecGradient2"></div>
             <div className="rotateSection">
               {/* Center Zyro Logo */}

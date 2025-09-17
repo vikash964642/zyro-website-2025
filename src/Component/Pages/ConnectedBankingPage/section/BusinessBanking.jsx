@@ -4,17 +4,18 @@ import arrowRight from '/image/ConnectedBanking/arrowRight.svg';
 import BusinessBankingMob from '/image/ConnectedBanking/BusinessBankingMob.svg';
 function BusinessBanking() {
     const navigate = useNavigate();
-   const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  //  const ScrollTop = () => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
      const handleLinkClick = (pageName) => {
-        ScrollTop();
+        // ScrollTop();
     navigate("/contact-us", { state: { pageName } }); 
   
   };
   return (
   <section className="max-w-screen-lg lg:mx-auto mt-[140px] lg:mt-[200px]">
-    <div className='bg-[#0E0624] rounded-[20px] px-[22px] lg:pl-[70px] lg:pr-[90px] lg:h-[460px] flex flex-col lg:flex-row gap-[100px] lg:gap-[0px] mx-[11px] lg:mx-0 overflow-hidden'>
+    <div className='bg-[#0E0624] rounded-[20px] px-[22px] lg:pl-[70px] lg:pr-[90px] lg:h-[460px] flex flex-col lg:flex-row gap-[100px] lg:gap-[0px] mx-[11px] lg:mx-0 overflow-hidden relative'>
+       <div className='businessBankingGradient1  z-10'></div>
       <div className='relative mt-[55px] lg:mt-[0px] lg:w-[60%] flex flex-col justify-center items-center lg:items-start'>
           <div>
             <h2 className='max-[360px]:text-[22px] text-[26px] lg:text-[48px] font-semibold text-center lg:text-left text-white90'>Ready to Simplify Your Business Banking</h2>
@@ -29,12 +30,12 @@ function BusinessBanking() {
                 <img src={arrowRight}/>
             </div>
         </button>
- <div className='businessBankingGradient1 w-[200px] h-[250px] lg:w-[300px] lg:h-[300px] z-10'></div>
+
       </div>
 <div className='flex items-end justify-center lg:justify-start lg:w-[40%] relative'>
-     <img src={BusinessBankingMob}/>
+     <img src={BusinessBankingMob} className="relative z-30"/>
 
-        <div className='w-[200px] h-[250px] lg:w-[300px] lg:h-[300px] businessBankingGradient2'></div>
+        <div className=' businessBankingGradient2'></div>
  
 </div>
     </div>

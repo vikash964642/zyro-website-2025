@@ -25,7 +25,11 @@ function Herosection() {
       let center = 140;
 
       // ✅ Responsive adjustments
-      if (window.innerWidth <= 480) { 
+        if (window.innerWidth <= 375) { 
+        orbitRadius = 110;   // Mobile
+        center = 110;
+      }
+      else if (window.innerWidth <= 480) { 
         orbitRadius = 120;   // Mobile
         center = 120;
       } else if (window.innerWidth <= 768) { 
@@ -75,7 +79,7 @@ function Herosection() {
   }, []);
  const navigate = useNavigate();
    const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   };
      const handleLinkClick = (pageName) => {
         ScrollTop();
@@ -100,7 +104,7 @@ function Herosection() {
               </button>
             </div>
           </div>
-          <div className="flex justify-center items-center lg:w-[50%] px-[30px] lg:px-[0px] ">
+          <div className="flex justify-center items-center lg:w-[50%]  ">
             <div className="HeroRotateSection">
                          {/* Center Zyro Logo */}
                          <div className="SoundboxImg">

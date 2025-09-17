@@ -34,7 +34,7 @@ function HeroSection() {
 
  const navigate = useNavigate();
    const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   };
      const handleLinkClick = (pageName) => {
         ScrollTop();
@@ -63,7 +63,7 @@ function HeroSection() {
         {cardData[currentIndex].SubHeader}
       </span>
      <div className="hidden lg:flex justify-center lg:justify-start mt-[55px]">
-         <button onClick={() => handleLinkClick("Pos Page")} className=" md:w-[225px] md:h-[46px] bg-[#4F31B4] md:rounded-[24.77px] md:text-[18px] font-semibold text-[#FFF] flex justify-center items-center">Get your speaker</button>
+         <button onClick={() => handleLinkClick("Pos Page")} className=" md:w-[225px] md:h-[46px] bg-[#4F31B4] md:rounded-[24.77px] md:text-[18px] font-semibold text-[#FFF] flex justify-center items-center">Get your Device</button>
      </div>
     </div>
 
@@ -84,7 +84,7 @@ function HeroSection() {
     <div className="HerosectionGradient2"></div>
   </div>
    <div className="flex lg:hidden justify-center lg:justify-start ">
-         <button onClick={() => handleLinkClick("Pos Page")} className="max-[400px]:w-[100%] w-[350px] h-[59.8px]  bg-[#4F31B4] rounded-[32.075px]  text-[23.52px] font-semibold text-[#FFF] flex justify-center items-center">Get your speaker</button>
+         <button onClick={() => handleLinkClick("Pos Page")} className="max-[400px]:w-[100%] w-[350px] h-[59.8px]  bg-[#4F31B4] rounded-[32.075px]  text-[23.52px] font-semibold text-[#FFF] flex justify-center items-center">Get your Device</button>
      </div>
 
 </section>

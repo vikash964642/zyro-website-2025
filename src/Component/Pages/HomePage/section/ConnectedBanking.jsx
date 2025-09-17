@@ -23,7 +23,7 @@ export default function ConnectedBanking() {
     return () => clearInterval(interval);
   }, [collaborators.length]);
  const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   };
   return (
 

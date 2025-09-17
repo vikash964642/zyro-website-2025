@@ -47,8 +47,8 @@ function PosFeatures() {
  <Swiper
        className='h-full'
         modules={[Autoplay,Pagination]}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        loop={true}
+        // autoplay={{ delay: 2000, disableOnInteraction: false }}
+        // loop={true}
          pagination={{
     el: ".custom-Pos-pagination", // connect to custom div
     clickable: true,

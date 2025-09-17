@@ -1,9 +1,12 @@
-import { Link } from "react-router-dom";
-import arrowRight from "/image/ConnectedBanking/arrowRight.svg";
 
+import arrowRight from "/image/ConnectedBanking/arrowRight.svg";
+import { useNavigate } from "react-router-dom";
 function DigitalPayment() {
-       const ScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+     const navigate = useNavigate();
+     const handleLinkClick = (pageName) => {
+        // ScrollTop();
+    navigate("/contact-us", { state: { pageName } }); 
+  
   };
   return (
      <section className="mt-[200px] lg:mt-[240px]">
@@ -14,14 +17,14 @@ function DigitalPayment() {
 <div className='flex justify-center max-[360px]:px-[10px] max-[415px]:px-[18px]'>
     <h2 className='min-[416px]:w-[350px] sm:w-[450px] md:w-[550px] lg::w-[625px] text-[#FFF] text-center max-[360px]:text-[25px] text-[28px] sm:text-[38px] md:text-[42px] lg:text-[50px] font-semibold'>Make Every Digital Payment Safe & Secure</h2>
 </div>
-    <Link to='/contact-us' className='relative  mt-[45px] cursor-pointer z-20' onClick={ScrollTop}>
+    <button to='/contact-us' className='relative  mt-[45px] cursor-pointer z-20' onClick={() => handleLinkClick("IMPS Switch")}>
             <div className=' w-[180px] h-[50px] bg-[#4F31B4] rounded-[44px] flex justify-center items-center'>
                 <p className='text-[16px] font-semibold text-[#FFF]'>Contact Sales</p>
             </div>
             <div className='h-[50px] w-[50px] bg-[#FBF9F1] rounded-[50%] absolute top-0 left-[158px] flex justify-center items-center'>
                 <img src={arrowRight}/>
             </div>
-        </Link>
+        </button>
         </div>
         </div>
         </section>
