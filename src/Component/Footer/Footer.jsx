@@ -6,7 +6,7 @@ import XTwitter from "/image/FooterImage/XTwitter.svg";
 import linkedIn from "/image/FooterImage/LinkedIn.svg";
 import zyrologo from "/image/zyro-logo.svg";
 import { useNavigate } from 'react-router-dom';
-import GooglePlay from "/image/FooterImage/playStore.svg";
+import GooglePlay from "/image/FooterImage/playstore.svg";
 import AppStore from "/image/FooterImage/appStore.svg";
 // import certificatezyro from "/image/FooterImage/certificatezyro.png";
 import certificatezyro from "/image/FooterImage/certificateNew1.svg";
